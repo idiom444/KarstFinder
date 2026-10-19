@@ -1,0 +1,2 @@
+# Preserve byte-identical audit CSVs, including their original CRLF records.
+docs/reviews/denny_v001_methodology/*.csv -text whitespace=cr-at-eol

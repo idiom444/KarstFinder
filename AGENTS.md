@@ -83,3 +83,15 @@ Denny results are finalized under experiments/snapshots/denny_v001.json, an
 unvalidated prospecting snapshot (not the blind Cave Ridge freeze). Its final
 numerical result directories are write-protected. Future revisions require new
 names/paths; the active qgis/KarstFinder.qgz is an editable review copy.
+
+## Current methodology review / information restriction
+
+The user explicitly prohibits looking up known cave locations or compromising
+the ongoing investigation. Do not acquire or read cave reference data, including
+the local private validation archive, for Denny work or methodology review.
+Use existing geology, terrain, unlabeled imagery and numerical results only.
+METHODOLOGY.md documents the implemented assumptions and Denny priority evidence.
+Preserve the original ranks/measurements and snapshot; the additive review record
+is docs/reviews/denny_v001_methodology/. No score/threshold retuning is authorized
+by the documentation request. Prior information exposure must not be erased or
+misrepresented as a new independent blind holdout.

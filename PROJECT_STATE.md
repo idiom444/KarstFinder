@@ -107,3 +107,13 @@ M5 supervised refinement and M6 expansion presented as validated are not justifi
 current few unverified records. Their prerequisites and prospective holdout
 protocol are in docs/NEXT_EXPERIMENT.md. Do not tune the frozen model against
 public references or claim future Cave Ridge revisions are independently blind.
+
+## Methodology review preserved
+
+METHODOLOGY.md now traces input datasets, geological assumptions, each implemented
+algorithm, score arithmetic and the specific Denny cliff priority evidence.
+The additive docs/reviews/denny_v001_methodology/ record retains byte-identical
+CSV rankings/configurations and a per-object pixel-summary/score audit.
+No original model, candidate rank, measurement, geometry or snapshot was changed.
+The audit makes no network requests and reads no cave reference data. The user
+explicitly prohibits known-cave lookups while this investigation continues.

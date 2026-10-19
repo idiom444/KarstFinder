@@ -167,3 +167,22 @@ results/provenance. An incidental unopened caving-newsletter search snippet
 appeared during access research and is recorded; no Denny entrance source was
 used in modeling. The area overlaps the old study edge. This is not an
 independent blind holdout or a validated M6 expansion. No outreach occurred.
+
+## Documentation and numerical traceability review — 2026-10-19
+
+At the user's request, the implemented methodology and Denny cliff-priority
+evidence are documented in METHODOLOGY.md without further prospecting, external
+research or cave-reference access. The review script reads saved polygons and
+raster pixels and preserves byte-identical candidate/access/landscape CSVs and
+configuration copies under docs/reviews/denny_v001_methodology/.
+
+All 489 core object summaries and score decompositions match the saved values;
+maximum numerical difference 1.1102230246251565e-16. Declared deterministic overall
+and per-method rank order matches. Existing Denny snapshot (144 hashes) and
+Cave Ridge freeze (163 hashes) verify before and after the review. The review
+is arithmetic/provenance verification, not predictive validation or new cave
+evidence. No candidate, supporting measurement, threshold or geometry changed.
+The field carbonate_fraction is explicitly documented as positive geological
+support fraction, not measured carbonate-rock percentage. A worked C1 example
+separates its fixed geological/terrain/morphological contributions from the lack
+of detected depression, entrance or verified access.

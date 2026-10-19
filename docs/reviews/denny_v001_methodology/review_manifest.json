@@ -1,0 +1,28 @@
+{
+  "source_snapshot": "experiments/snapshots/denny_v001.json",
+  "source_implementation_git_commit": "dfaf523",
+  "audit_script_sha256": "d8445f12a1ca15e5416e96dadae5d2422800fe3e27f38a3b0f968ad7b098d4bc",
+  "preserved_sources_sha256": {
+    "results/denny_v001_landscape/candidates.csv": "fd1cfbd650d190ff09dbaa5045b6cd7a12366bd5d5a813cd44df280a83a001d5",
+    "results/denny_v001_features/ranked_indicators.csv": "909077203a81f148c4f0a4e35ec96b4a7e10805a19969e7d27eb47addad081ac",
+    "results/denny_v001_access/screened_indicators.csv": "11901ef5c3c44e358b5257890529bbc20b84087c0fc12a1a1d0851e827b20609",
+    "configs/denny_v001_landscape.json": "2e341e3afbb2e36a6a9fdf804ce01b2845b094a76417967ff22d8a5bf29b25b8",
+    "configs/denny_v001_features.json": "1638fbfd8d74f34b85a199357ab22ee30b752dc6572d57ea953f824a4e1d3a60"
+  },
+  "review_files_sha256": {
+    "README.md": "915d79206328478e88ec487a427aebee8bc5a39ad0bab9dca9b905d06a573340",
+    "audit_summary.json": "d5be4829af11c46ec11f089aac3499b9a64dc27a71b0ad8f5d9911d7e9104e0d",
+    "feature_config.json": "1638fbfd8d74f34b85a199357ab22ee30b752dc6572d57ea953f824a4e1d3a60",
+    "landscape_candidates.csv": "fd1cfbd650d190ff09dbaa5045b6cd7a12366bd5d5a813cd44df280a83a001d5",
+    "landscape_config.json": "2e341e3afbb2e36a6a9fdf804ce01b2845b094a76417967ff22d8a5bf29b25b8",
+    "methodology_at_review.md": "d8a197350145309f67f62bb258f6839264ef1d26fe57dfeac9ed8bf4620ff1c7",
+    "ranked_indicators.csv": "909077203a81f148c4f0a4e35ec96b4a7e10805a19969e7d27eb47addad081ac",
+    "score_audit.csv": "2d7b0aee496192642aa24dfde144315c4ae3814bad1ecafb6e6a90a8b6c0d2fd",
+    "screened_indicators.csv": "11901ef5c3c44e358b5257890529bbc20b84087c0fc12a1a1d0851e827b20609",
+    "top10_evidence.md": "ad9191c24c0bbd9cac07c588067a9e902c12fcb0b330543ee6bfdbd2cd1e5ece"
+  },
+  "snapshot_hashes_verified_before_and_after": {
+    "denny": 144,
+    "cave_ridge": 163
+  }
+}

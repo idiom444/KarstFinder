@@ -58,7 +58,7 @@ at their relative locations. GeoTIFFs and candidate GeoPackages are under
 ## Research records
 
 - [RESEARCH.md](RESEARCH.md): sources, assumptions and transfer limits.
-- [METHODOLOGY.md](METHODOLOGY.md): exact baseline and scoring definitions.
+- [METHODOLOGY.md](METHODOLOGY.md): datasets, algorithms, assumptions, scoring and Denny cliff evidence.
 - [EXPERIMENTS.md](EXPERIMENTS.md): run history and empirical results.
 - [docs/DATASETS.md](docs/DATASETS.md): provenance, coverage, units and uncertainty.
 - [AGENTS.md](AGENTS.md): instructions that protect the blind experiment.
@@ -172,3 +172,9 @@ The finalized prospecting artifact hashes are in
 This is an unvalidated snapshot, distinct from the original blind freeze. It
 records post-review GeoPackage hashes and its committed implementation. Numerical
 result directories are write-protected; use the active QGIS copy for map review.
+
+The current methodology and unchanged rankings have an additive
+[independent-review record](docs/reviews/denny_v001_methodology/README.md). It
+contains full-precision CSV copies, exact configurations, per-object score
+contributions and hashes. Check it without rerunning models or accessing cave
+references using `.venv/bin/python scripts/audit_denny_methodology.py --verify`.

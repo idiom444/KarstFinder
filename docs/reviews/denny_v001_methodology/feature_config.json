@@ -1,0 +1,56 @@
+{
+  "experiment_id": "denny_v001_features",
+  "stage": "unvalidated_prospecting_followup",
+  "landscape_run": "results/denny_v001_landscape",
+  "crs": "EPSG:26910",
+  "study_bounds": [
+    615850,
+    5252250,
+    618850,
+    5255250
+  ],
+  "buffer_m": 1100,
+  "native_resolution_m": 1,
+  "seam_exclusion_m": 25,
+  "void_exclusion_m": 10,
+  "depression_depth_m": 0.5,
+  "depression_min_area_m2": 4,
+  "depression_max_area_m2": 2500,
+  "depression_depth_sensitivity_m": [
+    0.3,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "contact_buffer_sensitivity_m": [
+    0,
+    50,
+    100,
+    250
+  ],
+  "contact_buffer_primary_m": 100,
+  "cliff_slope_degrees": 45,
+  "cliff_min_area_m2": 25,
+  "cliff_max_area_m2": 10000,
+  "feature_weights": {
+    "geology": 0.4,
+    "landscape": 0.3,
+    "morphology": 0.3
+  },
+  "geology_scores": {
+    "mapped_marble": 1.0,
+    "marble_contact_buffer": 0.6,
+    "mixed_melange": 0.35
+  },
+  "clustering": {
+    "k": 6,
+    "seed": 42,
+    "sample_size": 10000
+  },
+  "notes": "Predeclared blind hypotheses, not cave probabilities. Depression and cliff objects are potential surface indicators. No individual opening is identified from these detectors. 100 m contact buffer is a sensitivity assumption, not measured geology accuracy. User-approved unvalidated follow-up; prior Cave Ridge reference exposure and geographic overlap prevent independent blind-validation claims. No Denny cave references will be acquired.",
+  "depression_algorithm": "Whitebox FillDepressionsWangAndLiu, fix_flats=False, filled minus original",
+  "processed_dir": "data/processed/denny_v001",
+  "dem_raw_dir": "data/raw",
+  "feature_processed_dir": "data/processed/denny_v001/features",
+  "native_quality_report": "docs/experiments/denny_v001_native_quality.json"
+}

@@ -1,0 +1,31 @@
+{
+  "ranked_objects": 489,
+  "cliffs": 477,
+  "depressions": 12,
+  "marble_overlap_objects": 48,
+  "marble_overlap_depressions": 0,
+  "core_score_and_geometry_measurements_recomputed_from_saved_object_pixels": true,
+  "audited_measurement_fields": [
+    "area_m2",
+    "geo_score",
+    "terrain_score",
+    "mean_slope_deg",
+    "min_residual_m",
+    "max_depth_m",
+    "morphology_score",
+    "score",
+    "carbonate_fraction",
+    "fraction_2021"
+  ],
+  "maximum_measurement_difference": 1.1102230246251565e-16,
+  "deterministic_ranking_verified": true,
+  "native_G_equal_one_pixels": 66434,
+  "comparison_geological_support_km2": 1.5338,
+  "sum_object_areas_m2": 83149.0,
+  "marble_object_area_sum_m2": 6185.0,
+  "vector_marble_overlap_area_sum_m2": 5346.32549614615,
+  "cave_reference_data_read": false,
+  "network_requests": 0,
+  "rankings_or_models_modified": false,
+  "meaning": "Numerical traceability audit, not independent validation of cave-prediction skill."
+}
