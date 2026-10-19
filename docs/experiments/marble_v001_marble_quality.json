@@ -1,0 +1,8 @@
+{
+  "mapped_marble_1m_pixels": 10922,
+  "eligible_marble_pixels": 10922,
+  "minimum_marble_distance_to_survey_seam_m": 107.0,
+  "marble_source_project_year_counts": {
+    "2013": 10922
+  }
+}

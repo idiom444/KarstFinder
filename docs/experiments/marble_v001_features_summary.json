@@ -1,0 +1,84 @@
+{
+  "experiment_id": "marble_v001_features",
+  "stage": "unvalidated_prospecting_followup",
+  "known_cave_sources_accessed": true,
+  "study_area_km2": 9.0,
+  "surface_indicators": 1525,
+  "by_kind": {
+    "depression": {
+      "size_eligible_components": 36,
+      "ranked_quality_and_geology_components": 8
+    },
+    "cliff": {
+      "size_eligible_components": 3303,
+      "ranked_quality_and_geology_components": 1517
+    }
+  },
+  "native_qa": {
+    "native_buffered_pixels": 27040000,
+    "native_buffered_missing_pixels": 0,
+    "native_buffered_valid_fraction": 1.0,
+    "native_study_missing_pixels": 0,
+    "native_overlap_sample": {
+      "older_year": 2016,
+      "newer_year": 2021,
+      "sampling_stride_m": 10,
+      "n": 0,
+      "median_difference_m": null,
+      "p95_absolute_difference_m": null,
+      "p99_absolute_difference_m": null
+    },
+    "native_overlap_samples": [
+      {
+        "older_year": 2013,
+        "newer_year": 2016,
+        "sampling_stride_m": 10,
+        "n": 63806,
+        "median_difference_m": -0.0745849609375,
+        "p95_absolute_difference_m": 2.1864471435546875,
+        "p99_absolute_difference_m": 4.432024955749512
+      },
+      {
+        "older_year": 2013,
+        "newer_year": 2021,
+        "sampling_stride_m": 10,
+        "n": 28952,
+        "median_difference_m": -0.1868743896484375,
+        "p95_absolute_difference_m": 1.4431976079940796,
+        "p99_absolute_difference_m": 2.273223876953125
+      },
+      {
+        "older_year": 2016,
+        "newer_year": 2021,
+        "sampling_stride_m": 10,
+        "n": 0,
+        "median_difference_m": null,
+        "p95_absolute_difference_m": null,
+        "p99_absolute_difference_m": null
+      }
+    ],
+    "study_feature_eligible_area_km2": 8.773256,
+    "study_seam_excluded_area_km2": 0.226744,
+    "seam_exclusion_m": 25,
+    "native_year_counts": {
+      "0": 0,
+      "2013": 5887501,
+      "2016": 2679214,
+      "2021": 433285
+    },
+    "source_hash": "18056092b6ace8d52aa944b648571c8063ae11594e0379712645ddbe42fd3b95",
+    "config_hash": "eb63922a129c6fb28b8ac7ffdc522cf776e9ebb7477ddbba01ad8c482d177d8e"
+  },
+  "geological_context_area_km2": 4.143629,
+  "primary_feature_area_km2": 0.242396,
+  "entrances_confirmed": 0,
+  "entrance_detector_claimed": false,
+  "interpretation": "Complementary surface indicators and landscape ranking, not probabilities or confirmed openings",
+  "public_cave_literature_consulted_for_area_selection": true,
+  "independently_blind": false,
+  "known_entrance_locations_used_as_model_inputs": false,
+  "area_name": "Marble Peak / upper Marble Gulch",
+  "marble_units": [
+    "TRmb(e)"
+  ]
+}

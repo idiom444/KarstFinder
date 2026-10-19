@@ -2,25 +2,50 @@
 
 Repository: /home/Idiom/Repos/MyRepos/KarstFinder (the open VS Code workspace).
 
-## Additional areas awaiting user review
+## Approved Kaleetan and Marble Peak investigations completed
 
-The user requested nearby marble/limestone proposals, with cave-specific public
-documentation lowering priority; ordinary hiking/climbing reports do not count.
-[The shortlist](docs/AREA_SHORTLIST_20261019.md) records five regional options,
-source checks and uncertainty. The nearest proposed first choice is a mapped
-marble pod near Kaleetan Peak (OBJECTID 29440); Marble Peak is a farther alternative.
-Proctor Creek and Rainy Creek already have cave-specific prospecting records;
-Palmer/Money Creek has regional historical karst documentation. No public report
-found for a pod does not prove it unexplored. These are literature-informed choices.
-No new area/footprint is approved. No terrain or candidate analysis was run, and
-no new library entry was created. The existing Denny map remains unchanged.
+The user approved both proposed 3 × 3 km windows. Separate persistent maps and
+library entries now cover **Kaleetan Peak vicinity** (`kaleetan-vicinity`) and
+**Marble Peak / upper Marble Gulch near Silverton** (`marble-peak`). Both remain
+**Not yet investigated** in the field. [Results and map previews](docs/APPROVED_AREAS_RESULTS_20261019.md)
+retain the original rankings, source coverage and evidence. The two default maps
+show 2 and 5 cliff patches intersecting mapped marble; Marble C754 is a weak
+~3 m² edge overlap. Neither lens has a depression core on mapped marble.
+
+Kaleetan has 808 total ranked surface indicators (773 cliffs / 35 depressions);
+Marble has 1,525 (1,517 / 8), mainly in less certain surrounding geological support.
+Each map has 31 persistent layers and overview/detail print layouts. The original
+Cave Ridge and Denny maps and all 307 frozen/snapshot entries remain unchanged.
+Independent repeats match 31 rasters, both CSVs and all three output vector layers
+per area. Pixel audits reconstruct all 2,333 scores and supporting measurements.
+All 27 automated tests pass, including regional lithology adapter checks.
+Kaleetan uses its 149-entry snapshot; Marble uses the additive
+`marble_v001_reviewed.json` after a provider-side context container change.
+Every geological schema/attribute/geometry matches a fresh raw-source reconstruction;
+all other 152 initial Marble hashes match. The original pre-review snapshot is
+retained unchanged. See `docs/MARBLE_PROVIDER_REVIEW_20261019.md`.
+
+The initial Marble USGS tiles lacked coverage at the marble lens. Public PSLC
+Tulalip 2013 native 3 ftUS bare-earth data fills the missing coverage after explicit
+GDAL CRS/unit conversion; newer USGS data takes precedence. The approved study
+and buffer have complete numerical coverage, with 25 m survey seams excluded
+from surface-indicator selection. Provenance records preserve the rejected
+coverage attempts and accepted source checks. No model threshold or score weight
+was tuned, and no cave records were used as numerical inputs.
+
+These are literature-informed, unvalidated prospecting maps, not independently
+blind holdouts. Public cave-specific literature was consulted only in the earlier
+approved shortlist. Lack of a matched report does not prove an area unexplored.
+No additional cave-location lookup, private archive access or outreach occurred.
+Current field rules/routes are not certified by these maps.
 
 ## Persistent Prospecting Library
 
 The local library is implemented under `prospecting_library/`, with a JSON catalog,
 independent versioned QGIS projects, original ranking/data checksums and private
 append-only field notes. Denny Mountain is the first complete example; Cave Ridge
-is registered from its frozen prediction-only project. Both entries start with
+is registered from its frozen prediction-only project. Kaleetan and Marble Peak
+are saved as separate literature-informed investigations. All four entries retain
 fieldwork status **Not yet investigated**. No visits or observations were invented.
 
 Open `prospecting_library/denny-mountain/denny-mountain.qgz` manually in QGIS to
@@ -36,14 +61,14 @@ it in a fresh QGIS process. Old maps and metadata revisions remain recoverable.
 Field notes are excluded from Git and reference original candidate IDs/checksums.
 Scientific algorithms, outputs, ranks, validation records and archived originals
 are unchanged. Verification details are in `docs/PROSPECTING_LIBRARY_VERIFICATION.json`.
-Twenty-four automated tests pass, including nine library tests using synthetic
-data and real fresh QGIS processes. Both saved real projects pass candidate-table,
-style/tree/view/geometry and dataset checks. The live MCP Denny reopen exactly
+The initial library implementation passed 24 automated tests, including nine using synthetic
+data and real fresh QGIS processes. Both original saved projects pass candidate-table,
+style/tree/view/geometry and dataset checks. The initial live MCP Denny reopen exactly
 matches the captured canvas extent and map state. All 163 original Cave Ridge
 and 144 Denny snapshot hashes verify; all four original QGIS files are byte-identical
 to the pre-library Git commit. No cave-reference data was read for this feature.
 
-**The approved southern Denny Mountain follow-up is complete and loaded in QGIS.**
+**The approved southern Denny Mountain follow-up remains complete and saved.**
 It applies the existing methods to 9 km² as unvalidated prospecting. The user
 approved the location on 2026-10-19 and asked to remove known-entrance overlays.
 No X marks, red uncertainty circles or historical reference boundaries are in

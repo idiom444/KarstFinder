@@ -1,0 +1,17 @@
+{
+  "surface_objects": 1525,
+  "route_verified_count": 0,
+  "hiking_ready_count": 0,
+  "screening_counts": {
+    "OFF-TRAIL / STEEP / UNRESOLVED": 1525
+  },
+  "ownership_at_points": {
+    "USDA FOREST SERVICE": 1308,
+    "NON-FS": 217
+  },
+  "minimum_point_trail_distance_m": null,
+  "direct_mapped_marble_objects": 5,
+  "scientific_ranks_changed": false,
+  "official_trail_feature_count": 0,
+  "interpretation": "Access flags are descriptive, not safe/legal route certification. No off-trail route generated."
+}

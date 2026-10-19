@@ -1,0 +1,26 @@
+{
+  "name": "Marble Peak / upper Marble Gulch",
+  "general_location": "Marble Peak / upper Marble Gulch near Silverton, Snohomish County, Washington",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      605050,
+      5322150,
+      608050,
+      5325150
+    ]
+  },
+  "geological_summary": "DNR 1:100,000 TRmb(e) marble, local component of OBJECTID 741; approximate contacts. Five cliff patches intersect mapped marble: four wholly within it and one weak edge overlap (~3 m\u00b2). No depression core overlaps it. Literature-informed unvalidated prospecting; no entrance predictions or verified routes.",
+  "candidate_csv": "results/marble_v001_access/screened_indicators.csv",
+  "analysis_references": [
+    "configs/marble_v001_landscape.json",
+    "configs/marble_v001_features.json",
+    "docs/APPROVED_AREAS_20261019.md",
+    "docs/reviews/marble_v001_methodology/review_manifest.json",
+    "results/marble_v001_landscape",
+    "results/marble_v001_features",
+    "results/marble_v001_access",
+    "docs/APPROVED_AREAS_RESULTS_20261019.md",
+    "experiments/snapshots/marble_v001.json"
+  ]
+}

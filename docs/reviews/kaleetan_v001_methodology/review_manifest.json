@@ -1,0 +1,19 @@
+{
+  "preserved_sources_sha256": {
+    "results/kaleetan_v001_landscape/candidates.csv": "1e2762217f96ffae5d3b2994aaa660b2e1ba85151a760837288019d349b9ea64",
+    "results/kaleetan_v001_features/ranked_indicators.csv": "6f8af582cdd2655dc3d1f198105c5c4ddcfda052ebc09e24d4ef950edd7cf2f3",
+    "results/kaleetan_v001_access/screened_indicators.csv": "79e591c4c6eba0a161a4089c6642884a91236ed05bedfec20b9719d754786cab",
+    "configs/kaleetan_v001_landscape.json": "5022966b3fcfc12f65d971e976fa517bbfc31ed0dd54dae3ad377515d0c75a42",
+    "configs/kaleetan_v001_features.json": "6bfe8f0c7f2e2d18d32ea77f270914b12b4d1bb43cc87bba4f75dd11ea2d4678"
+  },
+  "review_files_sha256": {
+    "landscape_candidates.csv": "1e2762217f96ffae5d3b2994aaa660b2e1ba85151a760837288019d349b9ea64",
+    "ranked_indicators.csv": "6f8af582cdd2655dc3d1f198105c5c4ddcfda052ebc09e24d4ef950edd7cf2f3",
+    "screened_indicators.csv": "79e591c4c6eba0a161a4089c6642884a91236ed05bedfec20b9719d754786cab",
+    "landscape_config.json": "5022966b3fcfc12f65d971e976fa517bbfc31ed0dd54dae3ad377515d0c75a42",
+    "feature_config.json": "6bfe8f0c7f2e2d18d32ea77f270914b12b4d1bb43cc87bba4f75dd11ea2d4678",
+    "score_audit.csv": "1374a1732cac3f72484b54a69c3fde3f27bddb673e278b6928916a8c97306e1f",
+    "audit_summary.json": "b2850ef7413fd487ae3e76293038bee2000564f8d1069c97d7fc0efd5e97cae8",
+    "direct_marble_evidence.md": "2f8ec6d7a214dd54faddc4fa8729158b62bbaa157c5045672f9b6ffa5cb0f637"
+  }
+}

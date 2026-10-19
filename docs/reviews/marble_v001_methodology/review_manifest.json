@@ -1,0 +1,19 @@
+{
+  "preserved_sources_sha256": {
+    "results/marble_v001_landscape/candidates.csv": "c5422b8b18800336f5f4879d25bbeef85a275174285678257b494fa041d83976",
+    "results/marble_v001_features/ranked_indicators.csv": "cebd8596ae97d6793af48ee6980d3feedbda809376ff2dea350362237f230def",
+    "results/marble_v001_access/screened_indicators.csv": "ada78e57e69bb547d2962b6080cf03c48963f2112e85cd2680b5b4e821050ed1",
+    "configs/marble_v001_landscape.json": "c0eb9c3a2a208d9664bce9dcdba531728832fcf308bbf3d7a1d7945770125288",
+    "configs/marble_v001_features.json": "eb63922a129c6fb28b8ac7ffdc522cf776e9ebb7477ddbba01ad8c482d177d8e"
+  },
+  "review_files_sha256": {
+    "landscape_candidates.csv": "c5422b8b18800336f5f4879d25bbeef85a275174285678257b494fa041d83976",
+    "ranked_indicators.csv": "cebd8596ae97d6793af48ee6980d3feedbda809376ff2dea350362237f230def",
+    "screened_indicators.csv": "ada78e57e69bb547d2962b6080cf03c48963f2112e85cd2680b5b4e821050ed1",
+    "landscape_config.json": "c0eb9c3a2a208d9664bce9dcdba531728832fcf308bbf3d7a1d7945770125288",
+    "feature_config.json": "eb63922a129c6fb28b8ac7ffdc522cf776e9ebb7477ddbba01ad8c482d177d8e",
+    "score_audit.csv": "46bc55b29bb3e45de44eef4de0e3ac1c96c83b965cf5fd33568ec91c0c29456c",
+    "audit_summary.json": "6983e042377aafba8289baa9ec6b6486cadbf9edabe2af82ace13a57cf49693f",
+    "direct_marble_evidence.md": "f25bd30551e2920b0b2dd25b207db70706da718ba88a8367d88527f5a3932297"
+  }
+}

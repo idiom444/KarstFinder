@@ -1,0 +1,17 @@
+{
+  "project": "qgis/KarstFinder_Kaleetan_v001.qgz",
+  "layers": 31,
+  "invalid_layers": [],
+  "entrance_reference_layers": 0,
+  "layouts": [
+    "overview",
+    "marble_detail"
+  ],
+  "previews": [
+    "docs/experiments/kaleetan_v001_overview.png",
+    "docs/experiments/kaleetan_v001_marble_detail.png"
+  ],
+  "surface_indicators": 808,
+  "mapped_marble_indicators": 2,
+  "default_extent": "mapped marble detail; overview print layout retains entire approved area"
+}

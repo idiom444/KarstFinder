@@ -1,0 +1,32 @@
+{
+  "area": "kaleetan_v001",
+  "ranked_objects": 808,
+  "cliffs": 773,
+  "depressions": 35,
+  "mapped_marble_overlap_objects": 2,
+  "mapped_marble_overlap_depressions": 0,
+  "maximum_measurement_difference": 1.1102230246251565e-16,
+  "deterministic_ranking_verified": true,
+  "all_representative_points_inside_original_patches": true,
+  "all_ranked_objects_quality_eligible": true,
+  "access_screen_preserves_all_original_candidate_fields": true,
+  "repeat_comparison": {
+    "rasters": 31,
+    "csvs": 2,
+    "geopackage_layers": 3
+  },
+  "audited_measurement_fields": [
+    "area_m2",
+    "geo_score",
+    "terrain_score",
+    "mean_slope_deg",
+    "min_residual_m",
+    "max_depth_m",
+    "morphology_score",
+    "score",
+    "carbonate_fraction",
+    "fraction_2021"
+  ],
+  "cave_reference_data_read": false,
+  "meaning": "Arithmetic and reproducibility checks; not validation of cave-prediction skill."
+}

@@ -1,0 +1,13 @@
+{
+  "path": "data/raw/shared_elevation_v001/GlacierPeak2014_marble_native_crop.tif",
+  "sha256": "33a89e0b30d7c9be7dbc8b931aa6f4cd8e4524d8e74142e89ccbcd15a1ed8dbb",
+  "remote_url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/OPR/Projects/Glacier_Peak_WA_QL1_LiDAR/WA_GlacierPeak_2014/TIFF/USGS_OPR_Glacier_Peak_WA_QL1_LiDAR_1945.tif",
+  "source_etag": "\"cba0a81a5c29961321cd551898649bf2-749\"",
+  "source_last_modified": "Fri, 08 Apr 2022 15:47:47 GMT",
+  "operation": "Native 1m pixel crop via HTTP range reads; assign missing NAD83 UTM10 CRS according to supplier bare-earth metadata; no elevation rescaling, resampling, infill or terrain derivation",
+  "metadata_path": "data/raw/marble_v001/Glacier_Peak_Hydroflattened_Bare_Earth_Metadata.xml",
+  "metadata_sha256": "03716432dddf5cb01d81364689551909d97a97501e72b8a5258a569183f7da49",
+  "valid_fraction": 0.0,
+  "accepted_for_analysis": false,
+  "rejection_reason": "No valid pixels in the approved study and buffer; catalog rectangle does not establish terrain coverage."
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://pugetsoundlidar.ess.washington.edu/lidardata/restricted/filegeodatabase/pslc2013/tulalip/2013tulalip_be.gdb.7z",
+  "path": "data/raw/marble_v001/2013tulalip_be.gdb.7z",
+  "bytes": 5841853674,
+  "sha256": "8802861156061db518ab292e8ab7b83aa1e57986dc9ea423ee4b532953054c1b",
+  "archive_crc_verified": true,
+  "source_page": "https://pugetsoundlidar.ess.washington.edu/lidardata/restricted/projects/2013tulalip.html",
+  "metadata_path": "data/raw/marble_v001/2013tulalip_deliv2_be.html",
+  "metadata_sha256": "9720738ac0a0df2108d9edc25072fe8e302c66bf9b8df1ded17adc6a62ed6969",
+  "horizontal_crs": "EPSG:2926",
+  "vertical_datum": "NAVD88 / Geoid03",
+  "horizontal_and_vertical_units": "US survey feet",
+  "native_cell_size_ftUS": 3,
+  "acquisition_year": 2013,
+  "restrictions": "No outreach; public PSLC data download only."
+}

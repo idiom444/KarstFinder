@@ -1,0 +1,24 @@
+{
+  "experiment_id": "kaleetan_v001_landscape",
+  "status": "unvalidated_prospecting_followup",
+  "known_cave_sources_accessed": true,
+  "study_area_km2": 9.0,
+  "eligible_area_km2": 9.0,
+  "mapped_marble_area_km2": 0.0313,
+  "mixed_carbonate_possible_area_km2": 3.449,
+  "threshold_selected_area_km2_before_size_filter": 0.0312,
+  "candidate_area_count": 1,
+  "boundary_clipped_candidate_count": 0,
+  "candidate_area_km2": 0.0312,
+  "candidate_area_fraction_of_study": 0.0034666666666666665,
+  "candidate_area_fraction_of_mapped_marble": 0.9968051118210862,
+  "cave_detection_or_validation_performed": false,
+  "interpretation": "Landscape hypotheses only. No cave existence probabilities.",
+  "public_cave_literature_consulted_for_area_selection": true,
+  "independently_blind": false,
+  "known_entrance_locations_used_as_model_inputs": false,
+  "area_name": "Kaleetan Peak vicinity",
+  "marble_units": [
+    "PMmb(e)"
+  ]
+}

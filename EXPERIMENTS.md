@@ -186,3 +186,61 @@ The field carbonate_fraction is explicitly documented as positive geological
 support fraction, not measured carbonate-rock percentage. A worked C1 example
 separates its fixed geological/terrain/morphological contributions from the lack
 of detected depression, entrance or verified access.
+
+
+## kaleetan_v001 / marble_v001 — approved regional prospecting, 2026-10-19
+
+The user approved both proposed 3 × 3 km windows after public cave-specific
+literature screening. These are literature-informed, unvalidated transfers of
+the existing numerical hypotheses, not independently blind validation. No cave
+entrance records or private archive were used. Thresholds, weights, scales,
+component limits and ranks were not tuned. PMmb(e) and TRmb(e) are explicitly
+mapped to the same established marble class by a tested regional vocabulary
+adapter; the frozen original implementation remains unchanged.
+
+| Result | Kaleetan | Marble Peak |
+|---|---:|---:|
+| Landscape zones | 1 | 1 |
+| Selected landscape area | 3.12 ha | 1.09 ha |
+| Total surface indicators | 808 | 1,525 |
+| Cliffs / depression cores | 773 / 35 | 1,517 / 8 |
+| Cliff patches intersecting mapped marble | 2 | 5 |
+| Depression cores intersecting mapped marble | 0 | 0 |
+| Independent repeat raster arrays matched | 31 | 31 |
+| Complete preserved ranking CSVs matched | 2 | 2 |
+| GeoPackage layers with matching geometries / attributes | 3 | 3 |
+| Saved-pixel audit maximum discrepancy | 1.11e-16 | 5.55e-17 |
+
+Marble Peak's original selected USGS tiles had no data over the mapped marble.
+A separately acquired public PSLC 2013 3 ftUS bare-earth source provides complete
+combined coverage after GDAL reprojection/explicit height-unit conversion. The
+accepted source-year mosaic and 25 m seam exclusion are retained; 0.226744 km² of
+the Marble study is excluded from feature selection. All marble cells themselves
+are eligible 2013 data, at least 107 m from a seam. Overlap differences and rejected
+source coverage are documented, without fitting offsets or changing the study
+boundary. Marble C754 has only ~3 m² carbonate overlap and is retained at its
+original low rank, not promoted to match the four wholly overlapping patches.
+
+Persistent results are in `results/{kaleetan,marble}_v001_*`, with full-precision
+additive reviews in `docs/reviews/{kaleetan,marble}_v001_methodology/`. New snapshots
+in `experiments/snapshots/` pin source/code/data/rank/map hashes and protect final
+numerical folders. Each independent QGIS map has 31 persistent layers, an overview
+and a marble-detail layout, and no entrance-reference overlays. Library IDs are
+`kaleetan-vicinity` and `marble-peak`, both Not yet investigated. The four original
+archived maps and the original 163 + 144 frozen entries are preserved.
+
+See [the full results and map key](docs/APPROVED_AREAS_RESULTS_20261019.md) and
+[execution/source record](docs/APPROVED_AREAS_20261019.md). Reproducibility and score
+arithmetic checks do not validate cave prediction or certify hiking access.
+
+
+### Additive Marble provider finalization
+
+The first Marble snapshot is retained as pre-review evidence. A subsequent QGIS
+provider reopen changed only the prepared context GeoPackage's container hash.
+A fresh raw-source reconstruction matches every layer schema, attribute and exact
+geometry; all other 152 initial hashes, scores and rankings match. The additive
+current integrity record is `experiments/snapshots/marble_v001_reviewed.json`.
+Prepared context files are now read-only. No numerical model or candidate changed.
+[Provider audit details](docs/MARBLE_PROVIDER_REVIEW_20261019.md) document the
+preserved initial record and limits on attributing the exact byte-level change.

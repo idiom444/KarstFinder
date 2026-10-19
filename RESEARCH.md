@@ -113,3 +113,36 @@ Dated access checks and official source links are summarized in
 [DENNY_RESULTS.md](docs/DENNY_RESULTS.md). Model-led cliff targets remain steep
 and 382–560 m from mapped trails; a geological target is not automatically a
 practical hiking destination. No source custodian was contacted.
+
+
+## Kaleetan / Marble Peak public-source transfer — 2026-10-19
+
+The user approved both carbonate proposals after the separately authorized
+cave-specific public-literature screen. They are literature-informed prospecting
+areas, not independently blind validation sites. Ordinary hiking/climbing reports
+were not used as negative priority evidence; an unsuccessful cave-report search
+is not proof that an area is unexplored. No further cave-location lookup or
+private validation-archive access is part of the numerical analysis.
+
+[The regional execution record](docs/APPROVED_AREAS_20261019.md) links the new
+source manifests and scripts. DNR 1:100,000 geology is queried with whitelisted
+rock/structural fields, and USFS trail/ownership geometries remain descriptive
+context. The two approved 9 km² windows are retained without changing their
+boundaries to improve model outcomes.
+
+USGS 3DEP catalog rectangles overstated usable native elevation coverage at
+Marble Peak: the initially selected standard 1 m inputs left the mapped marble
+entirely unobserved. A Glacier Peak OPR crop was also entirely nodata. Those
+coverage failures are preserved, rather than filled or interpreted as an absence
+of terrain indicators. An older public [PSLC Tulalip 2013 survey](https://pugetsoundlidar.ess.washington.edu/lidardata/restricted/projects/2013tulalip.html)
+provides another high-resolution source. Its [bare-earth metadata](https://pugetsoundlidar.ess.washington.edu/lidardata/metadata/2013tulalip_deliv2_be.html)
+specifies 3 US survey foot cells, State Plane Washington North NAD83(HARN) and
+NAVD88/Geoid03 elevations in US survey feet. GDAL OpenFileGDB/Warp handles reading
+and horizontal resampling; the explicit height conversion is 1200/3937 metres
+per US survey foot. No custom terrain, hydrology or TPI implementation is added.
+Actual coverage and inter-survey overlap measurements govern acceptance.
+
+Prior public cave-literature exposure is documented, and no model weight,
+threshold or ranking rule is tuned using it. New-area reviews reconstruct the
+saved-pixel arithmetic and retain complete original rankings; neither repeated
+computation nor a visually plausible hillshade demonstrates cave-prediction skill.

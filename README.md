@@ -1,7 +1,7 @@
 # KarstFinder
 
 Reproducible geospatial research into cave-bearing landscapes near Cave
-Ridge and nearby Denny Mountain, Snoqualmie Pass, Washington. Initial outputs describe **landscape
+Ridge, Denny Mountain, Kaleetan Peak and Marble Peak near Silverton, Washington. Outputs describe **landscape
 hypotheses, not cave locations or probabilities**. Initial predictions were frozen before known local cave references were consulted. Read [PROJECT_STATE.md](PROJECT_STATE.md) before work.
 
 ## Saved prospecting areas
@@ -9,7 +9,9 @@ hypotheses, not cave locations or probabilities**. Initial predictions were froz
 The [Prospecting Library](prospecting_library/README.md) keeps independent,
 versioned QGIS maps and a JSON catalog. Open
 [Denny Mountain](prospecting_library/denny-mountain/denny-mountain.qgz) or
-[Cave Ridge](prospecting_library/cave-ridge/cave-ridge.qgz) directly in QGIS with
+[Cave Ridge](prospecting_library/cave-ridge/cave-ridge.qgz),
+[Kaleetan Peak vicinity](prospecting_library/kaleetan-vicinity/kaleetan-vicinity.qgz), or
+[Marble Peak / upper Marble Gulch](prospecting_library/marble-peak/marble-peak.qgz) directly in QGIS with
 **Project → Open**. No Codex or analysis rerun is needed. These are local projects
 using shared datasets under `data/` and `results/`, **not portable data packages**;
 the GitHub repository alone excludes the large required datasets.
@@ -25,6 +27,16 @@ Ask Codex to save/open an area, update its fieldwork status, or record a candida
 observation. [Library instructions](prospecting_library/README.md) explain new-area
 registration, private local field notes, version history, backup and path recovery.
 Predictions and frozen experiments stay separate from subsequent observations.
+
+The two newly approved 9 km² studies are complete. Their default maps highlight
+two Kaleetan and five Marble Peak cliff patches intersecting mapped marble;
+one Marble patch has only a small contact-edge overlap. Neither lens has a modeled
+depression core. These are unverified surface indicators, not detected entrances.
+[Results, map previews and review evidence](docs/APPROVED_AREAS_RESULTS_20261019.md)
+explain the source coverage, original ranks and limitations. Both new maps have
+overview and marble-detail print layouts and retain the full indicator tables.
+[The final Marble provider review](docs/MARBLE_PROVIDER_REVIEW_20261019.md) preserves
+a container-byte change and its unchanged geological contents.
 
 ## Setup on Arch Linux
 

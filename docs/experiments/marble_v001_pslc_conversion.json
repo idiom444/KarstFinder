@@ -1,0 +1,32 @@
+{
+  "source_archive_sha256": "8802861156061db518ab292e8ab7b83aa1e57986dc9ea423ee4b532953054c1b",
+  "gdal_driver": "OpenFileGDB",
+  "source_raster_dataset": "tulalip_be (32-bit bare-earth elevation)",
+  "source_native_crs": "EPSG:2926",
+  "source_native_cell_size_ftUS": 3,
+  "source_geotransform": [
+    1330485.000000015,
+    3.0,
+    0.0,
+    532356.0,
+    0.0,
+    -3.0
+  ],
+  "source_units": "US survey feet",
+  "source_original_wkt": "PROJCS[\"NAD83(HARN) / Washington North (ftUS)\",GEOGCS[\"NAD83(HARN)\",DATUM[\"NAD83_High_Accuracy_Reference_Network\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6152\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",47],PARAMETER[\"central_meridian\",-120.833333333333],PARAMETER[\"standard_parallel_1\",47.5],PARAMETER[\"standard_parallel_2\",48.7333333333333],PARAMETER[\"false_easting\",1640416.66666667],PARAMETER[\"false_northing\",0],UNIT[\"US survey foot\",0.304800609601219,AUTHORITY[\"EPSG\",\"9003\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "canonical_crs_assignment": "Supplier metadata EPSG:2926; legacy WKT datum, linear unit and all six projection parameters checked (angular tolerance 1e-6 degrees, linear tolerance 0.001 ftUS; standard-parallel order is interchangeable).",
+  "legacy_vs_epsg_false_easting_difference_ftUS": -0.00033332989551126957,
+  "vertical_scale_ftUS_to_m": 0.3048006096012192,
+  "vertical_datum": "NAVD88 / Geoid03",
+  "output_crs": "EPSG:26910",
+  "output_resolution_m": 1,
+  "resampling": "nearest neighbour",
+  "output_path": "data/raw/shared_elevation_v001/PSLC_Tulalip2013_marble_1m_metres.tif",
+  "output_sha256": "6ce03bd7b592cb70b3f94b8af68740eaca25a45236ccdc264de8905417163c28",
+  "valid_fraction_in_5300m_crop": 0.9219204699181204,
+  "unscaled_source_pixel_checks": 110,
+  "metadata_path": "data/raw/marble_v001/2013tulalip_deliv2_be.html",
+  "metadata_sha256": "9720738ac0a0df2108d9edc25072fe8e302c66bf9b8df1ded17adc6a62ed6969",
+  "datum_policy": "GDAL/PROJ horizontal transform; no vertical datum shift or fitted alignment",
+  "interpretation": "A 1 m working grid from native 3 US survey foot bare-earth data; not finer detail inferred from coarse terrain."
+}

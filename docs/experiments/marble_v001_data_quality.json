@@ -1,0 +1,128 @@
+{
+  "source_rasters": [
+    {
+      "path": "data/raw/shared_elevation_v001/PSLC_Tulalip2013_marble_1m_metres.tif",
+      "year": 2013,
+      "project": "PSLC_Tulalip2013",
+      "crs": "EPSG:26910",
+      "size": [
+        5300,
+        5300
+      ],
+      "geotransform": [
+        603900.0,
+        1.0,
+        0.0,
+        5326300.0,
+        0.0,
+        -1.0
+      ],
+      "vertical_datum": "NAVD88",
+      "elevation_units": "metres; docs/experiments/marble_v001_pslc_conversion.json",
+      "sha256": "6ce03bd7b592cb70b3f94b8af68740eaca25a45236ccdc264de8905417163c28"
+    },
+    {
+      "path": "data/raw/shared_elevation_v001/USGS_one_meter_x60y533_WA_Western_North_2016.tif",
+      "year": 2016,
+      "project": "WA_Western_North_2016",
+      "crs": "EPSG:26910",
+      "size": [
+        10012,
+        10012
+      ],
+      "geotransform": [
+        599994.0,
+        1.0,
+        0.0,
+        5330006.0,
+        0.0,
+        -1.0
+      ],
+      "vertical_datum": "NAVD88",
+      "elevation_units": "metres; USGS catalog declaration",
+      "sha256": "73b2676619afd6cf4fca6023240206cf4e026398a8874d49f289e650f56b5c3a"
+    },
+    {
+      "path": "data/raw/shared_elevation_v001/USGS_1M_10_x60y533_WA_KingCounty_2021_B21.tif",
+      "year": 2021,
+      "project": "WA_KingCounty_2021_B21",
+      "crs": "EPSG:26910",
+      "size": [
+        10012,
+        10012
+      ],
+      "geotransform": [
+        599993.9999971432,
+        1.0,
+        0.0,
+        5330006.000036618,
+        0.0,
+        -1.0
+      ],
+      "vertical_datum": "NAVD88",
+      "elevation_units": "metres; USGS catalog declaration",
+      "sha256": "5a2e555d6b62224daf56c04f4a43e0b7fe243f723a979d81f2d2f7a32d1e0e9d"
+    }
+  ],
+  "study_area_km2": 9,
+  "buffer_m": 1100,
+  "buffered_valid_fraction": 1.0,
+  "study_valid_fraction": 1.0,
+  "native_qa": {
+    "native_buffered_pixels": 27040000,
+    "native_buffered_missing_pixels": 0,
+    "native_buffered_valid_fraction": 1.0,
+    "native_study_missing_pixels": 0,
+    "native_overlap_sample": {
+      "older_year": 2016,
+      "newer_year": 2021,
+      "sampling_stride_m": 10,
+      "n": 0,
+      "median_difference_m": null,
+      "p95_absolute_difference_m": null,
+      "p99_absolute_difference_m": null
+    },
+    "native_overlap_samples": [
+      {
+        "older_year": 2013,
+        "newer_year": 2016,
+        "sampling_stride_m": 10,
+        "n": 63806,
+        "median_difference_m": -0.0745849609375,
+        "p95_absolute_difference_m": 2.1864471435546875,
+        "p99_absolute_difference_m": 4.432024955749512
+      },
+      {
+        "older_year": 2013,
+        "newer_year": 2021,
+        "sampling_stride_m": 10,
+        "n": 28952,
+        "median_difference_m": -0.1868743896484375,
+        "p95_absolute_difference_m": 1.4431976079940796,
+        "p99_absolute_difference_m": 2.273223876953125
+      },
+      {
+        "older_year": 2016,
+        "newer_year": 2021,
+        "sampling_stride_m": 10,
+        "n": 0,
+        "median_difference_m": null,
+        "p95_absolute_difference_m": null,
+        "p99_absolute_difference_m": null
+      }
+    ],
+    "study_feature_eligible_area_km2": 8.773256,
+    "study_seam_excluded_area_km2": 0.226744,
+    "seam_exclusion_m": 25,
+    "native_year_counts": {
+      "0": 0,
+      "2013": 5887501,
+      "2016": 2679214,
+      "2021": 433285
+    },
+    "source_hash": "18056092b6ace8d52aa944b648571c8063ae11594e0379712645ddbe42fd3b95",
+    "config_hash": "eb63922a129c6fb28b8ac7ffdc522cf776e9ebb7477ddbba01ad8c482d177d8e"
+  },
+  "epoch_10m_interpretation": "newest contributing native epoch per 10m cell; native seam mask governs 1m detection",
+  "mosaic_policy": "oldest first, newest valid precedence; native nearest-neighbour, 10m average; no seam feathering"
+}

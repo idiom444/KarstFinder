@@ -1,0 +1,214 @@
+{
+  "fresh_process": true,
+  "qgis_version": "4.2.2-Belém do Pará",
+  "layer_count": 31,
+  "state_matches_capture": true,
+  "vector_counts": {
+    "2 mapped-marble indicators • purple dots are patch representatives": 2,
+    "All 808 ranked indicators • includes uncertain surrounding geology": 808,
+    "All cliff patches • 773; geological support varies": 773,
+    "Approved study • 3 × 3 km": 1,
+    "Closed depression cores • 35; 0 overlap mapped marble": 35,
+    "Gold outline • landscape hypothesis areas": 1,
+    "Mapped contacts • positional uncertainty": 48,
+    "Mapped faults • context only": 4,
+    "Mapped marble PMmb(e) • purple outline": 1,
+    "Mapped ownership • access still unresolved": 1,
+    "Mixed melange • possible carbonate, uncertain distribution": 3,
+    "Official USFS trails • query context; no route approval": 11,
+    "Orange patches • overlap mapped marble; unverified": 2
+  },
+  "candidate_table_check": {
+    "candidate_count": 808,
+    "matching_layer": "All 808 ranked indicators • includes uncertain surrounding geology",
+    "ids_ranks_scores_coordinates_match_csv": true
+  },
+  "dependencies": [
+    {
+      "path": "data/processed/kaleetan_v001/context.gpkg",
+      "bytes": 217088,
+      "sha256": "8c67e66ac47afd94840d3d8bd88f26678e10b65ec64d01ffa8862e74941370ae",
+      "layers": [
+        "Approved study • 3 × 3 km",
+        "Mapped contacts • positional uncertainty",
+        "Mapped faults • context only",
+        "Mapped marble PMmb(e) • purple outline",
+        "Mixed melange • possible carbonate, uncertain distribution"
+      ]
+    },
+    {
+      "path": "data/processed/kaleetan_v001/features/contributing_area_10m_buffered.tif",
+      "bytes": 1086204,
+      "sha256": "5bc81094abc8672359902feb89e0f3a510566b43f231eab7bcf1d0987f73336d",
+      "layers": [
+        "Modeled D8 contributing area • m², context only"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_access/access.gpkg",
+      "bytes": 1044480,
+      "sha256": "91af6509b16fdb8a1f85edebe7a2da6ba07b3d1536bf4db5669bd951f33868e7",
+      "layers": [
+        "2 mapped-marble indicators • purple dots are patch representatives",
+        "All 808 ranked indicators • includes uncertain surrounding geology",
+        "Mapped ownership • access still unresolved",
+        "Official USFS trails • query context; no route approval"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/combined_score_10m.tif",
+      "bytes": 99653,
+      "sha256": "bf06b2395ac2a1f8b949e027cd8eac6191e8b1b90b93979dd9fa562cadb2a0cd",
+      "layers": [
+        "Combined ordinal index • not a cave probability"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/depression_depth_1m.tif",
+      "bytes": 212885,
+      "sha256": "9f9b82ede4e58127c609eeb51d22edea41d4c1d16d75ce5c07217399befb8707",
+      "layers": [
+        "Closed depression depth • metres"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/feature_quality_1m.tif",
+      "bytes": 16221,
+      "sha256": "f44b2fac0075f1cf54b3c70224f2427abbacdca40d36a2dc21892bb27405bcc6",
+      "layers": [
+        "Eligible terrain mask • seams excluded"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/features.gpkg",
+      "bytes": 2322432,
+      "sha256": "67909392f31d904dfa53d52f61a222ce507f4f8b065e6f30795275f69adf88ba",
+      "layers": [
+        "All cliff patches • 773; geological support varies",
+        "Closed depression cores • 35; 0 overlap mapped marble",
+        "Orange patches • overlap mapped marble; unverified"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/hillshade_1m.tif",
+      "bytes": 7200964,
+      "sha256": "f5e97c155cebd992d89236af6864135a13117be1bac8e3686fd30b51c2c4d3c9",
+      "layers": [
+        "1 m terrain grid • bare-earth hillshade"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/residual_11m.tif",
+      "bytes": 25898544,
+      "sha256": "a06b1df9b955b3201e9723af3e2d246bb62ea02cf5cf439694a6f936e03378de",
+      "layers": [
+        "11 m elevation residual • metres"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/slope_1m.tif",
+      "bytes": 29998070,
+      "sha256": "723d847368b82b6fa1dd11fc6acb3e11c32a1764983074a6bd1248c536b9873c",
+      "layers": [
+        "Slope • degrees"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/source_epoch_1m.tif",
+      "bytes": 35206,
+      "sha256": "6c07b0180bfd127c3144b4700719e268e0730f86c7df6a1d5d1cc4f1be5a9b38",
+      "layers": [
+        "Source project year • 2021"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/terrain_clusters_10m.tif",
+      "bytes": 14704,
+      "sha256": "bd9b8e3f1f09e5c2d3bfdf87edab41c6db3ee9a352d7d4a508aab153ea914a0b",
+      "layers": [
+        "Six descriptive terrain classes • no cave labels"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/analysis_valid.tif",
+      "bytes": 2767,
+      "sha256": "567a52b6adce0faf8f90b05b3f77ca02de9548818e702cca99d007978c248fe0",
+      "layers": [
+        "Landscape component • analysis_valid"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/candidates.gpkg",
+      "bytes": 98304,
+      "sha256": "b50745b8a6f3d65f8104c05d3f41857b6ef71e693e2eae1b3cfb91f611c10fd6",
+      "layers": [
+        "Gold outline • landscape hypothesis areas"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/combined_score.tif",
+      "bytes": 97844,
+      "sha256": "b189066473d4e630b0c780a9d475ddf7fca048c40866eef28b79ddcbbe897472",
+      "layers": [
+        "Landscape index • 10 m; not an entrance model"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/dev_2010m.tif",
+      "bytes": 330946,
+      "sha256": "1c250518030dd42ae753c3362f249b34202d8ed8811673d61ddf8018c97f0c52",
+      "layers": [
+        "Landscape component • dev_2010m"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/dev_210m.tif",
+      "bytes": 336735,
+      "sha256": "04c2f7356463fbc9e6e9897ef67562cae160147e6956f6031ef59ed86f04fc6c",
+      "layers": [
+        "Landscape component • dev_210m"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/dev_610m.tif",
+      "bytes": 336411,
+      "sha256": "5c063cc36b2bab1638f2e81a0cee215864edf3acf89c9e4f38780a2e403b4bd9",
+      "layers": [
+        "Landscape component • dev_610m"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/exposure.tif",
+      "bytes": 242690,
+      "sha256": "084d5930e2cfd0a332f8459c72e7dcb68aee9a8e366d409c030e94657baefaac",
+      "layers": [
+        "Landscape component • exposure"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/geological_score.tif",
+      "bytes": 3932,
+      "sha256": "d0fe0ba10902b437cdb37d272008f7377f28f54a9647a18a971d8408a99ab8ec",
+      "layers": [
+        "Landscape component • geological_score"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/mid_slope_votes.tif",
+      "bytes": 13081,
+      "sha256": "a3c386e1cec2c81c639edbdab5c3efab21b9d7706d0e50937df4589a021c9dce",
+      "layers": [
+        "Landscape component • mid_slope_votes"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_landscape/terrain_score.tif",
+      "bytes": 246203,
+      "sha256": "61758619900c030a10b302de257d195cf34cebaf83f13d881bf8bd060ce9f630",
+      "layers": [
+        "Landscape component • terrain_score"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package"
+}

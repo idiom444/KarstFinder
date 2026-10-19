@@ -488,3 +488,44 @@ Any later claim of improvement needs appropriate independent evidence; do not
 select thresholds on discovered entrances and then call the same locations an
 independent test. The current investigation continues using geology, terrain and
 unlabeled imagery only, with no cave-record searches or third-party contact.
+
+## Approved regional transfers — 2026-10-19
+
+The user subsequently authorized a public cave-specific literature screen for
+selecting additional areas, then approved both proposed 3 × 3 km Kaleetan Peak
+vicinity and Marble Peak / upper Marble Gulch windows. This is a separate,
+literature-informed prospecting phase; it does not alter the preserved Denny
+review or constitute independent blind cave validation. No entrance records,
+private archive or known-cave overlays are used as model inputs. No one is
+contacted. [The regional execution record](docs/APPROVED_AREAS_20261019.md)
+documents the approved extents, sources, adapters, map interpretation and audits.
+
+The numerical terrain methods, hypothesis weights, thresholds, component size
+limits, four-neighbour connectivity and deterministic ranking rules above are
+retained. `scripts/run_approved_area.py` calls the unchanged archived numerical
+implementations. `src/karstfinder/prospecting.py` parameterizes their lithology
+vocabulary: PMmb(e) at Kaleetan and TRmb(e) at Marble Peak both map to the existing
+marble class, while JTRmt(e) retains the existing uncertain mixed-melange support.
+The adapter preserves category precedence and contact-distance calculation;
+synthetic GIS tests compare it to the archived PMmb(e) implementation.
+
+`scripts/prepare_approved_area.py` verifies actual valid-cell coverage before
+derivatives and preserves source-project years and the existing 25 m seam
+exclusion. A catalog rectangle is not a coverage measurement. Marble Peak's
+initial USGS 1 m inputs were rejected because the marble lens lacked valid cells;
+the coverage-screening record preserves this failure. The public PSLC Tulalip
+2013 bare-earth source provides native 3 US survey foot data. GDAL performs the
+horizontal transformation from EPSG:2926 to EPSG:26910 and nearest-neighbour
+sampling onto a 1 m working grid; valid heights are converted from US survey feet
+to metres using 1200/3937. It is not a coarse DEM enlarged to imply native detail.
+Source metadata, checksums, unit conversion and overlap checks are recorded
+separately. No fitted vertical offset or threshold adjustment is introduced.
+
+The new review bundles retain original full-precision rankings, measurements and
+configuration copies. `scripts/audit_approved_area.py` reconstructs each score
+from the saved object pixels, checks point/polygon consistency and deterministic
+ranks, and compares separate repeat runs. Scientific raster arrays, CSV bytes,
+and GeoPackage geometries/attributes are compared separately from SQLite container
+metadata. These establish traceability and reproducibility, not cave-detection
+skill. Different terrain epochs and source sampling also limit comparison of
+ordinal scores between areas.

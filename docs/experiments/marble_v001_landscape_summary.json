@@ -1,0 +1,24 @@
+{
+  "experiment_id": "marble_v001_landscape",
+  "status": "unvalidated_prospecting_followup",
+  "known_cave_sources_accessed": true,
+  "study_area_km2": 9.0,
+  "eligible_area_km2": 9.0,
+  "mapped_marble_area_km2": 0.0112,
+  "mixed_carbonate_possible_area_km2": 4.0598,
+  "threshold_selected_area_km2_before_size_filter": 0.0109,
+  "candidate_area_count": 1,
+  "boundary_clipped_candidate_count": 0,
+  "candidate_area_km2": 0.0109,
+  "candidate_area_fraction_of_study": 0.0012111111111111112,
+  "candidate_area_fraction_of_mapped_marble": 0.9732142857142857,
+  "cave_detection_or_validation_performed": false,
+  "interpretation": "Landscape hypotheses only. No cave existence probabilities.",
+  "public_cave_literature_consulted_for_area_selection": true,
+  "independently_blind": false,
+  "known_entrance_locations_used_as_model_inputs": false,
+  "area_name": "Marble Peak / upper Marble Gulch",
+  "marble_units": [
+    "TRmb(e)"
+  ]
+}

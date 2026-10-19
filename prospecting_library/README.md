@@ -201,3 +201,22 @@ Implementation: [catalog and workflow](../src/karstfinder/library.py),
 [QGIS capture/reopen checks](../src/karstfinder/library_qgis.py),
 [CLI](../scripts/prospecting_library.py), and
 [round-trip tests](../tests/test_library.py). No scientific analysis code changed.
+
+
+## Kaleetan and Marble Peak
+
+The approved additional areas are saved independently as `kaleetan-vicinity` and
+`marble-peak`, both **Not yet investigated**. Open their `AREA_ID/AREA_ID.qgz`
+projects manually or use `./library open AREA_ID`. Each has 31 persistent layers,
+a full-study overview and a readable marble-detail print layout. The default
+purple points represent 2 Kaleetan and 5 Marble cliff patches intersecting mapped
+marble; one Marble patch is a weak contact-edge overlap. These are unvalidated
+surface indicators, not entrances. Full tables also retain 808 and 1,525 indicators
+across less certain surrounding geology. See
+[results and evidence](../docs/APPROVED_AREAS_RESULTS_20261019.md).
+
+Each area has its own `kaleetan_v001` or `marble_v001` configurations, prepared
+inputs, outputs, original candidate checksums and unvalidated prospecting
+snapshot. Source-year/quality masks and the shared data/results are required to
+reopen the saved maps. These literature-informed choices are not independent
+blind holdouts. Original Cave Ridge/Denny entries and archives remain intact.

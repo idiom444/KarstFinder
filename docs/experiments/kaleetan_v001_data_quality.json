@@ -1,0 +1,98 @@
+{
+  "source_rasters": [
+    {
+      "path": "data/raw/USGS_1M_10_x61y526_WA_EasternCascades_2019_B19.tif",
+      "year": 2019,
+      "project": "WA_EasternCascades_2019_B19",
+      "crs": "EPSG:26910",
+      "size": [
+        10012,
+        10012
+      ],
+      "geotransform": [
+        609993.9999996538,
+        1.0,
+        0.0,
+        5260006.000047477,
+        0.0,
+        -1.0
+      ],
+      "vertical_datum": "NAVD88",
+      "elevation_units": "metres; USGS catalog declaration",
+      "sha256": "c9a3018f7cd6e312188f37ec76c46eacd7451ac6f126799b80860994333c55be"
+    },
+    {
+      "path": "data/raw/USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
+      "year": 2021,
+      "project": "WA_KingCounty_2021_B21",
+      "crs": "EPSG:26910",
+      "size": [
+        10012,
+        10012
+      ],
+      "geotransform": [
+        609993.9999996538,
+        1.0,
+        0.0,
+        5260006.000047477,
+        0.0,
+        -1.0
+      ],
+      "vertical_datum": "NAVD88",
+      "elevation_units": "metres; USGS catalog declaration",
+      "sha256": "8018e4320a3eac0865bd220f3213079473ebd3b83f1679094172333faa75cec1"
+    },
+    {
+      "path": "data/raw/shared_elevation_v001/USGS_1M_10_x61y527_WA_KingCounty_2021_B21.tif",
+      "year": 2021,
+      "project": "WA_KingCounty_2021_B21",
+      "crs": "EPSG:26910",
+      "size": [
+        10012,
+        10012
+      ],
+      "geotransform": [
+        609994.0000353233,
+        1.0,
+        0.0,
+        5270005.9999904,
+        0.0,
+        -1.0
+      ],
+      "vertical_datum": "NAVD88",
+      "elevation_units": "metres; USGS catalog declaration",
+      "sha256": "afe47791914abdf8a83a9e6fd49a1f226e9457a164f04982c349749dbe11168c"
+    }
+  ],
+  "study_area_km2": 9,
+  "buffer_m": 1100,
+  "buffered_valid_fraction": 1.0,
+  "study_valid_fraction": 1.0,
+  "native_qa": {
+    "native_buffered_pixels": 27040000,
+    "native_buffered_missing_pixels": 0,
+    "native_buffered_valid_fraction": 1.0,
+    "native_study_missing_pixels": 0,
+    "native_overlap_sample": {
+      "older_year": 2019,
+      "newer_year": 2021,
+      "sampling_stride_m": 10,
+      "n": 0,
+      "median_difference_m": null,
+      "p95_absolute_difference_m": null,
+      "p99_absolute_difference_m": null
+    },
+    "study_feature_eligible_area_km2": 9.0,
+    "study_seam_excluded_area_km2": 0.0,
+    "seam_exclusion_m": 25,
+    "native_year_counts": {
+      "0": 0,
+      "2019": 0,
+      "2021": 9000000
+    },
+    "source_hash": "76d08e0070644e067e58b1a7559030c3332730d5242756b23ea8cda5b5cd4112",
+    "config_hash": "6bfe8f0c7f2e2d18d32ea77f270914b12b4d1bb43cc87bba4f75dd11ea2d4678"
+  },
+  "epoch_10m_interpretation": "newest contributing native epoch per 10m cell; native seam mask governs 1m detection",
+  "mosaic_policy": "oldest first, newest valid precedence; native nearest-neighbour, 10m average; no seam feathering"
+}

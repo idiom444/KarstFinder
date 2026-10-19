@@ -1,0 +1,1501 @@
+{
+  "crs": "EPSG:26910",
+  "title": "KarstFinder | Marble Peak / upper Marble Gulch | UNVALIDATED prospecting",
+  "view_extent": [
+    606285.4279572102,
+    5323386.485948589,
+    606785.4279572102,
+    5323886.485948589
+  ],
+  "view_crs": "EPSG:26910",
+  "rotation": 0.0,
+  "tree": {
+    "name": "",
+    "checked": true,
+    "expanded": true,
+    "children": [
+      {
+        "name": "Prospecting hypotheses • points represent patches, not entrances",
+        "checked": true,
+        "expanded": true,
+        "children": [
+          {
+            "name": "5 mapped-marble indicators • purple dots are patch representatives",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "5_mapped_marble_indicators___purple_dots_are_patch_representatives_3c2d3bf7_6b43_4032_9cd2_7dab8116b020"
+          },
+          {
+            "name": "All 1525 ranked indicators • includes uncertain surrounding geology",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "All_1525_ranked_indicators___includes_uncertain_surrounding_geology_0e0dbac7_77fa_43ae_9224_f2f1e15be61c"
+          },
+          {
+            "name": "Orange patches • overlap mapped marble; unverified",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Orange_patches___overlap_mapped_marble__unverified_e49d1a7b_64b7_4083_bef2_49a941387a2e"
+          },
+          {
+            "name": "All cliff patches • 1517; geological support varies",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "All_cliff_patches___1517__geological_support_varies_ca6e6b9d_aa9f_4d13_8e53_3cb9111cf5e9"
+          },
+          {
+            "name": "Closed depression cores • 8; 0 overlap mapped marble",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Closed_depression_cores___8__0_overlap_mapped_marble_74dff409_6d08_4611_a5af_20457ba4b737"
+          },
+          {
+            "name": "Gold outline • landscape hypothesis areas",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Gold_outline___landscape_hypothesis_areas_e5db3676_9ea3_4804_a257_c9ff98f77aa1"
+          },
+          {
+            "name": "Combined ordinal index • not a cave probability",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Combined_ordinal_index___not_a_cave_probability_a2703b2c_2eb5_4a76_a8bb_0163ba8523a7"
+          },
+          {
+            "name": "Landscape index • 10 m; not an entrance model",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_index___10_m__not_an_entrance_model_420fc70a_97cd_4fa0_a3b3_8029df3ab85f"
+          }
+        ]
+      },
+      {
+        "name": "Geology • DNR 1:100,000 approximate contacts",
+        "checked": true,
+        "expanded": true,
+        "children": [
+          {
+            "name": "Mapped marble TRmb(e) • purple outline",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Mapped_marble_TRmb_e____purple_outline_33a769b9_a945_4e88_b86d_ba7678b615d9"
+          },
+          {
+            "name": "Mixed melange • possible carbonate, uncertain distribution",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Mixed_melange___possible_carbonate__uncertain_distribution_f89cf11b_bc9e_4e91_bb82_071eec750d1a"
+          },
+          {
+            "name": "Mapped faults • context only",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Mapped_faults___context_only_6df5c06b_1a18_4a9e_89ec_594cd2a17b76"
+          },
+          {
+            "name": "Mapped contacts • positional uncertainty",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Mapped_contacts___positional_uncertainty_d6c7f577_4364_48d8_a86a_e96e74d52f98"
+          }
+        ]
+      },
+      {
+        "name": "Terrain components and data quality • expand to inspect",
+        "checked": true,
+        "expanded": true,
+        "children": [
+          {
+            "name": "Slope • degrees",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Slope___degrees_70e7a7e7_89c0_47a6_9db1_73c8018cc321"
+          },
+          {
+            "name": "Closed depression depth • metres",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Closed_depression_depth___metres_a0443d3e_8fd1_4001_86a7_f8a78ac2ba2f"
+          },
+          {
+            "name": "11 m elevation residual • metres",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "11_m_elevation_residual___metres_1adb3820_7dfa_4fe2_b638_504b9de538b1"
+          },
+          {
+            "name": "Eligible terrain mask • seams excluded",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Eligible_terrain_mask___seams_excluded_6974e994_c6be_4707_bc1b_3885504b1b73"
+          },
+          {
+            "name": "Six descriptive terrain classes • no cave labels",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Six_descriptive_terrain_classes___no_cave_labels_0954ebde_cbfb_4b7f_92ae_621839f39e04"
+          },
+          {
+            "name": "Source project year • 2013/2016/2021",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Source_project_year___2013_2016_2021_419d05f4_0c9c_4450_8858_f8f426aaaf8c"
+          },
+          {
+            "name": "Modeled D8 contributing area • m², context only",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Modeled_D8_contributing_area___m___context_only_e13df424_e80c_400f_9e0c_9d6928e57670"
+          },
+          {
+            "name": "Landscape component • terrain_score",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___terrain_score_4b0db5c1_66bc_4570_a866_28098d02531d"
+          },
+          {
+            "name": "Landscape component • geological_score",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___geological_score_31567745_57e5_4298_bce1_009c0e77f647"
+          },
+          {
+            "name": "Landscape component • mid_slope_votes",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___mid_slope_votes_cabf1175_366d_4e55_be45_8fda7467961e"
+          },
+          {
+            "name": "Landscape component • exposure",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___exposure_477f8694_3b5f_4036_872f_1870c0aed498"
+          },
+          {
+            "name": "Landscape component • analysis_valid",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___analysis_valid_af6a7fd1_44d6_49de_99b5_33cd017b4da4"
+          },
+          {
+            "name": "Landscape component • dev_210m",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___dev_210m_3c7b8ff2_9600_4966_ba60_b23442807753"
+          },
+          {
+            "name": "Landscape component • dev_610m",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___dev_610m_93b72d12_cbfe_43f9_87f2_1278db0145c3"
+          },
+          {
+            "name": "Landscape component • dev_2010m",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Landscape_component___dev_2010m_c74ca02a_4ab0_4725_b627_0f87d41eb8ba"
+          }
+        ]
+      },
+      {
+        "name": "Study and public access context • no route verified",
+        "checked": true,
+        "expanded": true,
+        "children": [
+          {
+            "name": "Official USFS trails • query context; no route approval",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Official_USFS_trails___query_context__no_route_approval_85a57689_c6c2_445a_ba18_e80cd01944e0"
+          },
+          {
+            "name": "Mapped ownership • access still unresolved",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Mapped_ownership___access_still_unresolved_b8b82342_bbd9_49b4_b174_bc0a35b2b280"
+          },
+          {
+            "name": "Approved study • 3 × 3 km",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Approved_study___3___3_km_913bf934_2cf9_467d_95b1_a52cde5d3bbc"
+          },
+          {
+            "name": "1 m terrain grid • bare-earth hillshade",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "1_m_terrain_grid___bare_earth_hillshade_4c38f9c8_9ffb_4275_9621_a5f2f364f369"
+          }
+        ]
+      }
+    ]
+  },
+  "layers": {
+    "11_m_elevation_residual___metres_1adb3820_7dfa_4fe2_b638_504b9de538b1": {
+      "name": "11 m elevation residual • metres",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "03e7ec8b3f6ba5668beedfdaa46d2416fc7167c69d3f53c9898ac6fc655bd722",
+      "width": 3000,
+      "height": 3000,
+      "bands": 1
+    },
+    "1_m_terrain_grid___bare_earth_hillshade_4c38f9c8_9ffb_4275_9621_a5f2f364f369": {
+      "name": "1 m terrain grid • bare-earth hillshade",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "ef83d3b4706cebd0ed536245a5f9476dd014873e5a88b4e06b712881d216ccc4",
+      "width": 3000,
+      "height": 3000,
+      "bands": 1
+    },
+    "5_mapped_marble_indicators___purple_dots_are_patch_representatives_3c2d3bf7_6b43_4032_9cd2_7dab8116b020": {
+      "name": "5 mapped-marble indicators • purple dots are patch representatives",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "0d22acce16042d1730a59ca902a8e4a82a895b9f16cb4deb313f3b9829c50b0e",
+      "feature_count": 5,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "geo_score",
+          "Real"
+        ],
+        [
+          "terrain_score",
+          "Real"
+        ],
+        [
+          "morphology_score",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "rank_within_kind",
+          "Integer"
+        ],
+        [
+          "max_depth_m",
+          "Real"
+        ],
+        [
+          "mean_slope_deg",
+          "Real"
+        ],
+        [
+          "min_residual_m",
+          "Real"
+        ],
+        [
+          "distance_marble_m",
+          "Real"
+        ],
+        [
+          "fraction_2021",
+          "Real"
+        ],
+        [
+          "contact_only",
+          "Integer"
+        ],
+        [
+          "talus_or_slide",
+          "Integer"
+        ],
+        [
+          "boundary_clipped",
+          "Integer"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "evidence",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "status",
+          "String"
+        ],
+        [
+          "nearest_trail",
+          "String"
+        ],
+        [
+          "trail_distance_m",
+          "Real"
+        ],
+        [
+          "object_trail_gap_m",
+          "Real"
+        ],
+        [
+          "ownership_at_point",
+          "String"
+        ],
+        [
+          "object_nonfs_area_m2",
+          "Real"
+        ],
+        [
+          "object_fs_fraction",
+          "Real"
+        ],
+        [
+          "mapped_marble_overlap_m2",
+          "Real"
+        ],
+        [
+          "max_slope_within_25m_deg",
+          "Real"
+        ],
+        [
+          "fraction_35deg_within_25m",
+          "Real"
+        ],
+        [
+          "access_screen",
+          "String"
+        ],
+        [
+          "access_flags",
+          "String"
+        ],
+        [
+          "route_verified",
+          "Integer"
+        ],
+        [
+          "hiking_ready",
+          "Integer"
+        ],
+        [
+          "access_note",
+          "String"
+        ]
+      ],
+      "features_sha256": "84666a0a512e601f47098feacff1581d76ccf8a1aff97c22b988ebf74077dbf2",
+      "subset": "mapped_marble_overlap_m2 > 0",
+      "labels_enabled": true
+    },
+    "All_1525_ranked_indicators___includes_uncertain_surrounding_geology_0e0dbac7_77fa_43ae_9224_f2f1e15be61c": {
+      "name": "All 1525 ranked indicators • includes uncertain surrounding geology",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "421f26ede683a2280d96df4f19239c772f0c382bb661e6905fe5ef783dcbdc42",
+      "feature_count": 1525,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "geo_score",
+          "Real"
+        ],
+        [
+          "terrain_score",
+          "Real"
+        ],
+        [
+          "morphology_score",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "rank_within_kind",
+          "Integer"
+        ],
+        [
+          "max_depth_m",
+          "Real"
+        ],
+        [
+          "mean_slope_deg",
+          "Real"
+        ],
+        [
+          "min_residual_m",
+          "Real"
+        ],
+        [
+          "distance_marble_m",
+          "Real"
+        ],
+        [
+          "fraction_2021",
+          "Real"
+        ],
+        [
+          "contact_only",
+          "Integer"
+        ],
+        [
+          "talus_or_slide",
+          "Integer"
+        ],
+        [
+          "boundary_clipped",
+          "Integer"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "evidence",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "status",
+          "String"
+        ],
+        [
+          "nearest_trail",
+          "String"
+        ],
+        [
+          "trail_distance_m",
+          "Real"
+        ],
+        [
+          "object_trail_gap_m",
+          "Real"
+        ],
+        [
+          "ownership_at_point",
+          "String"
+        ],
+        [
+          "object_nonfs_area_m2",
+          "Real"
+        ],
+        [
+          "object_fs_fraction",
+          "Real"
+        ],
+        [
+          "mapped_marble_overlap_m2",
+          "Real"
+        ],
+        [
+          "max_slope_within_25m_deg",
+          "Real"
+        ],
+        [
+          "fraction_35deg_within_25m",
+          "Real"
+        ],
+        [
+          "access_screen",
+          "String"
+        ],
+        [
+          "access_flags",
+          "String"
+        ],
+        [
+          "route_verified",
+          "Integer"
+        ],
+        [
+          "hiking_ready",
+          "Integer"
+        ],
+        [
+          "access_note",
+          "String"
+        ]
+      ],
+      "features_sha256": "69da362b5af8d515cecf9a39b975ddbf9c9f953f017ed2620428caa1a25cc362",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "All_cliff_patches___1517__geological_support_varies_ca6e6b9d_aa9f_4d13_8e53_3cb9111cf5e9": {
+      "name": "All cliff patches • 1517; geological support varies",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "034491e09b2aa2d078a9df8149aec5beed1729d7e284a701a998f820fee4b0b8",
+      "feature_count": 1517,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "geo_score",
+          "Real"
+        ],
+        [
+          "terrain_score",
+          "Real"
+        ],
+        [
+          "morphology_score",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "rank_within_kind",
+          "Integer"
+        ],
+        [
+          "max_depth_m",
+          "Real"
+        ],
+        [
+          "mean_slope_deg",
+          "Real"
+        ],
+        [
+          "min_residual_m",
+          "Real"
+        ],
+        [
+          "distance_marble_m",
+          "Real"
+        ],
+        [
+          "fraction_2021",
+          "Real"
+        ],
+        [
+          "contact_only",
+          "Integer"
+        ],
+        [
+          "talus_or_slide",
+          "Integer"
+        ],
+        [
+          "boundary_clipped",
+          "Integer"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "evidence",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "status",
+          "String"
+        ]
+      ],
+      "features_sha256": "fe6957eefc97a6a74f9eb31d8759a9c6ddc8db682418e0d00ab8e03399499337",
+      "subset": "kind='cliff'",
+      "labels_enabled": false
+    },
+    "Approved_study___3___3_km_913bf934_2cf9_467d_95b1_a52cde5d3bbc": {
+      "name": "Approved study • 3 × 3 km",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "7c31166a366616ee2cf1f49bf75b31807a6a8b0e7d6a178721f5dd7769525fb2",
+      "feature_count": 1,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "name",
+          "String"
+        ]
+      ],
+      "features_sha256": "bb285fc4a62a519d93d3e84eb91651662ee005108038deb978f74f04b627b33e",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Closed_depression_cores___8__0_overlap_mapped_marble_74dff409_6d08_4611_a5af_20457ba4b737": {
+      "name": "Closed depression cores • 8; 0 overlap mapped marble",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "94950d13f2bfa7d49db0ecd13c8a3c9797a721342e8ba833174c1534bddb5c1d",
+      "feature_count": 8,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "geo_score",
+          "Real"
+        ],
+        [
+          "terrain_score",
+          "Real"
+        ],
+        [
+          "morphology_score",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "rank_within_kind",
+          "Integer"
+        ],
+        [
+          "max_depth_m",
+          "Real"
+        ],
+        [
+          "mean_slope_deg",
+          "Real"
+        ],
+        [
+          "min_residual_m",
+          "Real"
+        ],
+        [
+          "distance_marble_m",
+          "Real"
+        ],
+        [
+          "fraction_2021",
+          "Real"
+        ],
+        [
+          "contact_only",
+          "Integer"
+        ],
+        [
+          "talus_or_slide",
+          "Integer"
+        ],
+        [
+          "boundary_clipped",
+          "Integer"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "evidence",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "status",
+          "String"
+        ]
+      ],
+      "features_sha256": "0f9d782e630aa32bf78171d0cd36535a6b572305183d2b7e1b1080fb547be76b",
+      "subset": "kind='depression'",
+      "labels_enabled": false
+    },
+    "Closed_depression_depth___metres_a0443d3e_8fd1_4001_86a7_f8a78ac2ba2f": {
+      "name": "Closed depression depth • metres",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "dd77dcbb06373157290bdea292e04958713496cae0fdbd852887ed57947e27db",
+      "width": 3000,
+      "height": 3000,
+      "bands": 1
+    },
+    "Combined_ordinal_index___not_a_cave_probability_a2703b2c_2eb5_4a76_a8bb_0163ba8523a7": {
+      "name": "Combined ordinal index • not a cave probability",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 0.45,
+      "style_sha256": "3c26abce5309e5a9d28b6ef5a39c8d0f52553de0fcbb6ce7584d707295ad2589",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Eligible_terrain_mask___seams_excluded_6974e994_c6be_4707_bc1b_3885504b1b73": {
+      "name": "Eligible terrain mask • seams excluded",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "0de431990c3ddab53cc30f4562c3accd2bd1af83f262d96d3fe72a113c8c1ca1",
+      "width": 3000,
+      "height": 3000,
+      "bands": 1
+    },
+    "Gold_outline___landscape_hypothesis_areas_e5db3676_9ea3_4804_a257_c9ff98f77aa1": {
+      "name": "Gold outline • landscape hypothesis areas",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "94f333aefc416c3fbb0054ab2daa21498b990cfd69ef6f1c70183d2d4bdb0780",
+      "feature_count": 1,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "presence",
+          "Integer"
+        ],
+        [
+          "candidate_id",
+          "String"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "mean_score",
+          "Real"
+        ],
+        [
+          "max_score",
+          "Real"
+        ],
+        [
+          "terrain_mean",
+          "Real"
+        ],
+        [
+          "geo_mean",
+          "Real"
+        ],
+        [
+          "votes_mean",
+          "Real"
+        ],
+        [
+          "exposure_mean",
+          "Real"
+        ],
+        [
+          "slope_mean_deg",
+          "Real"
+        ],
+        [
+          "fraction_2021",
+          "Real"
+        ],
+        [
+          "boundary_clipped",
+          "Integer"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "geo_evidence",
+          "String"
+        ],
+        [
+          "terrain_evidence",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "status",
+          "String"
+        ]
+      ],
+      "features_sha256": "a55b4aa5874522cacf5f51f962ce168f81c4730b23980b431a733c2e9c6f3af1",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Landscape_component___analysis_valid_af6a7fd1_44d6_49de_99b5_33cd017b4da4": {
+      "name": "Landscape component • analysis_valid",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "0bfe450b60eb43b4c9a965056cbfde96ece6f03304ebbe6567bb96555aa83504",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_component___dev_2010m_c74ca02a_4ab0_4725_b627_0f87d41eb8ba": {
+      "name": "Landscape component • dev_2010m",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "3af0e50b1ea98394e412ad947d892cc0d19bf9622f089ce3d0007198ceca2bf7",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_component___dev_210m_3c7b8ff2_9600_4966_ba60_b23442807753": {
+      "name": "Landscape component • dev_210m",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "5a12ca7261d48a2f1cc8c39a6a99bc6b3749be2f87f1b9cb6a6558f67166754b",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_component___dev_610m_93b72d12_cbfe_43f9_87f2_1278db0145c3": {
+      "name": "Landscape component • dev_610m",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "7dba86829bc803dcb0d27fd49b8ab1d328569ce6aaaec39ae1ecfa4f31c51bdf",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_component___exposure_477f8694_3b5f_4036_872f_1870c0aed498": {
+      "name": "Landscape component • exposure",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "f4058b01375d389413b240e8702e6d8dd72c20cf58e03fe6fe288be80f9e77e9",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_component___geological_score_31567745_57e5_4298_bce1_009c0e77f647": {
+      "name": "Landscape component • geological_score",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "a29e3c2f8a4d29d37282a725dd5ea100b7782b03b1c57f6f2ac4b229135de805",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_component___mid_slope_votes_cabf1175_366d_4e55_be45_8fda7467961e": {
+      "name": "Landscape component • mid_slope_votes",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "b46d988e5e5389a9a8e2d0f2e0080bc51261b1b49011ea0804c4e8f9a62034ec",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_component___terrain_score_4b0db5c1_66bc_4570_a866_28098d02531d": {
+      "name": "Landscape component • terrain_score",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "776db0861d48170abb9536a88865c84a6eb95923f2e2dfd74f60f07bdf2d3c21",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Landscape_index___10_m__not_an_entrance_model_420fc70a_97cd_4fa0_a3b3_8029df3ab85f": {
+      "name": "Landscape index • 10 m; not an entrance model",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 0.45,
+      "style_sha256": "cb3a876c9cb3f004414e60902240610b9fed7127a5f3a3a359ef6d80749ba7c0",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Mapped_contacts___positional_uncertainty_d6c7f577_4364_48d8_a86a_e96e74d52f98": {
+      "name": "Mapped contacts • positional uncertainty",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "62f066dc2348e5aad46d750537d3c9888623ecb3c7b0ad2bf85b6f1483e18379",
+      "feature_count": 30,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "OBJECTID",
+          "Integer"
+        ],
+        [
+          "CONTACTS_100K_TYPE",
+          "String"
+        ],
+        [
+          "CONTACTS_100K_IS_CONCEALED",
+          "String"
+        ],
+        [
+          "CONTACTS_100K_LOC_CONFIDENCE_M",
+          "Integer"
+        ]
+      ],
+      "features_sha256": "adefc5bd14daa364ba2ceaf29807108e3ec2db6742631c643fd4bc6f2f3ef0c4",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Mapped_faults___context_only_6df5c06b_1a18_4a9e_89ec_594cd2a17b76": {
+      "name": "Mapped faults • context only",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "138a24782d8064d5b8f5cb47f12dd8b4b1fa515bfecd96d18361a5d034d2cc67",
+      "feature_count": 10,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "OBJECTID",
+          "Integer"
+        ],
+        [
+          "FAULTS_100K_TYPE",
+          "String"
+        ],
+        [
+          "FAULTS_100K_IS_CONCEALED",
+          "String"
+        ],
+        [
+          "FAULTS_100K_LOC_CONFIDENCE_M",
+          "Integer"
+        ]
+      ],
+      "features_sha256": "4c6d904bc7fc18a7a5555c8c3f8bd79e2541757cf1d69ec0c40927f1dc73f963",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Mapped_marble_TRmb_e____purple_outline_33a769b9_a945_4e88_b86d_ba7678b615d9": {
+      "name": "Mapped marble TRmb(e) • purple outline",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "08c945ddac92bd932a5eaf53fe420dc812acc4b4d93042638e7eb2f401745e7e",
+      "feature_count": 1,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "OBJECTID",
+          "Integer"
+        ],
+        [
+          "MAP_UNIT_100K",
+          "String"
+        ],
+        [
+          "MAP_UNIT_100K_ID_CONFIDENCE",
+          "String"
+        ],
+        [
+          "MAP_UNIT_100K_QUAD_UNIT",
+          "String"
+        ],
+        [
+          "geo_score",
+          "Real"
+        ],
+        [
+          "evidence",
+          "String"
+        ]
+      ],
+      "features_sha256": "51a79da32e556526614a3ca4f872d44b80db3eef104f7631b6d1767b1d8cdf0c",
+      "subset": "MAP_UNIT_100K IN ('TRmb(e)')",
+      "labels_enabled": false
+    },
+    "Mapped_ownership___access_still_unresolved_b8b82342_bbd9_49b4_b174_bc0a35b2b280": {
+      "name": "Mapped ownership • access still unresolved",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "313d4cf681509372d043dabb7526dfa8bb1593cd17c2d685200120ae97bbcbe5",
+      "feature_count": 2,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "objectid",
+          "Integer"
+        ],
+        [
+          "ownerclassification",
+          "String"
+        ],
+        [
+          "forestname",
+          "String"
+        ]
+      ],
+      "features_sha256": "d0d5b646c94d53f13b214472e99c49b95ed98c8fb4a6caa91da263adbcadcd62",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Mixed_melange___possible_carbonate__uncertain_distribution_f89cf11b_bc9e_4e91_bb82_071eec750d1a": {
+      "name": "Mixed melange • possible carbonate, uncertain distribution",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "74e9974dacaefba032fba05c3699f5b89b4fbc2df3f1955fe4ec948fe138d2ed",
+      "feature_count": 2,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "OBJECTID",
+          "Integer"
+        ],
+        [
+          "MAP_UNIT_100K",
+          "String"
+        ],
+        [
+          "MAP_UNIT_100K_ID_CONFIDENCE",
+          "String"
+        ],
+        [
+          "MAP_UNIT_100K_QUAD_UNIT",
+          "String"
+        ],
+        [
+          "geo_score",
+          "Real"
+        ],
+        [
+          "evidence",
+          "String"
+        ]
+      ],
+      "features_sha256": "9a895fab0a96b3b000c5c4d4981c489ea55e3fc35dbd49bc1035b3a7204519e9",
+      "subset": "MAP_UNIT_100K='JTRmt(e)'",
+      "labels_enabled": false
+    },
+    "Modeled_D8_contributing_area___m___context_only_e13df424_e80c_400f_9e0c_9d6928e57670": {
+      "name": "Modeled D8 contributing area • m², context only",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "00b375553f63394239bc8b6477eb7d13cfa7605cbee6dd509ff7794f9937e40c",
+      "width": 520,
+      "height": 520,
+      "bands": 1
+    },
+    "Official_USFS_trails___query_context__no_route_approval_85a57689_c6c2_445a_ba18_e80cd01944e0": {
+      "name": "Official USFS trails • query context; no route approval",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "14bfdb71c206eaa834140efb0eab06f2b3f5af56a0462c0bc47fa7fec4094376",
+      "feature_count": 0,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "trail_name",
+          "String"
+        ],
+        [
+          "trail_no",
+          "String"
+        ]
+      ],
+      "features_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Orange_patches___overlap_mapped_marble__unverified_e49d1a7b_64b7_4083_bef2_49a941387a2e": {
+      "name": "Orange patches • overlap mapped marble; unverified",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "486b20ad168379909762573b55b7e299e55aea76b25b8564ce49f87431103a2a",
+      "feature_count": 5,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "geo_score",
+          "Real"
+        ],
+        [
+          "terrain_score",
+          "Real"
+        ],
+        [
+          "morphology_score",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "rank_within_kind",
+          "Integer"
+        ],
+        [
+          "max_depth_m",
+          "Real"
+        ],
+        [
+          "mean_slope_deg",
+          "Real"
+        ],
+        [
+          "min_residual_m",
+          "Real"
+        ],
+        [
+          "distance_marble_m",
+          "Real"
+        ],
+        [
+          "fraction_2021",
+          "Real"
+        ],
+        [
+          "contact_only",
+          "Integer"
+        ],
+        [
+          "talus_or_slide",
+          "Integer"
+        ],
+        [
+          "boundary_clipped",
+          "Integer"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "evidence",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "status",
+          "String"
+        ]
+      ],
+      "features_sha256": "97283e17286126a71f65b8806ddfc254fb5a9c6fc94f63f5d6a086ee978712c2",
+      "subset": "object_id IN ('C-015597','C-015095','C-016118','C-015225','C-015604')",
+      "labels_enabled": false
+    },
+    "Six_descriptive_terrain_classes___no_cave_labels_0954ebde_cbfb_4b7f_92ae_621839f39e04": {
+      "name": "Six descriptive terrain classes • no cave labels",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "66298a414269e3adabccf69c469d0848ff77d5ad02b2d993eccb8644907dee59",
+      "width": 300,
+      "height": 300,
+      "bands": 1
+    },
+    "Slope___degrees_70e7a7e7_89c0_47a6_9db1_73c8018cc321": {
+      "name": "Slope • degrees",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "792f6f763df417705026eff6c7dcb15e92432425eb3d18969b29b055e012ce73",
+      "width": 3000,
+      "height": 3000,
+      "bands": 1
+    },
+    "Source_project_year___2013_2016_2021_419d05f4_0c9c_4450_8858_f8f426aaaf8c": {
+      "name": "Source project year • 2013/2016/2021",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "bb3a73eab564f58bafcdf4a7288105c42b51f3683ad5a2cf36d3c6e5f8cbeee7",
+      "width": 3000,
+      "height": 3000,
+      "bands": 1
+    }
+  },
+  "custom_order": [
+    "5_mapped_marble_indicators___purple_dots_are_patch_representatives_3c2d3bf7_6b43_4032_9cd2_7dab8116b020",
+    "All_1525_ranked_indicators___includes_uncertain_surrounding_geology_0e0dbac7_77fa_43ae_9224_f2f1e15be61c",
+    "Orange_patches___overlap_mapped_marble__unverified_e49d1a7b_64b7_4083_bef2_49a941387a2e",
+    "All_cliff_patches___1517__geological_support_varies_ca6e6b9d_aa9f_4d13_8e53_3cb9111cf5e9",
+    "Closed_depression_cores___8__0_overlap_mapped_marble_74dff409_6d08_4611_a5af_20457ba4b737",
+    "Gold_outline___landscape_hypothesis_areas_e5db3676_9ea3_4804_a257_c9ff98f77aa1",
+    "Combined_ordinal_index___not_a_cave_probability_a2703b2c_2eb5_4a76_a8bb_0163ba8523a7",
+    "Landscape_index___10_m__not_an_entrance_model_420fc70a_97cd_4fa0_a3b3_8029df3ab85f",
+    "Mapped_marble_TRmb_e____purple_outline_33a769b9_a945_4e88_b86d_ba7678b615d9",
+    "Mixed_melange___possible_carbonate__uncertain_distribution_f89cf11b_bc9e_4e91_bb82_071eec750d1a",
+    "Mapped_faults___context_only_6df5c06b_1a18_4a9e_89ec_594cd2a17b76",
+    "Mapped_contacts___positional_uncertainty_d6c7f577_4364_48d8_a86a_e96e74d52f98",
+    "Slope___degrees_70e7a7e7_89c0_47a6_9db1_73c8018cc321",
+    "Closed_depression_depth___metres_a0443d3e_8fd1_4001_86a7_f8a78ac2ba2f",
+    "11_m_elevation_residual___metres_1adb3820_7dfa_4fe2_b638_504b9de538b1",
+    "Eligible_terrain_mask___seams_excluded_6974e994_c6be_4707_bc1b_3885504b1b73",
+    "Six_descriptive_terrain_classes___no_cave_labels_0954ebde_cbfb_4b7f_92ae_621839f39e04",
+    "Source_project_year___2013_2016_2021_419d05f4_0c9c_4450_8858_f8f426aaaf8c",
+    "Modeled_D8_contributing_area___m___context_only_e13df424_e80c_400f_9e0c_9d6928e57670",
+    "Landscape_component___terrain_score_4b0db5c1_66bc_4570_a866_28098d02531d",
+    "Landscape_component___geological_score_31567745_57e5_4298_bce1_009c0e77f647",
+    "Landscape_component___mid_slope_votes_cabf1175_366d_4e55_be45_8fda7467961e",
+    "Landscape_component___exposure_477f8694_3b5f_4036_872f_1870c0aed498",
+    "Landscape_component___analysis_valid_af6a7fd1_44d6_49de_99b5_33cd017b4da4",
+    "Landscape_component___dev_210m_3c7b8ff2_9600_4966_ba60_b23442807753",
+    "Landscape_component___dev_610m_93b72d12_cbfe_43f9_87f2_1278db0145c3",
+    "Landscape_component___dev_2010m_c74ca02a_4ab0_4725_b627_0f87d41eb8ba",
+    "Official_USFS_trails___query_context__no_route_approval_85a57689_c6c2_445a_ba18_e80cd01944e0",
+    "Mapped_ownership___access_still_unresolved_b8b82342_bbd9_49b4_b174_bc0a35b2b280",
+    "Approved_study___3___3_km_913bf934_2cf9_467d_95b1_a52cde5d3bbc",
+    "1_m_terrain_grid___bare_earth_hillshade_4c38f9c8_9ffb_4275_9621_a5f2f364f369"
+  ],
+  "has_custom_order": false,
+  "layouts_sha256": "cc39c2820aa8c60768b90d63d7edd57e80e8b7fc98fc5a4e334f42f45cb91d52",
+  "annotations_sha256": "45477b24752d2ff4ee1ec1c2764654546b9dd7e17f29aa4331eecb0dbe09cc80",
+  "main_annotation_layer_sha256": "6c11000d308ce566cabf3638a9e9e710ab01900853ef55c354ff2a9eaffa877c",
+  "layout_names": [
+    "overview",
+    "marble_detail"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Kaleetan Peak vicinity",
+  "general_location": "Kaleetan Peak vicinity, Snoqualmie Pass, Washington",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      613050,
+      5256200,
+      616050,
+      5259200
+    ]
+  },
+  "geological_summary": "DNR 1:100,000 PMmb(e) marble, OBJECTID 29440; approximate contacts. Two cliff patches overlap mapped marble; no depression core does. Literature-informed unvalidated prospecting; no entrance predictions or verified routes.",
+  "candidate_csv": "results/kaleetan_v001_access/screened_indicators.csv",
+  "analysis_references": [
+    "configs/kaleetan_v001_landscape.json",
+    "configs/kaleetan_v001_features.json",
+    "docs/APPROVED_AREAS_20261019.md",
+    "docs/reviews/kaleetan_v001_methodology/review_manifest.json",
+    "results/kaleetan_v001_landscape",
+    "results/kaleetan_v001_features",
+    "results/kaleetan_v001_access",
+    "docs/APPROVED_AREAS_RESULTS_20261019.md",
+    "experiments/snapshots/kaleetan_v001.json"
+  ]
+}

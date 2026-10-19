@@ -1,0 +1,23 @@
+{
+  "approved_study_bounds": [
+    605050,
+    5322150,
+    608050,
+    5325150
+  ],
+  "crs": "EPSG:26910",
+  "buffer_m": 1100,
+  "initial_usgs_native_mosaic": {
+    "buffered_valid_fraction": 0.4125351701183432,
+    "buffered_missing_pixels": 15885049,
+    "study_valid_fraction": 0.34583322222222224,
+    "mapped_marble_native_pixels": 10922,
+    "mapped_marble_valid_fraction": 0.0,
+    "accepted_for_analysis": false
+  },
+  "glacier_peak_2014_opr_crop": {
+    "valid_fraction": 0.0,
+    "accepted_for_analysis": false
+  },
+  "policy": "No coarse upsampling presented as native terrain, no nodata infill, no study-boundary change. Seek an authoritative older high-resolution source before running the existing model."
+}

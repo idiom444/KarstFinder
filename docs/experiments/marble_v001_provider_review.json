@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-19T23:39:01.449634+00:00",
+  "initial_snapshot": "experiments/snapshots/marble_v001.json",
+  "initial_context_sha256": "eff9828297ced128cce0a4923f361b30ae3827a778fcc22f4ef337fff42b9127",
+  "post_provider_context_sha256": "6be05a313db63d8baf3d7016ae5fa0892373c24c1b149fc0a93c8d9f49b3137b",
+  "only_changed_initial_snapshot_file": "data/processed/marble_v001/context.gpkg",
+  "unchanged_other_snapshot_entries": 152,
+  "comparisons": {
+    "bedrock": {
+      "features": 17,
+      "all_attributes_and_geometry_match_raw_source_reconstruction": true
+    },
+    "faults": {
+      "features": 10,
+      "all_attributes_and_geometry_match_raw_source_reconstruction": true
+    },
+    "contacts": {
+      "features": 30,
+      "all_attributes_and_geometry_match_raw_source_reconstruction": true
+    },
+    "orientations": {
+      "features": 24,
+      "all_attributes_and_geometry_match_raw_source_reconstruction": true
+    },
+    "study_area": {
+      "features": 1,
+      "all_attributes_and_geometry_match_raw_source_reconstruction": true
+    }
+  },
+  "scores_ranks_raster_arrays_or_csvs_changed": false,
+  "cave_reference_data_read": false,
+  "explanation": "Context container bytes changed during QGIS provider review. Every layer schema, attribute and geometry matches a fresh reconstruction from the original raw geology/configuration. All other original snapshot hashes still match. The initial snapshot is retained as pre-review evidence; a distinct reviewed snapshot pins the final container. Exact original changed byte fields are not asserted because a byte copy of the earlier container was not retained."
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "path": "data/raw/kaleetan_v001/usgs_1m_catalog.json",
+    "sha256": "69f0373f5dc96a7b6dcc3e2823e3fedeb356bf7f3db506cc0009ed615fbedbd8",
+    "url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.51522982219727%2C47.438815098368266%2C-121.44490976166206%2C47.486502848371195&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=500",
+    "bytes": 13011,
+    "checked_utc": "2026-10-19T22:53:49.860315+00:00"
+  },
+  {
+    "path": "data/raw/USGS_1M_10_x61y526_WA_EasternCascades_2019_B19.tif",
+    "sha256": "c9a3018f7cd6e312188f37ec76c46eacd7451ac6f126799b80860994333c55be",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/WA_EasternCascades_2019_B19/TIFF/USGS_1M_10_x61y526_WA_EasternCascades_2019_B19.tif",
+    "bytes": 23197714,
+    "checked_utc": "2026-10-19T22:53:49.866672+00:00"
+  },
+  {
+    "path": "data/raw/USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
+    "sha256": "8018e4320a3eac0865bd220f3213079473ebd3b83f1679094172333faa75cec1",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/WA_KingCounty_2021_B21/TIFF/USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
+    "bytes": 312910665,
+    "checked_utc": "2026-10-19T22:53:49.946290+00:00"
+  },
+  {
+    "path": "data/raw/shared_elevation_v001/USGS_1M_10_x61y527_WA_KingCounty_2021_B21.tif",
+    "sha256": "afe47791914abdf8a83a9e6fd49a1f226e9457a164f04982c349749dbe11168c",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/WA_KingCounty_2021_B21/TIFF/USGS_1M_10_x61y527_WA_KingCounty_2021_B21.tif",
+    "bytes": 349877173,
+    "checked_utc": "2026-10-19T22:54:06.440592+00:00"
+  },
+  {
+    "path": "data/raw/kaleetan_v001/dnr_11.geojson",
+    "sha256": "02b3efa9afd4ca8a553947e9eec0795cbf3744369afbd8dfecdd96bc6d35ad31",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11/query?f=geojson&where=1%3D1&geometry=-121.51522982219727%2C47.438815098368266%2C-121.44490976166206%2C47.486502848371195&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&outFields=OBJECTID%2CMAP_UNIT_100K%2CMAP_UNIT_100K_ID_CONFIDENCE%2CMAP_UNIT_100K_QUAD_UNIT",
+    "bytes": 101166,
+    "checked_utc": "2026-10-19T22:54:06.759496+00:00"
+  },
+  {
+    "path": "data/raw/kaleetan_v001/dnr_7.geojson",
+    "sha256": "0435272b5d5302300cdb323a2bf11ccc0288cff9ac16897a1fe60524af230ddc",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/7/query?f=geojson&where=1%3D1&geometry=-121.51522982219727%2C47.438815098368266%2C-121.44490976166206%2C47.486502848371195&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&outFields=OBJECTID%2CFAULTS_100K_TYPE%2CFAULTS_100K_IS_CONCEALED%2CFAULTS_100K_LOC_CONFIDENCE_M",
+    "bytes": 2132,
+    "checked_utc": "2026-10-19T22:54:06.868757+00:00"
+  },
+  {
+    "path": "data/raw/kaleetan_v001/dnr_9.geojson",
+    "sha256": "00f1ca008e1996237994539c6f06f881c96adfb025ac0bf9d91e687f3cf04210",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/9/query?f=geojson&where=1%3D1&geometry=-121.51522982219727%2C47.438815098368266%2C-121.44490976166206%2C47.486502848371195&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&outFields=OBJECTID%2CCONTACTS_100K_TYPE%2CCONTACTS_100K_IS_CONCEALED%2CCONTACTS_100K_LOC_CONFIDENCE_M",
+    "bytes": 37374,
+    "checked_utc": "2026-10-19T22:54:06.984898+00:00"
+  },
+  {
+    "path": "data/raw/kaleetan_v001/dnr_1.geojson",
+    "sha256": "33fb2f42b74178f261c657fd881ed64fbfc3385b7e8a1126ed6696792396bf0b",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/1/query?f=geojson&where=1%3D1&geometry=-121.51522982219727%2C47.438815098368266%2C-121.44490976166206%2C47.486502848371195&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&outFields=OBJECTID%2CORIENTATION_100K_TYPE%2CORIENTATION_100K_AZIMUTH%2CORIENTATION_100K_INCLINATION",
+    "bytes": 2266,
+    "checked_utc": "2026-10-19T22:54:07.064122+00:00"
+  },
+  {
+    "path": "data/raw/kaleetan_v001/usfs_trails.geojson",
+    "sha256": "fd025e400fecaa711eeeb55b4a3fabf210dbb9b4741a2c93839162dafe149647",
+    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0/query?f=geojson&where=1%3D1&geometry=-121.51522982219727%2C47.438815098368266%2C-121.44490976166206%2C47.486502848371195&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&outFields=objectid%2Ctrail_name%2Ctrail_no%2Chiker_pedestrian_managed%2Chiker_pedestrian_restricted",
+    "bytes": 103163,
+    "checked_utc": "2026-10-19T22:54:07.471753+00:00"
+  },
+  {
+    "path": "data/raw/kaleetan_v001/usfs_ownership.geojson",
+    "sha256": "665c0043a28dc6da5543b2090526f28cf8bd7fcf51d0826e9134cb745ec37eab",
+    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_01/MapServer/0/query?f=geojson&where=1%3D1&geometry=-121.51522982219727%2C47.438815098368266%2C-121.44490976166206%2C47.486502848371195&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&outFields=objectid%2Cownerclassification%2Cforestname",
+    "bytes": 1334320,
+    "checked_utc": "2026-10-19T22:54:09.155395+00:00"
+  }
+]
