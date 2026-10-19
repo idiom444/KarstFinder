@@ -29,6 +29,9 @@ is unavailable and proceed with practical prospecting without cave records.
 - Working map qgis/KarstFinder.qgz; named project qgis/KarstFinder_Denny_v001.qgz.
   Both use 28 valid persistent layers and no private validation sources.
 - All 31 numerical raster arrays and both ranking CSVs reproduce exactly.
+- Final unvalidated prospecting snapshot: experiments/snapshots/denny_v001.json,
+  144 file hashes; implementation commit dfaf523. Final numerical
+  result directories are write-protected. Active QGIS review remains editable.
   All 489 geometries/support checks and trail-station containment checks pass.
   Fifteen tests pass and all 163 original Cave Ridge hashes verify.
 - Access pages/alerts checked 2026-10-19; source HTML and hashes saved locally.

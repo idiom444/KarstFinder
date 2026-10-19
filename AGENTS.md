@@ -78,3 +78,8 @@ Remove entrance-reference layers from the active prospecting map. Retain private
 validation archives locally, but never load them into the Denny project. Do not
 contact anyone. Field-observation leads require public access/terrain screening;
 straight-line trail distances are not routes or proof of safe/legal access.
+
+Denny results are finalized under experiments/snapshots/denny_v001.json, an
+unvalidated prospecting snapshot (not the blind Cave Ridge freeze). Its final
+numerical result directories are write-protected. Future revisions require new
+names/paths; the active qgis/KarstFinder.qgz is an editable review copy.

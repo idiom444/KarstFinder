@@ -166,3 +166,9 @@ The source paths are configurable in the two Denny configurations; baseline
 script defaults still identify the historical Cave Ridge build.
 
 ![Denny Mountain prospecting overview](docs/experiments/denny_v001_map.png)
+
+The finalized prospecting artifact hashes are in
+[experiments/snapshots/denny_v001.json](experiments/snapshots/denny_v001.json).
+This is an unvalidated snapshot, distinct from the original blind freeze. It
+records post-review GeoPackage hashes and its committed implementation. Numerical
+result directories are write-protected; use the active QGIS copy for map review.

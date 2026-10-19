@@ -121,3 +121,8 @@ three OBS points lie on the source trail geometry, and all 163 original Cave Rid
 freeze entries verify. Fifteen unit/analytical tests pass.
 
 ![Denny Mountain prospecting overview](experiments/denny_v001_map.png)
+
+Final artifact snapshot: [denny_v001.json](../experiments/snapshots/denny_v001.json),
+144 verified file hashes, implementation dfaf523. Final numerical
+result directories are write-protected. The active QGIS project remains an
+editable review copy and is excluded from the immutable artifact snapshot.
