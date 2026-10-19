@@ -113,3 +113,21 @@ candidate ID and original prediction checksum. Never put personal field evidence
 possible-opening locations, photos or private validation data into public Git.
 Archive previous maps/metadata instead of overwriting their history. These saved
 projects require shared data/results and are not portable standalone packages.
+
+## Public-literature shortlist requested 2026-10-19
+
+The user now explicitly authorizes cave-specific public trip-report/documentation
+searches to choose additional carbonate areas BEFORE analyzing them. This changes
+the earlier no-cave-literature restriction for this shortlist only; no private
+validation archive access or model retuning is authorized. Ordinary hiking,
+climbing and quarry reports do not lower priority: only geographically relevant
+cave/karst exploration documentation does. Record source/exposure limitations;
+do not later claim these literature-informed choices are independently blind.
+No one may be contacted. Never publish entrance-coordinate records.
+
+Proposals/evidence: docs/AREA_SHORTLIST_20261019.md and
+docs/proposals/20261019_carbonate_scope.json. Kaleetan-vicinity mapped marble
+(OBJECTID 29440) is the closest proposed first choice; Marble Peak's small lens
+is a farther alternative. NO NEW AREA IS APPROVED yet. Wait for the user's choice
+and study-footprint approval before terrain/morphology/candidate analysis, new
+study configuration or library registration. Preserve the current Denny map.

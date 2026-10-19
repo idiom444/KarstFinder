@@ -1,0 +1,357 @@
+{
+  "created_utc": "2026-10-19T19:50:06.160111+00:00",
+  "stage": "geology_and_public_literature_shortlist_awaiting_user_area_approval",
+  "terrain_or_cave_candidate_analysis_run": false,
+  "known_entrance_coordinates_acquired": false,
+  "source_query_url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11/query?f=geojson&where=MAP_UNIT_100K+IN+%28%27PMmb%28e%29%27%2C%27PMmb%28w%29%27%2C%27TRmb%28e%29%27%2C%27JTRmb%28c%29%27%29&geometry=-122.2%2C46.95%2C-120.5%2C48.15&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CMAP_UNIT_100K%2CMAP_UNIT_100K_QUAD_UNIT%2CMAP_UNIT_100K_ID_CONFIDENCE&resultRecordCount=2000",
+  "source_local_path": "data/raw/area_shortlist_20261019/final_marble_scope.geojson",
+  "source_sha256": "4b3ec63ecb5933a4ff558a22c702e1b6ff516190621bf9072cbaf9c5f1363fc8",
+  "scope": "Selected explicitly marble-coded units intersecting requested regional envelope; components retained within 75 km of approved Denny study center. Not an exhaustive survey of all carbonate/mixed units.",
+  "distance_reference": {
+    "crs": "EPSG:26910",
+    "point": [
+      617350,
+      5253750
+    ],
+    "interpretation": "Denny approved 3x3 km study center; planar shortest distance to mapped polygon edge, not hiking/driving distance"
+  },
+  "parts": [
+    {
+      "objectid": 29438,
+      "component_index": 0,
+      "unit": "PMmb(e)",
+      "distance_from_denny_study_center_to_edge_km": 0.0,
+      "mapped_polygon_area_ha": 6.64285851376811,
+      "geology_reference_point_wgs84": [
+        -121.445,
+        47.4268
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        617099.9790144252,
+        5253462.87890641,
+        617617.5550734515,
+        5254005.399517939
+      ]
+    },
+    {
+      "objectid": 29439,
+      "component_index": 0,
+      "unit": "PMmb(e)",
+      "distance_from_denny_study_center_to_edge_km": 3.2972243650454502,
+      "mapped_polygon_area_ha": 15.509898502671346,
+      "geology_reference_point_wgs84": [
+        -121.4117,
+        47.451
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        619544.054789278,
+        5256157.400556038,
+        620249.761419899,
+        5256861.408488825
+      ]
+    },
+    {
+      "objectid": 29440,
+      "component_index": 0,
+      "unit": "PMmb(e)",
+      "distance_from_denny_study_center_to_edge_km": 4.708140091607635,
+      "mapped_polygon_area_ha": 3.1323303129432722,
+      "geology_reference_point_wgs84": [
+        -121.4798,
+        47.4627
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        614468.908745712,
+        5257496.49656079,
+        614660.0638419677,
+        5257861.997641231
+      ]
+    },
+    {
+      "objectid": 741,
+      "component_index": 1,
+      "unit": "TRmb(e)",
+      "distance_from_denny_study_center_to_edge_km": 32.67085008095702,
+      "mapped_polygon_area_ha": 1.6235678420685231,
+      "geology_reference_point_wgs84": [
+        -121.4682,
+        47.721
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        614824.4190279088,
+        5286325.028827113,
+        614935.8629638779,
+        5286520.529067995
+      ]
+    },
+    {
+      "objectid": 741,
+      "component_index": 0,
+      "unit": "TRmb(e)",
+      "distance_from_denny_study_center_to_edge_km": 33.81834659050952,
+      "mapped_polygon_area_ha": 7.21649156406736,
+      "geology_reference_point_wgs84": [
+        -121.4654,
+        47.7325
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        614926.6725345845,
+        5287486.004540092,
+        615226.7904839289,
+        5287924.4886887735
+      ]
+    },
+    {
+      "objectid": 29441,
+      "component_index": 0,
+      "unit": "PMmb(w)",
+      "distance_from_denny_study_center_to_edge_km": 46.86830287542653,
+      "mapped_polygon_area_ha": 1.3703519719333854,
+      "geology_reference_point_wgs84": [
+        -121.6507,
+        47.8251
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        600939.2899273955,
+        5297665.413164977,
+        601035.1134775862,
+        5297835.90227635
+      ]
+    },
+    {
+      "objectid": 29442,
+      "component_index": 0,
+      "unit": "PMmb(w)",
+      "distance_from_denny_study_center_to_edge_km": 47.25473366001145,
+      "mapped_polygon_area_ha": 1.0073406544038561,
+      "geology_reference_point_wgs84": [
+        -121.6568,
+        47.8271
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        600466.3720438664,
+        5297909.408405831,
+        600595.2198773446,
+        5298010.903222844
+      ]
+    },
+    {
+      "objectid": 10378,
+      "component_index": 0,
+      "unit": "JTRmb(c)",
+      "distance_from_denny_study_center_to_edge_km": 58.97397568358156,
+      "mapped_polygon_area_ha": 4.9820138910504985,
+      "geology_reference_point_wgs84": [
+        -120.9626,
+        47.8477
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        652314.6719913417,
+        5301209.336331382,
+        652535.4927078991,
+        5301587.235445193
+      ]
+    },
+    {
+      "objectid": 10381,
+      "component_index": 0,
+      "unit": "JTRmb(c)",
+      "distance_from_denny_study_center_to_edge_km": 59.79117499925246,
+      "mapped_polygon_area_ha": 6.508890354661876,
+      "geology_reference_point_wgs84": [
+        -120.964,
+        47.8571
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        652055.8452088465,
+        5302252.363461674,
+        652420.4946839273,
+        5302598.870667994
+      ]
+    },
+    {
+      "objectid": 10379,
+      "component_index": 0,
+      "unit": "JTRmb(c)",
+      "distance_from_denny_study_center_to_edge_km": 59.841258503452984,
+      "mapped_polygon_area_ha": 3.3127604242716915,
+      "geology_reference_point_wgs84": [
+        -120.9588,
+        47.8546
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        652534.8860107675,
+        5302084.439280479,
+        652843.472400439,
+        5302243.05752185
+      ]
+    },
+    {
+      "objectid": 10380,
+      "component_index": 0,
+      "unit": "JTRmb(c)",
+      "distance_from_denny_study_center_to_edge_km": 60.16668796136559,
+      "mapped_polygon_area_ha": 5.291904447593866,
+      "geology_reference_point_wgs84": [
+        -120.9577,
+        47.8575
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        652592.1239839246,
+        5302340.730855389,
+        653075.0351059657,
+        5302601.624737717
+      ]
+    },
+    {
+      "objectid": 10382,
+      "component_index": 0,
+      "unit": "JTRmb(c)",
+      "distance_from_denny_study_center_to_edge_km": 60.467874734236744,
+      "mapped_polygon_area_ha": 14.248184738824143,
+      "geology_reference_point_wgs84": [
+        -120.9534,
+        47.86
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        652775.7140065255,
+        5302434.170858856,
+        653333.3628401089,
+        5303127.59716923
+      ]
+    },
+    {
+      "objectid": 741,
+      "component_index": 2,
+      "unit": "TRmb(e)",
+      "distance_from_denny_study_center_to_edge_km": 70.63731009333698,
+      "mapped_polygon_area_ha": 1.0907554046494536,
+      "geology_reference_point_wgs84": [
+        -121.5701,
+        48.0571
+      ],
+      "geology_reference_point_is_not_a_cave_location": true,
+      "bounds_26910": [
+        606475.0597951274,
+        5323563.483727472,
+        606595.7961192931,
+        5323709.488169705
+      ]
+    }
+  ],
+  "proposed_study_windows": [
+    {
+      "proposal_id": "kaleetan-vicinity",
+      "name": "Kaleetan Peak vicinity",
+      "approval_status": "awaiting_user_choice_and_approval",
+      "analysis_run": false,
+      "crs": "EPSG:26910",
+      "bounds": [
+        613050,
+        5256200,
+        616050,
+        5259200
+      ],
+      "area_km2": 9,
+      "center_wgs84": [
+        -121.48009,
+        47.46266
+      ],
+      "window_basis": "3 x 3 km review proposal enclosing the selected mapped marble pod(s), comparable in size to Denny; not a terrain-derived target boundary"
+    },
+    {
+      "proposal_id": "marble-peak",
+      "name": "Marble Peak / upper Marble Gulch",
+      "approval_status": "awaiting_user_choice_and_approval",
+      "analysis_run": false,
+      "crs": "EPSG:26910",
+      "bounds": [
+        605050,
+        5322150,
+        608050,
+        5325150
+      ],
+      "area_km2": 9,
+      "center_wgs84": [
+        -121.57003,
+        48.05723
+      ],
+      "window_basis": "3 x 3 km review proposal enclosing the selected mapped marble pod(s), comparable in size to Denny; not a terrain-derived target boundary"
+    },
+    {
+      "proposal_id": "money-creek",
+      "name": "Money Creek / eastern Palmer-Crosby slopes",
+      "approval_status": "awaiting_user_choice_and_approval",
+      "analysis_run": false,
+      "crs": "EPSG:26910",
+      "bounds": [
+        613525,
+        5285700,
+        616525,
+        5288700
+      ],
+      "area_km2": 9,
+      "center_wgs84": [
+        -121.46605,
+        47.72792
+      ],
+      "window_basis": "3 x 3 km review proposal enclosing the selected mapped marble pod(s), comparable in size to Denny; not a terrain-derived target boundary"
+    },
+    {
+      "proposal_id": "proctor-creek",
+      "name": "Proctor Creek",
+      "approval_status": "awaiting_user_choice_and_approval",
+      "analysis_run": false,
+      "crs": "EPSG:26910",
+      "bounds": [
+        599250,
+        5296350,
+        602250,
+        5299350
+      ],
+      "area_km2": 9,
+      "center_wgs84": [
+        -121.65389,
+        47.8261
+      ],
+      "window_basis": "3 x 3 km review proposal enclosing the selected mapped marble pod(s), comparable in size to Denny; not a terrain-derived target boundary"
+    },
+    {
+      "proposal_id": "rainy-creek",
+      "name": "Lower Rainy Creek / north side Nason Ridge",
+      "approval_status": "awaiting_user_choice_and_approval",
+      "analysis_run": false,
+      "crs": "EPSG:26910",
+      "bounds": [
+        651200,
+        5300700,
+        654200,
+        5303700
+      ],
+      "area_km2": 9,
+      "center_wgs84": [
+        -120.95863,
+        47.85499
+      ],
+      "window_basis": "3 x 3 km review proposal enclosing the selected mapped marble pod(s), comparable in size to Denny; not a terrain-derived target boundary"
+    }
+  ],
+  "unit_description_sources": [
+    {
+      "path": "data/raw/area_shortlist_20261019/selected_unit_descriptions.json",
+      "sha256": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958"
+    }
+  ]
+}

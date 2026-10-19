@@ -2,6 +2,19 @@
 
 Repository: /home/Idiom/Repos/MyRepos/KarstFinder (the open VS Code workspace).
 
+## Additional areas awaiting user review
+
+The user requested nearby marble/limestone proposals, with cave-specific public
+documentation lowering priority; ordinary hiking/climbing reports do not count.
+[The shortlist](docs/AREA_SHORTLIST_20261019.md) records five regional options,
+source checks and uncertainty. The nearest proposed first choice is a mapped
+marble pod near Kaleetan Peak (OBJECTID 29440); Marble Peak is a farther alternative.
+Proctor Creek and Rainy Creek already have cave-specific prospecting records;
+Palmer/Money Creek has regional historical karst documentation. No public report
+found for a pod does not prove it unexplored. These are literature-informed choices.
+No new area/footprint is approved. No terrain or candidate analysis was run, and
+no new library entry was created. The existing Denny map remains unchanged.
+
 ## Persistent Prospecting Library
 
 The local library is implemented under `prospecting_library/`, with a JSON catalog,
