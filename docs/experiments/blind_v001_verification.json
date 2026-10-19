@@ -1,0 +1,8 @@
+{
+  "raster_count": 12,
+  "candidate_count": 6,
+  "all_grids_aligned": true,
+  "geometries_valid": true,
+  "scores_and_masks_valid": true,
+  "area_totals_match": true
+}

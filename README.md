@@ -67,3 +67,5 @@ at their relative locations. GeoTIFFs and candidate GeoPackages are under
 M1 foundation and an exploratory M2 baseline are the first-session scope. M3
 requires an independent high-resolution feature detector before any final blind
 freeze. Validation, supervised learning and geographic expansion come later.
+
+![Exploratory blind landscape map](docs/experiments/blind_v001_map.png)

@@ -40,7 +40,10 @@ These observations are not an estimate of either survey's independent accuracy.
 Steep slope resampling, partial-cell coverage, surface changes and registration
 could contribute. Do not correct elevations by a single offset without further
 investigation. Quantify seam proximity and native-resolution artifacts before
-M3; source_epoch_10m.tif preserves survey identity.
+M3; source_epoch_10m.tif flags 2021 availability versus 2019 fallback. A 10 m cell
+can contain native pixels from both surveys at a seam; the epoch flag and
+candidate fraction_2021 attribute describe 10 m availability, not native pixel
+fractions or an independently measured local acquisition date.
 
 The study and 1,100 m processing buffer have full valid 10 m DEM coverage after
 mosaicking. Native 1 m voids still need separate feature-stage QA. A 10 m cell can

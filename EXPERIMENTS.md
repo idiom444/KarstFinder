@@ -2,9 +2,10 @@
 
 ## blind_v001 — exploratory landscape baseline, 2026-10-19
 
-Status: **UNFROZEN, blind**. Implementation foundation: Git `5354ba9`; later
-candidate metadata/reporting refinements are committed separately. The run
-manifest identifies the exact code hashes and commit used for its execution.
+Status: **UNFROZEN, blind**. Final numerical implementation: Git `46e1a5c` (clean working tree at execution).
+The original foundation is Git `5354ba9`. The run manifest identifies exact
+code hashes; the final documentation commit also stores the QGIS project and
+small result snapshots.
 No known local cave sources accessed. This is an M2 exploratory analysis, not
 M3's finalized independent entrance prediction.
 
@@ -26,7 +27,8 @@ Source data: 1 m USGS 2019/2021 bare earth, DNR 1:100,000 lithology.
 | Independent entrance validation | Not performed |
 
 Most area reduction comes from lithology: 56.4% of mapped marble remains selected.
-All six areas use 2021 elevations locally, though broad neighbourhoods may mix epochs.
+All six areas have 2021 data available in their 10 m cells; broad neighbourhoods
+and seam cells may mix epochs. Native pixel proportions were not measured.
 Selection area is an empirical property of the hypothesis; it is not predictive
 performance. Largest/rank-one area intersects the southwest study edge and its
 extent is censored. Other components occur in mapped carbonate near the ridge.
@@ -44,8 +46,12 @@ Verification: seven unit/analytical tests pass; all candidate polygons are
 geometrically valid; QGIS save/reopen reports 21 valid local layers. A repeat
 run must use a new output directory and compare scientific raster arrays and
 ranking attributes, rather than GeoPackage byte identity (SQLite metadata can
-vary). The first development output is preserved locally as
-`results/blind_v001_development_01/` after candidate metadata refinements.
+vary). Two development outputs are preserved locally as
+`results/blind_v001_development_01/` and `results/blind_v001_development_02/`.
+A separate repeat in `results/blind_v001_repeat/` reproduced all 18 raster
+arrays exactly, byte-identical candidate CSV and identical numerical summary.
+The tracked artifact inventory hashes the final numerical outputs, preview,
+live canvas render and QGIS file; this inventory is explicitly not a blind freeze.
 
 ## Freeze and validation ledger
 

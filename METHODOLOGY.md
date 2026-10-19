@@ -18,7 +18,9 @@ to the standardized USGS tiles. No vertical datum transformation is applied.
 GDAL mosaics 2019 Eastern Cascades then 2021 King County, giving the newest valid
 pixel priority. Original tiles have 6 m margins; the output has a common 1 m
 grid. A 10 m arithmetic-average DEM supports landscape derivatives. An epoch
-raster records which survey supplies each 10 m cell. Overlap elevation residuals
+raster records 2021 availability in each 10 m cell, with 2019 as fallback.
+Cells on a seam may average native pixels from both surveys; this categorical
+layer does not measure their native pixel proportions. Overlap elevation residuals
 are measured, not corrected/feathered. Remaining missing data stay NoData.
 Geology, contacts, faults and orientations are clipped with OGR and persisted
 in GeoPackage. Faults/contacts are contextual only in this baseline; no causal

@@ -1,0 +1,7 @@
+{
+  "repeat_output": "results/blind_v001_repeat",
+  "raster_arrays_identical": 18,
+  "candidate_csv_identical": true,
+  "summaries_identical": true,
+  "geopackage_bytes_compared": false
+}

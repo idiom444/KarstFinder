@@ -27,6 +27,8 @@ Initial predictions are exploratory and NOT finalized or frozen.**
 - `qgis/KarstFinder.qgz`: 21 persistent layers, relative paths; saved, reopened
   with no invalid layers, and map rendered for review.
 - Seven analytical tests passed, including independent known-plane checks.
+  Artifact verification checked 12 core grids, candidate geometry/area and
+  rankings; a separate run reproduced all 18 raster arrays and candidate CSV exactly.
 
 ## Milestones
 

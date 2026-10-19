@@ -1,0 +1,17 @@
+{
+  "experiment_id": "blind_v001",
+  "status": "exploratory_blind_unfrozen",
+  "known_cave_sources_accessed": false,
+  "study_area_km2": 30.0,
+  "eligible_area_km2": 30.0,
+  "mapped_marble_area_km2": 0.2199,
+  "mixed_carbonate_possible_area_km2": 1.3849,
+  "threshold_selected_area_km2_before_size_filter": 0.1263,
+  "candidate_area_count": 6,
+  "boundary_clipped_candidate_count": 1,
+  "candidate_area_km2": 0.1241,
+  "candidate_area_fraction_of_study": 0.004136666666666667,
+  "candidate_area_fraction_of_mapped_marble": 0.5643474306502956,
+  "cave_detection_or_validation_performed": false,
+  "interpretation": "Landscape hypotheses only. No cave existence probabilities."
+}
