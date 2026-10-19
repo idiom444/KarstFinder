@@ -47,9 +47,9 @@ have not started. Geology and imagery acquisition limitations are in
   been measured. Candidate polygons/representative points are landscape areas.
 - No hydrography, depression detection, unsupervised clustering or supervised
   model is implemented. No surface-only method can see occluded entrances.
-- QGIS command-line inventory banner said 3D-provider QGIS 3.x; the actual
-  packaged CLI/PyQGIS and live application are 4.2.2. Use measured package
-  versions in docs/system_packages.txt, not a provider heading as app version.
+- The early CLI version concern was a misreading of the `QGIS (3D)` provider
+  heading. Packaged CLI/PyQGIS and the live application use 4.2.2; measured
+  package versions are in docs/system_packages.txt.
 
 ## Next task
 

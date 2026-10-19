@@ -10,3 +10,5 @@ qgis/*.qgz
 qgis/*.qgd
 qgis/*.qgz~
 *.part
+
+!qgis/KarstFinder.qgz

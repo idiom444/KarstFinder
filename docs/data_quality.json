@@ -17,7 +17,7 @@
         10012,
         10012
       ],
-      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType='metre'"
     },
     {
       "file": "USGS_1M_10_x62y526_WA_EasternCascades_2019_B19.tif",
@@ -36,7 +36,7 @@
         10012,
         10012
       ],
-      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType='metre'"
     },
     {
       "file": "USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
@@ -55,7 +55,7 @@
         10012,
         10012
       ],
-      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType=''"
     },
     {
       "file": "USGS_1M_10_x62y526_WA_KingCounty_2021_B21.tif",
@@ -74,7 +74,7 @@
         10012,
         10012
       ],
-      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType=''"
     }
   ],
   "buffered_valid_fraction": 1.0,

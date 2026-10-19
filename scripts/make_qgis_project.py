@@ -8,8 +8,9 @@ os.environ.setdefault('QT_QPA_PLATFORM','offscreen')
 from qgis.core import (QgsApplication,QgsProject,QgsRasterLayer,QgsVectorLayer,QgsColorRampShader,
     QgsRasterShader,QgsSingleBandPseudoColorRenderer,QgsFillSymbol,QgsLineSymbol,QgsMarkerSymbol,
     QgsSingleSymbolRenderer,QgsCoordinateReferenceSystem,QgsRectangle,QgsMapSettings,
+    QgsPrintLayout,QgsLayoutItemPage,QgsLayoutItemMap,QgsLayoutItemLabel,QgsLayoutPoint,QgsLayoutSize,QgsLayoutExporter,QgsLayoutItemScaleBar,
     QgsMapRendererParallelJob,Qgis,QgsPalLayerSettings,QgsTextFormat,QgsVectorLayerSimpleLabeling)
-from qgis.PyQt.QtGui import QColor
+from qgis.PyQt.QtGui import QColor,QFont
 from qgis.PyQt.QtCore import QSize
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -18,11 +19,12 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--results',default='results/blind_v001');args=ap.parse_args()
     result=ROOT/args.results
+    summary=json.loads((result/'summary.json').read_text())
     app=QgsApplication([],False);app.initQgis()
     project=QgsProject.instance();project.setCrs(QgsCoordinateReferenceSystem('EPSG:26910'))
     project.setTitle('KarstFinder | Cave Ridge | BLIND exploratory baseline')
     project.setFilePathStorage(Qgis.FilePathType.Relative)
-    project.setMetadata(project.metadata())
+    meta=project.metadata();meta.setTitle(project.title());meta.setAuthor('KarstFinder');meta.setAbstract('Exploratory blind landscape hypotheses. No known local cave locations consulted; not an entrance detector or calibrated probability.');project.setMetadata(meta)
     groups={name:project.layerTreeRoot().addGroup(name) for name in [
         'Study boundary','Preliminary landscape areas — NOT entrances','Landscape hypotheses',
         'Geological evidence — DNR 1:100,000','Terrain measurements — 10 m','Elevation and imagery','Basemaps']}
@@ -37,7 +39,7 @@ def main():
             sh=QgsColorRampShader();sh.setColorRampType(QgsColorRampShader.Interpolated)
             sh.setColorRampItemList([QgsColorRampShader.ColorRampItem(v,QColor(color),str(v)) for v,color in ramp])
             rs=QgsRasterShader();rs.setRasterShaderFunction(sh)
-            layer.setRenderer(QgsSingleBandPseudoColorRenderer(layer.dataProvider(),1,rs))
+            renderer=QgsSingleBandPseudoColorRenderer(layer.dataProvider(),1,rs);renderer.setClassificationMin(ramp[0][0]);renderer.setClassificationMax(ramp[-1][0]);layer.setRenderer(renderer)
         layer.setOpacity(opacity);return add(layer,group,visible)
     def vector(name,title,group,style=None,visible=False,gpkg=None):
         path=gpkg or ROOT/'data/processed/context.gpkg';layer=QgsVectorLayer(f'{path}|layername={name}',title,'ogr')
@@ -72,14 +74,34 @@ def main():
     hill=raster(result/'hillshade.tif','Local terrain hillshade (10 m DEM)','Basemaps',True)
     rect=boundary.extent();rect.scale(1.03)
     project.viewSettings().setDefaultViewExtent(__import__('qgis.core',fromlist=['QgsReferencedRectangle']).QgsReferencedRectangle(rect,project.crs()))
+    visible=[node.layer() for node in project.layerTreeRoot().findLayers() if node.isVisible()]
+    layout=QgsPrintLayout(project);layout.initializeDefaults();layout.setName('Blind landscape baseline')
+    layout.pageCollection().pages()[0].setPageSize('A4',QgsLayoutItemPage.Landscape)
+    def label(text,x,y,width,height,size=9,color='#263445'):
+        item=QgsLayoutItemLabel(layout);item.setText(text);item.setFont(QFont('DejaVu Sans',size));item.setFontColor(QColor(color))
+        layout.addLayoutItem(item);item.attemptMove(QgsLayoutPoint(x,y));item.attemptResize(QgsLayoutSize(width,height));return item
+    label('KarstFinder | Cave Ridge',8,5,210,10,17)
+    label('Blind landscape baseline • exploratory and unfrozen • no confirmed entrances',8,16,280,9,9)
+    mapitem=QgsLayoutItemMap(layout);layout.addLayoutItem(mapitem);mapitem.attemptMove(QgsLayoutPoint(8,28))
+    mapitem.attemptResize(QgsLayoutSize(222,168));mapitem.setCrs(project.crs());mapitem.setLayers(visible);mapitem.setKeepLayerSet(True);mapitem.zoomToExtent(rect)
+    label('LANDSCAPE INDEX',236,29,58,7,10)
+    label('Green shading: ordinal\nlithology × terrain score.\nDarker = stronger hypothesis.\nValues 0–1 are not probabilities.',236,38,56,26,8)
+    label(f'Magenta outlines + KF IDs:\nranked landscape areas.\n{summary["candidate_area_count"]} areas • {summary["candidate_area_km2"]:.4f} km² total.\nRepresentative points in CSV\nare not entrance locations.',236,70,56,32,8,'#9c003b')
+    label('EVIDENCE / LIMITS',236,109,58,7,10)
+    label('USGS 2019 / 2021 LiDAR\nWA DNR 1:100,000 geology\n10 m landscape grid\n210 / 610 / 2,010 m windows\n\nCoarse contacts; glacial terrain;\nforest and overhang occlusion.\nBoundary clips KF-001.\n\nNo known local cave records\nwere consulted.',236,118,57,64,8)
+    label('N ↑',273,185,20,10,12)
+    scale=QgsLayoutItemScaleBar(layout);scale.setStyle('Single Box');scale.setLinkedMap(mapitem);scale.setUnits(Qgis.DistanceUnit.Meters)
+    scale.setUnitsPerSegment(500);scale.setNumberOfSegments(2);scale.setNumberOfSegmentsLeft(0);scale.setUnitLabel('m');scale.setHeight(1.7)
+    layout.addLayoutItem(scale);scale.attemptMove(QgsLayoutPoint(13,181))
+    label('blind_v001 | NAD83 / UTM 10N • NAVD88 metres | 2026-10-19 | landscape hypotheses only',8,198,280,7,8)
+    project.layoutManager().addLayout(layout)
     path=ROOT/'qgis/KarstFinder.qgz';project.setFileName(str(path));assert project.write()
     # Reopening is a required deliverable, not just a successful write call.
     assert project.read(str(path));invalid=[l.name() for l in project.mapLayers().values() if not l.isValid()]
     assert not invalid,invalid
-    visible=[node.layer() for node in project.layerTreeRoot().findLayers() if node.isVisible()]
-    settings=QgsMapSettings();settings.setLayers(visible);settings.setDestinationCrs(project.crs());settings.setExtent(rect)
-    settings.setOutputSize(QSize(1600,1350));settings.setBackgroundColor(QColor('#ffffff'))
-    job=QgsMapRendererParallelJob(settings);job.start();job.waitForFinished();assert job.renderedImage().save(str(result/'map_preview.png'))
+    export=QgsLayoutExporter(project.layoutManager().layoutByName('Blind landscape baseline'))
+    options=QgsLayoutExporter.ImageExportSettings();options.dpi=180
+    assert export.exportToImage(str(result/'map_preview.png'),options)==QgsLayoutExporter.Success
     report={'project':str(path.relative_to(ROOT)),'qgis_version':Qgis.QGIS_VERSION,'layer_count':len(project.mapLayers()),
             'invalid_layers_after_reopen':invalid,'paths':'relative','preview':str((result/'map_preview.png').relative_to(ROOT))}
     (ROOT/'docs/qgis_verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

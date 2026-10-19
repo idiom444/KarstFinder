@@ -1,0 +1,8 @@
+{
+  "project": "qgis/KarstFinder.qgz",
+  "qgis_version": "4.2.2-Bel\u00e9m do Par\u00e1",
+  "layer_count": 21,
+  "invalid_layers_after_reopen": [],
+  "paths": "relative",
+  "preview": "results/blind_v001/map_preview.png"
+}
