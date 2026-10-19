@@ -32,17 +32,18 @@ def objects(binary,minarea,maxarea):
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--output',default='results/blind_v002');args=ap.parse_args()
-    cfgpath=ROOT/'configs/blind_v002.json';cfg=json.loads(cfgpath.read_text());out=ROOT/args.output
+    ap=argparse.ArgumentParser();ap.add_argument('--config',default='configs/blind_v002.json');ap.add_argument('--output',default='results/blind_v002');args=ap.parse_args()
+    cfgpath=ROOT/args.config;cfg=json.loads(cfgpath.read_text());out=ROOT/args.output
     if out.exists():raise SystemExit(f'Refusing overwrite: {out}')
     out.mkdir(parents=True);(out/'config.json').write_text(json.dumps(cfg,indent=2)+'\n')
-    pre=ROOT/'data/processed/features_v002';base=ROOT/cfg['landscape_run']
+    pre=ROOT/cfg.get('feature_processed_dir','data/processed/features_v002');base=ROOT/cfg['landscape_run']
+    processed=ROOT/cfg.get('processed_dir','data/processed')
     qa=json.loads((pre/'qa.json').read_text());assert qa['native_buffered_missing_pixels']==0
     derives=json.loads((pre/'derivatives_manifest.json').read_text())
     for file,digest in derives['products'].items():assert sha(pre/file)==digest,file
-    assert derives['source_sha256']==sha(ROOT/'data/processed/dem_1m_buffered.tif')
+    assert derives['source_sha256']==sha(processed/'dem_1m_buffered.tif')
     a,b,c,d=cfg['study_bounds'];pad=cfg['buffer_m'];win=[a,d,c,b]
-    ref=gdal.Translate('',str(ROOT/'data/processed/dem_1m_buffered.tif'),format='MEM',projWin=win)
+    ref=gdal.Translate('',str(processed/'dem_1m_buffered.tif'),format='MEM',projWin=win)
     shape=(ref.RasterYSize,ref.RasterXSize)
     for name,source in [('depression_depth_1m',pre/'depression_depth_1m_buffered.tif'),('slope_1m',pre/'slope_1m_buffered.tif'),
                          ('residual_11m',pre/'residual_11m_buffered.tif'),('feature_quality_1m',pre/'feature_quality_1m_buffered.tif'),
@@ -50,7 +51,7 @@ def main():
         gdal.Translate(str(out/f'{name}.tif'),str(source),projWin=win,creationOptions=CO)
     depth=array(out/'depression_depth_1m.tif');slope=array(out/'slope_1m.tif');residual=array(out/'residual_11m.tif')
     quality=array(out/'feature_quality_1m.tif')==1;epoch=array(out/'source_epoch_1m.tif')
-    codes,marble_dist=geology(ref,ROOT/'data/processed/context.gpkg')
+    codes,marble_dist=geology(ref,processed/'context.gpkg')
     geo=np.where(codes==3,cfg['geology_scores']['mixed_melange'],0).astype('float32')
     geo=np.where(marble_dist<=cfg['contact_buffer_primary_m'],cfg['geology_scores']['marble_contact_buffer'],geo)
     geo[codes==1]=1.;geo[codes==4]=0.  # Exclude mapped open water from entrance-feature targets.
@@ -161,12 +162,12 @@ def main():
             sensitivity.append({'min_depth_m':thresh,'marble_buffer_m':buf,'objects':n,'area_m2':area})
         del lab,slcs;gc.collect()
     (out/'sensitivity.json').write_text(json.dumps(sensitivity,indent=2)+'\n')
-    summary={'experiment_id':cfg['experiment_id'],'stage':'blind_unfrozen','known_cave_sources_accessed':False,'study_area_km2':30.,
+    summary={'experiment_id':cfg['experiment_id'],'stage':cfg.get('stage','blind_unfrozen'),'known_cave_sources_accessed':False,'study_area_km2':(c-a)*(d-b)/1e6,
        'surface_indicators':len(rows),'by_kind':counts_report,'native_qa':qa,'geological_context_area_km2':float((geo>0).sum()/1e6),
        'primary_feature_area_km2':float((feature_strength>0).sum()/1e6),'entrances_confirmed':0,'entrance_detector_claimed':False,
        'interpretation':'Complementary surface indicators and landscape ranking, not probabilities or confirmed openings'}
     (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
-    inputs=[cfgpath]+list(pre.glob('*'))+[ROOT/'data/processed/context.gpkg']+list(base.glob('*.tif'))
+    inputs=[cfgpath]+list(pre.glob('*'))+[processed/'context.gpkg']+list(base.glob('*.tif'))
     manifest={'created_utc':datetime.now(timezone.utc).isoformat(),'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
       'frozen':False,'inputs':{str(p.relative_to(ROOT)):sha(p) for p in inputs if p.is_file()},
       'code':{str(p.relative_to(ROOT)):sha(p) for p in sorted((ROOT/'scripts').glob('*.py'))+sorted((ROOT/'src').rglob('*.py'))},

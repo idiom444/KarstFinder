@@ -103,10 +103,11 @@ def main():
     if out.exists():raise SystemExit(f'Refusing to overwrite {out}; choose a new experiment output directory')
     out.mkdir(parents=True)
     (out/'config.json').write_text(json.dumps(cfg,indent=2)+'\n')
-    source_manifest=json.loads((ROOT/'docs/acquisition_manifest.json').read_text())
+    source_manifest=json.loads((ROOT/cfg.get('acquisition_manifest','docs/acquisition_manifest.json')).read_text())
     for rec in source_manifest:
         if sha(ROOT/rec['path'])!=rec['sha256']:raise RuntimeError(f'Input changed: {rec["path"]}')
-    source=ROOT/'data/processed/dem_10m_buffered.tif';template=gdal.Open(str(source));valid=np.isfinite(read(source))
+    processed=ROOT/cfg.get('processed_dir','data/processed')
+    source=processed/'dem_10m_buffered.tif';template=gdal.Open(str(source));valid=np.isfinite(read(source))
     log=[]
     for mode in ['slope','aspect','hillshade']:
         ds=gdal.DEMProcessing(str(out/f'{mode}_buffered.tif'),str(source),mode,creationOptions=CO,**({'scale':1.0} if mode=='slope' else {}));ds=None
@@ -124,7 +125,7 @@ def main():
     full_support=minimum_filter(valid.astype('uint8'),size=max_window,mode='constant',cval=0).astype(bool)
     geo=gdal.GetDriverByName('MEM').Create('',template.RasterXSize,template.RasterYSize,1,gdal.GDT_Float32)
     geo.SetGeoTransform(template.GetGeoTransform());geo.SetProjection(template.GetProjection())
-    vec=ogr.Open(str(ROOT/'data/processed/context.gpkg'));layer=vec.GetLayerByName('bedrock')
+    vec=ogr.Open(str(processed/'context.gpkg'));layer=vec.GetLayerByName('bedrock')
     # Unit polygons should not overlap by compilation; order lower evidence before mapped marble.
     sorted_ds=ogr.GetDriverByName('MEM').CreateDataSource('')
     sorted_layer=sorted_ds.CreateLayer('geology',layer.GetSpatialRef(),ogr.wkbMultiPolygon);sorted_layer.CreateField(ogr.FieldDefn('geo_score',ogr.OFTReal))
@@ -141,9 +142,9 @@ def main():
     for mode in ['slope','aspect','hillshade']:
         gdal.Translate(str(out/f'{mode}.tif'),str(out/f'{mode}_buffered.tif'),projWin=[cfg['study_bounds'][0],cfg['study_bounds'][3],cfg['study_bounds'][2],cfg['study_bounds'][1]],creationOptions=CO)
     for scale,arr in zip(cfg['tpi_windows_cells'],deviations):write_raster(out/f'dev_{scale*cfg["terrain_resolution_m"]}m.tif',arr[sl],core)
-    rows,selected_cells=candidate_areas(out,core,scores['combined_score'][sl],scores['terrain_score'][sl],geology[sl],scores['mid_slope_votes'][sl],scores['exposure'][sl],slope[sl],gdal.Open(str(ROOT/'data/processed/source_epoch_10m.tif')).ReadAsArray()[sl],cfg)
+    rows,selected_cells=candidate_areas(out,core,scores['combined_score'][sl],scores['terrain_score'][sl],geology[sl],scores['mid_slope_votes'][sl],scores['exposure'][sl],slope[sl],gdal.Open(str(processed/'source_epoch_10m.tif')).ReadAsArray()[sl],cfg)
     area_per_cell=cfg['terrain_resolution_m']**2;area_total=core.RasterXSize*core.RasterYSize*area_per_cell
-    summary={'experiment_id':cfg['experiment_id'],'status':'exploratory_blind_unfrozen','known_cave_sources_accessed':False,
+    summary={'experiment_id':cfg['experiment_id'],'status':cfg.get('stage','exploratory_blind_unfrozen'),'known_cave_sources_accessed':False,
         'study_area_km2':area_total/1e6,'eligible_area_km2':float(full_support[sl].sum()*area_per_cell/1e6),
         'mapped_marble_area_km2':float((geology[sl]==1).sum()*area_per_cell/1e6),
         'mixed_carbonate_possible_area_km2':float(((geology[sl]>0)&(geology[sl]<1)).sum()*area_per_cell/1e6),
@@ -156,7 +157,7 @@ def main():
     (out/'inputs.json').write_text(json.dumps(source_manifest,indent=2)+'\n')
     code_files=sorted((ROOT/'src').rglob('*.py'))+sorted((ROOT/'scripts').glob('*.py'))+[cfg_path]
     outputs={str(p.relative_to(out)):sha(p) for p in sorted(out.glob('*')) if p.is_file()}
-    inputs={str(p.relative_to(ROOT)):sha(p) for p in sorted((ROOT/'data/processed').glob('*')) if p.is_file()}
+    inputs={str(p.relative_to(ROOT)):sha(p) for p in sorted(processed.glob('*')) if p.is_file()}
     commit=subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,text=True,capture_output=True).stdout.strip() or None
     manifest={'created_utc':datetime.now(timezone.utc).isoformat(),'git_commit_at_run':commit,
         'git_dirty_at_run':bool(subprocess.check_output(['git','status','--porcelain'],cwd=ROOT)),

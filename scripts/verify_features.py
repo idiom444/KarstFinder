@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Independent artifact invariants for native feature objects and their representative points."""
-import json,sys
+import argparse,json,sys
 from pathlib import Path
 import numpy as np
 from osgeo import gdal,ogr
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
 from karstfinder.gis import array
 
-gdal.UseExceptions();ogr.UseExceptions();out=ROOT/'results/blind_v002'
+ap=argparse.ArgumentParser();ap.add_argument('--results',default='results/blind_v002');ap.add_argument('--report',default='docs/experiments/blind_v002_verification.json');args=ap.parse_args()
+gdal.UseExceptions();ogr.UseExceptions();out=ROOT/args.results
 summary=json.loads((out/'summary.json').read_text());ds=ogr.Open(str(out/'features.gpkg'));poly=ds.GetLayerByName('surface_indicators');pts=ds.GetLayerByName('ranked_indicators')
 assert poly.GetFeatureCount()==pts.GetFeatureCount()==summary['surface_indicators']
 geos={f['object_id']:f.GetGeometryRef().Clone() for f in poly}
@@ -24,4 +25,4 @@ for f in pts:
 assert sorted(seen)==list(range(1,len(seen)+1))
 report={'surface_objects':len(seen),'all_polygons_valid':True,'representative_points_in_supported_objects':True,
         'quality_and_geology_support_verified':True,'rank_ids_complete':True,'confirmed_caves':0}
-(ROOT/'docs/experiments/blind_v002_verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+(ROOT/args.report).write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

@@ -64,3 +64,17 @@ cave confirmation. Retain model components. Treat glacial terrain, talus, rockfa
 landslides, forests, snow and overhang occlusion as limitations. No excavation,
 unstable-opening entry or restricted-access recommendations. Before any field
 suggestion, verify current land-manager rules.
+
+## Approved Denny Mountain follow-up
+
+On 2026-10-19 the user approved a 3 × 3 km southern Denny Mountain study near
+47.4265 N, 121.4444 W. Apply the existing methods as unvalidated prospecting,
+without obtaining cave records. This explicitly authorizes this geographic
+follow-up despite the earlier validation prerequisite for a demonstrated method.
+It does not establish model skill. The area overlaps the old study edge and is
+not an independent blind holdout. Use configs/denny_v001_*.json and separate
+data/processed/denny_v001 and results/denny_v001_* paths.
+Remove entrance-reference layers from the active prospecting map. Retain private
+validation archives locally, but never load them into the Denny project. Do not
+contact anyone. Field-observation leads require public access/terrain screening;
+straight-line trail distances are not routes or proof of safe/legal access.

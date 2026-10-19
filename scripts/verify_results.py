@@ -12,7 +12,7 @@ ROOT=Path(__file__).resolve().parents[1]
 ap=argparse.ArgumentParser();ap.add_argument('path',nargs='?',default='results/blind_v001');args=ap.parse_args()
 out=ROOT/args.path
 cfg=json.loads((out/'config.json').read_text());summary=json.loads((out/'summary.json').read_text())
-assert summary['status']=='exploratory_blind_unfrozen'
+assert summary['status']==cfg.get('stage','exploratory_blind_unfrozen')
 rasters={p.stem:gdal.Open(str(p)) for p in out.glob('*.tif') if '_buffered' not in p.stem}
 ref=rasters['combined_score'];gt=ref.GetGeoTransform()
 for name,ds in rasters.items():

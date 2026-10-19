@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """Persist DEMs and clipped geology using GDAL/OGR, never rendered hillshade."""
-import json
+import argparse,json
 from pathlib import Path
 import numpy as np
 from osgeo import gdal, ogr, osr
 
 gdal.UseExceptions(); ogr.UseExceptions(); osr.UseExceptions()
 ROOT = Path(__file__).resolve().parents[1]
-RAW, OUT = ROOT/'data/raw', ROOT/'data/processed'
+ap=argparse.ArgumentParser();ap.add_argument('--config',default='configs/blind_v001.json');args=ap.parse_args()
+cfg = json.loads((ROOT/args.config).read_text())
+RAW, OUT = ROOT/cfg.get('raw_dir','data/raw'), ROOT/cfg.get('processed_dir','data/processed')
+DEM_RAW=ROOT/cfg.get('dem_raw_dir',cfg.get('raw_dir','data/raw'))
 OUT.mkdir(parents=True, exist_ok=True)
-cfg = json.loads((ROOT/'configs/blind_v001.json').read_text())
+if (OUT/'dem_1m_buffered.tif').exists():raise SystemExit(f'Refusing prepared-input overwrite: {OUT}')
 a,b,c,d = cfg['study_bounds']; pad = cfg['buffer_m']
 bounds = [a-pad,b-pad,c+pad,d+pad]
 co = ['COMPRESS=DEFLATE','TILED=YES','BIGTIFF=IF_SAFER']
 # Older acquisition first; newest valid pixel takes precedence in VRT.
 tiles = [str(p) for project in [cfg['fallback_elevation_project'],cfg['elevation_project']]
-         for p in sorted(RAW.glob(f'USGS_1M_*_{project}.tif'))]
+         for p in sorted(DEM_RAW.glob(f'USGS_1M_*_{project}.tif'))]
 assert tiles, 'Run acquisition first'
 vrt = gdal.BuildVRT(str(OUT/'elevation_source.vrt'),tiles)
 raw_info = []
@@ -26,7 +29,7 @@ for p in tiles:
  assert ds.GetSpatialRef().GetAuthorityCode(None) == '26910', 'Unexpected native CRS: evaluate units/realization'
  # Standard USGS tile metadata explicitly declares NAVD88 metres;
  # delivered GeoTIFF bands leave UnitType empty. Supplier-native reports use feet.
- catalog=json.loads((RAW/'usgs_1m_catalog.json').read_text())
+ catalog=json.loads((DEM_RAW/'usgs_1m_catalog.json').read_text())
  item=next(i for i in catalog['items'] if Path(i['downloadURL']).name==Path(p).name)
  assert 'All bare earth elevation values are in meters' in item['body']
  assert band.GetUnitType() in ('','m','metre','meter'), 'Conflicting elevation units'
@@ -83,4 +86,4 @@ n=pad//cfg['terrain_resolution_m'];core=valid[n:-n,n:-n]
 report={'source_rasters':raw_info,'buffered_valid_fraction':float(valid.mean()),'study_valid_fraction':float(core.mean()),
         'buffered_elevation_min_m':float(z[valid].min()),'buffered_elevation_max_m':float(z[valid].max()),
         'study_area_km2':(c-a)*(d-b)/1e6,'buffer_m':pad,'epoch_overlap':overlap,'epoch_pixel_counts':{str(k):int((epoch==k).sum()) for k in [0,2019,2021]}}
-(ROOT/'docs/data_quality.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
+(ROOT/cfg.get('quality_report','docs/data_quality.json')).write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
