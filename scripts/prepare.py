@@ -30,7 +30,7 @@ for p in tiles:
  item=next(i for i in catalog['items'] if Path(i['downloadURL']).name==Path(p).name)
  assert 'All bare earth elevation values are in meters' in item['body']
  assert band.GetUnitType() in ('','m','metre','meter'), 'Conflicting elevation units'
- raw_info[-1]['elevation_units_evidence']='USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty'
+ raw_info[-1]['elevation_units_evidence']='USGS standard 1m catalog body: NAVD88 metres; band UnitType=' + repr(band.GetUnitType())
 for res,name in [(1,'dem_1m_buffered'),(cfg['terrain_resolution_m'],'dem_10m_buffered')]:
  path = OUT/f'{name}.tif'
  ds = gdal.Warp(str(path),vrt,dstSRS=cfg['crs'],outputBounds=bounds,xRes=res,yRes=res,

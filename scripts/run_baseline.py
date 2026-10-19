@@ -43,7 +43,7 @@ def read(path):
     return a
 
 
-def candidate_areas(out,core,combined,terrain,geology,votes,exposure,slope,cfg):
+def candidate_areas(out,core,combined,terrain,geology,votes,exposure,slope,epoch,cfg):
     binary=np.isfinite(combined)&(combined>=cfg['candidate_min_score'])
     temp=gdal.GetDriverByName('MEM').Create('',core.RasterXSize,core.RasterYSize,1,gdal.GDT_Byte)
     temp.SetGeoTransform(core.GetGeoTransform());temp.SetProjection(core.GetProjection());temp.GetRasterBand(1).WriteArray(binary.astype('uint8'))
@@ -51,7 +51,7 @@ def candidate_areas(out,core,combined,terrain,geology,votes,exposure,slope,cfg):
     layer=ds.CreateLayer('candidate_areas',core.GetSpatialRef(),ogr.wkbPolygon)
     specs=[('presence',ogr.OFTInteger),('candidate_id',ogr.OFTString),('rank',ogr.OFTInteger),('area_m2',ogr.OFTReal),
            ('mean_score',ogr.OFTReal),('max_score',ogr.OFTReal),('terrain_mean',ogr.OFTReal),('geo_mean',ogr.OFTReal),
-           ('votes_mean',ogr.OFTReal),('exposure_mean',ogr.OFTReal),('slope_mean_deg',ogr.OFTReal),
+           ('votes_mean',ogr.OFTReal),('exposure_mean',ogr.OFTReal),('slope_mean_deg',ogr.OFTReal),('fraction_2021',ogr.OFTReal),('boundary_clipped',ogr.OFTInteger),
            ('easting',ogr.OFTReal),('northing',ogr.OFTReal),('longitude',ogr.OFTReal),('latitude',ogr.OFTReal),
            ('geo_evidence',ogr.OFTString),('terrain_evidence',ogr.OFTString),('alternatives',ogr.OFTString),('uncertainty',ogr.OFTString),('status',ogr.OFTString)]
     for n,t in specs:layer.CreateField(ogr.FieldDefn(n,t))
@@ -64,21 +64,24 @@ def candidate_areas(out,core,combined,terrain,geology,votes,exposure,slope,cfg):
         geom=feature.GetGeometryRef();area=geom.GetArea()
         if area<cfg['candidate_min_area_m2']:
             deletes.append(feature.GetFID());continue
-        maskvec=ogr.GetDriverByName('Memory').CreateDataSource('');ml=maskvec.CreateLayer('shape',core.GetSpatialRef(),ogr.wkbPolygon)
+        maskvec=ogr.GetDriverByName('MEM').CreateDataSource('');ml=maskvec.CreateLayer('shape',core.GetSpatialRef(),ogr.wkbPolygon)
         mf=ogr.Feature(ml.GetLayerDefn());mf.SetGeometry(geom);ml.CreateFeature(mf)
         mask=gdal.GetDriverByName('MEM').Create('',core.RasterXSize,core.RasterYSize,1,gdal.GDT_Byte)
         mask.SetGeoTransform(core.GetGeoTransform());mask.SetProjection(core.GetProjection());gdal.RasterizeLayer(mask,[1],ml,burn_values=[1])
         pixels=mask.ReadAsArray().astype(bool)
+        boundary_clipped=bool(pixels[0].any() or pixels[-1].any() or pixels[:,0].any() or pixels[:,-1].any())
         point=geom.PointOnSurface();x,y=point.GetX(),point.GetY();lon,lat,_=tx.TransformPoint(x,y)
         row={'area_m2':area,'mean_score':float(combined[pixels].mean()),'max_score':float(combined[pixels].max()),
              'terrain_mean':float(terrain[pixels].mean()),'geo_mean':float(geology[pixels].mean()),'votes_mean':float(votes[pixels].mean()),
              'exposure_mean':float(exposure[pixels].mean()),'slope_mean_deg':float(slope[pixels].mean()),
+             'fraction_2021':float((epoch[pixels]==2021).mean()),'boundary_clipped':int(boundary_clipped),
              'easting':x,'northing':y,'longitude':lon,'latitude':lat,
              'geo_evidence':'Mapped marble PMmb(e), DNR 1:100,000',
              'terrain_evidence':'Multiscale mid-slope votes and slope exposure ramp',
              'alternatives':'Glacial bedrock morphology; talus; landslide scar; non-karst outcrop',
              'uncertainty':'Coarse geological contacts; multi-epoch DEM; no entrance detector or field verification',
              'status':'preliminary landscape area; NOT a cave or entrance prediction'}
+        if boundary_clipped:row['uncertainty']+='; component truncated by study boundary'
         items.append((feature.GetFID(),row))
     for fid in deletes:layer.DeleteFeature(fid)
     items.sort(key=lambda x:(-x[1]['mean_score'],-x[1]['area_m2'],x[1]['easting'],x[1]['northing']))
@@ -123,7 +126,7 @@ def main():
     geo.SetGeoTransform(template.GetGeoTransform());geo.SetProjection(template.GetProjection())
     vec=ogr.Open(str(ROOT/'data/processed/context.gpkg'));layer=vec.GetLayerByName('bedrock')
     # Unit polygons should not overlap by compilation; order lower evidence before mapped marble.
-    sorted_ds=ogr.GetDriverByName('Memory').CreateDataSource('')
+    sorted_ds=ogr.GetDriverByName('MEM').CreateDataSource('')
     sorted_layer=sorted_ds.CreateLayer('geology',layer.GetSpatialRef(),ogr.wkbMultiPolygon);sorted_layer.CreateField(ogr.FieldDefn('geo_score',ogr.OFTReal))
     for f in sorted(list(layer),key=lambda f:f['geo_score']):
         nf=ogr.Feature(sorted_layer.GetLayerDefn());nf.SetGeometry(f.GetGeometryRef());nf['geo_score']=f['geo_score'];sorted_layer.CreateFeature(nf)
@@ -138,14 +141,14 @@ def main():
     for mode in ['slope','aspect','hillshade']:
         gdal.Translate(str(out/f'{mode}.tif'),str(out/f'{mode}_buffered.tif'),projWin=[cfg['study_bounds'][0],cfg['study_bounds'][3],cfg['study_bounds'][2],cfg['study_bounds'][1]],creationOptions=CO)
     for scale,arr in zip(cfg['tpi_windows_cells'],deviations):write_raster(out/f'dev_{scale*cfg["terrain_resolution_m"]}m.tif',arr[sl],core)
-    rows,selected_cells=candidate_areas(out,core,scores['combined_score'][sl],scores['terrain_score'][sl],geology[sl],scores['mid_slope_votes'][sl],scores['exposure'][sl],slope[sl],cfg)
+    rows,selected_cells=candidate_areas(out,core,scores['combined_score'][sl],scores['terrain_score'][sl],geology[sl],scores['mid_slope_votes'][sl],scores['exposure'][sl],slope[sl],gdal.Open(str(ROOT/'data/processed/source_epoch_10m.tif')).ReadAsArray()[sl],cfg)
     area_per_cell=cfg['terrain_resolution_m']**2;area_total=core.RasterXSize*core.RasterYSize*area_per_cell
     summary={'experiment_id':cfg['experiment_id'],'status':'exploratory_blind_unfrozen','known_cave_sources_accessed':False,
         'study_area_km2':area_total/1e6,'eligible_area_km2':float(full_support[sl].sum()*area_per_cell/1e6),
         'mapped_marble_area_km2':float((geology[sl]==1).sum()*area_per_cell/1e6),
         'mixed_carbonate_possible_area_km2':float(((geology[sl]>0)&(geology[sl]<1)).sum()*area_per_cell/1e6),
         'threshold_selected_area_km2_before_size_filter':selected_cells*area_per_cell/1e6,
-        'candidate_area_count':len(rows),'candidate_area_km2':sum(r['area_m2'] for r in rows)/1e6,
+        'candidate_area_count':len(rows),'boundary_clipped_candidate_count':sum(r['boundary_clipped'] for r in rows),'candidate_area_km2':sum(r['area_m2'] for r in rows)/1e6,
         'candidate_area_fraction_of_study':sum(r['area_m2'] for r in rows)/area_total,
         'cave_detection_or_validation_performed':False,'interpretation':'Landscape hypotheses only. No cave existence probabilities.'}
     (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')

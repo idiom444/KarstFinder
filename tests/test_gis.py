@@ -2,6 +2,7 @@
 import numpy as np
 from osgeo import gdal, osr
 from whitebox.whitebox_tools import WhiteboxTools
+gdal.UseExceptions(); osr.UseExceptions()
 
 
 def test_packaged_gdal_slope_units(tmp_path):
