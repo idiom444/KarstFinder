@@ -1,5 +1,6 @@
 import numpy as np
 from karstfinder.evaluation import select_area,uncertainty_coverage,prediction_gain,kvamme_gain
+from karstfinder.evaluation import qualifies_for_localization
 
 
 def test_area_budget_ties_are_exact_and_reproducible():
@@ -25,3 +26,11 @@ def test_gains_handle_zero_recall_explicitly():
     assert prediction_gain(.5,.1)==5
     assert kvamme_gain(.5,.1)==.8
     assert kvamme_gain(0,.1) is None
+
+
+def test_assumed_accuracy_never_qualifies_for_entrance_localization():
+    assert not qualifies_for_localization({'uncertainty_m':5,'accuracy_verified':False},25)
+    assert not qualifies_for_localization({'uncertainty_m':5},25)
+    assert not qualifies_for_localization({'uncertainty_m':100,'accuracy_verified':True},25)
+    assert not qualifies_for_localization({'uncertainty_m':float('nan'),'accuracy_verified':True},25)
+    assert qualifies_for_localization({'uncertainty_m':25,'accuracy_verified':True},25)

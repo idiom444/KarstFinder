@@ -1,6 +1,8 @@
 # Implemented baseline: blind_v001
 
-Stage: **exploratory blind, unfrozen**. This implements a landscape baseline,
+Original v001 execution stage: **exploratory blind**. Its outputs are now
+preserved in the v002 blind freeze; original execution metadata is unchanged.
+The v001 method implements a landscape baseline,
 not the full initial experiment. No training labels, supervised learning,
 entrance detector, cave confirmation or validation is implemented yet.
 

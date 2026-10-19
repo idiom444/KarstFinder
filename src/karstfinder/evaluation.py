@@ -28,3 +28,11 @@ def prediction_gain(recall,area_fraction):
 
 def kvamme_gain(recall,area_fraction):
     return 1-area_fraction/recall if recall>0 else None
+
+
+def qualifies_for_localization(properties,max_uncertainty_m):
+    """An assumed small radius cannot substitute for verified source accuracy."""
+    radius=properties.get('uncertainty_m')
+    return (properties.get('accuracy_verified') is True and
+            isinstance(radius,(int,float)) and np.isfinite(radius) and
+            0<radius<=max_uncertainty_m)

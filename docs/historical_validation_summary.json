@@ -1,0 +1,37 @@
+{
+  "source": "Halliday 1963, printed pp.22-23; DNR PLSS polygon for historical section reference",
+  "independent_reference_regions": 1,
+  "historical_region_area_km2": 2.587005431660473,
+  "named_caves_not_counted_as_independent_coordinates": true,
+  "metrics": [
+    {
+      "model": "original_landscape",
+      "positive_prediction_area_in_region_km2": 0.6592,
+      "fraction_of_region_with_positive_score": 0.25488149093299306,
+      "any_regional_overlap": true,
+      "entrance_localization_test": false
+    },
+    {
+      "model": "combined",
+      "positive_prediction_area_in_region_km2": 0.7368,
+      "fraction_of_region_with_positive_score": 0.28488574411321194,
+      "any_regional_overlap": true,
+      "entrance_localization_test": false
+    },
+    {
+      "model": "surface_morphology",
+      "positive_prediction_area_in_region_km2": 0.1903,
+      "fraction_of_region_with_positive_score": 0.07358001778602637,
+      "any_regional_overlap": true,
+      "entrance_localization_test": false
+    },
+    {
+      "model": "geology",
+      "positive_prediction_area_in_region_km2": 0.7368,
+      "fraction_of_region_with_positive_score": 0.28488574411321194,
+      "any_regional_overlap": true,
+      "entrance_localization_test": false
+    }
+  ],
+  "interpretation": "Broad regional consistency only. Any overlap cannot establish individual entrance discovery or added skill over geology."
+}

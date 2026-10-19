@@ -8,6 +8,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
 from karstfinder.gis import array,memory,sha
 from karstfinder.freeze import verify_freeze
 from karstfinder.evaluation import select_area,uncertainty_coverage,prediction_gain,kvamme_gain
+from karstfinder.evaluation import qualifies_for_localization
 
 gdal.UseExceptions();ogr.UseExceptions();osr.UseExceptions()
 freeze=verify_freeze(ROOT)
@@ -51,6 +52,7 @@ for universe_name,universe in [('study',np.ones(shape,bool)),('comparable_geolog
                 if hit['coverage_fraction'] is not None:coverage.append(hit['coverage_fraction'])
             recall=float(np.mean(central)) if central else None
             rows.append({'universe':universe_name,'model':model,'requested_area_fraction':budget,'actual_area_fraction':actual,
+                 'universe_area_km2':n*abs(gt[1]*gt[5])/1e6,'selected_area_km2':int(selected.sum())*abs(gt[1]*gt[5])/1e6,
                  'central_reference_fraction_selected':recall,'possible_uncertainty_fraction':float(np.mean(possible)) if possible else None,
                  'robust_uncertainty_fraction':float(np.mean(robust)) if robust else None,'mean_uncertainty_region_coverage':float(np.mean(coverage)) if coverage else None,
                  'descriptive_prediction_gain':prediction_gain(recall,actual) if recall is not None else None,
@@ -60,13 +62,14 @@ for universe_name,universe in [('study',np.ones(shape,bool)),('comparable_geolog
 features=ogr.Open(str(ROOT/'results/blind_v002/features.gpkg'));polys=features.GetLayerByName('surface_indicators');geometries=[f.GetGeometryRef().Clone() for f in polys]
 localization=[]
 for item in validation:
-    if item['radius']>protocol['max_entrance_location_uncertainty_m']:continue
+    if not qualifies_for_localization(item['source'],protocol['max_entrance_location_uncertainty_m']):continue
     distances=[geom.Distance(item['point']) for geom in geometries]
     localization.append({'record_id':item['id'],'min_indicator_geometry_distance_m':min(distances) if distances else None,
        'uncertainty_m':item['radius'],'tolerance_matches':{str(t):bool(distances and min(distances)<=t) for t in protocol['localization_tolerances_m']},
        'meaning':'Proximity to a surface indicator is not proof the entrance itself was detected'})
 result={'freeze_commit':freeze['implementation_git_commit'],'reference_sha256':sha(path),'reference_count':len(validation),
  'precise_reference_count':len(localization),'uncertainty_m':[item['radius'] for item in validation],
+ 'localization_eligibility':'Source accuracy must be verified and uncertainty must be within the predeclared maximum; assumed radii never qualify',
  'spatial_independence_established':False,'inferential_p_values_reported':False,
  'limitations':['Presence-only incomplete inventory','Reference selection and historical exploration bias','Spatially clustered caves are not independent',
                'Large location uncertainty cannot establish entrance localization','Area fractions describe raster coverage, not probabilities'],

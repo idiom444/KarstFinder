@@ -1,0 +1,251 @@
+{
+  "evaluation_stage": "supplemental post-freeze audit; predictions and primary protocol unchanged",
+  "reference_count": 4,
+  "independent_reference_spatial_configurations": 1,
+  "accepted_null_placements": 303,
+  "null_design": "Whole reference point pattern translated jointly on 10 m grid, requiring identical geological evidence class for each point",
+  "inferential_p_values_reported": false,
+  "limitation": "All locations remain unverified, spatially associated and from one mapper. Translation-null results are descriptive, not an independent randomized experiment.",
+  "metrics": [
+    {
+      "model": "geology",
+      "requested_area_fraction": 0.01,
+      "actual_area_fraction": 0.009949652361543994,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0342691990090834,
+      "matched_geology_rigid_translation_mean_fraction": 0.028877887788778877,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "model": "geology",
+      "requested_area_fraction": 0.05,
+      "actual_area_fraction": 0.049988012467034285,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.17217175887696118,
+      "matched_geology_rigid_translation_mean_fraction": 0.15264026402640263,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "geology",
+      "requested_area_fraction": 0.1,
+      "actual_area_fraction": 0.09997602493406857,
+      "central_reference_fraction_selected": 0.25,
+      "tie_averaged_expected_central_fraction": 0.34434351775392236,
+      "matched_geology_rigid_translation_mean_fraction": 0.3333333333333333,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "geology",
+      "requested_area_fraction": 0.2,
+      "actual_area_fraction": 0.19995204986813714,
+      "central_reference_fraction_selected": 0.75,
+      "tie_averaged_expected_central_fraction": 0.6049850677693545,
+      "matched_geology_rigid_translation_mean_fraction": 0.6204620462046204,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "model": "terrain",
+      "requested_area_fraction": 0.01,
+      "actual_area_fraction": 0.009949652361543994,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.0024752475247524753,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "terrain",
+      "requested_area_fraction": 0.05,
+      "actual_area_fraction": 0.049988012467034285,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.009900990099009901,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "terrain",
+      "requested_area_fraction": 0.1,
+      "actual_area_fraction": 0.09997602493406857,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.022277227722772276,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "model": "terrain",
+      "requested_area_fraction": 0.2,
+      "actual_area_fraction": 0.19995204986813714,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.039603960396039604,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "model": "landscape_v001",
+      "requested_area_fraction": 0.01,
+      "actual_area_fraction": 0.009949652361543994,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.010726072607260726,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "model": "landscape_v001",
+      "requested_area_fraction": 0.05,
+      "actual_area_fraction": 0.049988012467034285,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.08993399339933994,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "landscape_v001",
+      "requested_area_fraction": 0.1,
+      "actual_area_fraction": 0.09997602493406857,
+      "central_reference_fraction_selected": 0.25,
+      "tie_averaged_expected_central_fraction": 0.25,
+      "matched_geology_rigid_translation_mean_fraction": 0.28795379537953797,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "landscape_v001",
+      "requested_area_fraction": 0.2,
+      "actual_area_fraction": 0.19995204986813714,
+      "central_reference_fraction_selected": 0.25,
+      "tie_averaged_expected_central_fraction": 0.25,
+      "matched_geology_rigid_translation_mean_fraction": 0.2986798679867987,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "morphology",
+      "requested_area_fraction": 0.01,
+      "actual_area_fraction": 0.009949652361543994,
+      "central_reference_fraction_selected": 0.75,
+      "tie_averaged_expected_central_fraction": 0.75,
+      "matched_geology_rigid_translation_mean_fraction": 0.06188118811881188,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "model": "morphology",
+      "requested_area_fraction": 0.05,
+      "actual_area_fraction": 0.049988012467034285,
+      "central_reference_fraction_selected": 0.75,
+      "tie_averaged_expected_central_fraction": 0.75,
+      "matched_geology_rigid_translation_mean_fraction": 0.1419141914191419,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "morphology",
+      "requested_area_fraction": 0.1,
+      "actual_area_fraction": 0.09997602493406857,
+      "central_reference_fraction_selected": 1.0,
+      "tie_averaged_expected_central_fraction": 1.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.18976897689768976,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "morphology",
+      "requested_area_fraction": 0.2,
+      "actual_area_fraction": 0.1774154878925917,
+      "central_reference_fraction_selected": 1.0,
+      "tie_averaged_expected_central_fraction": 1.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.2607260726072607,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.75
+      ]
+    },
+    {
+      "model": "combined_v002",
+      "requested_area_fraction": 0.01,
+      "actual_area_fraction": 0.009949652361543994,
+      "central_reference_fraction_selected": 0.0,
+      "tie_averaged_expected_central_fraction": 0.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.0462046204620462,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "model": "combined_v002",
+      "requested_area_fraction": 0.05,
+      "actual_area_fraction": 0.049988012467034285,
+      "central_reference_fraction_selected": 0.25,
+      "tie_averaged_expected_central_fraction": 0.20877192982456141,
+      "matched_geology_rigid_translation_mean_fraction": 0.12293729372937294,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "combined_v002",
+      "requested_area_fraction": 0.1,
+      "actual_area_fraction": 0.09997602493406857,
+      "central_reference_fraction_selected": 0.75,
+      "tie_averaged_expected_central_fraction": 0.75,
+      "matched_geology_rigid_translation_mean_fraction": 0.23184818481848185,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "model": "combined_v002",
+      "requested_area_fraction": 0.2,
+      "actual_area_fraction": 0.19995204986813714,
+      "central_reference_fraction_selected": 1.0,
+      "tie_averaged_expected_central_fraction": 1.0,
+      "matched_geology_rigid_translation_mean_fraction": 0.37293729372937295,
+      "matched_geology_rigid_translation_5_95_interval": [
+        0.0,
+        0.75
+      ]
+    }
+  ]
+}

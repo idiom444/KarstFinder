@@ -26,7 +26,10 @@ and unlabeled imagery. Historical Washington publications can mix geology and
 cave locations. A keyword filter is not proof that a source is blind-safe.
 If new information contaminates an intended blind experiment, record it.
 
-No messages/contact requests without authorization. No excavation, entry into
+The user permanently prohibits contacting anyone. Never send messages, email,
+contact requests, or approach data custodians on the user's behalf. Do not ask
+again for outreach authorization. Use public sources and local analysis only.
+No excavation, entry into
 unstable openings, or restricted-access suggestions. Fieldwork requires current
 land-manager rules and suitable non-invasive survey arrangements.
 

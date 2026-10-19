@@ -13,7 +13,7 @@ def verify_freeze(root,freeze_id='blind_v002'):
     if manifest.get('status')!='frozen_before_validation':raise RuntimeError('Invalid freeze state')
     for name,digest in manifest['sha256'].items():
         file=root/name
-        if name.startswith(('src/','scripts/','tests/')) or name in ['requirements.lock','pyproject.toml']:
+        if (name.startswith(('src/','scripts/','tests/')) and name.endswith('.py')) or name in ['requirements.lock','pyproject.toml']:
             blob=subprocess.check_output(['git','show',manifest['implementation_git_commit']+':'+name],cwd=root)
             actual=hashlib.sha256(blob).hexdigest()
         else:

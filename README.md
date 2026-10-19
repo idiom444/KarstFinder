@@ -2,8 +2,7 @@
 
 Reproducible, blind geospatial research into cave-bearing landscapes near Cave
 Ridge, Snoqualmie Pass, Washington. Initial outputs describe **landscape
-hypotheses, not cave locations or probabilities**. Known local cave locations
-have not been consulted. Read [PROJECT_STATE.md](PROJECT_STATE.md) before work.
+hypotheses, not cave locations or probabilities**. Initial predictions were frozen before known local cave references were consulted. Read [PROJECT_STATE.md](PROJECT_STATE.md) before work.
 
 ## Setup on Arch Linux
 
@@ -11,7 +10,7 @@ Use the repository open in VS Code: `/home/Idiom/Repos/MyRepos/KarstFinder`.
 The original brief's `~/Projects` location was superseded by the user.
 
 System prerequisites: QGIS with PyQGIS, GDAL with Python bindings, NumPy, SciPy,
-Python, Git, and optionally Poppler for technical-report text extraction. GRASS
+Python, Git, Matplotlib for aggregate plots, and optionally Poppler for technical-report text extraction. GRASS
 and SAGA runtimes are absent; the QGIS GRASS provider listing alone is not proof
 that GRASS algorithms can execute. Rasterio, GeoPandas and scikit-learn are not
 required for this baseline.
@@ -64,9 +63,9 @@ at their relative locations. GeoTIFFs and candidate GeoPackages are under
 - [docs/DATASETS.md](docs/DATASETS.md): provenance, coverage, units and uncertainty.
 - [AGENTS.md](AGENTS.md): instructions that protect the blind experiment.
 
-M1 foundation and an exploratory M2 baseline are the first-session scope. M3
-requires an independent high-resolution feature detector before any final blind
-freeze. Validation, supervised learning and geographic expansion come later.
+M1–M3 are delivered, including complementary native feature analysis and a
+final blind freeze. The current dependency is M4 reference quality; supervised
+learning and geographic expansion remain conditional on credible validation.
 
 ![Exploratory blind landscape map](docs/experiments/blind_v001_map.png)
 
@@ -93,3 +92,36 @@ Known-cave reference data and detailed validation remain ignored under
 the immutable freeze manifest first.
 
 ![Complementary blind surface evidence](docs/experiments/blind_v002_map.png)
+
+
+## Current validation status
+
+M1–M3 are delivered; v002 is frozen. The public-reference comparison is documented
+in [the validation report](docs/VALIDATION_REPORT.md). Four public mapped entrance
+records have unknown positional accuracy and a common mapper; none qualifies for
+the predeclared entrance-localization test. Apparent map-point agreement is
+exploratory. The user permanently prohibits outreach; no one has been contacted.
+The earlier unsent request has been withdrawn.
+
+The local-only validation project is
+`data/private/validation/KarstFinder_Validation.qgz` (39 valid persistent layers).
+Reproduce permitted local comparisons using the public-source acquisition and
+evaluation scripts below. Each reference-reading analysis verifies the frozen
+experiment first. Exact references, diagrams and coordinates remain outside Git.
+The full-study OSM envelope is clipped to the projected study boundary during
+import. Source URLs and checksums are saved in a local-only acquisition manifest.
+
+```bash
+.venv/bin/python scripts/acquire_public_validation.py
+.venv/bin/python scripts/import_public_validation.py
+.venv/bin/python scripts/evaluate_frozen.py
+.venv/bin/python scripts/evaluate_historical_region.py
+.venv/bin/python scripts/evaluation_audit.py
+.venv/bin/python scripts/plot_validation.py
+QT_QPA_PLATFORM=offscreen .venv/bin/python scripts/validation_project.py
+```
+
+Do not regenerate the private GeoPackage while editing its layers in QGIS; save
+and close it first. Reopen the resulting private project after rebuilding it.
+
+![Aggregate exploratory validation](docs/validation/coverage.png)

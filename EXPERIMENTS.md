@@ -2,7 +2,8 @@
 
 ## blind_v001 — exploratory landscape baseline, 2026-10-19
 
-Status: **UNFROZEN, blind**. Final numerical implementation: Git `46e1a5c` (clean working tree at execution).
+Original execution: **exploratory blind**; now preserved as part of the v002
+freeze. Its original run manifest correctly retains its execution-time unfrozen flag. Final numerical implementation: Git `46e1a5c` (clean working tree at execution).
 The original foundation is Git `5354ba9`. The run manifest identifies exact
 code hashes; the final documentation commit also stores the QGIS project and
 small result snapshots.
@@ -55,9 +56,9 @@ live canvas render and QGIS file; this inventory is explicitly not a blind freez
 
 ## Freeze and validation ledger
 
-No frozen experiment exists. No cave validation data have been acquired.
-Commit and output hashing during exploration do not authorize validation.
-Complete M3 and follow AGENTS.md before creating the first freeze manifest.
+The initial first-session ledger had no frozen experiment or validation data.
+That stage is now superseded by the v002 freeze and public-reference evaluation
+recorded below. The original exploratory run files have not been rewritten.
 
 ## blind_v002 — complementary native feature analysis
 
@@ -84,3 +85,44 @@ or distinguish glacial, talus, vegetation-classification and karst causes.
 No cave probability or confirmed entrance is claimed. Model rankings, alternative
 explanations and uncertainty fields are retained individually for each object.
 Validation will use the predeclared configs/validation_v001.json protocol.
+
+
+## Frozen v002 public-reference evaluation
+
+Initial freeze: implementation 243b730, 163 file hashes; recorded before local
+cave-reference acquisition. See experiments/frozen/blind_v002.json and
+ docs/FREEZE_AUDIT.md. The original freeze is unchanged.
+
+Primary protocol: configs/validation_v001.json. Four public map points have
+unknown accuracy and one contributor; zero accuracy-qualified entrance records.
+A 100 m assumed uncertainty scenario and one historical section-level region
+support exploratory coverage comparisons only. At 10% comparable area, central
+coverage is geology 1/4, terrain 0/4, v001 1/4, native morphology 4/4, combined
+3/4. No 100 m uncertainty region is fully selected at that budget.
+
+A supplemental evaluation audit averages score ties and evaluates 303 rigid
+translations of the full reference pattern while preserving geological evidence
+classes. It is explicitly post-freeze evaluation work, not a change to predictions
+or the primary protocol; no inferential p-values or independent localization
+success are claimed. Complete aggregate results are in docs/VALIDATION_REPORT.md,
+validation_summary.json, historical_validation_summary.json and validation_audit.json.
+
+The private validation project has 39 valid persistent layers. Detailed local
+records are excluded from Git. The current suite has 15 passing tests. M5/M6
+are conditional on stronger reference observations; no supervised model or new
+prospecting region has been presented as validated.
+
+### Final public-source coverage and reporting audit
+
+A full-study OSM API extract returned the same four records as the initial ridge
+subset; import clips the geographic envelope to the projected study bounds.
+The comparison denominator is 1.6684 km² on the 10 m maximum-aggregated geology
+grid, distinct from the native 1 m mask's 1.630497 km². At 10%, 1,668 cells
+(0.1668 km²) are selected. Earlier prose conflated these two resolutions; the
+metrics and frozen model did not change. Area denominators are now explicit in
+the evaluation JSON. A localization eligibility guard additionally requires
+verified source accuracy: assigning a small assumed radius cannot qualify a
+record. None of the present references qualifies, so results are unchanged.
+
+The user permanently prohibits contacting anyone. No outreach was sent; the
+earlier unsent request is withdrawn and further outreach is not an action item.

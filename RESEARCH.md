@@ -61,7 +61,7 @@ Do not equate a filled depression with a sinkhole or a sinkhole with an entrance
 Consider unsupervised terrain clustering only if it provides interpretable,
 measurably different evidence; cluster labels have no intrinsic cave meaning.
 
-## Blind-source record
+## Pre-freeze source record
 
 Only the ridge's exact GNIS feature record was queried for geographic anchoring.
 No local cave descriptions, inventories, photographs, entrance maps or entrance
@@ -69,7 +69,9 @@ coordinates were requested. DNR map-unit descriptions for marble and mixed
 melange were screened automatically before display for sentences mentioning
 caves/entrances. Only lithological text was used. Downloads for modelling use
 an explicit attribute allowlist; arbitrary unit notes and generic point layers
-are excluded. Labeled topographic maps were not inspected. No validation begun.
+are excluded. Labeled topographic maps were not inspected. No validation had
+begun at that stage. Validation sources were acquired only after the v002 freeze;
+see docs/VALIDATION_REPORT.md for the later source-quality assessment.
 
 ## Complementary feature analysis and validation controls (v002)
 
