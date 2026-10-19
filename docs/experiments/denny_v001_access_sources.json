@@ -1,0 +1,32 @@
+[
+  {
+    "path": "data/raw/denny_v001/trailhead.html",
+    "url": "https://www.fs.usda.gov/r06/mbs/recreation/denny-creek-trailhead",
+    "sha256": "bfa60e6f7f79e8af1fa26dc45addc1d07a91e00755c6a037baeff48480dd0a8a",
+    "checked_utc": "2026-10-19T18:38:35.676284+00:00"
+  },
+  {
+    "path": "data/raw/denny_v001/trail.html",
+    "url": "https://www.fs.usda.gov/r06/mbs/recreation/trails/denny-creek-trail-1014",
+    "sha256": "304c717fd26bded4577fd7f77b9512ce20b483c17c9de9e5ef6a18d215acfda7",
+    "checked_utc": "2026-10-19T18:38:37.250798+00:00"
+  },
+  {
+    "path": "data/raw/denny_v001/forest_alerts.html",
+    "url": "https://www.fs.usda.gov/r06/mbs/alerts",
+    "sha256": "cecdffb29f214d780b60daaaf6dc4a68532ce246709217271ac043463f737ff0",
+    "checked_utc": "2026-10-19T18:38:39.046975+00:00"
+  },
+  {
+    "path": "data/raw/denny_v001/alpental_policy.html",
+    "url": "https://www.summitatsnoqualmie.com/uphill-travel-guide",
+    "sha256": "5bab30575d8140a673e76a145c15cb0d853ab609037c19d4809ee447ce066aba",
+    "checked_utc": "2026-10-19T18:38:39.594019+00:00"
+  },
+  {
+    "path": "data/raw/denny_v001/north_bend_roads.html",
+    "url": "https://www.fs.usda.gov/r06/mbs/alerts/road-damages-closures-snoqualmie-district-north-bend-area",
+    "sha256": "c969f80c3cf1a3a4a83cedc003b54aa115a3131d54c7fb8374d1195f10c1f00e",
+    "checked_utc": "2026-10-19T18:48:37.732453+00:00"
+  }
+]

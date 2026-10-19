@@ -1,0 +1,45 @@
+{
+  "experiment_id": "denny_v001_features",
+  "stage": "unvalidated_prospecting_followup",
+  "known_cave_sources_accessed": false,
+  "study_area_km2": 9.0,
+  "surface_indicators": 489,
+  "by_kind": {
+    "depression": {
+      "size_eligible_components": 65,
+      "ranked_quality_and_geology_components": 12
+    },
+    "cliff": {
+      "size_eligible_components": 2070,
+      "ranked_quality_and_geology_components": 477
+    }
+  },
+  "native_qa": {
+    "native_buffered_pixels": 27040000,
+    "native_buffered_missing_pixels": 0,
+    "native_buffered_valid_fraction": 1.0,
+    "native_overlap_sample": {
+      "sampling_stride_m": 10,
+      "n": 9971,
+      "median_difference_m": -0.17034912109375,
+      "p95_absolute_difference_m": 1.01654052734375,
+      "p99_absolute_difference_m": 1.585626244544983
+    },
+    "native_study_missing_pixels": 0,
+    "study_feature_eligible_area_km2": 8.92716,
+    "study_seam_excluded_area_km2": 0.07284,
+    "seam_exclusion_m": 25,
+    "native_year_counts": {
+      "0": 0,
+      "2019": 460062,
+      "2021": 8539938
+    },
+    "source_hash": "9a0373200c3e7cb90185224fe761ce262ea2808b10bf5c8a8ef290bf79e4e75d",
+    "config_hash": "1638fbfd8d74f34b85a199357ab22ee30b752dc6572d57ea953f824a4e1d3a60"
+  },
+  "geological_context_area_km2": 1.494981,
+  "primary_feature_area_km2": 0.08312,
+  "entrances_confirmed": 0,
+  "entrance_detector_claimed": false,
+  "interpretation": "Complementary surface indicators and landscape ranking, not probabilities or confirmed openings"
+}

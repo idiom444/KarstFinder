@@ -1,0 +1,46 @@
+{
+  "method": "GDAL ViewshedGenerate, 10 m bare-earth DEM, 1.7 m observer, ground target, 1500 m range",
+  "target_marble_objectid": 29438,
+  "target_marble_cells_10m": 667,
+  "trail_sample_interval_m": 100,
+  "minimum_station_separation_m": 200,
+  "samples_evaluated": 34,
+  "stations": [
+    {
+      "easting": 616928.9017542744,
+      "northing": 5253294.7745029675,
+      "marble_distance_m": 519.5006680228221,
+      "visible_marble_cells_10m": 606,
+      "modeled_visible_marble_fraction": 0.9085457271364318,
+      "station_id": "OBS-01",
+      "longitude": -121.44969705206334,
+      "latitude": 47.42261717737075,
+      "meaning": "Point ON mapped Denny Creek trail; possible geological observation only. Bare-earth view excludes canopy, snow and weather. Not an entrance, verified viewpoint or off-trail route."
+    },
+    {
+      "easting": 616579.5368261876,
+      "northing": 5253537.18125536,
+      "marble_distance_m": 650.9187390901993,
+      "visible_marble_cells_10m": 601,
+      "modeled_visible_marble_fraction": 0.9010494752623688,
+      "station_id": "OBS-02",
+      "longitude": -121.45426353261,
+      "latitude": 47.42486011545733,
+      "meaning": "Point ON mapped Denny Creek trail; possible geological observation only. Bare-earth view excludes canopy, snow and weather. Not an entrance, verified viewpoint or off-trail route."
+    },
+    {
+      "easting": 617467.1499285063,
+      "northing": 5252561.643391484,
+      "marble_distance_m": 911.4186729372028,
+      "visible_marble_cells_10m": 586,
+      "modeled_visible_marble_fraction": 0.8785607196401799,
+      "station_id": "OBS-03",
+      "longitude": -121.44275789082226,
+      "latitude": 47.41592612019489,
+      "meaning": "Point ON mapped Denny Creek trail; possible geological observation only. Bare-earth view excludes canopy, snow and weather. Not an entrance, verified viewpoint or off-trail route."
+    }
+  ],
+  "ground_only": true,
+  "canopy_visibility_or_entrance_detection_claimed": false,
+  "note": "A terrain viewshed is not proof that rock or entrances are visible through trees, nor that access is currently open."
+}

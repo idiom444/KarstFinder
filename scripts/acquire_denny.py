@@ -88,3 +88,20 @@ records.extend(dict(r, reused_from_frozen_cave_ridge_acquisition=True) for r in 
 manifest = ROOT / cfg['acquisition_manifest']
 manifest.write_text(json.dumps(records, indent=2) + '\n')
 print('Saved acquisition manifest:', manifest.relative_to(ROOT))
+
+policy_urls = {
+    'trailhead': 'https://www.fs.usda.gov/r06/mbs/recreation/denny-creek-trailhead',
+    'trail': 'https://www.fs.usda.gov/r06/mbs/recreation/trails/denny-creek-trail-1014',
+    'forest_alerts': 'https://www.fs.usda.gov/r06/mbs/alerts',
+    'north_bend_roads': 'https://www.fs.usda.gov/r06/mbs/alerts/road-damages-closures-snoqualmie-district-north-bend-area',
+    'alpental_policy': 'https://www.summitatsnoqualmie.com/uphill-travel-guide',
+}
+policies = []
+for name, url in policy_urls.items():
+    path = raw / f'{name}.html'
+    if not path.exists():
+        r = requests.get(url, timeout=60); r.raise_for_status(); path.write_bytes(r.content)
+    policies.append(dict(path=str(path.relative_to(ROOT)), url=url,
+                         sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+                         checked_utc=datetime.now(timezone.utc).isoformat()))
+(ROOT / 'docs/experiments/denny_v001_access_sources.json').write_text(json.dumps(policies, indent=2) + '\n')

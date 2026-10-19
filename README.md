@@ -1,7 +1,7 @@
 # KarstFinder
 
-Reproducible, blind geospatial research into cave-bearing landscapes near Cave
-Ridge, Snoqualmie Pass, Washington. Initial outputs describe **landscape
+Reproducible geospatial research into cave-bearing landscapes near Cave
+Ridge and nearby Denny Mountain, Snoqualmie Pass, Washington. Initial outputs describe **landscape
 hypotheses, not cave locations or probabilities**. Initial predictions were frozen before known local cave references were consulted. Read [PROJECT_STATE.md](PROJECT_STATE.md) before work.
 
 ## Setup on Arch Linux
@@ -125,3 +125,44 @@ Do not regenerate the private GeoPackage while editing its layers in QGIS; save
 and close it first. Reopen the resulting private project after rebuilding it.
 
 ![Aggregate exploratory validation](docs/validation/coverage.png)
+
+## Approved Denny Mountain follow-up
+
+The current working map is the user-approved southern Denny Mountain study.
+Open [qgis/KarstFinder_Denny_v001.qgz](qgis/KarstFinder_Denny_v001.qgz) or
+qgis/KarstFinder.qgz. It contains no known-entrance reference layers.
+[Results and trail observation notes](docs/DENNY_RESULTS.md) describe 48 mapped-
+marble cliff patches, the absence of marble depression cores, and three possible
+observation stations on the official Denny Creek trail. No off-trail approach
+is verified; the GPX contains trail observation waypoints only.
+
+This is unvalidated prospecting, not demonstrated cave prediction. The approved
+9 km² window overlaps the old study edge. Model scales, thresholds and weights
+were transferred unchanged. Public trail/ownership context and GDAL bare-earth
+viewsheds support separate access screening; canopy visibility is unknown.
+
+Reproduction commands below refer to the original build and refuse existing
+analysis directories. Use a separate checkout/data/output tree to replay finalized
+products. Do not delete or overwrite either experiment's retained outputs.
+
+```bash
+.venv/bin/python scripts/acquire_denny.py
+.venv/bin/python scripts/prepare.py --config configs/denny_v001_landscape.json
+.venv/bin/python scripts/run_baseline.py --config configs/denny_v001_landscape.json --output results/denny_v001_landscape
+.venv/bin/python scripts/native_qa.py --config configs/denny_v001_features.json
+.venv/bin/python scripts/derive_features.py --config configs/denny_v001_features.json
+.venv/bin/python scripts/run_features.py --config configs/denny_v001_features.json --output results/denny_v001_features
+.venv/bin/python scripts/screen_denny_access.py
+.venv/bin/python scripts/denny_observation_points.py
+QT_QPA_PLATFORM=offscreen .venv/bin/python scripts/make_denny_project.py
+```
+
+For the independent numerical repeat, run baseline and feature commands with
+`--output results/denny_v001_landscape_repeat` and
+`--output results/denny_v001_features_repeat`, respectively. Also run
+`screen_denny_access.py --output results/denny_v001_access_repeat --report docs/experiments/denny_v001_access_repeat_summary.json`. Then run
+`QT_QPA_PLATFORM=offscreen .venv/bin/python scripts/verify_denny.py`.
+The source paths are configurable in the two Denny configurations; baseline
+script defaults still identify the historical Cave Ridge build.
+
+![Denny Mountain prospecting overview](docs/experiments/denny_v001_map.png)

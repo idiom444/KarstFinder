@@ -1,0 +1,35 @@
+{
+  "landscape": {
+    "identical_raster_arrays": 18,
+    "ranking_csv_byte_identical": true
+  },
+  "features": {
+    "identical_raster_arrays": 13,
+    "ranking_csv_byte_identical": true
+  },
+  "features_geopackage_rows_match_repeat_except_creation_timestamps": true,
+  "access_geopackage_rows_match_repeat_except_creation_timestamps": true,
+  "observation_points_on_official_trail": 3,
+  "access_screen_count": 489,
+  "direct_mapped_marble_cliffs": 48,
+  "project_layers": 28,
+  "fresh_process_vector_counts": {
+    "12 depression cores \u2022 none overlaps mapped marble": 12,
+    "48 cliff patches overlapping mapped marble": 48,
+    "All cliff indicators \u2022 includes uncertain melange/contact context": 477,
+    "All indicators \u2022 geological rank + access flags": 489,
+    "Approved study \u2022 3 \u00d7 3 km": 1,
+    "Mapped contacts \u2022 uncertain": 61,
+    "Mapped faults \u2022 context only": 4,
+    "Mapped marble PMmb(e) \u2022 approximate contacts": 1,
+    "Mixed melange \u2022 carbonate occurrence uncertain": 4,
+    "NON-FS mapped land \u2022 access unresolved": 1,
+    "OBS triangles \u2022 ON mapped trail; canopy visibility unknown": 3,
+    "Official USFS trails \u2022 current conditions still apply": 9,
+    "Top 10 marble priorities \u2022 steep/off-trail; NOT destinations": 10,
+    "USFS mapped ownership \u2022 not a legal boundary": 1
+  },
+  "entrance_reference_layers": 0,
+  "source_hashes_verified": true,
+  "cave_ridge_frozen_hashes_verified": 163
+}

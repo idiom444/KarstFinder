@@ -11,6 +11,7 @@ import numpy as np
 gdal.UseExceptions()
 ap=argparse.ArgumentParser();ap.add_argument('--config',default='configs/blind_v002.json');args=ap.parse_args();cfgpath=ROOT/args.config
 cfg=json.loads(cfgpath.read_text());out=ROOT/cfg.get('feature_processed_dir','data/processed/features_v002');out.mkdir(parents=True,exist_ok=True)
+if (out/'derivatives_manifest.json').exists():raise SystemExit(f'Refusing completed derivative overwrite: {out}')
 processed=ROOT/cfg.get('processed_dir','data/processed')
 source=processed/'dem_1m_buffered.tif';qa=json.loads((out/'qa.json').read_text())
 assert qa['source_hash']==sha(source),'Native source changed; repeat QA with a new version'

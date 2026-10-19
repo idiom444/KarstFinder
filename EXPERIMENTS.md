@@ -126,3 +126,44 @@ record. None of the present references qualifies, so results are unchanged.
 
 The user permanently prohibits contacting anyone. No outreach was sent; the
 earlier unsent request is withdrawn and further outreach is not an action item.
+
+## denny_v001 — approved unvalidated prospecting follow-up
+
+User approved southern Denny Mountain on 2026-10-19. Implementation/config
+checkpoint 684bf9c. Study 9 km²; unchanged 210/610/2010 m landscape scales,
+0.4/0.3/0.3 combined weights, 0.5 m depression threshold and 45° cliff threshold.
+Data and results use separate denny_v001 paths; the original freeze is unchanged.
+
+Landscape selects one 0.0667 km² rasterized marble area (the whole lens), with
+no boundary clipping. Native 1 m coverage is complete; seam exclusion removes
+0.07284 km². Native extraction yields 12 depressions and 477 cliff patches.
+Forty-eight cliff patches intersect mapped marble; no retained depression does.
+These are surface forms, with no cave-detection claim.
+
+Access screening keeps scientific rank unchanged. All marble-cliff representative
+points are 382–560 m straight-line from the official Denny Creek trail, with
+steep nearby ground; zero verified hiking-ready approaches. Three possible
+on-trail observation points were selected from 34 samples using GDAL bare-earth
+viewsheds to the approved Denny marble body only. The initial development
+viewshed also counted a buffered neighboring marble fragment; that evaluation
+was corrected to target polygon 29438, retained separately under ignored
+results/denny_v001_observation_development_01, and never used as cave evidence.
+The terrain-only viewshed omits forest, snow and actual tread alignment.
+
+Independent runs match all 18 landscape and 13 feature raster arrays plus both
+ranking CSVs. All 489 feature geometries/support checks pass. Three OBS points
+are on source trail geometry; the 28-layer project reopens in a fresh process
+with expected counts and no private/reference layers. Fifteen tests pass.
+Final headless generation uses read-only IMMUTABLE GPKG connections to avoid
+transient SQLite reopen errors seen with mutable providers; final build log clean.
+Live QGIS map and native review images were inspected. Mutable provider access
+changed feature/access GeoPackage bytes before finalization; every SQLite table
+row matches an independent repeat except expected creation timestamps. Initial
+run hashes are retained and post-review hashes recorded in the final snapshot.
+See denny_v001_provider_audit.json; no numerical raster or ranking CSV changed.
+
+See docs/DENNY_RESULTS.md and docs/experiments/denny_v001_*.json for complete
+results/provenance. An incidental unopened caving-newsletter search snippet
+appeared during access research and is recorded; no Denny entrance source was
+used in modeling. The area overlaps the old study edge. This is not an
+independent blind holdout or a validated M6 expansion. No outreach occurred.

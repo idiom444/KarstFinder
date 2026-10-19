@@ -113,3 +113,29 @@ central-location coverage, any uncertainty-region overlap and full uncertainty-
 region coverage separately. Descriptive recall/area and Kvamme gains are not
 independent inferential significance tests. Spatial clustering, source accuracy,
 inventory completeness and exploration bias constrain interpretation.
+
+## Approved Denny follow-up and access context
+
+The same numerical methods are applied through configs/denny_v001_*.json to a
+user-approved 9 km² window, with separate raw/prepared/results paths. Defaults
+remain the original Cave Ridge paths. Preparation, native QA, derivative and
+model scripts refuse completed-output overwrites. No detection threshold, weight
+or landscape scale was selected against Denny cave labels. The geographic
+overlap and prior Cave Ridge reference exposure preclude an independent blind
+validation claim.
+
+Access attributes are separate from scientific ranking. OGR distances describe
+straight-line point/geometry gaps to official USFS trails, not paths. USFS basic
+ownership intersections describe mapped ownership only. Flags identify a >50 m
+trail gap, 35° or steeper terrain within 25 m of a representative point, mapped
+talus/slide material, non-FS/unresolved ownership, and cliff objects. The 50 m
+and 35° values are transparent coarse screening choices, not safe-access limits.
+No candidate is declared hiking-ready without an actual verified route.
+
+GDAL ViewshedGenerate evaluates 100 m samples of the mapped Denny Creek trail
+within 1 km of target marble polygon 29438, using the projected 10 m bare-earth
+DEM, observer height 1.7 m, ground target, range 1,500 m, GVM_Edge and curvature
+coefficient 0.85714. Complete DEM coverage is checked before use. The top three
+positive-visibility stations at least 200 m apart are retained. Visibility here
+means modeled bare terrain; it excludes canopy/snow and does not locate
+entrances or verify viewpoints. No off-trail route is generated.

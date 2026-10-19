@@ -26,3 +26,10 @@ entry, excavation, or disturbance is proposed. No outreach is authorized.
 Deliver standard GeoTIFFs/GeoPackages, ranked surface objects, per-object access
 flags, a persistent QGIS project free of known-entrance layers, map previews,
 provenance/hashes, verification and a concise interpretation of practical limits.
+
+An incidental search-engine result for a caving newsletter appeared while
+checking general trail access. It was not opened and no entrance location was
+obtained from it or used in the model. This search exposure is recorded rather
+than asserting a fully blind new experiment. Subsequent searches were restricted
+to land-manager domains. The numerical methods and approved boundary were not
+changed in response to the snippet.

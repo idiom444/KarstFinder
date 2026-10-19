@@ -1,0 +1,17 @@
+{
+  "experiment_id": "denny_v001_landscape",
+  "status": "unvalidated_prospecting_followup",
+  "known_cave_sources_accessed": false,
+  "study_area_km2": 9.0,
+  "eligible_area_km2": 9.0,
+  "mapped_marble_area_km2": 0.0667,
+  "mixed_carbonate_possible_area_km2": 1.427,
+  "threshold_selected_area_km2_before_size_filter": 0.0667,
+  "candidate_area_count": 1,
+  "boundary_clipped_candidate_count": 0,
+  "candidate_area_km2": 0.0667,
+  "candidate_area_fraction_of_study": 0.007411111111111111,
+  "candidate_area_fraction_of_mapped_marble": 1.0,
+  "cave_detection_or_validation_performed": false,
+  "interpretation": "Landscape hypotheses only. No cave existence probabilities."
+}

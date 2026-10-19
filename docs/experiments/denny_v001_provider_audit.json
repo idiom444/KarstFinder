@@ -1,0 +1,20 @@
+{
+  "stage": "Pre-finalization provider audit",
+  "files": [
+    {
+      "path": "results/denny_v001_features/features.gpkg",
+      "initial_run_sha256": "b5443b48ffbedda3dc1d01d3174364fa6bb1086fa397c5dfdf2c3a00b725b4cd",
+      "post_review_sha256": "8dd9925cc7b454ac9d9c539fc93154e49e863904523c1602cd326191a46ed207"
+    },
+    {
+      "path": "results/denny_v001_access/access.gpkg",
+      "initial_run_sha256": "f5e1fa0c1377536ac6f094ad3eff4e23a662bfa6799ae94dc9e138558aaf1c98",
+      "post_review_sha256": "82a3286e9c70d0e3590fdef55d494943555aa5761d1f7c32a5b9122b48870128"
+    }
+  ],
+  "feature_attributes_and_geometry_match_independent_repeat": true,
+  "all_sqlite_table_rows_match_repeat_except_creation_timestamps": true,
+  "explanation": "Initial mutable QGIS provider access changed GeoPackage file bytes before finalization. All table rows compare equal to independent reruns after excluding expected creation timestamps. Original run manifests retain initial hashes; the final snapshot records post-review hashes. Final projects use read-only IMMUTABLE providers.",
+  "raster_arrays_and_ranking_csvs_changed": false,
+  "original_cave_ridge_freeze_changed": false
+}

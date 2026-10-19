@@ -92,3 +92,24 @@ uncertainties; their regional threshold/error estimates are not transferred here
 provides seeded k-means++ initialization. Six terrain clusters are descriptive,
 without cave labels or a presumed favorable class. Reproducibility records the
 seed, sampled training size, standardization and centroids.
+
+## Denny Mountain prospecting and trail observations (2026-10-19)
+
+This user-approved follow-up transfers the existing methods without claiming
+independent validation. Public DNR 24K and 25–99K map-unit count queries return
+zero processing-envelope coverage; the coarse 100K map remains the geological
+constraint. Public USFS trail and basic ownership services provide geometry,
+not legal boundary or safe-route certification. All geological/access acquisition
+requests and hashes are retained separately for Denny.
+
+[GDAL viewshed documentation](https://gdal.org/en/stable/programs/gdal_viewshed.html)
+describes the established Wang et al. (2000) algorithm, projected-CRS requirement,
+observer/target heights and curvature correction. We use it only to identify
+possible observation positions on official trail geometry. Bare-earth terrain
+visibility is not visibility through forest, a verified rock exposure or evidence
+of cave presence. The lack of canopy/snow modeling is material in this setting.
+
+Dated access checks and official source links are summarized in
+[DENNY_RESULTS.md](docs/DENNY_RESULTS.md). Model-led cliff targets remain steep
+and 382–560 m from mapped trails; a geological target is not automatically a
+practical hiking destination. No source custodian was contacted.
