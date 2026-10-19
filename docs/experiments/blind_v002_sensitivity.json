@@ -1,0 +1,98 @@
+[
+  {
+    "min_depth_m": 0.3,
+    "marble_buffer_m": 0,
+    "objects": 102,
+    "area_m2": 5375
+  },
+  {
+    "min_depth_m": 0.3,
+    "marble_buffer_m": 50,
+    "objects": 102,
+    "area_m2": 5375
+  },
+  {
+    "min_depth_m": 0.3,
+    "marble_buffer_m": 100,
+    "objects": 102,
+    "area_m2": 5375
+  },
+  {
+    "min_depth_m": 0.3,
+    "marble_buffer_m": 250,
+    "objects": 103,
+    "area_m2": 5383
+  },
+  {
+    "min_depth_m": 0.5,
+    "marble_buffer_m": 0,
+    "objects": 76,
+    "area_m2": 3246
+  },
+  {
+    "min_depth_m": 0.5,
+    "marble_buffer_m": 50,
+    "objects": 76,
+    "area_m2": 3246
+  },
+  {
+    "min_depth_m": 0.5,
+    "marble_buffer_m": 100,
+    "objects": 76,
+    "area_m2": 3246
+  },
+  {
+    "min_depth_m": 0.5,
+    "marble_buffer_m": 250,
+    "objects": 76,
+    "area_m2": 3246
+  },
+  {
+    "min_depth_m": 1.0,
+    "marble_buffer_m": 0,
+    "objects": 47,
+    "area_m2": 1592
+  },
+  {
+    "min_depth_m": 1.0,
+    "marble_buffer_m": 50,
+    "objects": 47,
+    "area_m2": 1592
+  },
+  {
+    "min_depth_m": 1.0,
+    "marble_buffer_m": 100,
+    "objects": 47,
+    "area_m2": 1592
+  },
+  {
+    "min_depth_m": 1.0,
+    "marble_buffer_m": 250,
+    "objects": 47,
+    "area_m2": 1592
+  },
+  {
+    "min_depth_m": 2.0,
+    "marble_buffer_m": 0,
+    "objects": 23,
+    "area_m2": 654
+  },
+  {
+    "min_depth_m": 2.0,
+    "marble_buffer_m": 50,
+    "objects": 23,
+    "area_m2": 654
+  },
+  {
+    "min_depth_m": 2.0,
+    "marble_buffer_m": 100,
+    "objects": 23,
+    "area_m2": 654
+  },
+  {
+    "min_depth_m": 2.0,
+    "marble_buffer_m": 250,
+    "objects": 23,
+    "area_m2": 654
+  }
+]

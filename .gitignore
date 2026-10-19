@@ -14,3 +14,5 @@ qgis/*.qgz~
 !qgis/KarstFinder.qgz
 
 !qgis/KarstFinder_Blind_v001.qgz
+
+!qgis/KarstFinder_Blind_v002.qgz

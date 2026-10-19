@@ -69,3 +69,27 @@ requires an independent high-resolution feature detector before any final blind
 freeze. Validation, supervised learning and geographic expansion come later.
 
 ![Exploratory blind landscape map](docs/experiments/blind_v001_map.png)
+
+## Complementary native analysis
+
+The continuation adds independent closed-depression and cliff/outcrop indicators,
+a combined ranking, descriptive terrain clustering and survey-seam controls:
+
+```bash
+.venv/bin/python scripts/native_qa.py
+.venv/bin/python scripts/derive_features.py
+.venv/bin/python scripts/run_features.py
+QT_QPA_PLATFORM=offscreen .venv/bin/python scripts/feature_project.py
+.venv/bin/python scripts/verify_features.py
+```
+
+These commands describe the original blind build. **Do not overwrite frozen
+input/output directories when reproducing or improving a completed experiment.**
+Use a separate checkout/data/output tree for later experiments. Baseline and v002
+QGIS review projects are retained as `qgis/KarstFinder_Blind_v001.qgz` and
+`qgis/KarstFinder_Blind_v002.qgz`; `qgis/KarstFinder.qgz` is the active review copy.
+Known-cave reference data and detailed validation remain ignored under
+`data/private/validation/`. The validator refuses to read them without verifying
+the immutable freeze manifest first.
+
+![Complementary blind surface evidence](docs/experiments/blind_v002_map.png)

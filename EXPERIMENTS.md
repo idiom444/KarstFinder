@@ -58,3 +58,29 @@ live canvas render and QGIS file; this inventory is explicitly not a blind freez
 No frozen experiment exists. No cave validation data have been acquired.
 Commit and output hashing during exploration do not authorize validation.
 Complete M3 and follow AGENTS.md before creating the first freeze manifest.
+
+## blind_v002 — complementary native feature analysis
+
+Blind numerical implementation: `bc64030`. Outputs are in results/blind_v002.
+The candidate map is finalized before independent local cave sources are read.
+The separate freeze record will identify its final implementation/archive commit.
+
+- 76 depression cores and 520 cliff exposures: 596 unverified surface indicators.
+- Geological/contact context area: 1.630497 km². Native surface morphology area:
+  0.102971 km², before any tolerance buffers or area-budget comparisons.
+- Exact native survey provenance and 25 m seam exclusion; no missing native cells.
+- Depth-threshold sensitivity 0.3/0.5/1/2 m: 102/76/47/23 objects with unbuffered
+  carbonate/melange support. Counts alone do not measure prediction skill.
+- Six seeded terrain classes, purely descriptive, with centroids retained.
+- Thirteen tests pass, including known flat basin/open outlet, score masks and
+  area-budget/uncertainty metrics. Artifact checks verify all 596 geometries,
+  point containment and geological/quality support.
+- Independent execution reproduced all 13 v002 raster arrays and byte-identical
+  indicator rankings. QGIS reopened with 36 valid local layers and two layouts;
+  independent provider reads found 76 depression, 520 cliff and 596 point records.
+
+Top-ranked native DEM reviews show surface relief but do not identify openings
+or distinguish glacial, talus, vegetation-classification and karst causes.
+No cave probability or confirmed entrance is claimed. Model rankings, alternative
+explanations and uncertainty fields are retained individually for each object.
+Validation will use the predeclared configs/validation_v001.json protocol.
