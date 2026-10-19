@@ -1,0 +1,104 @@
+{
+  "ping": {
+    "status": "success",
+    "result": {
+      "pong": true
+    }
+  },
+  "get_qgis_info": {
+    "status": "success",
+    "result": {
+      "qgis_version": "4.2.2-Bel\u00e9m do Par\u00e1",
+      "profile_folder": "/home/Idiom/.local/share/QGIS/QGIS4/profiles/default/",
+      "plugins_count": 5,
+      "pid": 303851,
+      "window_title": "*Untitled Project \u2014 QGIS"
+    }
+  },
+  "get_project_info": {
+    "status": "success",
+    "result": {
+      "filename": "",
+      "title": "",
+      "layer_count": 2,
+      "crs": "EPSG:3857",
+      "layers": [
+        {
+          "id": "Bare_Earth_Hillshade__Default_Sun_Angle__719022c1_0d5f_4377_85b5_d030c46cf60d",
+          "name": "Bare Earth Hillshade (Default Sun Angle)",
+          "type": "raster",
+          "visible": false
+        },
+        {
+          "id": "USGSTopo_34dde506_5d73_44dc_909c_80b5d4ee16be",
+          "name": "USGSTopo",
+          "type": "raster",
+          "visible": true
+        }
+      ],
+      "layers_truncated": false
+    }
+  },
+  "get_processing_providers": {
+    "status": "success",
+    "result": {
+      "providers": [
+        {
+          "id": "3d",
+          "name": "QGIS (3D)",
+          "algorithm_count": 1,
+          "active": true
+        },
+        {
+          "id": "gdal",
+          "name": "GDAL",
+          "algorithm_count": 59,
+          "active": true
+        },
+        {
+          "id": "grass",
+          "name": "GRASS",
+          "algorithm_count": 307,
+          "active": true
+        },
+        {
+          "id": "model",
+          "name": "Models",
+          "algorithm_count": 0,
+          "active": true
+        },
+        {
+          "id": "native",
+          "name": "QGIS (native c++)",
+          "algorithm_count": 350,
+          "active": true
+        },
+        {
+          "id": "pdal",
+          "name": "QGIS (PDAL)",
+          "algorithm_count": 24,
+          "active": true
+        },
+        {
+          "id": "project",
+          "name": "Project models",
+          "algorithm_count": 0,
+          "active": true
+        },
+        {
+          "id": "qgis",
+          "name": "QGIS",
+          "algorithm_count": 31,
+          "active": true
+        },
+        {
+          "id": "script",
+          "name": "Scripts",
+          "algorithm_count": 0,
+          "active": true
+        }
+      ],
+      "count": 9
+    }
+  }
+}

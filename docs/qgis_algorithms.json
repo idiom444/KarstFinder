@@ -1,0 +1,3868 @@
+{
+  "status": "success",
+  "result": {
+    "algorithms": [
+      {
+        "id": "3d:tessellate",
+        "name": "Tessellate",
+        "provider": "3d"
+      },
+      {
+        "id": "gdal:aspect",
+        "name": "Aspect",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:assignprojection",
+        "name": "Assign projection",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:buffervectors",
+        "name": "Buffer vectors",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:buildvirtualraster",
+        "name": "Build virtual raster",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:buildvirtualvector",
+        "name": "Build virtual vector",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:cliprasterbyextent",
+        "name": "Clip raster by extent",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:cliprasterbymasklayer",
+        "name": "Clip raster by mask layer",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:clipvectorbyextent",
+        "name": "Clip vector by extent",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:clipvectorbypolygon",
+        "name": "Clip vector by mask layer",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:colorrelief",
+        "name": "Color relief",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:contour",
+        "name": "Contour",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:contour_polygon",
+        "name": "Contour Polygons",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:convertformat",
+        "name": "Convert format",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:createcog",
+        "name": "Create Cloud Optimized GeoTIFF",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:dataset_identify",
+        "name": "Dataset identification",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:dissolve",
+        "name": "Dissolve",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:executesql",
+        "name": "Execute SQL",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:extractprojection",
+        "name": "Extract projection",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:fillnodata",
+        "name": "Fill NoData",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gdal2tiles",
+        "name": "gdal2tiles",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gdal2xyz",
+        "name": "gdal2xyz",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gdalinfo",
+        "name": "Raster information",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gridaverage",
+        "name": "Grid (Moving average)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:griddatametrics",
+        "name": "Grid (Data metrics)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gridinversedistance",
+        "name": "Grid (Inverse distance to a power)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gridinversedistancenearestneighbor",
+        "name": "Grid (IDW with nearest neighbor searching)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gridlinear",
+        "name": "Grid (Linear)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:gridnearestneighbor",
+        "name": "Grid (Nearest neighbor)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:hillshade",
+        "name": "Hillshade",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:importvectorintopostgisdatabaseavailableconnections",
+        "name": "Export to PostgreSQL (available connections)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:importvectorintopostgisdatabasenewconnection",
+        "name": "Export to PostgreSQL (new connection)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:merge",
+        "name": "Merge",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:nearblack",
+        "name": "Near black",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:offsetcurve",
+        "name": "Offset curve",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:ogrinfo",
+        "name": "Vector information",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:ogrinfojson",
+        "name": "Vector information (JSON)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:onesidebuffer",
+        "name": "One side buffer",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:overviews",
+        "name": "Build overviews (pyramids)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:pansharp",
+        "name": "Pansharpening",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:pcttorgb",
+        "name": "PCT to RGB",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:pointsalonglines",
+        "name": "Points along lines",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:polygonize",
+        "name": "Polygonize (raster to vector)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:proximity",
+        "name": "Proximity (raster distance)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:rastercalculator",
+        "name": "Raster calculator",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:rasterize",
+        "name": "Rasterize (vector to raster)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:rasterize_over",
+        "name": "Rasterize (overwrite with attribute)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:rasterize_over_fixed_value",
+        "name": "Rasterize (overwrite with fixed value)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:rearrange_bands",
+        "name": "Rearrange bands",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:retile",
+        "name": "Retile",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:rgbtopct",
+        "name": "RGB to PCT",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:roughness",
+        "name": "Roughness",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:sieve",
+        "name": "Sieve",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:slope",
+        "name": "Slope",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:tileindex",
+        "name": "Tile index",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:tpitopographicpositionindex",
+        "name": "Topographic Position Index (TPI)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:translate",
+        "name": "Translate (convert format)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:triterrainruggednessindex",
+        "name": "Terrain Ruggedness Index (TRI)",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:viewshed",
+        "name": "Viewshed",
+        "provider": "gdal"
+      },
+      {
+        "id": "gdal:warpreproject",
+        "name": "Warp (reproject)",
+        "provider": "gdal"
+      },
+      {
+        "id": "grass:g.extension.list",
+        "name": "g.extension.list",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:g.extension.manage",
+        "name": "g.extension.manage",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:g.version",
+        "name": "g.version",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.albedo",
+        "name": "i.albedo",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.aster.toar",
+        "name": "i.aster.toar",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.atcorr",
+        "name": "i.atcorr",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.biomass",
+        "name": "i.biomass",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.cca",
+        "name": "i.cca",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.cluster",
+        "name": "i.cluster",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.colors.enhance",
+        "name": "i.colors.enhance",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.eb.eta",
+        "name": "i.eb.eta",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.eb.evapfr",
+        "name": "i.eb.evapfr",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.eb.hsebal01.coords",
+        "name": "i.eb.hsebal01.coords",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.eb.netrad",
+        "name": "i.eb.netrad",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.eb.soilheatflux",
+        "name": "i.eb.soilheatflux",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.emissivity",
+        "name": "i.emissivity",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.evapo.mh",
+        "name": "i.evapo.mh",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.evapo.pm",
+        "name": "i.evapo.pm",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.evapo.pt",
+        "name": "i.evapo.pt",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.evapo.time",
+        "name": "i.evapo.time",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.fft",
+        "name": "i.fft",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.gensig",
+        "name": "i.gensig",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.gensigset",
+        "name": "i.gensigset",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.group",
+        "name": "i.group",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.his.rgb",
+        "name": "i.his.rgb",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.ifft",
+        "name": "i.ifft",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.image.mosaic",
+        "name": "i.image.mosaic",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.in.spotvgt",
+        "name": "i.in.spotvgt",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.landsat.acca",
+        "name": "i.landsat.acca",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.landsat.toar",
+        "name": "i.landsat.toar",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.maxlik",
+        "name": "i.maxlik",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.modis.qc",
+        "name": "i.modis.qc",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.oif",
+        "name": "i.oif",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.pansharpen",
+        "name": "i.pansharpen",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.pca",
+        "name": "i.pca",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.rgb.his",
+        "name": "i.rgb.his",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.segment",
+        "name": "i.segment",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.smap",
+        "name": "i.smap",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.tasscap",
+        "name": "i.tasscap",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.topo.coor.ill",
+        "name": "i.topo.coor.ill",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.topo.corr",
+        "name": "i.topo.corr",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.vi",
+        "name": "i.vi",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:i.zc",
+        "name": "i.zc",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:m.cogo",
+        "name": "m.cogo",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:nviz",
+        "name": "nviz",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.basins.fill",
+        "name": "r.basins.fill",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.blend.combine",
+        "name": "r.blend.combine",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.blend.rgb",
+        "name": "r.blend.rgb",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.buffer",
+        "name": "r.buffer",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.buffer.lowmem",
+        "name": "r.buffer.lowmem",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.carve",
+        "name": "r.carve",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.category",
+        "name": "r.category",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.category.out",
+        "name": "r.category.out",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.circle",
+        "name": "r.circle",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.clump",
+        "name": "r.clump",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.coin",
+        "name": "r.coin",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.colors",
+        "name": "r.colors",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.colors.out",
+        "name": "r.colors.out",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.colors.stddev",
+        "name": "r.colors.stddev",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.composite",
+        "name": "r.composite",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.contour",
+        "name": "r.contour",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.cost",
+        "name": "r.cost",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.covar",
+        "name": "r.covar",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.cross",
+        "name": "r.cross",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.describe",
+        "name": "r.describe",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.distance",
+        "name": "r.distance",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.drain",
+        "name": "r.drain",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.fill.dir",
+        "name": "r.fill.dir",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.fill.stats",
+        "name": "r.fill.stats",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.fillnulls",
+        "name": "r.fillnulls",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.flow",
+        "name": "r.flow",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.geomorphon",
+        "name": "r.geomorphon",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.grow",
+        "name": "r.grow",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.grow.distance",
+        "name": "r.grow.distance",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.gwflow",
+        "name": "r.gwflow",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.his",
+        "name": "r.his",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.horizon",
+        "name": "r.horizon",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.horizon.height",
+        "name": "r.horizon.height",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.in.lidar",
+        "name": "r.in.lidar",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.in.lidar.info",
+        "name": "r.in.lidar.info",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.info",
+        "name": "r.info",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.kappa",
+        "name": "r.kappa",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.lake",
+        "name": "r.lake",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.latlong",
+        "name": "r.latlong",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.cwed",
+        "name": "r.li.cwed",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.cwed.ascii",
+        "name": "r.li.cwed.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.dominance",
+        "name": "r.li.dominance",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.dominance.ascii",
+        "name": "r.li.dominance.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.edgedensity",
+        "name": "r.li.edgedensity",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.edgedensity.ascii",
+        "name": "r.li.edgedensity.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.mpa",
+        "name": "r.li.mpa",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.mpa.ascii",
+        "name": "r.li.mpa.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.mps",
+        "name": "r.li.mps",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.mps.ascii",
+        "name": "r.li.mps.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.padcv",
+        "name": "r.li.padcv",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.padcv.ascii",
+        "name": "r.li.padcv.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.padrange",
+        "name": "r.li.padrange",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.padrange.ascii",
+        "name": "r.li.padrange.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.padsd",
+        "name": "r.li.padsd",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.padsd.ascii",
+        "name": "r.li.padsd.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.patchdensity",
+        "name": "r.li.patchdensity",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.patchdensity.ascii",
+        "name": "r.li.patchdensity.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.patchnum",
+        "name": "r.li.patchnum",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.patchnum.ascii",
+        "name": "r.li.patchnum.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.pielou",
+        "name": "r.li.pielou",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.pielou.ascii",
+        "name": "r.li.pielou.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.renyi",
+        "name": "r.li.renyi",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.renyi.ascii",
+        "name": "r.li.renyi.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.richness",
+        "name": "r.li.richness",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.richness.ascii",
+        "name": "r.li.richness.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.shannon",
+        "name": "r.li.shannon",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.shannon.ascii",
+        "name": "r.li.shannon.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.shape",
+        "name": "r.li.shape",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.shape.ascii",
+        "name": "r.li.shape.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.simpson",
+        "name": "r.li.simpson",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.li.simpson.ascii",
+        "name": "r.li.simpson.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.mapcalc.simple",
+        "name": "r.mapcalc.simple",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.mask.rast",
+        "name": "r.mask.rast",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.mask.vect",
+        "name": "r.mask.vect",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.mfilter",
+        "name": "r.mfilter",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.mode",
+        "name": "r.mode",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.neighbors",
+        "name": "r.neighbors",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.null",
+        "name": "r.null",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.ascii",
+        "name": "r.out.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.gridatb",
+        "name": "r.out.gridatb",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.mat",
+        "name": "r.out.mat",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.mpeg",
+        "name": "r.out.mpeg",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.png",
+        "name": "r.out.png",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.pov",
+        "name": "r.out.pov",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.ppm",
+        "name": "r.out.ppm",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.ppm3",
+        "name": "r.out.ppm3",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.vrml",
+        "name": "r.out.vrml",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.vtk",
+        "name": "r.out.vtk",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.out.xyz",
+        "name": "r.out.xyz",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.param.scale",
+        "name": "r.param.scale",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.patch",
+        "name": "r.patch",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.path",
+        "name": "r.path",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.path.coordinate.txt",
+        "name": "r.path.coordinate.txt",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.plane",
+        "name": "r.plane",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.profile",
+        "name": "r.profile",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.proj",
+        "name": "r.proj",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.quant",
+        "name": "r.quant",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.quantile",
+        "name": "r.quantile",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.quantile.plain",
+        "name": "r.quantile.plain",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.random",
+        "name": "r.random",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.random.cells",
+        "name": "r.random.cells",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.random.surface",
+        "name": "r.random.surface",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.reclass",
+        "name": "r.reclass",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.reclass.area",
+        "name": "r.reclass.area",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.recode",
+        "name": "r.recode",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.regression.line",
+        "name": "r.regression.line",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.regression.multi",
+        "name": "r.regression.multi",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.relief",
+        "name": "r.relief",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.relief.scaling",
+        "name": "r.relief.scaling",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.report",
+        "name": "r.report",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.resamp.bspline",
+        "name": "r.resamp.bspline",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.resamp.filter",
+        "name": "r.resamp.filter",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.resamp.interp",
+        "name": "r.resamp.interp",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.resamp.rst",
+        "name": "r.resamp.rst",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.resamp.stats",
+        "name": "r.resamp.stats",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.resample",
+        "name": "r.resample",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.rescale",
+        "name": "r.rescale",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.rescale.eq",
+        "name": "r.rescale.eq",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.rgb",
+        "name": "r.rgb",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.ros",
+        "name": "r.ros",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.series",
+        "name": "r.series",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.series.accumulate",
+        "name": "r.series.accumulate",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.series.interp",
+        "name": "r.series.interp",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.shade",
+        "name": "r.shade",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.sim.sediment",
+        "name": "r.sim.sediment",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.sim.water",
+        "name": "r.sim.water",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.slope.aspect",
+        "name": "r.slope.aspect",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.solute.transport",
+        "name": "r.solute.transport",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.spread",
+        "name": "r.spread",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.spreadpath",
+        "name": "r.spreadpath",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.statistics",
+        "name": "r.statistics",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.stats",
+        "name": "r.stats",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.stats.quantile.out",
+        "name": "r.stats.quantile.out",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.stats.quantile.rast",
+        "name": "r.stats.quantile.rast",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.stats.zonal",
+        "name": "r.stats.zonal",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.stream.extract",
+        "name": "r.stream.extract",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.sun.incidout",
+        "name": "r.sun.incidout",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.sun.insoltime",
+        "name": "r.sun.insoltime",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.sunhours",
+        "name": "r.sunhours",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.sunmask.datetime",
+        "name": "r.sunmask.datetime",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.sunmask.position",
+        "name": "r.sunmask.position",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.surf.area",
+        "name": "r.surf.area",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.surf.contour",
+        "name": "r.surf.contour",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.surf.fractal",
+        "name": "r.surf.fractal",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.surf.gauss",
+        "name": "r.surf.gauss",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.surf.idw",
+        "name": "r.surf.idw",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.surf.random",
+        "name": "r.surf.random",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.terraflow",
+        "name": "r.terraflow",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.texture",
+        "name": "r.texture",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.thin",
+        "name": "r.thin",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.tile",
+        "name": "r.tile",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.tileset",
+        "name": "r.tileset",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.to.vect",
+        "name": "r.to.vect",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.topidx",
+        "name": "r.topidx",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.topmodel",
+        "name": "r.topmodel",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.topmodel.topidxstats",
+        "name": "r.topmodel.topidxstats",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.transect",
+        "name": "r.transect",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.univar",
+        "name": "r.univar",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.uslek",
+        "name": "r.uslek",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.usler",
+        "name": "r.usler",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.viewshed",
+        "name": "r.viewshed",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.volume",
+        "name": "r.volume",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.walk.coords",
+        "name": "r.walk.coords",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.walk.points",
+        "name": "r.walk.points",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.walk.rast",
+        "name": "r.walk.rast",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.water.outlet",
+        "name": "r.water.outlet",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.watershed",
+        "name": "r.watershed",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.what.color",
+        "name": "r.what.color",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.what.coords",
+        "name": "r.what.coords",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:r.what.points",
+        "name": "r.what.points",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.buffer",
+        "name": "v.buffer",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.build.check",
+        "name": "v.build.check",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.build.polylines",
+        "name": "v.build.polylines",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.class",
+        "name": "v.class",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.clean",
+        "name": "v.clean",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.cluster",
+        "name": "v.cluster",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.db.select",
+        "name": "v.db.select",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.decimate",
+        "name": "v.decimate",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.delaunay",
+        "name": "v.delaunay",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.dissolve",
+        "name": "v.dissolve",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.distance",
+        "name": "v.distance",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.drape",
+        "name": "v.drape",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.edit",
+        "name": "v.edit",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.extract",
+        "name": "v.extract",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.extrude",
+        "name": "v.extrude",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.generalize",
+        "name": "v.generalize",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.hull",
+        "name": "v.hull",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.ascii",
+        "name": "v.in.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.dxf",
+        "name": "v.in.dxf",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.e00",
+        "name": "v.in.e00",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.geonames",
+        "name": "v.in.geonames",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.lidar",
+        "name": "v.in.lidar",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.lines",
+        "name": "v.in.lines",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.mapgen",
+        "name": "v.in.mapgen",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.in.wfs",
+        "name": "v.in.wfs",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.info",
+        "name": "v.info",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.kcv",
+        "name": "v.kcv",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.kernel.rast",
+        "name": "v.kernel.rast",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.kernel.vector",
+        "name": "v.kernel.vector",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.lidar.correction",
+        "name": "v.lidar.correction",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.lidar.edgedetection",
+        "name": "v.lidar.edgedetection",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.lidar.growing",
+        "name": "v.lidar.growing",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.mkgrid",
+        "name": "v.mkgrid",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.neighbors",
+        "name": "v.neighbors",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net",
+        "name": "v.net",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.alloc",
+        "name": "v.net.alloc",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.allpairs",
+        "name": "v.net.allpairs",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.bridge",
+        "name": "v.net.bridge",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.centrality",
+        "name": "v.net.centrality",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.components",
+        "name": "v.net.components",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.connectivity",
+        "name": "v.net.connectivity",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.distance",
+        "name": "v.net.distance",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.flow",
+        "name": "v.net.flow",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.iso",
+        "name": "v.net.iso",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.nreport",
+        "name": "v.net.nreport",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.path",
+        "name": "v.net.path",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.report",
+        "name": "v.net.report",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.salesman",
+        "name": "v.net.salesman",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.spanningtree",
+        "name": "v.net.spanningtree",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.steiner",
+        "name": "v.net.steiner",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.timetable",
+        "name": "v.net.timetable",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.net.visibility",
+        "name": "v.net.visibility",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.normal",
+        "name": "v.normal",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.out.ascii",
+        "name": "v.out.ascii",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.out.dxf",
+        "name": "v.out.dxf",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.out.postgis",
+        "name": "v.out.postgis",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.out.pov",
+        "name": "v.out.pov",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.out.svg",
+        "name": "v.out.svg",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.out.vtk",
+        "name": "v.out.vtk",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.outlier",
+        "name": "v.outlier",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.overlay",
+        "name": "v.overlay",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.pack",
+        "name": "v.pack",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.parallel",
+        "name": "v.parallel",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.patch",
+        "name": "v.patch",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.perturb",
+        "name": "v.perturb",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.proj",
+        "name": "v.proj",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.qcount",
+        "name": "v.qcount",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.random",
+        "name": "v.random",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.rast.stats",
+        "name": "v.rast.stats",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.reclass",
+        "name": "v.reclass",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.rectify",
+        "name": "v.rectify",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.report",
+        "name": "v.report",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.sample",
+        "name": "v.sample",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.segment",
+        "name": "v.segment",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.select",
+        "name": "v.select",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.split",
+        "name": "v.split",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.surf.bspline",
+        "name": "v.surf.bspline",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.surf.idw",
+        "name": "v.surf.idw",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.surf.rst",
+        "name": "v.surf.rst",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.surf.rst.cvdev",
+        "name": "v.surf.rst.cvdev",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.to.3d",
+        "name": "v.to.3d",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.to.lines",
+        "name": "v.to.lines",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.to.points",
+        "name": "v.to.points",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.to.rast",
+        "name": "v.to.rast",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.transform",
+        "name": "v.transform",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.type",
+        "name": "v.type",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.univar",
+        "name": "v.univar",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.vect.stats",
+        "name": "v.vect.stats",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.voronoi",
+        "name": "v.voronoi",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.voronoi.skeleton",
+        "name": "v.voronoi.skeleton",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.what.rast",
+        "name": "v.what.rast",
+        "provider": "grass"
+      },
+      {
+        "id": "grass:v.what.vect",
+        "name": "v.what.vect",
+        "provider": "grass"
+      },
+      {
+        "id": "native:addautoincrementalfield",
+        "name": "Add autoincremental field",
+        "provider": "native"
+      },
+      {
+        "id": "native:addfieldtoattributestable",
+        "name": "Add field to attributes table",
+        "provider": "native"
+      },
+      {
+        "id": "native:addhistorymetadata",
+        "name": "Add history metadata",
+        "provider": "native"
+      },
+      {
+        "id": "native:adduniquevalueindexfield",
+        "name": "Add unique value index field",
+        "provider": "native"
+      },
+      {
+        "id": "native:addxyfields",
+        "name": "Add X/Y fields to layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:affinetransform",
+        "name": "Affine transform",
+        "provider": "native"
+      },
+      {
+        "id": "native:aggregate",
+        "name": "Aggregate",
+        "provider": "native"
+      },
+      {
+        "id": "native:alignrasters",
+        "name": "Align rasters",
+        "provider": "native"
+      },
+      {
+        "id": "native:alignsingleraster",
+        "name": "Align raster",
+        "provider": "native"
+      },
+      {
+        "id": "native:angletonearest",
+        "name": "Align points to features",
+        "provider": "native"
+      },
+      {
+        "id": "native:antimeridiansplit",
+        "name": "Geodesic line split at antimeridian",
+        "provider": "native"
+      },
+      {
+        "id": "native:approximatemedialaxis",
+        "name": "Approximate medial axis",
+        "provider": "native"
+      },
+      {
+        "id": "native:arrayoffsetlines",
+        "name": "Array of offset (parallel) lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:arraytranslatedfeatures",
+        "name": "Array of translated features",
+        "provider": "native"
+      },
+      {
+        "id": "native:aspect",
+        "name": "Aspect",
+        "provider": "native"
+      },
+      {
+        "id": "native:assignprojection",
+        "name": "Assign projection",
+        "provider": "native"
+      },
+      {
+        "id": "native:atlaslayouttoimage",
+        "name": "Export atlas layout as image",
+        "provider": "native"
+      },
+      {
+        "id": "native:atlaslayouttomultiplepdf",
+        "name": "Export atlas layout as PDF (multiple files)",
+        "provider": "native"
+      },
+      {
+        "id": "native:atlaslayouttopdf",
+        "name": "Export atlas layout as PDF (single file)",
+        "provider": "native"
+      },
+      {
+        "id": "native:b3dmtogltf",
+        "name": "Convert B3DM to GLTF",
+        "provider": "native"
+      },
+      {
+        "id": "native:basicstatisticsforfields",
+        "name": "Basic statistics for fields",
+        "provider": "native"
+      },
+      {
+        "id": "native:batchnominatimgeocoder",
+        "name": "Batch Nominatim geocoder",
+        "provider": "native"
+      },
+      {
+        "id": "native:bookmarkstolayer",
+        "name": "Convert spatial bookmarks to layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:boundary",
+        "name": "Boundary",
+        "provider": "native"
+      },
+      {
+        "id": "native:boundingboxes",
+        "name": "Bounding boxes",
+        "provider": "native"
+      },
+      {
+        "id": "native:buffer",
+        "name": "Buffer",
+        "provider": "native"
+      },
+      {
+        "id": "native:bufferbym",
+        "name": "Variable width buffer (by M value)",
+        "provider": "native"
+      },
+      {
+        "id": "native:calculateexpression",
+        "name": "Calculate expression",
+        "provider": "native"
+      },
+      {
+        "id": "native:calculatevectoroverlaps",
+        "name": "Overlap analysis",
+        "provider": "native"
+      },
+      {
+        "id": "native:categorizeusingstyle",
+        "name": "Create categorized renderer from styles",
+        "provider": "native"
+      },
+      {
+        "id": "native:cellstackpercentile",
+        "name": "Cell stack percentile",
+        "provider": "native"
+      },
+      {
+        "id": "native:cellstackpercentrankfromrasterlayer",
+        "name": "Cell stack percentrank from raster layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:cellstackpercentrankfromvalue",
+        "name": "Cell stack percent rank from value",
+        "provider": "native"
+      },
+      {
+        "id": "native:cellstatistics",
+        "name": "Cell statistics",
+        "provider": "native"
+      },
+      {
+        "id": "native:centroids",
+        "name": "Centroids",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryangle",
+        "name": "Small angles",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryarea",
+        "name": "Small polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrycontained",
+        "name": "Features inside polygon",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrydangle",
+        "name": "Dangle-end lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrydegeneratepolygon",
+        "name": "Degenerate polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryduplicate",
+        "name": "Duplicated geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryduplicatenodes",
+        "name": "Duplicated vertices",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryfollowboundaries",
+        "name": "Polygons exceeding boundaries",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrygap",
+        "name": "Small gaps",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryhole",
+        "name": "Holes",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrylineintersection",
+        "name": "Lines intersecting each other",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrylinelayerintersection",
+        "name": "Lines intersecting other layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrymissingvertex",
+        "name": "Missing vertices along borders",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrymultipart",
+        "name": "Strictly multipart",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryoverlap",
+        "name": "Overlaps",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrypointcoveredbyline",
+        "name": "Points outside lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrypointinpolygon",
+        "name": "Points outside polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrysegmentlength",
+        "name": "Small segments",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryselfcontact",
+        "name": "Self-contacts",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometryselfintersection",
+        "name": "Self-intersections",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkgeometrysliverpolygon",
+        "name": "Sliver polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:checkvalidity",
+        "name": "Check validity",
+        "provider": "native"
+      },
+      {
+        "id": "native:climbalongline",
+        "name": "Climb along line",
+        "provider": "native"
+      },
+      {
+        "id": "native:clip",
+        "name": "Clip",
+        "provider": "native"
+      },
+      {
+        "id": "native:collect",
+        "name": "Collect geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:combinestyles",
+        "name": "Combine style databases",
+        "provider": "native"
+      },
+      {
+        "id": "native:concavehull",
+        "name": "Concave hull (by layer)",
+        "provider": "native"
+      },
+      {
+        "id": "native:concavehullbyfeature",
+        "name": "Concave hull (by feature)",
+        "provider": "native"
+      },
+      {
+        "id": "native:condition",
+        "name": "Conditional branch",
+        "provider": "native"
+      },
+      {
+        "id": "native:convertgeometrytype",
+        "name": "Convert geometry type",
+        "provider": "native"
+      },
+      {
+        "id": "native:convertgpsdata",
+        "name": "Convert GPS data",
+        "provider": "native"
+      },
+      {
+        "id": "native:convertgpxfeaturetype",
+        "name": "Convert GPX feature type",
+        "provider": "native"
+      },
+      {
+        "id": "native:converttocurves",
+        "name": "Convert to curved geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:convexhull",
+        "name": "Convex hull",
+        "provider": "native"
+      },
+      {
+        "id": "native:copylayermetadata",
+        "name": "Copy layer metadata",
+        "provider": "native"
+      },
+      {
+        "id": "native:countpointsinpolygon",
+        "name": "Count points in polygon",
+        "provider": "native"
+      },
+      {
+        "id": "native:coveragesimplify",
+        "name": "Simplify coverage",
+        "provider": "native"
+      },
+      {
+        "id": "native:coverageunion",
+        "name": "Dissolve coverage",
+        "provider": "native"
+      },
+      {
+        "id": "native:coveragevalidate",
+        "name": "Validate coverage",
+        "provider": "native"
+      },
+      {
+        "id": "native:createattributeindex",
+        "name": "Create attribute index",
+        "provider": "native"
+      },
+      {
+        "id": "native:createconstantrasterlayer",
+        "name": "Create constant raster layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:createdirectory",
+        "name": "Create directory",
+        "provider": "native"
+      },
+      {
+        "id": "native:creategrid",
+        "name": "Create grid",
+        "provider": "native"
+      },
+      {
+        "id": "native:createpointslayerfromtable",
+        "name": "Create points layer from table",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandombinomialrasterlayer",
+        "name": "Create random raster layer (binomial distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandomexponentialrasterlayer",
+        "name": "Create random raster layer (exponential distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandomgammarasterlayer",
+        "name": "Create random raster layer (gamma distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandomgeometricrasterlayer",
+        "name": "Create random raster layer (geometric distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandomnegativebinomialrasterlayer",
+        "name": "Create random raster layer (negative binomial distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandomnormalrasterlayer",
+        "name": "Create random raster layer (normal distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandompoissonrasterlayer",
+        "name": "Create random raster layer (poisson distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createrandomuniformrasterlayer",
+        "name": "Create random raster layer (uniform distribution)",
+        "provider": "native"
+      },
+      {
+        "id": "native:createspatialindex",
+        "name": "Create spatial index",
+        "provider": "native"
+      },
+      {
+        "id": "native:dbscanclustering",
+        "name": "DBSCAN clustering",
+        "provider": "native"
+      },
+      {
+        "id": "native:definecurrentprojection",
+        "name": "Define projection",
+        "provider": "native"
+      },
+      {
+        "id": "native:delaunaytriangulation",
+        "name": "Delaunay triangulation",
+        "provider": "native"
+      },
+      {
+        "id": "native:deletecolumn",
+        "name": "Drop field(s)",
+        "provider": "native"
+      },
+      {
+        "id": "native:deleteduplicategeometries",
+        "name": "Delete duplicate geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:deleteholes",
+        "name": "Delete holes",
+        "provider": "native"
+      },
+      {
+        "id": "native:densifygeometries",
+        "name": "Densify by count",
+        "provider": "native"
+      },
+      {
+        "id": "native:densifygeometriesgivenaninterval",
+        "name": "Densify by interval",
+        "provider": "native"
+      },
+      {
+        "id": "native:detectvectorchanges",
+        "name": "Detect dataset changes",
+        "provider": "native"
+      },
+      {
+        "id": "native:difference",
+        "name": "Difference",
+        "provider": "native"
+      },
+      {
+        "id": "native:dissolve",
+        "name": "Dissolve",
+        "provider": "native"
+      },
+      {
+        "id": "native:distancematrix",
+        "name": "Distance matrix",
+        "provider": "native"
+      },
+      {
+        "id": "native:distancetonearesthub",
+        "name": "Distance to nearest hub",
+        "provider": "native"
+      },
+      {
+        "id": "native:downloadgpsdata",
+        "name": "Download GPS data from device",
+        "provider": "native"
+      },
+      {
+        "id": "native:downloadvectortiles",
+        "name": "Download vector tiles",
+        "provider": "native"
+      },
+      {
+        "id": "native:dropgeometries",
+        "name": "Drop geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:dropmzvalues",
+        "name": "Drop M/Z values",
+        "provider": "native"
+      },
+      {
+        "id": "native:dtmslopebasedfilter",
+        "name": "DTM filter (slope-based)",
+        "provider": "native"
+      },
+      {
+        "id": "native:dxfexport",
+        "name": "Export layers to DXF",
+        "provider": "native"
+      },
+      {
+        "id": "native:equaltofrequency",
+        "name": "Equal to frequency",
+        "provider": "native"
+      },
+      {
+        "id": "native:explodehstorefield",
+        "name": "Explode HStore Field",
+        "provider": "native"
+      },
+      {
+        "id": "native:explodelines",
+        "name": "Explode lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:exportaddgeometrycolumns",
+        "name": "Add geometry attributes",
+        "provider": "native"
+      },
+      {
+        "id": "native:exportlayermetadata",
+        "name": "Export layer metadata",
+        "provider": "native"
+      },
+      {
+        "id": "native:exportlayersinformation",
+        "name": "Export layer(s) information",
+        "provider": "native"
+      },
+      {
+        "id": "native:exportmeshedges",
+        "name": "Export mesh edges",
+        "provider": "native"
+      },
+      {
+        "id": "native:exportmeshfaces",
+        "name": "Export mesh faces",
+        "provider": "native"
+      },
+      {
+        "id": "native:exportmeshongrid",
+        "name": "Export mesh on grid",
+        "provider": "native"
+      },
+      {
+        "id": "native:exportmeshvertices",
+        "name": "Export mesh vertices",
+        "provider": "native"
+      },
+      {
+        "id": "native:exporttospreadsheet",
+        "name": "Export to spreadsheet",
+        "provider": "native"
+      },
+      {
+        "id": "native:extendlines",
+        "name": "Extend lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:extenttolayer",
+        "name": "Create layer from extent",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractbinary",
+        "name": "Extract binary field",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractbyattribute",
+        "name": "Extract by attribute",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractbyexpression",
+        "name": "Extract by expression",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractbyextent",
+        "name": "Extract/clip by extent",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractbylocation",
+        "name": "Extract by location",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractlabels",
+        "name": "Extract labels",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractmvalues",
+        "name": "Extract M values",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractnetworkendpoints",
+        "name": "Extract network end points",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractspecificvertices",
+        "name": "Extract specific vertices",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractvertices",
+        "name": "Extract vertices",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractwithindistance",
+        "name": "Extract within distance",
+        "provider": "native"
+      },
+      {
+        "id": "native:extractzvalues",
+        "name": "Extract Z values",
+        "provider": "native"
+      },
+      {
+        "id": "native:extrude",
+        "name": "Extrude",
+        "provider": "native"
+      },
+      {
+        "id": "native:fieldcalculator",
+        "name": "Field calculator",
+        "provider": "native"
+      },
+      {
+        "id": "native:filedownloader",
+        "name": "Download file via HTTP(S)",
+        "provider": "native"
+      },
+      {
+        "id": "native:fileuploader",
+        "name": "Upload a file via HTTP(S)",
+        "provider": "native"
+      },
+      {
+        "id": "native:fillnodata",
+        "name": "Fill NoData cells",
+        "provider": "native"
+      },
+      {
+        "id": "native:fillsinkswangliu",
+        "name": "Fill sinks (Wang & Liu)",
+        "provider": "native"
+      },
+      {
+        "id": "native:filter",
+        "name": "Feature filter",
+        "provider": "native"
+      },
+      {
+        "id": "native:filterbygeometry",
+        "name": "Filter by geometry type",
+        "provider": "native"
+      },
+      {
+        "id": "native:filterlayersbytype",
+        "name": "Filter layers by type",
+        "provider": "native"
+      },
+      {
+        "id": "native:filterverticesbym",
+        "name": "Filter vertices by M value",
+        "provider": "native"
+      },
+      {
+        "id": "native:filterverticesbyz",
+        "name": "Filter vertices by Z value",
+        "provider": "native"
+      },
+      {
+        "id": "native:findprojection",
+        "name": "Find projection",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometries",
+        "name": "Fix geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometryangle",
+        "name": "Delete small angles",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometryarea",
+        "name": "Fix small polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometrydeletefeatures",
+        "name": "Delete features",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometryduplicatenodes",
+        "name": "Delete duplicated vertices",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometrygap",
+        "name": "Fill gaps",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometryhole",
+        "name": "Fill holes",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometrymissingvertex",
+        "name": "Add missing vertices along borders",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometrymultipart",
+        "name": "Convert to strictly multipart",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometryoverlap",
+        "name": "Delete overlaps",
+        "provider": "native"
+      },
+      {
+        "id": "native:fixgeometryselfintersection",
+        "name": "Split self-intersecting geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:flattenrelationships",
+        "name": "Flatten relationship",
+        "provider": "native"
+      },
+      {
+        "id": "native:forceccw",
+        "name": "Force polygons counter-clockwise",
+        "provider": "native"
+      },
+      {
+        "id": "native:forcecw",
+        "name": "Force polygons clockwise",
+        "provider": "native"
+      },
+      {
+        "id": "native:forcerhr",
+        "name": "Force right-hand-rule",
+        "provider": "native"
+      },
+      {
+        "id": "native:fuzzifyrastergaussianmembership",
+        "name": "Fuzzify raster (gaussian membership)",
+        "provider": "native"
+      },
+      {
+        "id": "native:fuzzifyrasterlargemembership",
+        "name": "Fuzzify raster (large membership)",
+        "provider": "native"
+      },
+      {
+        "id": "native:fuzzifyrasterlinearmembership",
+        "name": "Fuzzify raster (linear membership)",
+        "provider": "native"
+      },
+      {
+        "id": "native:fuzzifyrasternearmembership",
+        "name": "Fuzzify raster (near membership)",
+        "provider": "native"
+      },
+      {
+        "id": "native:fuzzifyrasterpowermembership",
+        "name": "Fuzzify raster (power membership)",
+        "provider": "native"
+      },
+      {
+        "id": "native:fuzzifyrastersmallmembership",
+        "name": "Fuzzify raster (small membership)",
+        "provider": "native"
+      },
+      {
+        "id": "native:generateelevationprofileimage",
+        "name": "Generate elevation profile image",
+        "provider": "native"
+      },
+      {
+        "id": "native:generatepointspixelcentroidsinsidepolygons",
+        "name": "Generate points (pixel centroids) inside polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:geometrybyexpression",
+        "name": "Geometry by expression",
+        "provider": "native"
+      },
+      {
+        "id": "native:gltftovector",
+        "name": "Convert GLTF to vector features",
+        "provider": "native"
+      },
+      {
+        "id": "native:greaterthanfrequency",
+        "name": "Greater than frequency",
+        "provider": "native"
+      },
+      {
+        "id": "native:heatmapkerneldensityestimation",
+        "name": "Heatmap (Kernel Density Estimation)",
+        "provider": "native"
+      },
+      {
+        "id": "native:highestpositioninrasterstack",
+        "name": "Highest position in raster stack",
+        "provider": "native"
+      },
+      {
+        "id": "native:hillshade",
+        "name": "Hillshade",
+        "provider": "native"
+      },
+      {
+        "id": "native:httprequest",
+        "name": "HTTP(S) POST/GET request",
+        "provider": "native"
+      },
+      {
+        "id": "native:hublines",
+        "name": "Join by lines (hub lines)",
+        "provider": "native"
+      },
+      {
+        "id": "native:hypsometriccurves",
+        "name": "Hypsometric curves",
+        "provider": "native"
+      },
+      {
+        "id": "native:importintopostgis",
+        "name": "Export to PostgreSQL",
+        "provider": "native"
+      },
+      {
+        "id": "native:importintospatialite",
+        "name": "Export to SpatiaLite",
+        "provider": "native"
+      },
+      {
+        "id": "native:importintospatialiteregistered",
+        "name": "Export to SpatiaLite (registered)",
+        "provider": "native"
+      },
+      {
+        "id": "native:importphotos",
+        "name": "Import geotagged photos",
+        "provider": "native"
+      },
+      {
+        "id": "native:interpolatepoint",
+        "name": "Interpolate point on line",
+        "provider": "native"
+      },
+      {
+        "id": "native:intersection",
+        "name": "Intersection",
+        "provider": "native"
+      },
+      {
+        "id": "native:joinattributesbylocation",
+        "name": "Join attributes by location",
+        "provider": "native"
+      },
+      {
+        "id": "native:joinattributestable",
+        "name": "Join attributes by field value",
+        "provider": "native"
+      },
+      {
+        "id": "native:joinbylocationsummary",
+        "name": "Join attributes by location (summary)",
+        "provider": "native"
+      },
+      {
+        "id": "native:joinbynearest",
+        "name": "Join attributes by nearest",
+        "provider": "native"
+      },
+      {
+        "id": "native:keepnbiggestparts",
+        "name": "Keep N biggest parts",
+        "provider": "native"
+      },
+      {
+        "id": "native:kmeansclustering",
+        "name": "K-means clustering",
+        "provider": "native"
+      },
+      {
+        "id": "native:layertobookmarks",
+        "name": "Convert layer to spatial bookmarks",
+        "provider": "native"
+      },
+      {
+        "id": "native:lessthanfrequency",
+        "name": "Less than frequency",
+        "provider": "native"
+      },
+      {
+        "id": "native:linedensity",
+        "name": "Line density",
+        "provider": "native"
+      },
+      {
+        "id": "native:lineintersections",
+        "name": "Line intersections",
+        "provider": "native"
+      },
+      {
+        "id": "native:linesubstring",
+        "name": "Line substring",
+        "provider": "native"
+      },
+      {
+        "id": "native:listuniquevalues",
+        "name": "List unique values",
+        "provider": "native"
+      },
+      {
+        "id": "native:loadlayer",
+        "name": "Load layer into project",
+        "provider": "native"
+      },
+      {
+        "id": "native:lowestpositioninrasterstack",
+        "name": "Lowest position in raster stack",
+        "provider": "native"
+      },
+      {
+        "id": "native:meancoordinates",
+        "name": "Mean coordinate(s)",
+        "provider": "native"
+      },
+      {
+        "id": "native:mergelines",
+        "name": "Merge lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:mergevectorlayers",
+        "name": "Merge vector layers",
+        "provider": "native"
+      },
+      {
+        "id": "native:meshcontours",
+        "name": "Export contours",
+        "provider": "native"
+      },
+      {
+        "id": "native:meshexportcrosssection",
+        "name": "Export cross section dataset values on lines from mesh",
+        "provider": "native"
+      },
+      {
+        "id": "native:meshexporttimeseries",
+        "name": "Export time series values from points of a mesh dataset",
+        "provider": "native"
+      },
+      {
+        "id": "native:meshrasterize",
+        "name": "Rasterize mesh dataset",
+        "provider": "native"
+      },
+      {
+        "id": "native:minimumboundinggeometry",
+        "name": "Minimum bounding geometry",
+        "provider": "native"
+      },
+      {
+        "id": "native:minimumenclosingcircle",
+        "name": "Minimum enclosing circles",
+        "provider": "native"
+      },
+      {
+        "id": "native:modelerrastercalc",
+        "name": "Raster calculator",
+        "provider": "native"
+      },
+      {
+        "id": "native:modelervirtualrastercalc",
+        "name": "Raster calculator (virtual)",
+        "provider": "native"
+      },
+      {
+        "id": "native:multidifference",
+        "name": "Difference (multiple)",
+        "provider": "native"
+      },
+      {
+        "id": "native:multiintersection",
+        "name": "Intersection (multiple)",
+        "provider": "native"
+      },
+      {
+        "id": "native:multiparttosingleparts",
+        "name": "Multipart to singleparts",
+        "provider": "native"
+      },
+      {
+        "id": "native:multiringconstantbuffer",
+        "name": "Multi-ring buffer (constant distance)",
+        "provider": "native"
+      },
+      {
+        "id": "native:multiunion",
+        "name": "Union (multiple)",
+        "provider": "native"
+      },
+      {
+        "id": "native:nearestneighbouranalysis",
+        "name": "Nearest neighbour analysis",
+        "provider": "native"
+      },
+      {
+        "id": "native:offsetline",
+        "name": "Offset lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:openurl",
+        "name": "Open file or URL",
+        "provider": "native"
+      },
+      {
+        "id": "native:orderbyexpression",
+        "name": "Order by expression",
+        "provider": "native"
+      },
+      {
+        "id": "native:orientedminimumboundingbox",
+        "name": "Oriented minimum bounding box",
+        "provider": "native"
+      },
+      {
+        "id": "native:orthogonalize",
+        "name": "Orthogonalize",
+        "provider": "native"
+      },
+      {
+        "id": "native:package",
+        "name": "Package layers",
+        "provider": "native"
+      },
+      {
+        "id": "native:pixelstopoints",
+        "name": "Raster pixels to points",
+        "provider": "native"
+      },
+      {
+        "id": "native:pixelstopolygons",
+        "name": "Raster pixels to polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:pointonsurface",
+        "name": "Point on surface",
+        "provider": "native"
+      },
+      {
+        "id": "native:pointsalonglines",
+        "name": "Points along geometry",
+        "provider": "native"
+      },
+      {
+        "id": "native:pointstopath",
+        "name": "Points to path",
+        "provider": "native"
+      },
+      {
+        "id": "native:pointtolayer",
+        "name": "Create layer from point",
+        "provider": "native"
+      },
+      {
+        "id": "native:poleofinaccessibility",
+        "name": "Pole of inaccessibility",
+        "provider": "native"
+      },
+      {
+        "id": "native:polygonfromlayerextent",
+        "name": "Extract layer extent",
+        "provider": "native"
+      },
+      {
+        "id": "native:polygonize",
+        "name": "Polygonize",
+        "provider": "native"
+      },
+      {
+        "id": "native:polygonstolines",
+        "name": "Polygons to lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:postgisexecuteandloadsql",
+        "name": "PostgreSQL execute and load SQL",
+        "provider": "native"
+      },
+      {
+        "id": "native:postgisexecutesql",
+        "name": "PostgreSQL execute SQL",
+        "provider": "native"
+      },
+      {
+        "id": "native:printlayoutmapextenttolayer",
+        "name": "Print layout map extent to layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:printlayouttoimage",
+        "name": "Export print layout as image",
+        "provider": "native"
+      },
+      {
+        "id": "native:printlayouttopdf",
+        "name": "Export print layout as PDF",
+        "provider": "native"
+      },
+      {
+        "id": "native:projectpointcartesian",
+        "name": "Project points (Cartesian)",
+        "provider": "native"
+      },
+      {
+        "id": "native:promotetomulti",
+        "name": "Promote to multipart",
+        "provider": "native"
+      },
+      {
+        "id": "native:raiseexception",
+        "name": "Raise exception",
+        "provider": "native"
+      },
+      {
+        "id": "native:raisemessage",
+        "name": "Raise message",
+        "provider": "native"
+      },
+      {
+        "id": "native:raisewarning",
+        "name": "Raise warning",
+        "provider": "native"
+      },
+      {
+        "id": "native:randomextract",
+        "name": "Random extract",
+        "provider": "native"
+      },
+      {
+        "id": "native:randomextractwithinsubsets",
+        "name": "Random extract within subsets",
+        "provider": "native"
+      },
+      {
+        "id": "native:randompointsinextent",
+        "name": "Random points in extent",
+        "provider": "native"
+      },
+      {
+        "id": "native:randompointsinpolygons",
+        "name": "Random points in polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:randompointsonlines",
+        "name": "Random points on lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:randomselection",
+        "name": "Random selection",
+        "provider": "native"
+      },
+      {
+        "id": "native:randomselectionwithinsubsets",
+        "name": "Random selection within subsets",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterbooleanand",
+        "name": "Raster boolean AND",
+        "provider": "native"
+      },
+      {
+        "id": "native:rastercalc",
+        "name": "Raster calculator",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterfeaturepreservingsmoothing",
+        "name": "Feature preserving DEM smoothing",
+        "provider": "native"
+      },
+      {
+        "id": "native:rastergaussianblur",
+        "name": "Gaussian blur",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterize",
+        "name": "Convert map to raster",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterlayerproperties",
+        "name": "Raster layer properties",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterlayerstatistics",
+        "name": "Raster layer statistics",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterlayeruniquevaluesreport",
+        "name": "Raster layer unique values report",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterlayerzonalstats",
+        "name": "Raster layer zonal statistics",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterlogicalor",
+        "name": "Raster boolean OR",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterminmax",
+        "name": "Raster minimum/maximum",
+        "provider": "native"
+      },
+      {
+        "id": "native:rasterrank",
+        "name": "Raster rank",
+        "provider": "native"
+      },
+      {
+        "id": "native:rastersampling",
+        "name": "Sample raster values",
+        "provider": "native"
+      },
+      {
+        "id": "native:rastersurfacevolume",
+        "name": "Raster surface volume",
+        "provider": "native"
+      },
+      {
+        "id": "native:reclassifybylayer",
+        "name": "Reclassify by layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:reclassifybytable",
+        "name": "Reclassify by table",
+        "provider": "native"
+      },
+      {
+        "id": "native:rectanglesovalsdiamonds",
+        "name": "Rectangles, ovals, diamonds",
+        "provider": "native"
+      },
+      {
+        "id": "native:refactorfields",
+        "name": "Refactor fields",
+        "provider": "native"
+      },
+      {
+        "id": "native:relief",
+        "name": "Relief",
+        "provider": "native"
+      },
+      {
+        "id": "native:removeduplicatesbyattribute",
+        "name": "Delete duplicates by attribute",
+        "provider": "native"
+      },
+      {
+        "id": "native:removeduplicatevertices",
+        "name": "Remove duplicate vertices",
+        "provider": "native"
+      },
+      {
+        "id": "native:removenullgeometries",
+        "name": "Remove null geometries",
+        "provider": "native"
+      },
+      {
+        "id": "native:removepartsbyarea",
+        "name": "Remove parts by area",
+        "provider": "native"
+      },
+      {
+        "id": "native:removepartsbylength",
+        "name": "Remove parts by length",
+        "provider": "native"
+      },
+      {
+        "id": "native:renamelayer",
+        "name": "Rename layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:renametablefield",
+        "name": "Rename field",
+        "provider": "native"
+      },
+      {
+        "id": "native:repairshapefile",
+        "name": "Repair Shapefile",
+        "provider": "native"
+      },
+      {
+        "id": "native:reprojectlayer",
+        "name": "Reproject layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:rescaleraster",
+        "name": "Rescale raster",
+        "provider": "native"
+      },
+      {
+        "id": "native:retainfields",
+        "name": "Retain fields",
+        "provider": "native"
+      },
+      {
+        "id": "native:reverselinedirection",
+        "name": "Reverse line direction",
+        "provider": "native"
+      },
+      {
+        "id": "native:rotatefeatures",
+        "name": "Rotate",
+        "provider": "native"
+      },
+      {
+        "id": "native:roundness",
+        "name": "Roundness",
+        "provider": "native"
+      },
+      {
+        "id": "native:roundrastervalues",
+        "name": "Round raster",
+        "provider": "native"
+      },
+      {
+        "id": "native:ruggednessindex",
+        "name": "Ruggedness index",
+        "provider": "native"
+      },
+      {
+        "id": "native:savefeatures",
+        "name": "Save vector features to file",
+        "provider": "native"
+      },
+      {
+        "id": "native:savelog",
+        "name": "Save log to file",
+        "provider": "native"
+      },
+      {
+        "id": "native:saveselectedfeatures",
+        "name": "Extract selected features",
+        "provider": "native"
+      },
+      {
+        "id": "native:segmentizebymaxangle",
+        "name": "Segmentize by maximum angle",
+        "provider": "native"
+      },
+      {
+        "id": "native:segmentizebymaxdistance",
+        "name": "Segmentize by maximum distance",
+        "provider": "native"
+      },
+      {
+        "id": "native:selectbyattribute",
+        "name": "Select by attribute",
+        "provider": "native"
+      },
+      {
+        "id": "native:selectbyexpression",
+        "name": "Select by expression",
+        "provider": "native"
+      },
+      {
+        "id": "native:selectbylocation",
+        "name": "Select by location",
+        "provider": "native"
+      },
+      {
+        "id": "native:selectwithindistance",
+        "name": "Select within distance",
+        "provider": "native"
+      },
+      {
+        "id": "native:serviceareafromlayer",
+        "name": "Service area (from layer)",
+        "provider": "native"
+      },
+      {
+        "id": "native:serviceareafrompoint",
+        "name": "Service area (from point)",
+        "provider": "native"
+      },
+      {
+        "id": "native:setlayerencoding",
+        "name": "Set layer encoding",
+        "provider": "native"
+      },
+      {
+        "id": "native:setlayermetadata",
+        "name": "Set layer metadata",
+        "provider": "native"
+      },
+      {
+        "id": "native:setlayerstyle",
+        "name": "Set layer style",
+        "provider": "native"
+      },
+      {
+        "id": "native:setmetadatafields",
+        "name": "Set metadata fields",
+        "provider": "native"
+      },
+      {
+        "id": "native:setmfromraster",
+        "name": "Set M value from raster",
+        "provider": "native"
+      },
+      {
+        "id": "native:setmvalue",
+        "name": "Set M value",
+        "provider": "native"
+      },
+      {
+        "id": "native:setprojectvariable",
+        "name": "Set project variable",
+        "provider": "native"
+      },
+      {
+        "id": "native:setzfromraster",
+        "name": "Drape (set Z value from raster)",
+        "provider": "native"
+      },
+      {
+        "id": "native:setzvalue",
+        "name": "Set Z value",
+        "provider": "native"
+      },
+      {
+        "id": "native:shortestline",
+        "name": "Shortest line between features",
+        "provider": "native"
+      },
+      {
+        "id": "native:shortestpathlayertopoint",
+        "name": "Shortest path (layer to point)",
+        "provider": "native"
+      },
+      {
+        "id": "native:shortestpathpointtolayer",
+        "name": "Shortest path (point to layer)",
+        "provider": "native"
+      },
+      {
+        "id": "native:shortestpathpointtopoint",
+        "name": "Shortest path (point to point)",
+        "provider": "native"
+      },
+      {
+        "id": "native:shpencodinginfo",
+        "name": "Extract Shapefile encoding",
+        "provider": "native"
+      },
+      {
+        "id": "native:simplifygeometries",
+        "name": "Simplify",
+        "provider": "native"
+      },
+      {
+        "id": "native:singlesidedbuffer",
+        "name": "Single sided buffer",
+        "provider": "native"
+      },
+      {
+        "id": "native:slope",
+        "name": "Slope",
+        "provider": "native"
+      },
+      {
+        "id": "native:smoothgeometry",
+        "name": "Smooth",
+        "provider": "native"
+      },
+      {
+        "id": "native:snapgeometries",
+        "name": "Snap geometries to layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:snappointstogrid",
+        "name": "Snap points to grid",
+        "provider": "native"
+      },
+      {
+        "id": "native:spatialiteexecutesql",
+        "name": "SpatiaLite execute SQL",
+        "provider": "native"
+      },
+      {
+        "id": "native:spatialiteexecutesqlregistered",
+        "name": "SpatiaLite execute SQL (registered DB)",
+        "provider": "native"
+      },
+      {
+        "id": "native:splitfeaturesbycharacter",
+        "name": "Split features by character",
+        "provider": "native"
+      },
+      {
+        "id": "native:splitlinesbylength",
+        "name": "Split lines by maximum length",
+        "provider": "native"
+      },
+      {
+        "id": "native:splitvectorlayer",
+        "name": "Split vector layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:splitwithlines",
+        "name": "Split with lines",
+        "provider": "native"
+      },
+      {
+        "id": "native:stdbscanclustering",
+        "name": "ST-DBSCAN clustering",
+        "provider": "native"
+      },
+      {
+        "id": "native:stringconcatenation",
+        "name": "String concatenation",
+        "provider": "native"
+      },
+      {
+        "id": "native:stylefromproject",
+        "name": "Create style database from project",
+        "provider": "native"
+      },
+      {
+        "id": "native:subdivide",
+        "name": "Subdivide",
+        "provider": "native"
+      },
+      {
+        "id": "native:sumlinelengths",
+        "name": "Sum line lengths",
+        "provider": "native"
+      },
+      {
+        "id": "native:surfacetopolygon",
+        "name": "Surface to polygon",
+        "provider": "native"
+      },
+      {
+        "id": "native:swapxy",
+        "name": "Swap X and Y coordinates",
+        "provider": "native"
+      },
+      {
+        "id": "native:symmetricaldifference",
+        "name": "Symmetrical difference",
+        "provider": "native"
+      },
+      {
+        "id": "native:taperedbuffer",
+        "name": "Tapered buffers",
+        "provider": "native"
+      },
+      {
+        "id": "native:tightconcavehullofpolygons",
+        "name": "Fill gaps between polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:tilesxyzdirectory",
+        "name": "Generate XYZ tiles (Directory)",
+        "provider": "native"
+      },
+      {
+        "id": "native:tilesxyzmbtiles",
+        "name": "Generate XYZ tiles (MBTiles)",
+        "provider": "native"
+      },
+      {
+        "id": "native:tinmeshcreation",
+        "name": "TIN Mesh Creation",
+        "provider": "native"
+      },
+      {
+        "id": "native:totalcurvature",
+        "name": "Total curvature",
+        "provider": "native"
+      },
+      {
+        "id": "native:transect",
+        "name": "Transect",
+        "provider": "native"
+      },
+      {
+        "id": "native:transectfixeddistance",
+        "name": "Transect (fixed distance)",
+        "provider": "native"
+      },
+      {
+        "id": "native:transferannotationsfrommain",
+        "name": "Transfer annotations from main layer",
+        "provider": "native"
+      },
+      {
+        "id": "native:translategeometry",
+        "name": "Translate",
+        "provider": "native"
+      },
+      {
+        "id": "native:truncatetable",
+        "name": "Truncate table",
+        "provider": "native"
+      },
+      {
+        "id": "native:union",
+        "name": "Union",
+        "provider": "native"
+      },
+      {
+        "id": "native:updatelayermetadata",
+        "name": "Update layer metadata",
+        "provider": "native"
+      },
+      {
+        "id": "native:uploadgpsdata",
+        "name": "Upload GPS data to device",
+        "provider": "native"
+      },
+      {
+        "id": "native:validatenetwork",
+        "name": "Validate network",
+        "provider": "native"
+      },
+      {
+        "id": "native:virtualrastercalc",
+        "name": "Raster calculator (virtual)",
+        "provider": "native"
+      },
+      {
+        "id": "native:voronoipolygons",
+        "name": "Voronoi polygons",
+        "provider": "native"
+      },
+      {
+        "id": "native:wedgebuffers",
+        "name": "Create wedge buffers",
+        "provider": "native"
+      },
+      {
+        "id": "native:writevectortiles_mbtiles",
+        "name": "Write Vector Tiles (MBTiles)",
+        "provider": "native"
+      },
+      {
+        "id": "native:writevectortiles_xyz",
+        "name": "Write Vector Tiles (XYZ)",
+        "provider": "native"
+      },
+      {
+        "id": "native:zonalhistogram",
+        "name": "Zonal histogram",
+        "provider": "native"
+      },
+      {
+        "id": "native:zonalminmaxpoint",
+        "name": "Zonal minimum/maximum point",
+        "provider": "native"
+      },
+      {
+        "id": "native:zonalstatistics",
+        "name": "Zonal statistics (in place)",
+        "provider": "native"
+      },
+      {
+        "id": "native:zonalstatisticsfb",
+        "name": "Zonal statistics",
+        "provider": "native"
+      },
+      {
+        "id": "pdal:assignprojection",
+        "name": "Assign projection",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:boundary",
+        "name": "Boundary",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:classifyground",
+        "name": "Classify ground points",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:clip",
+        "name": "Clip point cloud",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:compare",
+        "name": "Compare point clouds",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:convertformat",
+        "name": "Convert point cloud format",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:createcopc",
+        "name": "Create COPC",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:density",
+        "name": "Point cloud density",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:exportraster",
+        "name": "Export point cloud to raster",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:exportrastertin",
+        "name": "Export point cloud to raster (using triangulation)",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:exportvector",
+        "name": "Export point cloud to vector",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:filter",
+        "name": "Filter point cloud",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:filternoiseradius",
+        "name": "Filter noise (using radius)",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:filternoisestatistical",
+        "name": "Filter noise",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:heightabovegroundbynearestneighbor",
+        "name": "Height above ground",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:heightabovegroundtriangulation",
+        "name": "Height above ground (using triangulation)",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:info",
+        "name": "Point cloud information",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:merge",
+        "name": "Merge point cloud",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:reproject",
+        "name": "Reproject point cloud",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:thinbydecimate",
+        "name": "Thin (by skipping points)",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:thinbyradius",
+        "name": "Thin (by sampling radius)",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:tile",
+        "name": "Create tiles from point cloud",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:transformpointcloud",
+        "name": "Transform point cloud",
+        "provider": "pdal"
+      },
+      {
+        "id": "pdal:virtualpointcloud",
+        "name": "Build virtual point cloud (VPC)",
+        "provider": "pdal"
+      },
+      {
+        "id": "qgis:advancedpythonfieldcalculator",
+        "name": "Advanced Python field calculator",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:barplot",
+        "name": "Bar plot",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:boxplot",
+        "name": "Box plot",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:distancetonearesthublinetohub",
+        "name": "Distance to nearest hub (line to hub)",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:distancetonearesthubpoints",
+        "name": "Distance to nearest hub (points)",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:eliminateselectedpolygons",
+        "name": "Eliminate selected polygons",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:executesql",
+        "name": "Execute SQL",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:generatepointspixelcentroidsalongline",
+        "name": "Generate points (pixel centroids) along line",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:idwinterpolation",
+        "name": "IDW interpolation",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:knearestconcavehull",
+        "name": "Concave hull (k-nearest neighbor)",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:linestopolygons",
+        "name": "Lines to polygons",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:meanandstandarddeviationplot",
+        "name": "Mean and standard deviation plot",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:pointsdisplacement",
+        "name": "Points displacement",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:polarplot",
+        "name": "Polar plot",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:randompointsalongline",
+        "name": "Random points along line",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:randompointsinlayerbounds",
+        "name": "Random points in layer bounds",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:randompointsinsidepolygons",
+        "name": "Random points inside polygons",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:rastercalculator",
+        "name": "Raster calculator",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:rasterlayerhistogram",
+        "name": "Raster layer histogram",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:rectanglesovalsdiamondsvariable",
+        "name": "Rectangles, ovals, diamonds (variable)",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:regularpoints",
+        "name": "Regular points",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:scatter3dplot",
+        "name": "Vector layer scatterplot 3D",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:setstyleforrasterlayer",
+        "name": "Set style for raster layer",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:setstyleforvectorlayer",
+        "name": "Set style for vector layer",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:statisticsbycategories",
+        "name": "Statistics by categories",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:texttofloat",
+        "name": "Text to float",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:tininterpolation",
+        "name": "TIN interpolation",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:topologicalcoloring",
+        "name": "Topological coloring",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:variabledistancebuffer",
+        "name": "Variable distance buffer",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:vectorlayerhistogram",
+        "name": "Vector layer histogram",
+        "provider": "qgis"
+      },
+      {
+        "id": "qgis:vectorlayerscatterplot",
+        "name": "Vector layer scatterplot",
+        "provider": "qgis"
+      }
+    ],
+    "count": 772
+  }
+}

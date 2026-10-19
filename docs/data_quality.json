@@ -1,0 +1,97 @@
+{
+  "source_rasters": [
+    {
+      "file": "USGS_1M_10_x61y526_WA_EasternCascades_2019_B19.tif",
+      "crs": "26910",
+      "geotransform": [
+        609993.9999996538,
+        1.0,
+        0.0,
+        5260006.000047477,
+        0.0,
+        -1.0
+      ],
+      "unit": "metre",
+      "nodata": -999999.0,
+      "size": [
+        10012,
+        10012
+      ],
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+    },
+    {
+      "file": "USGS_1M_10_x62y526_WA_EasternCascades_2019_B19.tif",
+      "crs": "26910",
+      "geotransform": [
+        619993.9999726275,
+        1.0,
+        0.0,
+        5260006.000055701,
+        0.0,
+        -1.0
+      ],
+      "unit": "metre",
+      "nodata": -999999.0,
+      "size": [
+        10012,
+        10012
+      ],
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+    },
+    {
+      "file": "USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
+      "crs": "26910",
+      "geotransform": [
+        609993.9999996538,
+        1.0,
+        0.0,
+        5260006.000047477,
+        0.0,
+        -1.0
+      ],
+      "unit": "",
+      "nodata": -999999.0,
+      "size": [
+        10012,
+        10012
+      ],
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+    },
+    {
+      "file": "USGS_1M_10_x62y526_WA_KingCounty_2021_B21.tif",
+      "crs": "26910",
+      "geotransform": [
+        619993.9999726275,
+        1.0,
+        0.0,
+        5260006.000055701,
+        0.0,
+        -1.0
+      ],
+      "unit": "",
+      "nodata": -999999.0,
+      "size": [
+        10012,
+        10012
+      ],
+      "elevation_units_evidence": "USGS standard 1m catalog body: NAVD88 metres; band UnitType is empty"
+    }
+  ],
+  "buffered_valid_fraction": 1.0,
+  "study_valid_fraction": 1.0,
+  "buffered_elevation_min_m": 676.8450927734375,
+  "buffered_elevation_max_m": 1991.7772216796875,
+  "study_area_km2": 30.0,
+  "buffer_m": 1100,
+  "epoch_overlap": {
+    "overlap_cells_10m": 28812,
+    "difference_definition": "2021 minus 2019 average-grid elevation",
+    "median_difference_m": -0.3468017578125,
+    "p95_absolute_difference_m": 5.142254638671874
+  },
+  "epoch_pixel_counts": {
+    "0": 0,
+    "2019": 204420,
+    "2021": 385980
+  }
+}

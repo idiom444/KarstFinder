@@ -1,0 +1,35 @@
+{
+  "experiment_id": "blind_v001",
+  "stage": "exploratory_blind_unfrozen",
+  "crs": "EPSG:26910",
+  "study_bounds": [
+    617000,
+    5253500,
+    623000,
+    5258500
+  ],
+  "buffer_m": 1100,
+  "terrain_resolution_m": 10,
+  "elevation_project": "WA_KingCounty_2021_B21",
+  "tpi_windows_cells": [
+    21,
+    61,
+    201
+  ],
+  "mid_slope_z_threshold": 0.5,
+  "exposure_slope_start_degrees": 15,
+  "exposure_slope_full_degrees": 45,
+  "geology_scores": {
+    "PMmb(e)": 1.0,
+    "JTRmt(e)": 0.35
+  },
+  "weights": {
+    "mid_slope": 0.6,
+    "exposure": 0.4
+  },
+  "candidate_min_score": 0.5,
+  "candidate_min_area_m2": 1000,
+  "candidate_connectivity": 4,
+  "notes": "Hypothesis-based ordinal indices, not probabilities. Marble score describes mapped lithology evidence, not cave existence. Mixed melange retained as uncertain carbonate-bearing terrain.",
+  "fallback_elevation_project": "WA_EasternCascades_2019_B19"
+}

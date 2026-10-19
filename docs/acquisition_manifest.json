@@ -1,0 +1,135 @@
+[
+  {
+    "path": "data/raw/gnis_ridge.json",
+    "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?f=json&where=gaz_name+%3D+%27Cave+Ridge%27+AND+state_alpha+%3D+%27WA%27&outFields=gaz_id%2Cgaz_name%2Cgaz_featureclass%2Cstate_alpha%2Ccounty_name&outSR=4326",
+    "sha256": "ba10737f30236e631fb5e5c06b44b246d84085df821b44195ae9536c3af7770a",
+    "bytes": 1345,
+    "verified_utc": "2026-10-19T17:32:43.364885+00:00"
+  },
+  {
+    "path": "data/raw/usgs_1m_catalog.json",
+    "url": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-121.46356789699857%2C47.41324435228249%2C-121.3528880387831%2C47.4795151008229&datasets=Digital+Elevation+Model+%28DEM%29+1+meter&max=100",
+    "sha256": "e4a573f2b728201451d6b45663c2f132ea2aae0a39b02a428acac76f42f19898",
+    "bytes": 19710,
+    "verified_utc": "2026-10-19T17:32:43.365071+00:00"
+  },
+  {
+    "path": "data/raw/USGS_1M_10_x61y526_WA_EasternCascades_2019_B19.tif",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/WA_EasternCascades_2019_B19/TIFF/USGS_1M_10_x61y526_WA_EasternCascades_2019_B19.tif",
+    "sha256": "c9a3018f7cd6e312188f37ec76c46eacd7451ac6f126799b80860994333c55be",
+    "bytes": 23197714,
+    "verified_utc": "2026-10-19T17:32:47.217547+00:00"
+  },
+  {
+    "path": "data/raw/USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/WA_KingCounty_2021_B21/TIFF/USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
+    "sha256": "8018e4320a3eac0865bd220f3213079473ebd3b83f1679094172333faa75cec1",
+    "bytes": 312910665,
+    "verified_utc": "2026-10-19T17:32:47.303770+00:00"
+  },
+  {
+    "path": "data/raw/USGS_1M_10_x62y526_WA_EasternCascades_2019_B19.tif",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/WA_EasternCascades_2019_B19/TIFF/USGS_1M_10_x62y526_WA_EasternCascades_2019_B19.tif",
+    "sha256": "234071ee236160ca676e4321d67fd315599a4dae62c0953d180a0a001eea8c9e",
+    "bytes": 298832547,
+    "verified_utc": "2026-10-19T17:33:04.977983+00:00"
+  },
+  {
+    "path": "data/raw/USGS_1M_10_x62y526_WA_KingCounty_2021_B21.tif",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/WA_KingCounty_2021_B21/TIFF/USGS_1M_10_x62y526_WA_KingCounty_2021_B21.tif",
+    "sha256": "b74c8aac45c4dadba786c6e38a7e4e4f01b4ac6aa9e19942ef79a4d8a3f80c70",
+    "bytes": 46519268,
+    "verified_utc": "2026-10-19T17:33:04.990618+00:00"
+  },
+  {
+    "path": "data/raw/dnr_layer_11_metadata.json",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11?f=json",
+    "sha256": "8b1eeb7a736730950e7a79f1012eaff212cec0d2b644416fdc1ab46ce9ed7dcc",
+    "bytes": 123006,
+    "verified_utc": "2026-10-19T17:33:04.990822+00:00"
+  },
+  {
+    "path": "data/raw/dnr_11.geojson",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11/query?f=geojson&where=1%3D1&geometry=-121.46356789699857%2C47.41324435228249%2C-121.3528880387831%2C47.4795151008229&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CMAP_UNIT_100K%2CMAP_UNIT_100K_SYMBOL%2CMAP_UNIT_100K_ID_CONFIDENCE%2CMAP_UNIT_100K_QUAD_UNIT",
+    "sha256": "79b7f636b810eb10b73afbad675f693b9e567f5cb9ee3a88cce07b50b871d104",
+    "bytes": 265153,
+    "verified_utc": "2026-10-19T17:33:04.991063+00:00"
+  },
+  {
+    "path": "data/raw/dnr_layer_7_metadata.json",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/7?f=json",
+    "sha256": "2c7fdee2e2573547961b431087f4ea8a1f8dea1a0ebc264194ad43fcc1fe501e",
+    "bytes": 76083,
+    "verified_utc": "2026-10-19T17:33:04.991183+00:00"
+  },
+  {
+    "path": "data/raw/dnr_7.geojson",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/7/query?f=geojson&where=1%3D1&geometry=-121.46356789699857%2C47.41324435228249%2C-121.3528880387831%2C47.4795151008229&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CFAULTS_100K_TYPE%2CFAULTS_100K_IS_CONCEALED%2CFAULTS_100K_LOC_CONFIDENCE_M",
+    "sha256": "91dabede51a04261fc2fd44b7bd45501ed40d0a1a8c9905c7e1598f64f5b14d7",
+    "bytes": 5047,
+    "verified_utc": "2026-10-19T17:33:04.991290+00:00"
+  },
+  {
+    "path": "data/raw/dnr_layer_9_metadata.json",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/9?f=json",
+    "sha256": "716f12508bccb45c92bc956435a3f3099aa49ac3e7bc2f686c2627e522b82b70",
+    "bytes": 20587,
+    "verified_utc": "2026-10-19T17:33:04.991374+00:00"
+  },
+  {
+    "path": "data/raw/dnr_9.geojson",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/9/query?f=geojson&where=1%3D1&geometry=-121.46356789699857%2C47.41324435228249%2C-121.3528880387831%2C47.4795151008229&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CCONTACTS_100K_TYPE%2CCONTACTS_100K_IS_CONCEALED%2CCONTACTS_100K_LOC_CONFIDENCE_M",
+    "sha256": "9c68b342e62d509bff4e99595c504456e7d7903c95349382f9f1e33b173bf36a",
+    "bytes": 93424,
+    "verified_utc": "2026-10-19T17:33:04.991496+00:00"
+  },
+  {
+    "path": "data/raw/dnr_layer_1_metadata.json",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/1?f=json",
+    "sha256": "b6f1013a53bc21fc238f13080dbf619038b22100b5a5d63239107df523d1e02c",
+    "bytes": 75551,
+    "verified_utc": "2026-10-19T17:33:04.991590+00:00"
+  },
+  {
+    "path": "data/raw/dnr_1.geojson",
+    "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/1/query?f=geojson&where=1%3D1&geometry=-121.46356789699857%2C47.41324435228249%2C-121.3528880387831%2C47.4795151008229&geometryType=esriGeometryEnvelope&inSR=4326&outSR=26910&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CORIENTATION_100K_TYPE%2CORIENTATION_100K_AZIMUTH%2CORIENTATION_100K_INCLINATION%2CORIENTATION_100K_LOC_CONF_M",
+    "sha256": "aa7b0b01b67c4b20483a9ad791d78457e5a8f9c37b08cf451c474b45bb7dcdfc",
+    "bytes": 7753,
+    "verified_utc": "2026-10-19T17:33:04.991686+00:00"
+  },
+  {
+    "path": "data/raw/USGS_WA_KingCo_3_2021_FINAL_DEM_Report.txt",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/metadata/WA_KingCounty_2021_B21/WA_KingCo_3_2021/reports/USGS_WA_KingCo_3_2021_FINAL_DEM_Report.txt",
+    "sha256": "27bd93b906e88e5757cfa7a66c2ff24260b3ad3afb153e0004c764d73f63f6ae",
+    "bytes": 7639,
+    "verified_utc": "2026-10-19T17:34:26.321869+00:00"
+  },
+  {
+    "path": "data/raw/WA_KingCounty_2021_B21_Lidar_Delivery_2_Technical_Data_Report.pdf",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/metadata/WA_KingCounty_2021_B21/WA_KingCo_3_2021/reports/WA_KingCounty_2021_B21_Lidar_Delivery_2_Technical_Data_Report.pdf",
+    "sha256": "38f18444013092e4c54656249ef9f1b3d301488d62a4ba643431a90952e94904",
+    "bytes": 4245621,
+    "verified_utc": "2026-10-19T17:34:26.323200+00:00"
+  },
+  {
+    "path": "data/raw/naip_metadata.json",
+    "url": "https://imagery-public.watech.wa.gov/arcgis/rest/services/NAIP/Statewide_NAIP_2017_3ft_4band_wsps_83h_img/ImageServer?f=json",
+    "sha256": "5778de0dd84a9e04c458da5f8c808e6c3d4b689a60e7893f65d0b6944e575360",
+    "bytes": 6458,
+    "verified_utc": "2026-10-19T17:34:26.323318+00:00"
+  },
+  {
+    "path": "data/raw/naip_export.json",
+    "url": "https://imagery-public.watech.wa.gov/arcgis/rest/services/NAIP/Statewide_NAIP_2017_3ft_4band_wsps_83h_img/ImageServer/exportImage?f=json&bbox=617000%2C5253500%2C623000%2C5258500&bboxSR=26910&imageSR=26910&size=3000%2C2500&format=tiff&pixelType=U8&bandIds=0%2C1%2C2&interpolation=RSP_BilinearInterpolation",
+    "sha256": "8089fc941d486f52851e0bfe270f915714206145c79757213628193b9559435b",
+    "bytes": 349,
+    "verified_utc": "2026-10-19T17:34:26.323453+00:00"
+  },
+  {
+    "path": "data/raw/naip2017_rgb_2m.tif",
+    "url": "https://imagery-public.watech.wa.gov/arcgis/rest/directories/arcgisoutput/NAIP/Statewide_NAIP_2017_3ft_4band_wsps_83h_img_ImageServer/_ags_c4978c8b_6852_4c9c_852c_cc481d4169c9.tif",
+    "sha256": "7ae6b6639d0147d8b636e4e71222394f284145cc0e54f9727c833e4462d99b4a",
+    "bytes": 23597336,
+    "verified_utc": "2026-10-19T17:34:26.329909+00:00"
+  }
+]

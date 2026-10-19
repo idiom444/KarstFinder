@@ -1,0 +1,756 @@
+Available algorithms
+
+QGIS (3D)
+	3d:tessellate	Tessellate
+
+GDAL
+	gdal:aspect	Aspect
+	gdal:assignprojection	Assign projection
+	gdal:buffervectors	Buffer vectors
+	gdal:buildvirtualraster	Build virtual raster
+	gdal:buildvirtualvector	Build virtual vector
+	gdal:cliprasterbyextent	Clip raster by extent
+	gdal:cliprasterbymasklayer	Clip raster by mask layer
+	gdal:clipvectorbyextent	Clip vector by extent
+	gdal:clipvectorbypolygon	Clip vector by mask layer
+	gdal:colorrelief	Color relief
+	gdal:contour	Contour
+	gdal:contour_polygon	Contour Polygons
+	gdal:convertformat	Convert format
+	gdal:createcog	Create Cloud Optimized GeoTIFF
+	gdal:dataset_identify	Dataset identification
+	gdal:dissolve	Dissolve
+	gdal:executesql	Execute SQL
+	gdal:extractprojection	Extract projection
+	gdal:fillnodata	Fill NoData
+	gdal:gdal2tiles	gdal2tiles
+	gdal:gdal2xyz	gdal2xyz
+	gdal:gdalinfo	Raster information
+	gdal:gridaverage	Grid (Moving average)
+	gdal:griddatametrics	Grid (Data metrics)
+	gdal:gridinversedistance	Grid (Inverse distance to a power)
+	gdal:gridinversedistancenearestneighbor	Grid (IDW with nearest neighbor searching)
+	gdal:gridlinear	Grid (Linear)
+	gdal:gridnearestneighbor	Grid (Nearest neighbor)
+	gdal:hillshade	Hillshade
+	gdal:importvectorintopostgisdatabaseavailableconnections	Export to PostgreSQL (available connections)
+	gdal:importvectorintopostgisdatabasenewconnection	Export to PostgreSQL (new connection)
+	gdal:merge	Merge
+	gdal:nearblack	Near black
+	gdal:offsetcurve	Offset curve
+	gdal:ogrinfo	Vector information
+	gdal:ogrinfojson	Vector information (JSON)
+	gdal:onesidebuffer	One side buffer
+	gdal:overviews	Build overviews (pyramids)
+	gdal:pansharp	Pansharpening
+	gdal:pcttorgb	PCT to RGB
+	gdal:pointsalonglines	Points along lines
+	gdal:polygonize	Polygonize (raster to vector)
+	gdal:proximity	Proximity (raster distance)
+	gdal:rastercalculator	Raster calculator
+	gdal:rasterize	Rasterize (vector to raster)
+	gdal:rasterize_over	Rasterize (overwrite with attribute)
+	gdal:rasterize_over_fixed_value	Rasterize (overwrite with fixed value)
+	gdal:rearrange_bands	Rearrange bands
+	gdal:retile	Retile
+	gdal:rgbtopct	RGB to PCT
+	gdal:roughness	Roughness
+	gdal:sieve	Sieve
+	gdal:slope	Slope
+	gdal:tileindex	Tile index
+	gdal:tpitopographicpositionindex	Topographic Position Index (TPI)
+	gdal:translate	Translate (convert format)
+	gdal:triterrainruggednessindex	Terrain Ruggedness Index (TRI)
+	gdal:viewshed	Viewshed
+	gdal:warpreproject	Warp (reproject)
+
+GRASS
+	grass:g.extension.list	g.extension.list
+	grass:g.extension.manage	g.extension.manage
+	grass:g.version	g.version
+	grass:i.albedo	i.albedo
+	grass:i.aster.toar	i.aster.toar
+	grass:i.atcorr	i.atcorr
+	grass:i.biomass	i.biomass
+	grass:i.cca	i.cca
+	grass:i.cluster	i.cluster
+	grass:i.colors.enhance	i.colors.enhance
+	grass:i.eb.eta	i.eb.eta
+	grass:i.eb.evapfr	i.eb.evapfr
+	grass:i.eb.hsebal01.coords	i.eb.hsebal01.coords
+	grass:i.eb.netrad	i.eb.netrad
+	grass:i.eb.soilheatflux	i.eb.soilheatflux
+	grass:i.emissivity	i.emissivity
+	grass:i.evapo.mh	i.evapo.mh
+	grass:i.evapo.pm	i.evapo.pm
+	grass:i.evapo.pt	i.evapo.pt
+	grass:i.evapo.time	i.evapo.time
+	grass:i.fft	i.fft
+	grass:i.gensig	i.gensig
+	grass:i.gensigset	i.gensigset
+	grass:i.group	i.group
+	grass:i.his.rgb	i.his.rgb
+	grass:i.ifft	i.ifft
+	grass:i.image.mosaic	i.image.mosaic
+	grass:i.in.spotvgt	i.in.spotvgt
+	grass:i.landsat.acca	i.landsat.acca
+	grass:i.landsat.toar	i.landsat.toar
+	grass:i.maxlik	i.maxlik
+	grass:i.modis.qc	i.modis.qc
+	grass:i.oif	i.oif
+	grass:i.pansharpen	i.pansharpen
+	grass:i.pca	i.pca
+	grass:i.rgb.his	i.rgb.his
+	grass:i.segment	i.segment
+	grass:i.smap	i.smap
+	grass:i.tasscap	i.tasscap
+	grass:i.topo.coor.ill	i.topo.coor.ill
+	grass:i.topo.corr	i.topo.corr
+	grass:i.vi	i.vi
+	grass:i.zc	i.zc
+	grass:m.cogo	m.cogo
+	grass:nviz	nviz
+	grass:r.basins.fill	r.basins.fill
+	grass:r.blend.combine	r.blend.combine
+	grass:r.blend.rgb	r.blend.rgb
+	grass:r.buffer	r.buffer
+	grass:r.buffer.lowmem	r.buffer.lowmem
+	grass:r.carve	r.carve
+	grass:r.category	r.category
+	grass:r.category.out	r.category.out
+	grass:r.circle	r.circle
+	grass:r.clump	r.clump
+	grass:r.coin	r.coin
+	grass:r.colors	r.colors
+	grass:r.colors.out	r.colors.out
+	grass:r.colors.stddev	r.colors.stddev
+	grass:r.composite	r.composite
+	grass:r.contour	r.contour
+	grass:r.cost	r.cost
+	grass:r.covar	r.covar
+	grass:r.cross	r.cross
+	grass:r.describe	r.describe
+	grass:r.distance	r.distance
+	grass:r.drain	r.drain
+	grass:r.fill.dir	r.fill.dir
+	grass:r.fill.stats	r.fill.stats
+	grass:r.fillnulls	r.fillnulls
+	grass:r.flow	r.flow
+	grass:r.geomorphon	r.geomorphon
+	grass:r.grow	r.grow
+	grass:r.grow.distance	r.grow.distance
+	grass:r.gwflow	r.gwflow
+	grass:r.his	r.his
+	grass:r.horizon	r.horizon
+	grass:r.horizon.height	r.horizon.height
+	grass:r.in.lidar	r.in.lidar
+	grass:r.in.lidar.info	r.in.lidar.info
+	grass:r.info	r.info
+	grass:r.kappa	r.kappa
+	grass:r.lake	r.lake
+	grass:r.latlong	r.latlong
+	grass:r.li.cwed	r.li.cwed
+	grass:r.li.cwed.ascii	r.li.cwed.ascii
+	grass:r.li.dominance	r.li.dominance
+	grass:r.li.dominance.ascii	r.li.dominance.ascii
+	grass:r.li.edgedensity	r.li.edgedensity
+	grass:r.li.edgedensity.ascii	r.li.edgedensity.ascii
+	grass:r.li.mpa	r.li.mpa
+	grass:r.li.mpa.ascii	r.li.mpa.ascii
+	grass:r.li.mps	r.li.mps
+	grass:r.li.mps.ascii	r.li.mps.ascii
+	grass:r.li.padcv	r.li.padcv
+	grass:r.li.padcv.ascii	r.li.padcv.ascii
+	grass:r.li.padrange	r.li.padrange
+	grass:r.li.padrange.ascii	r.li.padrange.ascii
+	grass:r.li.padsd	r.li.padsd
+	grass:r.li.padsd.ascii	r.li.padsd.ascii
+	grass:r.li.patchdensity	r.li.patchdensity
+	grass:r.li.patchdensity.ascii	r.li.patchdensity.ascii
+	grass:r.li.patchnum	r.li.patchnum
+	grass:r.li.patchnum.ascii	r.li.patchnum.ascii
+	grass:r.li.pielou	r.li.pielou
+	grass:r.li.pielou.ascii	r.li.pielou.ascii
+	grass:r.li.renyi	r.li.renyi
+	grass:r.li.renyi.ascii	r.li.renyi.ascii
+	grass:r.li.richness	r.li.richness
+	grass:r.li.richness.ascii	r.li.richness.ascii
+	grass:r.li.shannon	r.li.shannon
+	grass:r.li.shannon.ascii	r.li.shannon.ascii
+	grass:r.li.shape	r.li.shape
+	grass:r.li.shape.ascii	r.li.shape.ascii
+	grass:r.li.simpson	r.li.simpson
+	grass:r.li.simpson.ascii	r.li.simpson.ascii
+	grass:r.mapcalc.simple	r.mapcalc.simple
+	grass:r.mask.rast	r.mask.rast
+	grass:r.mask.vect	r.mask.vect
+	grass:r.mfilter	r.mfilter
+	grass:r.mode	r.mode
+	grass:r.neighbors	r.neighbors
+	grass:r.null	r.null
+	grass:r.out.ascii	r.out.ascii
+	grass:r.out.gridatb	r.out.gridatb
+	grass:r.out.mat	r.out.mat
+	grass:r.out.mpeg	r.out.mpeg
+	grass:r.out.png	r.out.png
+	grass:r.out.pov	r.out.pov
+	grass:r.out.ppm	r.out.ppm
+	grass:r.out.ppm3	r.out.ppm3
+	grass:r.out.vrml	r.out.vrml
+	grass:r.out.vtk	r.out.vtk
+	grass:r.out.xyz	r.out.xyz
+	grass:r.param.scale	r.param.scale
+	grass:r.patch	r.patch
+	grass:r.path	r.path
+	grass:r.path.coordinate.txt	r.path.coordinate.txt
+	grass:r.plane	r.plane
+	grass:r.profile	r.profile
+	grass:r.proj	r.proj
+	grass:r.quant	r.quant
+	grass:r.quantile	r.quantile
+	grass:r.quantile.plain	r.quantile.plain
+	grass:r.random	r.random
+	grass:r.random.cells	r.random.cells
+	grass:r.random.surface	r.random.surface
+	grass:r.reclass	r.reclass
+	grass:r.reclass.area	r.reclass.area
+	grass:r.recode	r.recode
+	grass:r.regression.line	r.regression.line
+	grass:r.regression.multi	r.regression.multi
+	grass:r.relief	r.relief
+	grass:r.relief.scaling	r.relief.scaling
+	grass:r.report	r.report
+	grass:r.resamp.bspline	r.resamp.bspline
+	grass:r.resamp.filter	r.resamp.filter
+	grass:r.resamp.interp	r.resamp.interp
+	grass:r.resamp.rst	r.resamp.rst
+	grass:r.resamp.stats	r.resamp.stats
+	grass:r.resample	r.resample
+	grass:r.rescale	r.rescale
+	grass:r.rescale.eq	r.rescale.eq
+	grass:r.rgb	r.rgb
+	grass:r.ros	r.ros
+	grass:r.series	r.series
+	grass:r.series.accumulate	r.series.accumulate
+	grass:r.series.interp	r.series.interp
+	grass:r.shade	r.shade
+	grass:r.sim.sediment	r.sim.sediment
+	grass:r.sim.water	r.sim.water
+	grass:r.slope.aspect	r.slope.aspect
+	grass:r.solute.transport	r.solute.transport
+	grass:r.spread	r.spread
+	grass:r.spreadpath	r.spreadpath
+	grass:r.statistics	r.statistics
+	grass:r.stats	r.stats
+	grass:r.stats.quantile.out	r.stats.quantile.out
+	grass:r.stats.quantile.rast	r.stats.quantile.rast
+	grass:r.stats.zonal	r.stats.zonal
+	grass:r.stream.extract	r.stream.extract
+	grass:r.sun.incidout	r.sun.incidout
+	grass:r.sun.insoltime	r.sun.insoltime
+	grass:r.sunhours	r.sunhours
+	grass:r.sunmask.datetime	r.sunmask.datetime
+	grass:r.sunmask.position	r.sunmask.position
+	grass:r.surf.area	r.surf.area
+	grass:r.surf.contour	r.surf.contour
+	grass:r.surf.fractal	r.surf.fractal
+	grass:r.surf.gauss	r.surf.gauss
+	grass:r.surf.idw	r.surf.idw
+	grass:r.surf.random	r.surf.random
+	grass:r.terraflow	r.terraflow
+	grass:r.texture	r.texture
+	grass:r.thin	r.thin
+	grass:r.tile	r.tile
+	grass:r.tileset	r.tileset
+	grass:r.to.vect	r.to.vect
+	grass:r.topidx	r.topidx
+	grass:r.topmodel	r.topmodel
+	grass:r.topmodel.topidxstats	r.topmodel.topidxstats
+	grass:r.transect	r.transect
+	grass:r.univar	r.univar
+	grass:r.uslek	r.uslek
+	grass:r.usler	r.usler
+	grass:r.viewshed	r.viewshed
+	grass:r.volume	r.volume
+	grass:r.walk.coords	r.walk.coords
+	grass:r.walk.points	r.walk.points
+	grass:r.walk.rast	r.walk.rast
+	grass:r.water.outlet	r.water.outlet
+	grass:r.watershed	r.watershed
+	grass:r.what.color	r.what.color
+	grass:r.what.coords	r.what.coords
+	grass:r.what.points	r.what.points
+	grass:v.buffer	v.buffer
+	grass:v.build.check	v.build.check
+	grass:v.build.polylines	v.build.polylines
+	grass:v.class	v.class
+	grass:v.clean	v.clean
+	grass:v.cluster	v.cluster
+	grass:v.db.select	v.db.select
+	grass:v.decimate	v.decimate
+	grass:v.delaunay	v.delaunay
+	grass:v.dissolve	v.dissolve
+	grass:v.distance	v.distance
+	grass:v.drape	v.drape
+	grass:v.edit	v.edit
+	grass:v.extract	v.extract
+	grass:v.extrude	v.extrude
+	grass:v.generalize	v.generalize
+	grass:v.hull	v.hull
+	grass:v.in.ascii	v.in.ascii
+	grass:v.in.dxf	v.in.dxf
+	grass:v.in.e00	v.in.e00
+	grass:v.in.geonames	v.in.geonames
+	grass:v.in.lidar	v.in.lidar
+	grass:v.in.lines	v.in.lines
+	grass:v.in.mapgen	v.in.mapgen
+	grass:v.in.wfs	v.in.wfs
+	grass:v.info	v.info
+	grass:v.kcv	v.kcv
+	grass:v.kernel.rast	v.kernel.rast
+	grass:v.kernel.vector	v.kernel.vector
+	grass:v.lidar.correction	v.lidar.correction
+	grass:v.lidar.edgedetection	v.lidar.edgedetection
+	grass:v.lidar.growing	v.lidar.growing
+	grass:v.mkgrid	v.mkgrid
+	grass:v.neighbors	v.neighbors
+	grass:v.net	v.net
+	grass:v.net.alloc	v.net.alloc
+	grass:v.net.allpairs	v.net.allpairs
+	grass:v.net.bridge	v.net.bridge
+	grass:v.net.centrality	v.net.centrality
+	grass:v.net.components	v.net.components
+	grass:v.net.connectivity	v.net.connectivity
+	grass:v.net.distance	v.net.distance
+	grass:v.net.flow	v.net.flow
+	grass:v.net.iso	v.net.iso
+	grass:v.net.nreport	v.net.nreport
+	grass:v.net.path	v.net.path
+	grass:v.net.report	v.net.report
+	grass:v.net.salesman	v.net.salesman
+	grass:v.net.spanningtree	v.net.spanningtree
+	grass:v.net.steiner	v.net.steiner
+	grass:v.net.timetable	v.net.timetable
+	grass:v.net.visibility	v.net.visibility
+	grass:v.normal	v.normal
+	grass:v.out.ascii	v.out.ascii
+	grass:v.out.dxf	v.out.dxf
+	grass:v.out.postgis	v.out.postgis
+	grass:v.out.pov	v.out.pov
+	grass:v.out.svg	v.out.svg
+	grass:v.out.vtk	v.out.vtk
+	grass:v.outlier	v.outlier
+	grass:v.overlay	v.overlay
+	grass:v.pack	v.pack
+	grass:v.parallel	v.parallel
+	grass:v.patch	v.patch
+	grass:v.perturb	v.perturb
+	grass:v.proj	v.proj
+	grass:v.qcount	v.qcount
+	grass:v.random	v.random
+	grass:v.rast.stats	v.rast.stats
+	grass:v.reclass	v.reclass
+	grass:v.rectify	v.rectify
+	grass:v.report	v.report
+	grass:v.sample	v.sample
+	grass:v.segment	v.segment
+	grass:v.select	v.select
+	grass:v.split	v.split
+	grass:v.surf.bspline	v.surf.bspline
+	grass:v.surf.idw	v.surf.idw
+	grass:v.surf.rst	v.surf.rst
+	grass:v.surf.rst.cvdev	v.surf.rst.cvdev
+	grass:v.to.3d	v.to.3d
+	grass:v.to.lines	v.to.lines
+	grass:v.to.points	v.to.points
+	grass:v.to.rast	v.to.rast
+	grass:v.transform	v.transform
+	grass:v.type	v.type
+	grass:v.univar	v.univar
+	grass:v.vect.stats	v.vect.stats
+	grass:v.voronoi	v.voronoi
+	grass:v.voronoi.skeleton	v.voronoi.skeleton
+	grass:v.what.rast	v.what.rast
+	grass:v.what.vect	v.what.vect
+
+Models
+
+QGIS (native c++)
+	native:addautoincrementalfield	Add autoincremental field
+	native:addfieldtoattributestable	Add field to attributes table
+	native:addhistorymetadata	Add history metadata
+	native:adduniquevalueindexfield	Add unique value index field
+	native:addxyfields	Add X/Y fields to layer
+	native:affinetransform	Affine transform
+	native:aggregate	Aggregate
+	native:angletonearest	Align points to features
+	native:antimeridiansplit	Geodesic line split at antimeridian
+	native:approximatemedialaxis	Approximate medial axis
+	native:arrayoffsetlines	Array of offset (parallel) lines
+	native:arraytranslatedfeatures	Array of translated features
+	native:aspect	Aspect
+	native:assignprojection	Assign projection
+	native:atlaslayouttoimage	Export atlas layout as image
+	native:atlaslayouttomultiplepdf	Export atlas layout as PDF (multiple files)
+	native:atlaslayouttopdf	Export atlas layout as PDF (single file)
+	native:b3dmtogltf	Convert B3DM to GLTF
+	native:basicstatisticsforfields	Basic statistics for fields
+	native:batchnominatimgeocoder	Batch Nominatim geocoder
+	native:bookmarkstolayer	Convert spatial bookmarks to layer
+	native:boundary	Boundary
+	native:boundingboxes	Bounding boxes
+	native:buffer	Buffer
+	native:bufferbym	Variable width buffer (by M value)
+	native:calculatevectoroverlaps	Overlap analysis
+	native:cellstackpercentile	Cell stack percentile
+	native:cellstackpercentrankfromrasterlayer	Cell stack percentrank from raster layer
+	native:cellstackpercentrankfromvalue	Cell stack percent rank from value
+	native:cellstatistics	Cell statistics
+	native:centroids	Centroids
+	native:checkgeometryangle	Small angles
+	native:checkgeometryarea	Small polygons
+	native:checkgeometrycontained	Features inside polygon
+	native:checkgeometrydangle	Dangle-end lines
+	native:checkgeometrydegeneratepolygon	Degenerate polygons
+	native:checkgeometryduplicate	Duplicated geometries
+	native:checkgeometryduplicatenodes	Duplicated vertices
+	native:checkgeometryfollowboundaries	Polygons exceeding boundaries
+	native:checkgeometrygap	Small gaps
+	native:checkgeometryhole	Holes
+	native:checkgeometrylineintersection	Lines intersecting each other
+	native:checkgeometrylinelayerintersection	Lines intersecting other layer
+	native:checkgeometrymissingvertex	Missing vertices along borders
+	native:checkgeometrymultipart	Strictly multipart
+	native:checkgeometryoverlap	Overlaps
+	native:checkgeometrypointcoveredbyline	Points outside lines
+	native:checkgeometrypointinpolygon	Points outside polygons
+	native:checkgeometrysegmentlength	Small segments
+	native:checkgeometryselfcontact	Self-contacts
+	native:checkgeometryselfintersection	Self-intersections
+	native:checkgeometrysliverpolygon	Sliver polygons
+	native:checkvalidity	Check validity
+	native:climbalongline	Climb along line
+	native:clip	Clip
+	native:collect	Collect geometries
+	native:combinestyles	Combine style databases
+	native:concavehull	Concave hull (by layer)
+	native:concavehullbyfeature	Concave hull (by feature)
+	native:convertgeometrytype	Convert geometry type
+	native:convertgpsdata	Convert GPS data
+	native:convertgpxfeaturetype	Convert GPX feature type
+	native:converttocurves	Convert to curved geometries
+	native:convexhull	Convex hull
+	native:copylayermetadata	Copy layer metadata
+	native:countpointsinpolygon	Count points in polygon
+	native:coveragesimplify	Simplify coverage
+	native:coverageunion	Dissolve coverage
+	native:coveragevalidate	Validate coverage
+	native:createattributeindex	Create attribute index
+	native:createconstantrasterlayer	Create constant raster layer
+	native:creategrid	Create grid
+	native:createpointslayerfromtable	Create points layer from table
+	native:createrandombinomialrasterlayer	Create random raster layer (binomial distribution)
+	native:createrandomexponentialrasterlayer	Create random raster layer (exponential distribution)
+	native:createrandomgammarasterlayer	Create random raster layer (gamma distribution)
+	native:createrandomgeometricrasterlayer	Create random raster layer (geometric distribution)
+	native:createrandomnegativebinomialrasterlayer	Create random raster layer (negative binomial distribution)
+	native:createrandomnormalrasterlayer	Create random raster layer (normal distribution)
+	native:createrandompoissonrasterlayer	Create random raster layer (poisson distribution)
+	native:createrandomuniformrasterlayer	Create random raster layer (uniform distribution)
+	native:createspatialindex	Create spatial index
+	native:dbscanclustering	DBSCAN clustering
+	native:definecurrentprojection	Define projection
+	native:delaunaytriangulation	Delaunay triangulation
+	native:deletecolumn	Drop field(s)
+	native:deleteduplicategeometries	Delete duplicate geometries
+	native:deleteholes	Delete holes
+	native:densifygeometries	Densify by count
+	native:densifygeometriesgivenaninterval	Densify by interval
+	native:detectvectorchanges	Detect dataset changes
+	native:difference	Difference
+	native:dissolve	Dissolve
+	native:distancematrix	Distance matrix
+	native:distancetonearesthub	Distance to nearest hub
+	native:downloadgpsdata	Download GPS data from device
+	native:downloadvectortiles	Download vector tiles
+	native:dropgeometries	Drop geometries
+	native:dropmzvalues	Drop M/Z values
+	native:dtmslopebasedfilter	DTM filter (slope-based)
+	native:dxfexport	Export layers to DXF
+	native:equaltofrequency	Equal to frequency
+	native:explodehstorefield	Explode HStore Field
+	native:explodelines	Explode lines
+	native:exportaddgeometrycolumns	Add geometry attributes
+	native:exportlayermetadata	Export layer metadata
+	native:exportlayersinformation	Export layer(s) information
+	native:exportmeshedges	Export mesh edges
+	native:exportmeshfaces	Export mesh faces
+	native:exportmeshongrid	Export mesh on grid
+	native:exportmeshvertices	Export mesh vertices
+	native:exporttospreadsheet	Export to spreadsheet
+	native:extendlines	Extend lines
+	native:extenttolayer	Create layer from extent
+	native:extractbinary	Extract binary field
+	native:extractbyattribute	Extract by attribute
+	native:extractbyexpression	Extract by expression
+	native:extractbyextent	Extract/clip by extent
+	native:extractbylocation	Extract by location
+	native:extractlabels	Extract labels
+	native:extractmvalues	Extract M values
+	native:extractnetworkendpoints	Extract network end points
+	native:extractspecificvertices	Extract specific vertices
+	native:extractvertices	Extract vertices
+	native:extractwithindistance	Extract within distance
+	native:extractzvalues	Extract Z values
+	native:extrude	Extrude
+	native:fieldcalculator	Field calculator
+	native:filedownloader	Download file via HTTP(S)
+	native:fileuploader	Upload a file via HTTP(S)
+	native:fillnodata	Fill NoData cells
+	native:fillsinkswangliu	Fill sinks (Wang & Liu)
+	native:filterbygeometry	Filter by geometry type
+	native:filterverticesbym	Filter vertices by M value
+	native:filterverticesbyz	Filter vertices by Z value
+	native:findprojection	Find projection
+	native:fixgeometries	Fix geometries
+	native:fixgeometryangle	Delete small angles
+	native:fixgeometryarea	Fix small polygons
+	native:fixgeometrydeletefeatures	Delete features
+	native:fixgeometryduplicatenodes	Delete duplicated vertices
+	native:fixgeometrygap	Fill gaps
+	native:fixgeometryhole	Fill holes
+	native:fixgeometrymissingvertex	Add missing vertices along borders
+	native:fixgeometrymultipart	Convert to strictly multipart
+	native:fixgeometryoverlap	Delete overlaps
+	native:fixgeometryselfintersection	Split self-intersecting geometries
+	native:flattenrelationships	Flatten relationship
+	native:forceccw	Force polygons counter-clockwise
+	native:forcecw	Force polygons clockwise
+	native:forcerhr	Force right-hand-rule
+	native:fuzzifyrastergaussianmembership	Fuzzify raster (gaussian membership)
+	native:fuzzifyrasterlargemembership	Fuzzify raster (large membership)
+	native:fuzzifyrasterlinearmembership	Fuzzify raster (linear membership)
+	native:fuzzifyrasternearmembership	Fuzzify raster (near membership)
+	native:fuzzifyrasterpowermembership	Fuzzify raster (power membership)
+	native:fuzzifyrastersmallmembership	Fuzzify raster (small membership)
+	native:generateelevationprofileimage	Generate elevation profile image
+	native:generatepointspixelcentroidsinsidepolygons	Generate points (pixel centroids) inside polygons
+	native:geometrybyexpression	Geometry by expression
+	native:gltftovector	Convert GLTF to vector features
+	native:greaterthanfrequency	Greater than frequency
+	native:heatmapkerneldensityestimation	Heatmap (Kernel Density Estimation)
+	native:highestpositioninrasterstack	Highest position in raster stack
+	native:hillshade	Hillshade
+	native:httprequest	HTTP(S) POST/GET request
+	native:hublines	Join by lines (hub lines)
+	native:hypsometriccurves	Hypsometric curves
+	native:importintopostgis	Export to PostgreSQL
+	native:importintospatialite	Export to SpatiaLite
+	native:importintospatialiteregistered	Export to SpatiaLite (registered)
+	native:importphotos	Import geotagged photos
+	native:interpolatepoint	Interpolate point on line
+	native:intersection	Intersection
+	native:joinattributesbylocation	Join attributes by location
+	native:joinattributestable	Join attributes by field value
+	native:joinbylocationsummary	Join attributes by location (summary)
+	native:joinbynearest	Join attributes by nearest
+	native:keepnbiggestparts	Keep N biggest parts
+	native:kmeansclustering	K-means clustering
+	native:layertobookmarks	Convert layer to spatial bookmarks
+	native:lessthanfrequency	Less than frequency
+	native:linedensity	Line density
+	native:lineintersections	Line intersections
+	native:linesubstring	Line substring
+	native:listuniquevalues	List unique values
+	native:lowestpositioninrasterstack	Lowest position in raster stack
+	native:meancoordinates	Mean coordinate(s)
+	native:mergelines	Merge lines
+	native:mergevectorlayers	Merge vector layers
+	native:meshcontours	Export contours
+	native:meshexportcrosssection	Export cross section dataset values on lines from mesh
+	native:meshexporttimeseries	Export time series values from points of a mesh dataset
+	native:meshrasterize	Rasterize mesh dataset
+	native:minimumboundinggeometry	Minimum bounding geometry
+	native:minimumenclosingcircle	Minimum enclosing circles
+	native:multidifference	Difference (multiple)
+	native:multiintersection	Intersection (multiple)
+	native:multiparttosingleparts	Multipart to singleparts
+	native:multiringconstantbuffer	Multi-ring buffer (constant distance)
+	native:multiunion	Union (multiple)
+	native:nearestneighbouranalysis	Nearest neighbour analysis
+	native:offsetline	Offset lines
+	native:openurl	Open file or URL
+	native:orderbyexpression	Order by expression
+	native:orientedminimumboundingbox	Oriented minimum bounding box
+	native:orthogonalize	Orthogonalize
+	native:package	Package layers
+	native:pixelstopoints	Raster pixels to points
+	native:pixelstopolygons	Raster pixels to polygons
+	native:pointonsurface	Point on surface
+	native:pointsalonglines	Points along geometry
+	native:pointstopath	Points to path
+	native:pointtolayer	Create layer from point
+	native:poleofinaccessibility	Pole of inaccessibility
+	native:polygonfromlayerextent	Extract layer extent
+	native:polygonize	Polygonize
+	native:polygonstolines	Polygons to lines
+	native:postgisexecutesql	PostgreSQL execute SQL
+	native:printlayoutmapextenttolayer	Print layout map extent to layer
+	native:printlayouttoimage	Export print layout as image
+	native:printlayouttopdf	Export print layout as PDF
+	native:projectpointcartesian	Project points (Cartesian)
+	native:promotetomulti	Promote to multipart
+	native:randomextract	Random extract
+	native:randomextractwithinsubsets	Random extract within subsets
+	native:randompointsinextent	Random points in extent
+	native:randompointsinpolygons	Random points in polygons
+	native:randompointsonlines	Random points on lines
+	native:randomselection	Random selection
+	native:randomselectionwithinsubsets	Random selection within subsets
+	native:rasterbooleanand	Raster boolean AND
+	native:rasterfeaturepreservingsmoothing	Feature preserving DEM smoothing
+	native:rastergaussianblur	Gaussian blur
+	native:rasterize	Convert map to raster
+	native:rasterlayerproperties	Raster layer properties
+	native:rasterlayerstatistics	Raster layer statistics
+	native:rasterlayeruniquevaluesreport	Raster layer unique values report
+	native:rasterlayerzonalstats	Raster layer zonal statistics
+	native:rasterlogicalor	Raster boolean OR
+	native:rasterminmax	Raster minimum/maximum
+	native:rasterrank	Raster rank
+	native:rastersampling	Sample raster values
+	native:rastersurfacevolume	Raster surface volume
+	native:reclassifybylayer	Reclassify by layer
+	native:reclassifybytable	Reclassify by table
+	native:rectanglesovalsdiamonds	Rectangles, ovals, diamonds
+	native:refactorfields	Refactor fields
+	native:relief	Relief
+	native:removeduplicatesbyattribute	Delete duplicates by attribute
+	native:removeduplicatevertices	Remove duplicate vertices
+	native:removenullgeometries	Remove null geometries
+	native:removepartsbyarea	Remove parts by area
+	native:removepartsbylength	Remove parts by length
+	native:renametablefield	Rename field
+	native:repairshapefile	Repair Shapefile
+	native:reprojectlayer	Reproject layer
+	native:rescaleraster	Rescale raster
+	native:retainfields	Retain fields
+	native:reverselinedirection	Reverse line direction
+	native:rotatefeatures	Rotate
+	native:roundness	Roundness
+	native:roundrastervalues	Round raster
+	native:ruggednessindex	Ruggedness index
+	native:savefeatures	Save vector features to file
+	native:saveselectedfeatures	Extract selected features
+	native:segmentizebymaxangle	Segmentize by maximum angle
+	native:segmentizebymaxdistance	Segmentize by maximum distance
+	native:selectbyattribute	Select by attribute
+	native:serviceareafromlayer	Service area (from layer)
+	native:serviceareafrompoint	Service area (from point)
+	native:setlayerencoding	Set layer encoding
+	native:setlayermetadata	Set layer metadata
+	native:setlayerstyle	Set layer style
+	native:setmetadatafields	Set metadata fields
+	native:setmfromraster	Set M value from raster
+	native:setmvalue	Set M value
+	native:setzfromraster	Drape (set Z value from raster)
+	native:setzvalue	Set Z value
+	native:shortestline	Shortest line between features
+	native:shortestpathlayertopoint	Shortest path (layer to point)
+	native:shortestpathpointtolayer	Shortest path (point to layer)
+	native:shortestpathpointtopoint	Shortest path (point to point)
+	native:shpencodinginfo	Extract Shapefile encoding
+	native:simplifygeometries	Simplify
+	native:singlesidedbuffer	Single sided buffer
+	native:slope	Slope
+	native:smoothgeometry	Smooth
+	native:snapgeometries	Snap geometries to layer
+	native:snappointstogrid	Snap points to grid
+	native:spatialiteexecutesql	SpatiaLite execute SQL
+	native:spatialiteexecutesqlregistered	SpatiaLite execute SQL (registered DB)
+	native:splitfeaturesbycharacter	Split features by character
+	native:splitlinesbylength	Split lines by maximum length
+	native:splitvectorlayer	Split vector layer
+	native:splitwithlines	Split with lines
+	native:stdbscanclustering	ST-DBSCAN clustering
+	native:stylefromproject	Create style database from project
+	native:subdivide	Subdivide
+	native:sumlinelengths	Sum line lengths
+	native:surfacetopolygon	Surface to polygon
+	native:swapxy	Swap X and Y coordinates
+	native:symmetricaldifference	Symmetrical difference
+	native:taperedbuffer	Tapered buffers
+	native:tightconcavehullofpolygons	Fill gaps between polygons
+	native:tilesxyzdirectory	Generate XYZ tiles (Directory)
+	native:tilesxyzmbtiles	Generate XYZ tiles (MBTiles)
+	native:tinmeshcreation	TIN Mesh Creation
+	native:totalcurvature	Total curvature
+	native:transect	Transect
+	native:transectfixeddistance	Transect (fixed distance)
+	native:transferannotationsfrommain	Transfer annotations from main layer
+	native:translategeometry	Translate
+	native:truncatetable	Truncate table
+	native:union	Union
+	native:updatelayermetadata	Update layer metadata
+	native:uploadgpsdata	Upload GPS data to device
+	native:validatenetwork	Validate network
+	native:voronoipolygons	Voronoi polygons
+	native:wedgebuffers	Create wedge buffers
+	native:writevectortiles_mbtiles	Write Vector Tiles (MBTiles)
+	native:writevectortiles_xyz	Write Vector Tiles (XYZ)
+	native:zonalhistogram	Zonal histogram
+	native:zonalminmaxpoint	Zonal minimum/maximum point
+	native:zonalstatisticsfb	Zonal statistics
+
+QGIS (PDAL)
+	pdal:assignprojection	Assign projection
+	pdal:boundary	Boundary
+	pdal:classifyground	Classify ground points
+	pdal:clip	Clip point cloud
+	pdal:compare	Compare point clouds
+	pdal:convertformat	Convert point cloud format
+	pdal:createcopc	Create COPC
+	pdal:density	Point cloud density
+	pdal:exportraster	Export point cloud to raster
+	pdal:exportrastertin	Export point cloud to raster (using triangulation)
+	pdal:exportvector	Export point cloud to vector
+	pdal:filter	Filter point cloud
+	pdal:filternoiseradius	Filter noise (using radius)
+	pdal:filternoisestatistical	Filter noise
+	pdal:heightabovegroundbynearestneighbor	Height above ground
+	pdal:heightabovegroundtriangulation	Height above ground (using triangulation)
+	pdal:info	Point cloud information
+	pdal:merge	Merge point cloud
+	pdal:reproject	Reproject point cloud
+	pdal:thinbydecimate	Thin (by skipping points)
+	pdal:thinbyradius	Thin (by sampling radius)
+	pdal:tile	Create tiles from point cloud
+	pdal:transformpointcloud	Transform point cloud
+	pdal:virtualpointcloud	Build virtual point cloud (VPC)
+
+QGIS
+	qgis:advancedpythonfieldcalculator	Advanced Python field calculator
+	qgis:barplot	Bar plot
+	qgis:boxplot	Box plot
+	qgis:executesql	Execute SQL
+	qgis:generatepointspixelcentroidsalongline	Generate points (pixel centroids) along line
+	qgis:idwinterpolation	IDW interpolation
+	qgis:linestopolygons	Lines to polygons
+	qgis:meanandstandarddeviationplot	Mean and standard deviation plot
+	qgis:pointsdisplacement	Points displacement
+	qgis:polarplot	Polar plot
+	qgis:randompointsalongline	Random points along line
+	qgis:randompointsinlayerbounds	Random points in layer bounds
+	qgis:randompointsinsidepolygons	Random points inside polygons
+	qgis:rasterlayerhistogram	Raster layer histogram
+	qgis:regularpoints	Regular points
+	qgis:scatter3dplot	Vector layer scatterplot 3D
+	qgis:statisticsbycategories	Statistics by categories
+	qgis:texttofloat	Text to float
+	qgis:tininterpolation	TIN interpolation
+	qgis:topologicalcoloring	Topological coloring
+	qgis:vectorlayerhistogram	Vector layer histogram
+	qgis:vectorlayerscatterplot	Vector layer scatterplot
+
+Scripts
+

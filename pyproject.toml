@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "karstfinder"
+version = "0.1.0"
+description = "Blind, reproducible karst landscape prospecting"
+requires-python = ">=3.11"
+dependencies = ["requests==2.34.2", "whitebox==2.3.6"]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
