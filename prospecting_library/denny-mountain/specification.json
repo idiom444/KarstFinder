@@ -1,0 +1,21 @@
+{
+  "name": "Denny Mountain",
+  "general_location": "Southern Denny Mountain / Denny Creek, Snoqualmie Pass, Washington",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [615850, 5252250, 618850, 5255250]
+  },
+  "geological_summary": "DNR 1:100,000 mapped PMmb(e) marble lens (OBJECTID 29438), with uncertain contacts and mixed melange context. 48 cliff patches overlap mapped marble; no depression core does. Unvalidated surface indicators, not detected entrances.",
+  "candidate_csv": "results/denny_v001_access/screened_indicators.csv",
+  "analysis_references": [
+    "configs/denny_v001_landscape.json",
+    "configs/denny_v001_features.json",
+    "experiments/snapshots/denny_v001.json",
+    "docs/DENNY_RESULTS.md",
+    "docs/reviews/denny_v001_methodology/review_manifest.json",
+    "results/denny_v001_landscape",
+    "results/denny_v001_features",
+    "results/denny_v001_access",
+    "results/denny_v001_observation"
+  ]
+}

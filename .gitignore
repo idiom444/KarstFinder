@@ -18,3 +18,13 @@ qgis/*.qgz~
 !qgis/KarstFinder_Blind_v002.qgz
 
 !qgis/KarstFinder_Denny_v001.qgz
+
+# Personal field observations/photos stay local, independent of public predictions.
+prospecting_library/*/local/
+prospecting_library/.sessions/
+prospecting_library/.lock
+prospecting_library/**/.capture-*
+prospecting_library/**/*.qgz~
+prospecting_library/**/*.qgd
+prospecting_library/**/*.tmp
+prospecting_library/**/*.mismatch.json

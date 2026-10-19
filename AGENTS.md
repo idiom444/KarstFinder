@@ -95,3 +95,21 @@ Preserve the original ranks/measurements and snapshot; the additive review recor
 is docs/reviews/denny_v001_methodology/. No score/threshold retuning is authorized
 by the documentation request. Prior information exposure must not be erased or
 misrepresented as a new independent blind holdout.
+
+## Persistent Prospecting Library
+
+Save completed investigations with `./library save AREA_ID` (captures live QGIS)
+or `--project PATH`; new areas also need `--spec PATH`. Use `./library open AREA_ID`
+for MCP reopening, which preserves dirty sessions and refuses pending layer edits.
+Documented workflow and backup requirements: prospecting_library/README.md.
+Catalog: prospecting_library/index.json. Denny's stable saved project is
+prospecting_library/denny-mountain/denny-mountain.qgz; Cave Ridge has its own entry.
+Run `./library verify AREA_ID` after saves. The original frozen projects/outputs
+must remain intact. New library features live in separate modules and scripts.
+
+Statuses describe fieldwork only. Record observations via `./library note` in
+ignored prospecting_library/AREA_ID/local/field_notes.json, associated with area,
+candidate ID and original prediction checksum. Never put personal field evidence,
+possible-opening locations, photos or private validation data into public Git.
+Archive previous maps/metadata instead of overwriting their history. These saved
+projects require shared data/results and are not portable standalone packages.

@@ -1,0 +1,407 @@
+{
+  "area_id": "denny-mountain",
+  "created_utc": "2026-10-19T19:31:15.025157+00:00",
+  "status": "Not yet investigated",
+  "personal_notes": "prospecting_library/denny-mountain/local/field_notes.json",
+  "revision": 2,
+  "updated_utc": "2026-10-19T19:35:15.533048+00:00",
+  "change": "map saved from live QGIS",
+  "metadata_path": "prospecting_library/denny-mountain/versions/v000002.json",
+  "name": "Denny Mountain",
+  "general_location": "Southern Denny Mountain / Denny Creek, Snoqualmie Pass, Washington",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      615850,
+      5252250,
+      618850,
+      5255250
+    ]
+  },
+  "geological_summary": "DNR 1:100,000 mapped PMmb(e) marble lens (OBJECTID 29438), with uncertain contacts and mixed melange context. 48 cliff patches overlap mapped marble; no depression core does. Unvalidated surface indicators, not detected entrances.",
+  "specification": {
+    "name": "Denny Mountain",
+    "general_location": "Southern Denny Mountain / Denny Creek, Snoqualmie Pass, Washington",
+    "study_extent": {
+      "crs": "EPSG:26910",
+      "bounds": [
+        615850,
+        5252250,
+        618850,
+        5255250
+      ]
+    },
+    "geological_summary": "DNR 1:100,000 mapped PMmb(e) marble lens (OBJECTID 29438), with uncertain contacts and mixed melange context. 48 cliff patches overlap mapped marble; no depression core does. Unvalidated surface indicators, not detected entrances.",
+    "candidate_csv": "results/denny_v001_access/screened_indicators.csv",
+    "analysis_references": [
+      "configs/denny_v001_landscape.json",
+      "configs/denny_v001_features.json",
+      "experiments/snapshots/denny_v001.json",
+      "docs/DENNY_RESULTS.md",
+      "docs/reviews/denny_v001_methodology/review_manifest.json",
+      "results/denny_v001_landscape",
+      "results/denny_v001_features",
+      "results/denny_v001_access",
+      "results/denny_v001_observation"
+    ]
+  },
+  "candidate_count": 489,
+  "highest_priority_candidates": [
+    {
+      "object_id": "C-007851",
+      "rank": "1",
+      "kind": "cliff",
+      "score": "0.861542123556137"
+    },
+    {
+      "object_id": "C-007828",
+      "rank": "2",
+      "kind": "cliff",
+      "score": "0.8555275201797485"
+    },
+    {
+      "object_id": "C-007722",
+      "rank": "3",
+      "kind": "cliff",
+      "score": "0.8544946312904358"
+    },
+    {
+      "object_id": "C-007983",
+      "rank": "4",
+      "kind": "cliff",
+      "score": "0.8535515832901002"
+    },
+    {
+      "object_id": "C-007707",
+      "rank": "5",
+      "kind": "cliff",
+      "score": "0.8221245628595353"
+    },
+    {
+      "object_id": "C-007841",
+      "rank": "6",
+      "kind": "cliff",
+      "score": "0.819242308139801"
+    },
+    {
+      "object_id": "C-008008",
+      "rank": "7",
+      "kind": "cliff",
+      "score": "0.8183267438411712"
+    },
+    {
+      "object_id": "C-008453",
+      "rank": "8",
+      "kind": "cliff",
+      "score": "0.8051103615760804"
+    },
+    {
+      "object_id": "C-008180",
+      "rank": "9",
+      "kind": "cliff",
+      "score": "0.7982960754632951"
+    },
+    {
+      "object_id": "C-008379",
+      "rank": "10",
+      "kind": "cliff",
+      "score": "0.78975876390934"
+    }
+  ],
+  "candidate_csv": "results/denny_v001_access/screened_indicators.csv",
+  "candidate_csv_sha256": "11901ef5c3c44e358b5257890529bbc20b84087c0fc12a1a1d0851e827b20609",
+  "analysis_references": [
+    "configs/denny_v001_landscape.json",
+    "configs/denny_v001_features.json",
+    "experiments/snapshots/denny_v001.json",
+    "docs/DENNY_RESULTS.md",
+    "docs/reviews/denny_v001_methodology/review_manifest.json",
+    "results/denny_v001_landscape",
+    "results/denny_v001_features",
+    "results/denny_v001_access",
+    "results/denny_v001_observation"
+  ],
+  "project_path": "prospecting_library/denny-mountain/denny-mountain.qgz",
+  "archived_project": "prospecting_library/denny-mountain/map-v000002.qgz",
+  "project_sha256": "78273e453a0d4377ef21cfcadac9ddde23ca80626dcecc0792867775fc0dd813",
+  "map_revision": 2,
+  "state_path": "prospecting_library/denny-mountain/versions/v000002.state.json",
+  "verification_path": "prospecting_library/denny-mountain/versions/v000002.verification.json",
+  "dataset_references": [
+    {
+      "path": "data/processed/denny_v001/context.gpkg",
+      "bytes": 229376,
+      "sha256": "6478be7a7a408f1376bb37a55953a4417103455e75c7c977c06037d8434f4a86",
+      "layers": [
+        "Approved study • 3 × 3 km",
+        "Mapped contacts • uncertain",
+        "Mapped faults • context only",
+        "Mapped marble PMmb(e) • approximate contacts",
+        "Mixed melange • carbonate occurrence uncertain"
+      ]
+    },
+    {
+      "path": "data/processed/denny_v001/features/contributing_area_10m_buffered.tif",
+      "bytes": 1086204,
+      "sha256": "ba4a586cd5ec6cb27305bac862ed3d847d8beedc6f8f671f86169ae2dc2702b3",
+      "layers": [
+        "Modeled D8 contributing area • m², context only"
+      ]
+    },
+    {
+      "path": "data/processed/denny_v001/features/contributing_area_10m_buffered.tif.aux.xml",
+      "bytes": 365,
+      "sha256": "b370f9d84db0cfb62a494cbcc79e4fb1312b0a8f6675746aff84122fdafb54aa",
+      "layers": [
+        "Modeled D8 contributing area • m², context only"
+      ]
+    },
+    {
+      "path": "data/raw/naip2017_rgb_2m.tif",
+      "bytes": 23597336,
+      "sha256": "7ae6b6639d0147d8b636e4e71222394f284145cc0e54f9727c833e4462d99b4a",
+      "layers": [
+        "NAIP 2017 RGB • partial context coverage"
+      ]
+    },
+    {
+      "path": "data/raw/naip2017_rgb_2m.tif.aux.xml",
+      "bytes": 1170,
+      "sha256": "84798d66ae05f82b35993efc5cabca9cf51e8d5c3afed77832133eaeedd30369",
+      "layers": [
+        "NAIP 2017 RGB • partial context coverage"
+      ]
+    },
+    {
+      "path": "results/denny_v001_access/access.gpkg",
+      "bytes": 724992,
+      "sha256": "82a3286e9c70d0e3590fdef55d494943555aa5761d1f7c32a5b9122b48870128",
+      "layers": [
+        "All indicators • geological rank + access flags",
+        "NON-FS mapped land • access unresolved",
+        "Official USFS trails • current conditions still apply",
+        "Top 10 marble priorities • steep/off-trail; NOT destinations",
+        "USFS mapped ownership • not a legal boundary"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/combined_score_10m.tif",
+      "bytes": 47572,
+      "sha256": "0ca12e598f3407010b755170589c28df43050150e17cb571f891bcc9d8ab1b09",
+      "layers": [
+        "Combined ordinal index • NOT cave probability"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/combined_score_10m.tif.aux.xml",
+      "bytes": 373,
+      "sha256": "fc0db938615aeb2957576f1b1d4b3ba29b48631b9a1cfac8fb04de9b519039bb",
+      "layers": [
+        "Combined ordinal index • NOT cave probability"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif",
+      "bytes": 190311,
+      "sha256": "14046f556e232ed73aec997c37e5dd76ad1f84157c172313ff6b6fc55e9dfa38",
+      "layers": [
+        "Closed depression depth • metres"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif.aux.xml",
+      "bytes": 425,
+      "sha256": "131d94403ea70de756d6fc1414befc3017f6cdc582903115d1466f9d599e8498",
+      "layers": [
+        "Closed depression depth • metres"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/feature_quality_1m.tif",
+      "bytes": 18111,
+      "sha256": "2a2eb0841a5cbd9bd3a454016954531139cf7a76d1e85da31e5e2a314a23fe74",
+      "layers": [
+        "Quality mask • survey seam excluded"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/feature_quality_1m.tif.aux.xml",
+      "bytes": 408,
+      "sha256": "0b902001b9f9c8144ee74ed1a598d78467e781697fd9be7714b71028f3a22c37",
+      "layers": [
+        "Quality mask • survey seam excluded"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/features.gpkg",
+      "bytes": 1359872,
+      "sha256": "8dd9925cc7b454ac9d9c539fc93154e49e863904523c1602cd326191a46ed207",
+      "layers": [
+        "12 depression cores • none overlaps mapped marble",
+        "48 cliff patches overlapping mapped marble",
+        "All cliff indicators • includes uncertain melange/contact context"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif",
+      "bytes": 7540467,
+      "sha256": "9896a9f106c9fec7346f7554c7877fac6986ceb76289e5e697576d5a9300ea16",
+      "layers": [
+        "1 m LiDAR terrain hillshade"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif.aux.xml",
+      "bytes": 408,
+      "sha256": "d5cdf2d877b7ffe39b83f92647168e094373fe899c7527f6f58c0a21b4c06e56",
+      "layers": [
+        "1 m LiDAR terrain hillshade"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/residual_11m.tif",
+      "bytes": 26941940,
+      "sha256": "446b7c2860ef6dcae507d91c5b4c05bd95f15587920842a69c0575972f37815d",
+      "layers": [
+        "11 m elevation residual • metres"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/residual_11m.tif.aux.xml",
+      "bytes": 439,
+      "sha256": "4cc998d4d5af3b30fddbcea0c5febeb28c6993fbf32d04529f354e023dfeecd7",
+      "layers": [
+        "11 m elevation residual • metres"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif",
+      "bytes": 31563227,
+      "sha256": "e8ef572d699e49afa9e420b55b93619921c74396a5555aa1bb17262cb148a2e7",
+      "layers": [
+        "Native slope • degrees"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif.aux.xml",
+      "bytes": 436,
+      "sha256": "212ce9e546e4827dc130baf9ba7c424ef8091aeb989f9ca9dcaa6ad19d14292b",
+      "layers": [
+        "Native slope • degrees"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/source_epoch_1m.tif",
+      "bytes": 38408,
+      "sha256": "7c3f698d17fa5894a753bde8e314ec488fc7b1045265d5623d43b6341e47e344",
+      "layers": [
+        "Native acquisition epoch • 2019/2021"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/source_epoch_1m.tif.aux.xml",
+      "bytes": 413,
+      "sha256": "851e448c8f4dc7b901431427cfe98c39b1420d842a22e22d69732eb17877c82e",
+      "layers": [
+        "Native acquisition epoch • 2019/2021"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/terrain_clusters_10m.tif",
+      "bytes": 12636,
+      "sha256": "860eb2f99d58ba1f49d0a67029931ab7993221d51f0e6ec0472ccacd874de3a1",
+      "layers": [
+        "Six descriptive terrain classes • no cave labels"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/terrain_clusters_10m.tif.aux.xml",
+      "bytes": 356,
+      "sha256": "1742cb18250ee081a600bd6df5506f05bb72d556d538b418753f7ddb7bc29dc6",
+      "layers": [
+        "Six descriptive terrain classes • no cave labels"
+      ]
+    },
+    {
+      "path": "results/denny_v001_landscape/combined_score.tif",
+      "bytes": 45882,
+      "sha256": "d43f8d46ce22d182a7f3e1cc00f15cdcd9922b92870f0a0530895c232fb143fc",
+      "layers": [
+        "Original landscape index • whole marble lens selected"
+      ]
+    },
+    {
+      "path": "results/denny_v001_landscape/combined_score.tif.aux.xml",
+      "bytes": 358,
+      "sha256": "806477c4c44e4d0333c6f69b51f58704bbb4f911357b4cd48a29233eb43a0257",
+      "layers": [
+        "Original landscape index • whole marble lens selected"
+      ]
+    },
+    {
+      "path": "results/denny_v001_observation/OBS-01_bare_earth_viewshed.tif",
+      "bytes": 3176,
+      "sha256": "9afcefbb5eaeb2123f7074a2ed9201ba1b3eea1c72d351e7a6e513b53d24768e",
+      "layers": [
+        "OBS-01 terrain viewshed • excludes canopy"
+      ]
+    },
+    {
+      "path": "results/denny_v001_observation/OBS-01_bare_earth_viewshed.tif.aux.xml",
+      "bytes": 336,
+      "sha256": "e5cf9836e8c968a8baad6b8ee7d115b1db8adbd357507c6311df204d7659be96",
+      "layers": [
+        "OBS-01 terrain viewshed • excludes canopy"
+      ]
+    },
+    {
+      "path": "results/denny_v001_observation/OBS-02_bare_earth_viewshed.tif",
+      "bytes": 3094,
+      "sha256": "719a4f7e8d23ec5463970efe7c0d8ce56be14b5bfac68207bdd8b5fda7318ea8",
+      "layers": [
+        "OBS-02 terrain viewshed • excludes canopy"
+      ]
+    },
+    {
+      "path": "results/denny_v001_observation/OBS-02_bare_earth_viewshed.tif.aux.xml",
+      "bytes": 336,
+      "sha256": "ef33b4e736b5292352d9a8ffb5182ec3d7e072f0d4e697037f8de1a3c67c6cad",
+      "layers": [
+        "OBS-02 terrain viewshed • excludes canopy"
+      ]
+    },
+    {
+      "path": "results/denny_v001_observation/OBS-03_bare_earth_viewshed.tif",
+      "bytes": 4353,
+      "sha256": "d1f60820c2fc59b5fe2df40df07c8859d83686450b3ca698c7813471adf5b124",
+      "layers": [
+        "OBS-03 terrain viewshed • excludes canopy"
+      ]
+    },
+    {
+      "path": "results/denny_v001_observation/OBS-03_bare_earth_viewshed.tif.aux.xml",
+      "bytes": 336,
+      "sha256": "0a4c2684be13b0a98e95e24dcde0919be514b9010f5567cd3fd24caa7f4b9969",
+      "layers": [
+        "OBS-03 terrain viewshed • excludes canopy"
+      ]
+    },
+    {
+      "path": "results/denny_v001_observation/observation.gpkg",
+      "bytes": 98304,
+      "sha256": "1abe1062853f2ed87add7c34c0bf865891ce4a996f67a01c57ce3183523e1ed8",
+      "layers": [
+        "OBS triangles • ON mapped trail; canopy visibility unknown"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package",
+  "layer_count": 28,
+  "analysis_reference_hashes": {
+    "configs/denny_v001_landscape.json": "2e341e3afbb2e36a6a9fdf804ce01b2845b094a76417967ff22d8a5bf29b25b8",
+    "configs/denny_v001_features.json": "1638fbfd8d74f34b85a199357ab22ee30b752dc6572d57ea953f824a4e1d3a60",
+    "experiments/snapshots/denny_v001.json": "8d6a061c0ac519ab2183a34c2d68383bff5c948792640e991f798cfe23f612f6",
+    "docs/DENNY_RESULTS.md": "7c4e857cf7efbb510e9b9ca58eedddb2632bfa27a761f3672f50a1640a445107",
+    "docs/reviews/denny_v001_methodology/review_manifest.json": "54663d40bdac551704d55f768bb95800a4ddf71037f76d2796449c0d91df5790"
+  }
+}

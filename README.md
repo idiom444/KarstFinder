@@ -4,6 +4,28 @@ Reproducible geospatial research into cave-bearing landscapes near Cave
 Ridge and nearby Denny Mountain, Snoqualmie Pass, Washington. Initial outputs describe **landscape
 hypotheses, not cave locations or probabilities**. Initial predictions were frozen before known local cave references were consulted. Read [PROJECT_STATE.md](PROJECT_STATE.md) before work.
 
+## Saved prospecting areas
+
+The [Prospecting Library](prospecting_library/README.md) keeps independent,
+versioned QGIS maps and a JSON catalog. Open
+[Denny Mountain](prospecting_library/denny-mountain/denny-mountain.qgz) or
+[Cave Ridge](prospecting_library/cave-ridge/cave-ridge.qgz) directly in QGIS with
+**Project → Open**. No Codex or analysis rerun is needed. These are local projects
+using shared datasets under `data/` and `results/`, **not portable data packages**;
+the GitHub repository alone excludes the large required datasets.
+
+```bash
+./library list
+./library open denny-mountain        # through the live QGIS MCP plugin
+./library save denny-mountain        # preserve the current map as a new version
+./library verify denny-mountain      # independent reopen and data checks
+```
+
+Ask Codex to save/open an area, update its fieldwork status, or record a candidate
+observation. [Library instructions](prospecting_library/README.md) explain new-area
+registration, private local field notes, version history, backup and path recovery.
+Predictions and frozen experiments stay separate from subsequent observations.
+
 ## Setup on Arch Linux
 
 Use the repository open in VS Code: `/home/Idiom/Repos/MyRepos/KarstFinder`.

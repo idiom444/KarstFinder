@@ -2,6 +2,34 @@
 
 Repository: /home/Idiom/Repos/MyRepos/KarstFinder (the open VS Code workspace).
 
+## Persistent Prospecting Library
+
+The local library is implemented under `prospecting_library/`, with a JSON catalog,
+independent versioned QGIS projects, original ranking/data checksums and private
+append-only field notes. Denny Mountain is the first complete example; Cave Ridge
+is registered from its frozen prediction-only project. Both entries start with
+fieldwork status **Not yet investigated**. No visits or observations were invented.
+
+Open `prospecting_library/denny-mountain/denny-mountain.qgz` manually in QGIS to
+recover the saved Denny map. It retains all 28 layers, 489 candidate indicators,
+48 marble-cliff patches, top-ten markers and three observation stations. Cave
+Ridge's saved project retains its 36 layers and 596 surface indicators. These
+projects share existing local datasets; Git alone is not a full data backup.
+
+Use `./library save AREA_ID`, `open`, `verify`, `update`, `note`, `notes` and
+`candidate`; see [the workflow](prospecting_library/README.md). Saving captures
+the live view and styling without overwriting its original project, then verifies
+it in a fresh QGIS process. Old maps and metadata revisions remain recoverable.
+Field notes are excluded from Git and reference original candidate IDs/checksums.
+Scientific algorithms, outputs, ranks, validation records and archived originals
+are unchanged. Verification details are in `docs/PROSPECTING_LIBRARY_VERIFICATION.json`.
+Twenty-four automated tests pass, including nine library tests using synthetic
+data and real fresh QGIS processes. Both saved real projects pass candidate-table,
+style/tree/view/geometry and dataset checks. The live MCP Denny reopen exactly
+matches the captured canvas extent and map state. All 163 original Cave Ridge
+and 144 Denny snapshot hashes verify; all four original QGIS files are byte-identical
+to the pre-library Git commit. No cave-reference data was read for this feature.
+
 **The approved southern Denny Mountain follow-up is complete and loaded in QGIS.**
 It applies the existing methods to 9 km² as unvalidated prospecting. The user
 approved the location on 2026-10-19 and asked to remove known-entrance overlays.

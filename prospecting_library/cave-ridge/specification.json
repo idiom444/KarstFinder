@@ -1,0 +1,18 @@
+{
+  "name": "Cave Ridge",
+  "general_location": "Cave Ridge / Snoqualmie Pass, Washington",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [617000, 5253500, 623000, 5258500]
+  },
+  "geological_summary": "DNR mapped marble and uncertain mixed melange/contact context in glacial alpine terrain. Frozen blind v001 landscape and v002 surface indicators; subsequent exploratory comparison did not establish entrance-localization skill. This saved map contains predictions only, without private cave-reference layers.",
+  "candidate_csv": "results/blind_v002/ranked_indicators.csv",
+  "analysis_references": [
+    "configs/blind_v001.json",
+    "configs/blind_v002.json",
+    "experiments/frozen/blind_v002.json",
+    "docs/BLIND_REVIEW.md",
+    "results/blind_v001",
+    "results/blind_v002"
+  ]
+}

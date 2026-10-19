@@ -1,0 +1,110 @@
+{
+  "verified_utc": "2026-10-19T19:38:41.970590+00:00",
+  "areas": {
+    "denny-mountain": {
+      "area_id": "denny-mountain",
+      "layer_count": 28,
+      "candidate_count": 489,
+      "fresh_process_reopened": true,
+      "state_matches_capture": true,
+      "dataset_files": 32,
+      "dataset_hashes_checked": true,
+      "candidate_csv_unchanged": true,
+      "portability": "local_shared_datasets; not a self-contained package",
+      "candidate_table_check": {
+        "candidate_count": 489,
+        "matching_layer": "All indicators • geological rank + access flags",
+        "ids_ranks_scores_coordinates_match_csv": true
+      },
+      "vector_counts": {
+        "12 depression cores • none overlaps mapped marble": 12,
+        "48 cliff patches overlapping mapped marble": 48,
+        "All cliff indicators • includes uncertain melange/contact context": 477,
+        "All indicators • geological rank + access flags": 489,
+        "Approved study • 3 × 3 km": 1,
+        "Mapped contacts • uncertain": 61,
+        "Mapped faults • context only": 4,
+        "Mapped marble PMmb(e) • approximate contacts": 1,
+        "Mixed melange • carbonate occurrence uncertain": 4,
+        "NON-FS mapped land • access unresolved": 1,
+        "OBS triangles • ON mapped trail; canopy visibility unknown": 3,
+        "Official USFS trails • current conditions still apply": 9,
+        "Top 10 marble priorities • steep/off-trail; NOT destinations": 10,
+        "USFS mapped ownership • not a legal boundary": 1
+      },
+      "map_revision": 2,
+      "project_path": "prospecting_library/denny-mountain/denny-mountain.qgz",
+      "project_sha256": "78273e453a0d4377ef21cfcadac9ddde23ca80626dcecc0792867775fc0dd813",
+      "view_extent": [
+        615868.152097192,
+        5252904.339901766,
+        619410.6025922416,
+        5255004.339901766
+      ]
+    },
+    "cave-ridge": {
+      "area_id": "cave-ridge",
+      "layer_count": 36,
+      "candidate_count": 596,
+      "fresh_process_reopened": true,
+      "state_matches_capture": true,
+      "dataset_files": 55,
+      "dataset_hashes_checked": true,
+      "candidate_csv_unchanged": true,
+      "portability": "local_shared_datasets; not a self-contained package",
+      "candidate_table_check": {
+        "candidate_count": 596,
+        "matching_layer": "All ranked indicators • inspect attributes",
+        "ids_ranks_scores_coordinates_match_csv": true
+      },
+      "vector_counts": {
+        "All ranked indicators • inspect attributes": 596,
+        "Cliff/outcrop exposures • not openings": 520,
+        "Closed-depression cores • not confirmed sinkholes": 76,
+        "Geological contacts • uncertain": 122,
+        "Geological units (PMmb(e) = marble)": 49,
+        "Mapped faults": 8,
+        "Ranked landscape areas • unverified": 6,
+        "Structural measurements": 27,
+        "Study envelope • 30 km²": 1,
+        "Top 10 per method • separate method ranks": 20
+      },
+      "map_revision": 2,
+      "project_path": "prospecting_library/cave-ridge/cave-ridge.qgz",
+      "project_sha256": "f16f24f7b5bca1cec9dbcf5ca52d2b1a47fe5237b77fa9f219c12f454e8d1d31",
+      "view_extent": [
+        616910.0,
+        5253425.0,
+        623090.0,
+        5258575.0
+      ]
+    }
+  },
+  "no_analysis_rerun": true,
+  "original_cave_ridge_frozen_hashes_verified": 163,
+  "denny_scientific_snapshot_hashes_verified": 144,
+  "unchanged_original_projects": {
+    "qgis/KarstFinder.qgz": "081d47cb734f958c568829576f8062fb066abd83b301e740904f14dc90d5bcf1",
+    "qgis/KarstFinder_Denny_v001.qgz": "29e570e1db74933a4a5a63c4773e746d2a0f4da05ac9f8b2ac7a99b883c0a83d",
+    "qgis/KarstFinder_Blind_v001.qgz": "1ef0328a4674b80b579e312f2b1eafffac01a9afd8dd18d5ab7e34f4c4926777",
+    "qgis/KarstFinder_Blind_v002.qgz": "2b5b7d676b0850ee1d948f08c5331bdc3fd48aae8199b181be329a056c868113"
+  },
+  "original_denny_ranking_csvs_byte_identical_to_methodology_review": true,
+  "live_mcp_reopen": {
+    "filename": "/home/Idiom/Repos/MyRepos/KarstFinder/prospecting_library/denny-mountain/denny-mountain.qgz",
+    "state_differences": [],
+    "extent": [
+      615868.152097192,
+      5252904.339901766,
+      619410.6025922416,
+      5255004.339901766
+    ],
+    "expected_extent": [
+      615868.152097192,
+      5252904.339901766,
+      619410.6025922416,
+      5255004.339901766
+    ],
+    "rotation": 0.0
+  }
+}
