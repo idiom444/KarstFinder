@@ -3,27 +3,32 @@
 Work only in this repository. The user corrected the original ~/Projects path:
 this VS Code workspace is the canonical project. Do not modify Atlas or other repos.
 
-## Blind experiment (critical)
+## Frozen blind experiment and validation (critical)
 
-**Current stage: exploratory blind; initial predictions are NOT frozen.**
-Do not search for or read named Cave Ridge caves, entrances, cave inventories,
-exploration reports, entrance photographs, cave-location maps or cave GIS layers.
-Do not use labeled topo basemaps that might disclose cave names/locations.
-A GNIS query for the ridge itself is permitted; restrict to exact name and class.
-Avoid historical Washington cave publications entirely during this stage.
-Only use geology unit polygons, structural lines/measurements, unlabeled imagery,
-and numeric elevations. Restrict service attribute fields; do not display arbitrary
-notes or regional map annotations. A text keyword filter is only a precaution,
-not proof that an arbitrary source is blind-safe. Log possible contamination and
-stop the experiment if any entrance evidence is exposed.
+Initial blind v002 was frozen before any local cave source was acquired.
+Freeze: experiments/frozen/blind_v002.json; implementation commit
+243b7307fea8abccee7693ae4cec926fb09e6e0c. Verify it with
+karstfinder.freeze.verify_freeze before reading local cave validation records.
+Detailed references/evaluation may now be acquired for Cave Ridge validation,
+only from reliable legally accessible sources, and kept under data/private/.
+Never publish sensitive locations or put detailed reference data in Git.
 
-Before any independent validation: finish complementary feature detection,
-review and finalize rankings/configuration, commit all code, ensure a clean tree,
-record Git commit plus SHA-256 of every input/output/configuration, and create a
-separate immutable freeze manifest. Merely committing the exploratory baseline
-is NOT a freeze. Never tune a frozen experiment against known entrances.
-Keep permitted detailed validation data under ignored data/private/ locally.
-Do not publish sensitive locations. No messages/contact requests without authorization.
+Do not modify frozen outputs, original configurations, inputs or the archived
+QGIS projects. Implement new experiments under new names/directories, retaining
+the old frozen comparison. Once validation sources are read, new Cave Ridge
+models are no longer independently blind; do not claim otherwise. Only an
+appropriately separate holdout or new geographic area can support new validation.
+
+For any future blinded area, do not search/read named caves, cave inventories,
+entrance maps/coordinates/photographs or exploration reports until predictions
+are finalized, committed, hashed and frozen. Use only geology, numerical terrain
+and unlabeled imagery. Historical Washington publications can mix geology and
+cave locations. A keyword filter is not proof that a source is blind-safe.
+If new information contaminates an intended blind experiment, record it.
+
+No messages/contact requests without authorization. No excavation, entry into
+unstable openings, or restricted-access suggestions. Fieldwork requires current
+land-manager rules and suitable non-invasive survey arrangements.
 
 ## Implementation
 

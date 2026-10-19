@@ -3,8 +3,10 @@
 Canonical repository: `/home/Idiom/Repos/MyRepos/KarstFinder`, selected by the
 user's correction to use the open VS Code workspace.
 
-**Blind stage is active. No known Cave Ridge cave locations were consulted.
-Initial predictions are exploratory and NOT finalized or frozen.**
+**Initial blind predictions are finalized and frozen.**
+Freeze: experiments/frozen/blind_v002.json, implementation Git 243b730.
+No known Cave Ridge cave source was consulted before the freeze. Independent
+validation source assessment is now authorized; detailed records remain local.
 
 ## Completed and verified
 
@@ -33,9 +35,8 @@ Initial predictions are exploratory and NOT finalized or frozen.**
 ## Milestones
 
 M1 foundation delivered, with remaining data-quality refinements explicitly
-recorded. M2 exploratory landscape baseline delivered. M3 feature analysis and
-final blind freeze remain open. M4 validation, M5 improvement and M6 expansion
-have not started. Geology and imagery acquisition limitations are in
+recorded. M2 exploratory landscape baseline delivered. M3 complementary feature analysis and blind freeze are complete. M4 independent
+validation source assessment is beginning. M5 improvement and M6 expansion are conditional on useful, credible evidence. Geology and imagery acquisition limitations are in
 `docs/DATASETS.md`; no blocker prevents continued local development.
 
 ## Important limitations and decisions
@@ -73,3 +74,10 @@ are implemented. 596 surface indicators (76 depression cores, 520 cliff patches)
 are present. All representative points lie in quality-supported, geologically
 supported parts of valid object polygons. Thirteen tests pass. No cave source
 has been accessed yet. See docs/BLIND_REVIEW.md. Final freeze is the next gate.
+
+## Freeze milestone
+
+Frozen v002: 163 input/configuration/code/output files hashed, implementation
+commit 243b7307fea8abccee7693ae4cec926fb09e6e0c. Both result directories are
+write-protected. Verification code reads archived source from the frozen Git
+commit and checks numerical artifacts on disk. Validation cannot tune this run.
