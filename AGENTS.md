@@ -128,6 +128,12 @@ No one may be contacted. Never publish entrance-coordinate records.
 Proposals/evidence: docs/AREA_SHORTLIST_20261019.md and
 docs/proposals/20261019_carbonate_scope.json. Kaleetan-vicinity mapped marble
 (OBJECTID 29440) is the closest proposed first choice; Marble Peak's small lens
-is a farther alternative. NO NEW AREA IS APPROVED yet. Wait for the user's choice
-and study-footprint approval before terrain/morphology/candidate analysis, new
-study configuration or library registration. Preserve the current Denny map.
+is a farther alternative. The user subsequently explicitly approved BOTH
+Kaleetan Peak vicinity and Marble Peak / upper Marble Gulch near Silverton,
+requesting maps like Cave Ridge and Denny. The two proposed 3 × 3 km windows
+are authorized for analysis and separate library registration. Use new
+`kaleetan_v001` and `marble_v001` configurations, data and result directories.
+Transfer the existing numerical methods without tuning to cave records; retain
+the literature-informed, unvalidated status. Preserve the current Denny map and
+all old frozen outputs. Record actual elevation coverage and source units before
+analysis; catalog bounding boxes alone do not establish valid DEM coverage.

@@ -1,0 +1,88 @@
+{
+  "experiment_id": "kaleetan_v001_features",
+  "stage": "unvalidated_prospecting_followup",
+  "landscape_run": "results/kaleetan_v001_landscape",
+  "crs": "EPSG:26910",
+  "study_bounds": [
+    613050,
+    5256200,
+    616050,
+    5259200
+  ],
+  "buffer_m": 1100,
+  "native_resolution_m": 1,
+  "seam_exclusion_m": 25,
+  "void_exclusion_m": 10,
+  "depression_depth_m": 0.5,
+  "depression_min_area_m2": 4,
+  "depression_max_area_m2": 2500,
+  "depression_depth_sensitivity_m": [
+    0.3,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "contact_buffer_sensitivity_m": [
+    0,
+    50,
+    100,
+    250
+  ],
+  "contact_buffer_primary_m": 100,
+  "cliff_slope_degrees": 45,
+  "cliff_min_area_m2": 25,
+  "cliff_max_area_m2": 10000,
+  "feature_weights": {
+    "geology": 0.4,
+    "landscape": 0.3,
+    "morphology": 0.3
+  },
+  "geology_scores": {
+    "mapped_marble": 1.0,
+    "marble_contact_buffer": 0.6,
+    "mixed_melange": 0.35
+  },
+  "clustering": {
+    "k": 6,
+    "seed": 42,
+    "sample_size": 10000
+  },
+  "notes": "User approved this 3x3 km proposal on 2026-10-19. Literature-informed unvalidated prospecting. Existing numerical scales/thresholds/weights retained. No entrance records used for scoring.",
+  "depression_algorithm": "Whitebox FillDepressionsWangAndLiu, fix_flats=False, filled minus original",
+  "processed_dir": "data/processed/kaleetan_v001",
+  "dem_raw_dir": "data/raw",
+  "feature_processed_dir": "data/processed/kaleetan_v001/features",
+  "native_quality_report": "docs/experiments/kaleetan_v001_native_quality.json",
+  "area_name": "Kaleetan Peak vicinity",
+  "marble_units": [
+    "PMmb(e)"
+  ],
+  "mixed_units": [
+    "JTRmt(e)"
+  ],
+  "elevation_sources": [
+    {
+      "path": "data/raw/USGS_1M_10_x61y526_WA_EasternCascades_2019_B19.tif",
+      "year": 2019,
+      "project": "WA_EasternCascades_2019_B19",
+      "catalog_title": "USGS 1 Meter 10 x61y526 WA_EasternCascades_2019_B19",
+      "catalog_body": "This is a tile of the standard one-meter resolution digital elevation model (DEM) produced through the 3D Elevation Program (3DEP) . The elevations in this DEM represent the topographic bare-earth surface. USGS standard one-meter DEMs are produced exclusively from high resolution light detection and ranging (lidar) source data of one-meter or higher resolution. One-meter DEM surfaces are seamless within collection projects, but, not necessarily seamless across projects. The spatial reference used for tiles of the one-meter DEM within the conterminous United States (CONUS) is Universal Transverse Mercator (UTM) in units of meters, and in conformance with the North American Datum of 1983 (NAD83). All bare earth elevation values are in meters and are referenced to the North American Vertical Datum of 1988 (NAVD88). Each tile is distributed in the UTM Zone in which it lies. If a tile crosses two UTM zones, it is delivered in both zones. The one-meter DEM is the highest resolution standard DEM offered in the 3DEP product suite. Other 3DEP products are nationally seamless DEMs in resolutions of 1/3, 1, and 2 arc seconds. These seamless DEMs were referred to as the National Elevation Dataset (NED) from about 2000 through 2015 at which time they became the seamless DEM layers under the 3DEP program and lost the NED branding. Other 3DEP products include five-meter DEMs in Alaska as well as various source datasets including the lidar point cloud and interferometric synthetic aperture radar (Ifsar) digital surface models and intensity images. All 3DEP products are public domain."
+    },
+    {
+      "path": "data/raw/USGS_1M_10_x61y526_WA_KingCounty_2021_B21.tif",
+      "year": 2021,
+      "project": "WA_KingCounty_2021_B21",
+      "catalog_title": "USGS 1 Meter 10 x61y526 WA_KingCounty_2021_B21",
+      "catalog_body": "This is a tile of the standard one-meter resolution digital elevation model (DEM) produced through the 3D Elevation Program (3DEP) . The elevations in this DEM represent the topographic bare-earth surface. USGS standard one-meter DEMs are produced exclusively from high resolution light detection and ranging (lidar) source data of one-meter or higher resolution. One-meter DEM surfaces are seamless within collection projects, but, not necessarily seamless across projects. The spatial reference used for tiles of the one-meter DEM within the conterminous United States (CONUS) is Universal Transverse Mercator (UTM) in units of meters, and in conformance with the North American Datum of 1983 (NAD83). All bare earth elevation values are in meters and are referenced to the North American Vertical Datum of 1988 (NAVD88). Each tile is distributed in the UTM Zone in which it lies. If a tile crosses two UTM zones, it is delivered in both zones. The one-meter DEM is the highest resolution standard DEM offered in the 3DEP product suite. Other 3DEP products are nationally seamless DEMs in resolutions of 1/3, 1, and 2 arc seconds. These seamless DEMs were referred to as the National Elevation Dataset (NED) from about 2000 through 2015 at which time they became the seamless DEM layers under the 3DEP program and lost the NED branding. Other 3DEP products include five-meter DEMs in Alaska as well as various source datasets including the lidar point cloud and interferometric synthetic aperture radar (Ifsar) digital surface models and intensity images. All 3DEP products are public domain."
+    },
+    {
+      "path": "data/raw/shared_elevation_v001/USGS_1M_10_x61y527_WA_KingCounty_2021_B21.tif",
+      "year": 2021,
+      "project": "WA_KingCounty_2021_B21",
+      "catalog_title": "USGS 1 Meter 10 x61y527 WA_KingCounty_2021_B21",
+      "catalog_body": "This is a tile of the standard one-meter resolution digital elevation model (DEM) produced through the 3D Elevation Program (3DEP) . The elevations in this DEM represent the topographic bare-earth surface. USGS standard one-meter DEMs are produced exclusively from high resolution light detection and ranging (lidar) source data of one-meter or higher resolution. One-meter DEM surfaces are seamless within collection projects, but, not necessarily seamless across projects. The spatial reference used for tiles of the one-meter DEM within the conterminous United States (CONUS) is Universal Transverse Mercator (UTM) in units of meters, and in conformance with the North American Datum of 1983 (NAD83). All bare earth elevation values are in meters and are referenced to the North American Vertical Datum of 1988 (NAVD88). Each tile is distributed in the UTM Zone in which it lies. If a tile crosses two UTM zones, it is delivered in both zones. The one-meter DEM is the highest resolution standard DEM offered in the 3DEP product suite. Other 3DEP products are nationally seamless DEMs in resolutions of 1/3, 1, and 2 arc seconds. These seamless DEMs were referred to as the National Elevation Dataset (NED) from about 2000 through 2015 at which time they became the seamless DEM layers under the 3DEP program and lost the NED branding. Other 3DEP products include five-meter DEMs in Alaska as well as various source datasets including the lidar point cloud and interferometric synthetic aperture radar (Ifsar) digital surface models and intensity images. All 3DEP products are public domain."
+    }
+  ],
+  "public_literature_screening_before_selection": true,
+  "independently_blind": false
+}

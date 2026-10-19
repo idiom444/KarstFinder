@@ -19,6 +19,9 @@ qgis/*.qgz~
 
 !qgis/KarstFinder_Denny_v001.qgz
 
+!qgis/KarstFinder_Kaleetan_v001.qgz
+!qgis/KarstFinder_Marble_v001.qgz
+
 # Personal field observations/photos stay local, independent of public predictions.
 prospecting_library/*/local/
 prospecting_library/.sessions/
