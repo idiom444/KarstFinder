@@ -78,7 +78,7 @@ def main():
     layout=QgsPrintLayout(project);layout.initializeDefaults();layout.setName('Blind landscape baseline')
     layout.pageCollection().pages()[0].setPageSize('A4',QgsLayoutItemPage.Landscape)
     def label(text,x,y,width,height,size=9,color='#263445'):
-        item=QgsLayoutItemLabel(layout);item.setText(text);item.setFont(QFont('DejaVu Sans',size));item.setFontColor(QColor(color))
+        item=QgsLayoutItemLabel(layout);item.setText(text);textformat=QgsTextFormat();textformat.setFont(QFont('DejaVu Sans',size));textformat.setSize(size);textformat.setColor(QColor(color));item.setTextFormat(textformat)
         layout.addLayoutItem(item);item.attemptMove(QgsLayoutPoint(x,y));item.attemptResize(QgsLayoutSize(width,height));return item
     label('KarstFinder | Cave Ridge',8,5,210,10,17)
     label('Blind landscape baseline • exploratory and unfrozen • no confirmed entrances',8,16,280,9,9)
@@ -92,7 +92,7 @@ def main():
     label('N ↑',273,185,20,10,12)
     scale=QgsLayoutItemScaleBar(layout);scale.setStyle('Single Box');scale.setLinkedMap(mapitem);scale.setUnits(Qgis.DistanceUnit.Meters)
     scale.setUnitsPerSegment(500);scale.setNumberOfSegments(2);scale.setNumberOfSegmentsLeft(0);scale.setUnitLabel('m');scale.setHeight(1.7)
-    layout.addLayoutItem(scale);scale.attemptMove(QgsLayoutPoint(13,181))
+    layout.addLayoutItem(scale);scale.attemptMove(QgsLayoutPoint(20,34))
     label('blind_v001 | NAD83 / UTM 10N • NAVD88 metres | 2026-10-19 | landscape hypotheses only',8,198,280,7,8)
     project.layoutManager().addLayout(layout)
     path=ROOT/'qgis/KarstFinder.qgz';project.setFileName(str(path));assert project.write()
@@ -100,8 +100,8 @@ def main():
     assert project.read(str(path));invalid=[l.name() for l in project.mapLayers().values() if not l.isValid()]
     assert not invalid,invalid
     export=QgsLayoutExporter(project.layoutManager().layoutByName('Blind landscape baseline'))
-    options=QgsLayoutExporter.ImageExportSettings();options.dpi=180
-    assert export.exportToImage(str(result/'map_preview.png'),options)==QgsLayoutExporter.Success
+    image=export.renderPageToImage(0,QSize(),180)
+    assert not image.isNull() and image.save(str(result/'map_preview.png'))
     report={'project':str(path.relative_to(ROOT)),'qgis_version':Qgis.QGIS_VERSION,'layer_count':len(project.mapLayers()),
             'invalid_layers_after_reopen':invalid,'paths':'relative','preview':str((result/'map_preview.png').relative_to(ROOT))}
     (ROOT/'docs/qgis_verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

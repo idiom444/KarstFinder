@@ -40,7 +40,7 @@ QT_QPA_PLATFORM=offscreen .venv/bin/python scripts/make_qgis_project.py
 
 Downloads are cached and checksummed. Acquisition manifests contain exact URLs;
 source files, processing outputs and local validation data are ignored by Git.
-About 1 GB of disk is needed initially; allow extra space for repeat experiments.
+About 1.5 GB of disk is needed initially; allow extra space for repeat experiments.
 The model refuses to overwrite an existing run. To repeat locally, use
 `--output results/blind_v001_repeat`, then pass the same results path to
 `make_qgis_project.py --results results/blind_v001_repeat`. That command updates
@@ -48,7 +48,10 @@ the review project to the specified run; it does not freeze an experiment.
 Run acquisition scripts in the listed order: the supplemental script merges
 its records into the acquisition manifest created by the primary script.
 
-Open `qgis/KarstFinder.qgz` in QGIS. All map layers are persistent local files;
+Open `qgis/KarstFinder.qgz` in QGIS. To load it through the running QGIS MCP
+plugin, run `.venv/bin/python scripts/review_in_qgis.py`; it preserves another
+open session before loading. Use `.venv/bin/python scripts/verify_results.py`
+for artifact checks. All map layers are persistent local files;
 no web basemap or Codex session is needed. The imagery and data files must remain
 at their relative locations. GeoTIFFs and candidate GeoPackages are under
 `results/blind_v001/`; original terrain/context data are under `data/`.

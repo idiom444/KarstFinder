@@ -1,0 +1,81 @@
+{
+  "loaded": {
+    "loaded": "/home/Idiom/Repos/MyRepos/KarstFinder/qgis/KarstFinder.qgz",
+    "layer_count": 21
+  },
+  "project": {
+    "filename": "/home/Idiom/Repos/MyRepos/KarstFinder/qgis/KarstFinder.qgz",
+    "title": "KarstFinder | Cave Ridge | BLIND exploratory baseline",
+    "layer_count": 21,
+    "crs": "EPSG:26910",
+    "layers": [
+      {
+        "id": "Aspect___degrees_clockwise_from_north_ceb30492_9edf_4a7e_b829_9e5333c4e117",
+        "name": "Aspect \u2022 degrees clockwise from north",
+        "type": "raster",
+        "visible": false
+      },
+      {
+        "id": "Averaged_elevation___10_m___NAVD88_m_54fc0f7c_fce7_418d_8006_ca6a1e1d4179",
+        "name": "Averaged elevation \u2022 10 m / NAVD88 m",
+        "type": "raster",
+        "visible": false
+      },
+      {
+        "id": "Complete_neighbourhood_support___1___valid_3524c655_0671_4e13_80fe_e6de7afedd6e",
+        "name": "Complete neighbourhood support \u2022 1 = valid",
+        "type": "raster",
+        "visible": false
+      },
+      {
+        "id": "Geological_contacts___uncertain_4b18f6bd_8a70_498a_acf5_14fe37cdcc81",
+        "name": "Geological contacts \u2022 uncertain",
+        "type": "vector_1",
+        "visible": false
+      },
+      {
+        "id": "Geological_units__PMmb_e____marble__120f01d1_09fd_4fde_995b_2829527c194c",
+        "name": "Geological units (PMmb(e) = marble)",
+        "type": "vector_2",
+        "visible": false
+      },
+      {
+        "id": "LiDAR_acquisition___2019___2021_d56f8e73_4b86_44cc_aa43_e77d54d810a9",
+        "name": "LiDAR acquisition \u2022 2019 / 2021",
+        "type": "raster",
+        "visible": false
+      },
+      {
+        "id": "Lithology___terrain_index___NOT_probability_6382883a_b490_4dc1_a2e2_296ef3b6ddca",
+        "name": "Lithology \u00d7 terrain index \u2022 NOT probability",
+        "type": "raster",
+        "visible": true
+      },
+      {
+        "id": "Local_terrain_hillshade__10_m_DEM__02c954b7_fc4b_4f81_88a7_ce4f846ccb1c",
+        "name": "Local terrain hillshade (10 m DEM)",
+        "type": "raster",
+        "visible": true
+      },
+      {
+        "id": "Mapped_faults_dd390a41_8659_409b_8b23_f3cb6eb39c6c",
+        "name": "Mapped faults",
+        "type": "vector_1",
+        "visible": false
+      },
+      {
+        "id": "Mapped_lithology_evidence_index_38a402f9_6e7d_439d_8783_dfcd8da1e209",
+        "name": "Mapped lithology evidence index",
+        "type": "raster",
+        "visible": false
+      }
+    ],
+    "layers_truncated": true
+  },
+  "layer_validation": {
+    "executed": true,
+    "stdout": "[('Aspect \u2022 degrees clockwise from north', True), ('Averaged elevation \u2022 10 m / NAVD88 m', True), ('Complete neighbourhood support \u2022 1 = valid', True), ('Geological contacts \u2022 uncertain', True), ('Geological units (PMmb(e) = marble)', True), ('LiDAR acquisition \u2022 2019 / 2021', True), ('Lithology \u00d7 terrain index \u2022 NOT probability', True), ('Local terrain hillshade (10 m DEM)', True), ('Mapped faults', True), ('Mapped lithology evidence index', True), ('Mid-slope votes \u2022 0\u20133', True), ('NAIP 2017 RGB \u2022 exported at 2 m', True), ('Ranked landscape areas \u2022 unverified', True), ('Slope \u2022 degrees (Horn)', True), ('Standardized topographic position \u2022 2010 m window', True), ('Standardized topographic position \u2022 210 m window', True), ('Standardized topographic position \u2022 610 m window', True), ('Structural measurements', True), ('Study envelope \u2022 30 km\u00b2', True), ('Terrain index \u2022 0\u20131 hypothesis', True), ('USGS bare-earth elevation \u2022 1 m / NAVD88 m', True)]\nInvalid: 0\n",
+    "stderr": "",
+    "elapsed": 0.0
+  }
+}

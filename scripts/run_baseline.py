@@ -150,6 +150,7 @@ def main():
         'threshold_selected_area_km2_before_size_filter':selected_cells*area_per_cell/1e6,
         'candidate_area_count':len(rows),'boundary_clipped_candidate_count':sum(r['boundary_clipped'] for r in rows),'candidate_area_km2':sum(r['area_m2'] for r in rows)/1e6,
         'candidate_area_fraction_of_study':sum(r['area_m2'] for r in rows)/area_total,
+        'candidate_area_fraction_of_mapped_marble':sum(r['area_m2'] for r in rows)/float((geology[sl]==1).sum()*area_per_cell) if (geology[sl]==1).any() else None,
         'cave_detection_or_validation_performed':False,'interpretation':'Landscape hypotheses only. No cave existence probabilities.'}
     (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     (out/'inputs.json').write_text(json.dumps(source_manifest,indent=2)+'\n')

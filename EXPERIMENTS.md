@@ -22,8 +22,11 @@ Source data: 1 m USGS 2019/2021 bare earth, DNR 1:100,000 lithology.
 | Retained landscape components ≥1,000 m² | 6 |
 | Total retained area | 0.1241 km² |
 | Fraction of study selected | 0.4137% |
+| Fraction of mapped marble selected | 56.4347% |
 | Independent entrance validation | Not performed |
 
+Most area reduction comes from lithology: 56.4% of mapped marble remains selected.
+All six areas use 2021 elevations locally, though broad neighbourhoods may mix epochs.
 Selection area is an empirical property of the hypothesis; it is not predictive
 performance. Largest/rank-one area intersects the southwest study edge and its
 extent is censored. Other components occur in mapped carbonate near the ridge.
