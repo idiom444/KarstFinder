@@ -82,3 +82,32 @@ within comparable mapped carbonate and a geology-only baseline; use spatial
 blocks and location-uncertainty sensitivity. Entrance distance tolerances must
 follow source accuracy and cannot be enlarged post hoc. Historical inventory
 incompleteness and exploration bias preclude treating unlisted areas as absences.
+
+# Complementary blind experiment v002
+
+Native QA, derivations, feature extraction and project generation are implemented
+in scripts/native_qa.py, derive_features.py, run_features.py and feature_project.py.
+See docs/BLIND_REVIEW.md for tool tests, thresholds, false positives and sensitivity.
+This is a separate experiment; v001 outputs and their original rankings remain.
+
+Geological evidence G is 1 in mapped marble, 0.6 within the assumed 100 m marble
+contact buffer, 0.35 in mixed melange, and 0 elsewhere, with mapped water excluded.
+The buffer overrides mixed melange and direct mapped marble overrides the buffer.
+Object G and terrain T are their mean values across the complete object.
+For depression morphology, F=min(1, maximum_depth/3 m). Cliff morphology is
+F=0.5 clip((mean_slope−45°)/30°,0,1) + 0.5 clip(−minimum_11m_residual/2 m,0,1).
+The object ranking index is 0.4G + 0.3T + 0.3F. It is not a probability.
+Rank ties use morphology, method name, easting and northing deterministically.
+
+The 10 m comparison grid uses maximum geological and feature evidence in each
+cell, with the same 0.4/0.3/0.3 combination where G>0 and zero elsewhere. This grid
+is a regional area-ranking surface. A high 10 m cell does not localize an opening.
+The native object polygons and representative points remain separate outputs.
+Cliff/depression rankings are retained separately in rank_within_kind.
+
+Area-budget validation caps selections at positive score support, reports actual
+selected fraction, and uses fixed independent ordering for score ties. It reports
+central-location coverage, any uncertainty-region overlap and full uncertainty-
+region coverage separately. Descriptive recall/area and Kvamme gains are not
+independent inferential significance tests. Spatial clustering, source accuracy,
+inventory completeness and exploration bias constrain interpretation.

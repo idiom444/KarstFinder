@@ -64,3 +64,12 @@ combined rankings and freeze input/output/configuration hashes plus a clean Git
 commit. Only after the documented freeze may independent validation start.
 
 See EXPERIMENTS.md for exact outputs, empirical results and commit associations.
+
+## Continuation: M3 implementation under review
+
+Native QA, Wang–Liu depression cores, cliff patches, seeded descriptive clustering,
+modeled drainage context, transparent combined rankings and threshold sensitivity
+are implemented. 596 surface indicators (76 depression cores, 520 cliff patches)
+are present. All representative points lie in quality-supported, geologically
+supported parts of valid object polygons. Thirteen tests pass. No cave source
+has been accessed yet. See docs/BLIND_REVIEW.md. Final freeze is the next gate.

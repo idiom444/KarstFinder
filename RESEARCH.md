@@ -70,3 +70,23 @@ melange were screened automatically before display for sentences mentioning
 caves/entrances. Only lithological text was used. Downloads for modelling use
 an explicit attribute allowlist; arbitrary unit notes and generic point layers
 are excluded. Labeled topographic maps were not inspected. No validation begun.
+
+## Complementary feature analysis and validation controls (v002)
+
+Whitebox's [hydrology manual](https://jblindsay.github.io/wbt_book/available_tools/hydrological_analysis.html)
+describes depression depth as filled minus original elevation. Synthetic
+flat-bottom tests, rather than manual claims, selected the functioning Wang–Liu
+implementation in the installed binary. Fixing drainage flats would create an
+artificial gradient in measured pit depth, so those workflows are separate.
+
+[Wall, Doctor & Terziotti (2015), USGS record](https://pubs.usgs.gov/publication/70175692)
+identifies bridge/culvert barriers as a source of false filled depressions.
+The [2024 USGS depression assessment](https://pubs.usgs.gov/publication/sir20245134/full)
+also examines threshold-dependent false positives/negatives and numerical error
+propagation. These support retaining thresholds and alternative origins as
+uncertainties; their regional threshold/error estimates are not transferred here.
+
+[SciPy kmeans2 documentation](https://scipy.github.io/devdocs/reference/generated/scipy.cluster.vq.kmeans2.html)
+provides seeded k-means++ initialization. Six terrain clusters are descriptive,
+without cave labels or a presumed favorable class. Reproducibility records the
+seed, sampled training size, standardization and centroids.

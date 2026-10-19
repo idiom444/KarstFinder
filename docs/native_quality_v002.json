@@ -1,0 +1,23 @@
+{
+  "native_buffered_pixels": 59040000,
+  "native_buffered_missing_pixels": 0,
+  "native_buffered_valid_fraction": 1.0,
+  "native_overlap_sample": {
+    "sampling_stride_m": 10,
+    "n": 24142,
+    "median_difference_m": -0.2735595703125,
+    "p95_absolute_difference_m": 1.1121704578399658,
+    "p99_absolute_difference_m": 2.298779249191284
+  },
+  "native_study_missing_pixels": 0,
+  "study_feature_eligible_area_km2": 29.597846,
+  "study_seam_excluded_area_km2": 0.402154,
+  "seam_exclusion_m": 25,
+  "native_year_counts": {
+    "0": 0,
+    "2019": 8906667,
+    "2021": 21093333
+  },
+  "source_hash": "49f3d7f7311e67806f4cd53c3ba0928afe5a19cb3666877fe53c25ed077357e0",
+  "config_hash": "ad69ebb64b6d30885889fd1a983e81a54e21db46be51edf8dc4c49bd771e489d"
+}

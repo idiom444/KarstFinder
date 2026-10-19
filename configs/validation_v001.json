@@ -1,0 +1,19 @@
+{
+  "freeze_id": "blind_v002",
+  "area_budgets": [0.01, 0.05, 0.10, 0.20],
+  "localization_tolerances_m": [5, 10, 25],
+  "max_entrance_location_uncertainty_m": 25,
+  "seed": 20261019,
+  "null_replicates": 999,
+  "spatial_block_m": 500,
+  "rules": [
+    "Never enlarge matching distances after seeing validation locations.",
+    "Locations with uncertainty >25 m support regional coverage analysis only, not entrance-localization claims.",
+    "Report central, possible and robust uncertainty-region coverage separately.",
+    "Compare geology-only, terrain-only, original landscape, morphology-only and combined indices at equal area budgets.",
+    "Report full-study and comparable-geology denominators; zero scores cannot create artificial high-rank coverage.",
+    "Inventory absence is not confirmed cave absence; historical exploration is biased.",
+    "Related entrances and spatially clustered records are not independent evidence.",
+    "No supervised model or geographic expansion without credible independent predictive evidence."
+  ]
+}
