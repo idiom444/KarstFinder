@@ -1,0 +1,41 @@
+{
+  "area": "denny-mountain",
+  "project": "qgis/KarstFinder_denny-mountain_carbonate_v001.qgz",
+  "layers": 13,
+  "default_site_count": 3,
+  "eligible_observations": 78,
+  "candidate_subset": "",
+  "scale_hiding": false,
+  "default_visible": "All eligible sites and support footprints, carbonate geology, flagged margin and hillshade.",
+  "layouts": [
+    "Study overview",
+    "Marble detail 29438"
+  ],
+  "previews": [
+    "docs/carbonate_v001/denny-mountain_study_overview.png",
+    "docs/carbonate_v001/denny-mountain_marble_detail_29438.png"
+  ],
+  "ramp_stops": [
+    [
+      0.0,
+      "#440154"
+    ],
+    [
+      0.25,
+      "#3b528b"
+    ],
+    [
+      0.5,
+      "#21918c"
+    ],
+    [
+      0.75,
+      "#5ec962"
+    ],
+    [
+      1.0,
+      "#fde725"
+    ]
+  ],
+  "default_focus": "Largest documented marble component; overview layout includes the full study."
+}

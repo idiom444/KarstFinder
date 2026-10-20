@@ -1,0 +1,249 @@
+{
+  "version": "carbonate_v001",
+  "area": "cave-ridge",
+  "scope": "Explicit carbonate exposure polygons plus 25 m flagged boundary margin; no blanket melange/unknown eligibility.",
+  "formations": [
+    {
+      "formation_id": "cave-ridge:F-29438-5a36d27e7073",
+      "source_id": "29438",
+      "unit": "PMmb(e)",
+      "source_ref": "results/enhanced_v001_cave-ridge/geology.gpkg#source_id=29438",
+      "lithology": "crystalline marble beds and pods, locally interlayered with noncarbonate rocks",
+      "description_key": "Compiled | PMmb(e)",
+      "description_source": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13",
+      "description_input": "data/raw/area_shortlist_20261019/selected_unit_descriptions.json",
+      "description_input_sha256": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+      "scale_denominator": 100000,
+      "unit_id_confidence": "certain",
+      "geometry_sha256": "5a36d27e7073de1065274a338b12b3798d66852cd0ca871acc06d401c8c1f525",
+      "mixed_unit_eligible": false,
+      "mapped_carbonate_area_m2": 64196.91528200731,
+      "eligible_area_with_margin_m2": 99964.63800026994,
+      "observations": 77,
+      "sites": 4,
+      "boundary_only_observations": 16,
+      "bounds_utm": [
+        617040,
+        5253500,
+        617650,
+        5254060
+      ]
+    },
+    {
+      "formation_id": "cave-ridge:F-29439-994cc1c5e821",
+      "source_id": "29439",
+      "unit": "PMmb(e)",
+      "source_ref": "results/enhanced_v001_cave-ridge/geology.gpkg#source_id=29439",
+      "lithology": "crystalline marble beds and pods, locally interlayered with noncarbonate rocks",
+      "description_key": "Compiled | PMmb(e)",
+      "description_source": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13",
+      "description_input": "data/raw/area_shortlist_20261019/selected_unit_descriptions.json",
+      "description_input_sha256": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+      "scale_denominator": 100000,
+      "unit_id_confidence": "certain",
+      "geometry_sha256": "994cc1c5e8218ad5de8f71331de9aad7d2ba1f798c5d8539011ac1779ce88633",
+      "mixed_unit_eligible": false,
+      "mapped_carbonate_area_m2": 155098.9850267768,
+      "eligible_area_with_margin_m2": 219328.0166816935,
+      "observations": 135,
+      "sites": 53,
+      "boundary_only_observations": 31,
+      "bounds_utm": [
+        619490,
+        5256100,
+        620300,
+        5256920
+      ]
+    }
+  ],
+  "excluded_geological_polygons": [
+    {
+      "source_id": "2596",
+      "unit": "Qls",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "4748",
+      "unit": "Ec(2nag)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "4749",
+      "unit": "Ec(2nag)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "4763",
+      "unit": "Ec(2nas)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "4767",
+      "unit": "Ec(2nas)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "8316",
+      "unit": "Evb(na)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "8318",
+      "unit": "Evb(nap)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "8831",
+      "unit": "Evt(na)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "8832",
+      "unit": "Evt(na)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "8833",
+      "unit": "Evt(na)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "8834",
+      "unit": "Evt(na)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "10529",
+      "unit": "JTRmt(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "10531",
+      "unit": "JTRmt(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "14876",
+      "unit": "Mig(s)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "14877",
+      "unit": "Mig(s)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "14878",
+      "unit": "Mig(s)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "15675",
+      "unit": "MOigd(s)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "27058",
+      "unit": "Ovc",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "31629",
+      "unit": "Qa",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "31950",
+      "unit": "Qa",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "31957",
+      "unit": "Qa",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "31958",
+      "unit": "Qa",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "31965",
+      "unit": "Qa",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "31985",
+      "unit": "Qa",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "35288",
+      "unit": "Qad(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "35289",
+      "unit": "Qad(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "35290",
+      "unit": "Qad(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "35292",
+      "unit": "Qad(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "35293",
+      "unit": "Qad(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "47870",
+      "unit": "wtr",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "47885",
+      "unit": "wtr",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "48409",
+      "unit": "wtr",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "48414",
+      "unit": "wtr",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "52225",
+      "unit": "Qta",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    }
+  ],
+  "observations": 212,
+  "sites": 57,
+  "by_kind": {
+    "cliff": 154,
+    "depression": 31,
+    "hydrology": 27
+  },
+  "unattached_context_observations": 7,
+  "boundary_only_sites": 11,
+  "single_method_sites": 46,
+  "suppressed": {
+    "below_minimum_after_exact_geological_clip": 3
+  },
+  "geology_insufficient": "Outside the listed mapped marble bodies, local carbonate exposure is not established; no candidates generated there. Finer-scale exposure/karst suitability and within-unit purity remain unresolved.",
+  "no_documented_carbonate_coverage": false,
+  "caves_confirmed": 0,
+  "independently_blind": false,
+  "known_cave_inputs_used": false
+}

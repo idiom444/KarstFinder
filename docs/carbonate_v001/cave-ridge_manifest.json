@@ -1,0 +1,51 @@
+{
+  "area": "cave-ridge",
+  "config_sha256": "0bbdc4fbe10650d6413e60dc6a0037ba0a1e8a267803156307b9eefa34004024",
+  "inputs": {
+    "configs/carbonate_v001.json": "0bbdc4fbe10650d6413e60dc6a0037ba0a1e8a267803156307b9eefa34004024",
+    "data/processed/enhanced_v001/cave-ridge/imagery/ndvi.tif": "eda5435381ffda5013e2900cb474d88df16d499e2f4e800e41eb68ab6d01b62f",
+    "data/processed/enhanced_v001/cave-ridge/imagery/possible_exposed_surface_mask.tif": "0dbb120ab11393841e33711f6585c0cc4705a5ace1bd393377ac8ef5ce383d85",
+    "data/processed/enhanced_v001/cave-ridge/imagery/vegetation_mask.tif": "b9579b0a0cb76b6e012ea4f4f1088716761ea7b8ea04618542fa49fca6982fe4",
+    "data/processed/enhanced_v001/cave-ridge/terrain/height_above_modeled_drainage.tif": "7d6a1fbf0649cd999edc9f7d59a538ef81e89c91fe29fafecfb05bc9914725e9",
+    "data/processed/enhanced_v001/cave-ridge/terrain/hydrologic_edge_contamination.tif": "d6e1acbdc49fe90aa8843102cbedd3453dfe548a6c9955b4761b695f483e7270",
+    "data/processed/enhanced_v001/cave-ridge/terrain/residual_11m.tif": "0f706b7268cd8c467a584c39a2dfdc7421f1c445d12e478abe03beff6a3859d7",
+    "data/processed/enhanced_v001/cave-ridge/terrain/residual_31m.tif": "1afcdaffa0cd57070bb71c46628eb0377422fccc66c8ef80dc22a467d07ea52a",
+    "data/processed/enhanced_v001/cave-ridge/terrain/residual_61m.tif": "29d4a2adf1c61be574729bd77a1ef6496c9cc5ccda8e68330b6bc64a57ccba46",
+    "data/processed/features_v002/contributing_area_10m_buffered.tif": "ec357da369f2fed2101f38d74201eefb8b1435a6c8f84300423505af72cceca8",
+    "data/raw/area_shortlist_20261019/selected_unit_descriptions.json": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+    "results/blind_v002/depression_depth_1m.tif": "46d224819b995fc28f0847384b4fe856b79507fd36e67f0874c6d296aeadcb76",
+    "results/blind_v002/feature_quality_1m.tif": "2ea2d4d9cb19816aa7058431ed1177b3d354a91cbd4dff8a6f2d3b86e98f0508",
+    "results/blind_v002/slope_1m.tif": "8317e4383a207b92d88563e3976f64b8bdcdcb3b9dbd07428db7d4c2feb5e5ee",
+    "results/blind_v002/source_epoch_1m.tif": "735089cf18ed28a2f7d7e62d51e631a37e3116b61522e68d7814656eb844b316",
+    "results/enhanced_v001_cave-ridge/geology.gpkg": "2d8e6cb500fc053532c5aff48368055c512a79394e7cd0657353e730383f1e17",
+    "results/enhanced_v001_cave-ridge/registry.gpkg": "db3c853767ddece75c4711d91912ff06c0ab980a60018f8441f367c4279011fe"
+  },
+  "prepared": {
+    "data/processed/carbonate_v001/cave-ridge/formation_29438_5a36d27e7073/eligibility_1m.tif": "eb10e0e3d2c90b2764866774dff393bb549c945ecbdcb2b628130e225659b685",
+    "data/processed/carbonate_v001/cave-ridge/formation_29438_5a36d27e7073/hydrology_eligible_10m.tif": "c14659cfb0dd47ccf0fcdbf2c6cff62291b4b05321faccd6769fe9ae5c30c21f",
+    "data/processed/carbonate_v001/cave-ridge/formation_29439_994cc1c5e821/eligibility_1m.tif": "045c739bdf9ce43d7a6145d196ae699f099fdcfca3cfefd6629a33fcd0c54e08",
+    "data/processed/carbonate_v001/cave-ridge/formation_29439_994cc1c5e821/hydrology_eligible_10m.tif": "045f533a7b470bb4b041bf155fa6b905d402957851c20b0653d87d875af28f3c"
+  },
+  "outputs": {
+    "results/carbonate_v001_cave-ridge/boundary_sensitivity.json": "57533cc59a9da5700102190bbc48c566bb16405cfd207f8d9e1d16f697375a0b",
+    "results/carbonate_v001_cave-ridge/candidates.csv": "7298b0809f9ec9778fafa54a211c51e31ef0f9578000d9508c1aefd375cccf86",
+    "results/carbonate_v001_cave-ridge/candidates.json": "6849074b55f0de39b7e212789bf5259c9b28d61396eea7fe6c2bb80ad9e541a6",
+    "results/carbonate_v001_cave-ridge/config.json": "8e7e16086d37da0636ad165ff026a1df6e2a510a40eb7e3701900cd78855b9ef",
+    "results/carbonate_v001_cave-ridge/membership.json": "cc854dd086c080338262a995239ce725b3e5a8e57bfbce43b57a9ab07e806095",
+    "results/carbonate_v001_cave-ridge/observations.csv": "437b4801114d1dcdba3e94982697a3aa13b7faf1b77f701b2636f93ca74cf454",
+    "results/carbonate_v001_cave-ridge/observations.json": "4eadd64f274f04899799b2f64102677ade519df350f43470de111172dc625236",
+    "results/carbonate_v001_cave-ridge/priority_display_10m.tif": "573a96770f7638971f6c59ec640bb0aefd8f0750835b3f5381f05d8e72cbaa9f",
+    "results/carbonate_v001_cave-ridge/prospecting.gpkg": "40f070ee9e1edb3cefd94d86d3ef962a801b3b2443d9fbbb7a565e34412439b4",
+    "results/carbonate_v001_cave-ridge/summary.json": "671035bd32beb1915261233603bee3c6318aa460671047be2fee2d9bcd436553"
+  },
+  "code": {
+    "src/karstfinder/carbonate/__init__.py": "d01926b1c819cc615f11150a3f7ef5fedc9984e9d141a0d383819af8edeefeac",
+    "src/karstfinder/carbonate/common.py": "6b1957d7d954835860ccde25b723dd07c25a699d50808257558b1202f96dc1cb",
+    "src/karstfinder/carbonate/grouping.py": "35156507ff133b2d39276727ad4bddc8e7d6d5804ca2b63b9a1e7446b6a40066",
+    "src/karstfinder/carbonate/map_project.py": "40b26fff3237c7da7cccac163af66c98aa7315721d560532d1e2a4e91507e080",
+    "src/karstfinder/carbonate/pipeline.py": "e8e71f7a930bb9d86dbe2741bfd30fcd4a96e489df44ea68fb2c90301d93f9fc",
+    "src/karstfinder/carbonate/priority.py": "44b54cc2ca7a3bbf7b84b14bddfd977f675a90b6b4be241a85aa0adb23117b36",
+    "src/karstfinder/carbonate/scope.py": "2c0257f1e2e287ec5f09136267955267e74a024a9e3eb6cdbe9bb154667e4f38"
+  },
+  "scoring_model": "carbonate_priority_v001"
+}

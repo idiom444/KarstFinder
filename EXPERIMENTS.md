@@ -1,5 +1,31 @@
 # Experiment ledger
 
+## carbonate_v001 — scope correction, 2026-10-20
+
+Configuration: `configs/carbonate_v001.json`; ranking model:
+`carbonate_priority_v001`. New analysis and Library IDs preserve enhanced v001
+and every earlier experiment. Explicit documented PMmb(e)/TRmb(e) marble gates
+generation, with a flagged assumed 25 m contact margin. Terrain alone outside that
+scope is ineligible. Single-method surface evidence survives. Drainage is context
+only and cannot seed/bridge/raise a site. Small same-formation surface systems use
+actual intersections or ≤10 m eligible connectors, with every member preserved.
+
+Results: 308 observations, 62 local sites (Cave Ridge 57, Denny 3, Kaleetan 1,
+Marble 1). Seven unattached modeled-drainage patches are context only. No top-N or
+scale filter reduces these counts. New native masks, local measurements, ranks,
+coordinates, IDs, membership, sensitivity and original-source links are persistent.
+[Full method](docs/carbonate_v001/METHODOLOGY.md),
+[results](docs/carbonate_v001/RESULTS.md),
+[verification](docs/carbonate_v001/verification.json),
+[review records](docs/carbonate_v001/review_records.json) and
+`experiments/snapshots/carbonate_v001.json` make this separately auditable.
+
+No new geographic acquisition, cave-location lookup, private-record access,
+regional search, outreach or training. Prior reference/literature exposure remains
+recorded; these are unvalidated, not independently blind. Exploratory development
+runs are locally preserved under `_development_` paths and excluded from the final
+snapshot. All historical experiments below remain intact.
+
 ## blind_v001 — exploratory landscape baseline, 2026-10-19
 
 Original execution: **exploratory blind**; now preserved as part of the v002

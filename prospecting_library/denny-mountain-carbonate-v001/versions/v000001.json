@@ -1,0 +1,205 @@
+{
+  "area_id": "denny-mountain-carbonate-v001",
+  "created_utc": "2026-10-20T12:09:25.138286+00:00",
+  "status": "Not yet investigated",
+  "personal_notes": "prospecting_library/denny-mountain-carbonate-v001/local/field_notes.json",
+  "revision": 1,
+  "updated_utc": "2026-10-20T12:09:25.138322+00:00",
+  "change": "map registered from saved project",
+  "metadata_path": "prospecting_library/denny-mountain-carbonate-v001/versions/v000001.json",
+  "name": "Denny Mountain — Carbonate prospecting v001",
+  "general_location": "Denny Mountain, Washington; existing approved study window",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      615850,
+      5252250,
+      618850,
+      5255250
+    ]
+  },
+  "geological_summary": "Explicit DNR mapped marble plus a flagged 25 m contact-review margin. Mixed/unknown formations excluded. Unvalidated ordinal prospecting; coordinates are surface reference points, not entrances or access routes.",
+  "specification": {
+    "name": "Denny Mountain — Carbonate prospecting v001",
+    "general_location": "Denny Mountain, Washington; existing approved study window",
+    "study_extent": {
+      "crs": "EPSG:26910",
+      "bounds": [
+        615850,
+        5252250,
+        618850,
+        5255250
+      ]
+    },
+    "geological_summary": "Explicit DNR mapped marble plus a flagged 25 m contact-review margin. Mixed/unknown formations excluded. Unvalidated ordinal prospecting; coordinates are surface reference points, not entrances or access routes.",
+    "candidate_csv": "results/carbonate_v001_denny-mountain/candidates.csv",
+    "analysis_references": [
+      "configs/carbonate_v001.json",
+      "docs/carbonate_v001/METHODOLOGY.md",
+      "docs/carbonate_v001/GEOLOGY_EVIDENCE.json",
+      "docs/carbonate_v001/RESULTS.md",
+      "results/carbonate_v001_denny-mountain/manifest.json",
+      "results/carbonate_v001_denny-mountain/summary.json"
+    ]
+  },
+  "candidate_count": 3,
+  "highest_priority_candidates": [
+    {
+      "object_id": "denny-mountain:S-f3ebb0ee1e2ea0b3",
+      "rank": "1",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:S-f71b52854ed980d9",
+      "rank": "2",
+      "kind": "cliff",
+      "score": "0.35"
+    },
+    {
+      "object_id": "denny-mountain:S-e2b144694037c63a",
+      "rank": "3",
+      "kind": "cliff",
+      "score": "0.29925619363784794"
+    }
+  ],
+  "candidate_csv": "results/carbonate_v001_denny-mountain/candidates.csv",
+  "candidate_csv_sha256": "3796426c256e48e78ec39b472249fee7edc384e05c8ad4d9dd07c8cff0ab850c",
+  "analysis_references": [
+    "configs/carbonate_v001.json",
+    "docs/carbonate_v001/METHODOLOGY.md",
+    "docs/carbonate_v001/GEOLOGY_EVIDENCE.json",
+    "docs/carbonate_v001/RESULTS.md",
+    "results/carbonate_v001_denny-mountain/manifest.json",
+    "results/carbonate_v001_denny-mountain/summary.json"
+  ],
+  "analysis_reference_hashes": {
+    "configs/carbonate_v001.json": "0bbdc4fbe10650d6413e60dc6a0037ba0a1e8a267803156307b9eefa34004024",
+    "docs/carbonate_v001/METHODOLOGY.md": "0bc7940832a10b076d0129fbfc825d8595e7ad914449aa00b121b3bdc4947e50",
+    "docs/carbonate_v001/GEOLOGY_EVIDENCE.json": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+    "docs/carbonate_v001/RESULTS.md": "eaeaf045248b743f6991f991ecbf5ebda3339f5249e91d5c9476a1ca553a7457",
+    "results/carbonate_v001_denny-mountain/manifest.json": "19bf36dc4b895ee2f0677ecacf6170a4830561f0d97ad14b8d8b7f0af3c7a813",
+    "results/carbonate_v001_denny-mountain/summary.json": "1cd3c8478d972a2bc58a8e78ecb5d8c10a133006d6762d5825d5818b80467eba"
+  },
+  "project_path": "prospecting_library/denny-mountain-carbonate-v001/denny-mountain-carbonate-v001.qgz",
+  "archived_project": "prospecting_library/denny-mountain-carbonate-v001/map-v000001.qgz",
+  "project_sha256": "162183787af767858f11ac0261c7eb7f1d6a8ea2b725aa08791a3b19c6de2e0a",
+  "map_revision": 1,
+  "state_path": "prospecting_library/denny-mountain-carbonate-v001/versions/v000001.state.json",
+  "verification_path": "prospecting_library/denny-mountain-carbonate-v001/versions/v000001.verification.json",
+  "dataset_references": [
+    {
+      "path": "data/processed/carbonate_v001/denny-mountain/formation_29438_4a8c01af73c9/eligibility_1m.tif",
+      "bytes": 4380,
+      "sha256": "81a25280d05d3628daabfe01dd1f1fd6375c1dc7adf6edf15153e28b7eea3c84",
+      "layers": [
+        "Eligibility mask • formation_29438_4a8c01af73c9 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/carbonate_v001/denny-mountain/formation_29438_4a8c01af73c9/eligibility_1m.tif.aux.xml",
+      "bytes": 358,
+      "sha256": "aa967aea001ce98a5196e181ea69adf10a81f49a73f303af4ad29ec6cdded12a",
+      "layers": [
+        "Eligibility mask • formation_29438_4a8c01af73c9 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/rgbnir.tif",
+      "bytes": 89824723,
+      "sha256": "1953c20cbd495a519743e41795f3789bf05a90f55a66dbbb111ab51d8dfd98c9",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/rgbnir.tif.aux.xml",
+      "bytes": 5242,
+      "sha256": "953f7ebc49b63e70c9ec63507612ccf24c7db14a4c490deff2a683cd37ecfc1c",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_denny-mountain/priority_display_10m.tif",
+      "bytes": 3153,
+      "sha256": "04d3e66ea1ed0035eaa26af0954020a3d0e6e1ab93d137e063cdc9f86850dce2",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_denny-mountain/priority_display_10m.tif.aux.xml",
+      "bytes": 376,
+      "sha256": "610800aa2ef4ffcaae49b6fab803a9dbf95a9d4b90547b05579928ba95ef1764",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_denny-mountain/prospecting.gpkg",
+      "bytes": 1355776,
+      "sha256": "9f4b7f94b4c17572895a06b24caa0ccd74788dfadeb1f9d99ddea968071040bf",
+      "layers": [
+        "25 m contact uncertainty • not mapped carbonate",
+        "Documented marble • PMmb(e) / TRmb(e)",
+        "Individual observation footprints • original scoped geometry",
+        "Individual observations • carbonate scope only",
+        "Prospecting sites • ALL eligible destinations",
+        "Site ↔ observation membership and evidence roles",
+        "Site support footprints • related eligible observations"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif",
+      "bytes": 190311,
+      "sha256": "14046f556e232ed73aec997c37e5dd76ad1f84157c172313ff6b6fc55e9dfa38",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif.aux.xml",
+      "bytes": 425,
+      "sha256": "131d94403ea70de756d6fc1414befc3017f6cdc582903115d1466f9d599e8498",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif",
+      "bytes": 7540467,
+      "sha256": "9896a9f106c9fec7346f7554c7877fac6986ceb76289e5e697576d5a9300ea16",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif.aux.xml",
+      "bytes": 408,
+      "sha256": "d5cdf2d877b7ffe39b83f92647168e094373fe899c7527f6f58c0a21b4c06e56",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif",
+      "bytes": 31563227,
+      "sha256": "e8ef572d699e49afa9e420b55b93619921c74396a5555aa1bb17262cb148a2e7",
+      "layers": [
+        "slope 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif.aux.xml",
+      "bytes": 436,
+      "sha256": "212ce9e546e4827dc130baf9ba7c424ef8091aeb989f9ca9dcaa6ad19d14292b",
+      "layers": [
+        "slope 1m"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package",
+  "layer_count": 13,
+  "source_project": "qgis/KarstFinder_denny-mountain_carbonate_v001.qgz"
+}

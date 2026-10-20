@@ -1,0 +1,177 @@
+{
+  "version": "carbonate_v001",
+  "crs": "EPSG:26910",
+  "purpose": "Cave prospecting in documented carbonate formations only; no generic terrain-anomaly candidates.",
+  "eligible_units": {
+    "PMmb(e)": {
+      "lithology": "crystalline marble beds and pods, locally interlayered with noncarbonate rocks",
+      "description_key": "Compiled | PMmb(e)"
+    },
+    "TRmb(e)": {
+      "lithology": "crystalline marble beds and pods, interlayered locally with metachert and greenstone",
+      "description_key": "Compiled | TRmb(e)"
+    }
+  },
+  "geology_evidence_file": "data/raw/area_shortlist_20261019/selected_unit_descriptions.json",
+  "geology_source_url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13",
+  "boundary_margin_m": 25,
+  "boundary_sensitivity_m": [
+    0,
+    25,
+    50
+  ],
+  "boundary_justification": "Conservative contact-review margin at 1:100,000, reduced from the former 100 m assumption. It is not a measured accuracy interval and does not authorize a mixed formation as a whole.",
+  "mixed_formations": "Ineligible without separately mapped or independently documented local carbonate exposure; no such additional exposure record established in these four areas.",
+  "detection": {
+    "cliff_slope_deg": 45,
+    "cliff_min_area_m2": 25,
+    "depression_depth_m": 0.5,
+    "depression_min_area_m2": 4,
+    "hydrology_min_area_m2": 100,
+    "hydrology_hand_m": 5,
+    "hydrology_catchment_m2": 25000,
+    "residual_windows_m": [
+      11,
+      31,
+      61
+    ]
+  },
+  "scoring": {
+    "version": "carbonate_priority_v001",
+    "cliff_floor": 0.2,
+    "robust_recess_scale_m": 2,
+    "depression_depth_scale_m": 3,
+    "hydrology_support": 0.4,
+    "boundary_support_factor": 0.35,
+    "formula": "After carbonate eligibility, observation support = (0.35 + 0.65 * mapped_carbonate_fraction) * terrain_anomaly_strength. Site priority is the maximum cliff/depression member support. Ordinary modeled drainage is context only: it cannot seed, bridge or increase a site score."
+  },
+  "sites": {
+    "maximum_local_gap_m": 10,
+    "same_formation_required": true,
+    "corridor_inside_eligibility_required": true,
+    "hydrology_cannot_bridge_sites": true,
+    "representative": "Highest-priority surface member with mapped-carbonate overlap where available; otherwise the best eligible member. Point lies on mapped overlap preferentially; never an averaged entrance estimate.",
+    "hydrology_context_only": true
+  },
+  "colors": {
+    "stops": [
+      [
+        0,
+        "#440154"
+      ],
+      [
+        0.25,
+        "#3b528b"
+      ],
+      [
+        0.5,
+        "#21918c"
+      ],
+      [
+        0.75,
+        "#5ec962"
+      ],
+      [
+        1,
+        "#fde725"
+      ]
+    ],
+    "interpolation": "linear sRGB; exact supplied anchors; ordinal 0\u20131"
+  },
+  "known_cave_inputs_used": false,
+  "independently_blind": false,
+  "areas": {
+    "cave-ridge": {
+      "name": "Cave Ridge",
+      "baseline_area_id": "cave-ridge",
+      "enhanced_library_id": "cave-ridge-enhanced-v001",
+      "baseline_feature_config": "configs/blind_v002.json",
+      "study_bounds": [
+        617000,
+        5253500,
+        623000,
+        5258500
+      ],
+      "baseline_processed": "data/processed",
+      "baseline_feature_prepared": "data/processed/features_v002",
+      "baseline_features": "results/blind_v002",
+      "baseline_landscape": "results/blind_v001",
+      "baseline_candidate_csv": "results/blind_v002/ranked_indicators.csv",
+      "raw_dir": "data/raw/enhanced_v001/cave-ridge",
+      "processed_dir": "data/processed/carbonate_v001/cave-ridge",
+      "result_dir": "results/carbonate_v001_cave-ridge",
+      "source_enhanced_dir": "results/enhanced_v001_cave-ridge",
+      "source_enhanced_processed": "data/processed/enhanced_v001/cave-ridge",
+      "library_id": "cave-ridge-carbonate-v001"
+    },
+    "denny-mountain": {
+      "name": "Denny Mountain",
+      "baseline_area_id": "denny-mountain",
+      "enhanced_library_id": "denny-mountain-enhanced-v001",
+      "baseline_feature_config": "configs/denny_v001_features.json",
+      "study_bounds": [
+        615850,
+        5252250,
+        618850,
+        5255250
+      ],
+      "baseline_processed": "data/processed/denny_v001",
+      "baseline_feature_prepared": "data/processed/denny_v001/features",
+      "baseline_features": "results/denny_v001_features",
+      "baseline_landscape": "results/denny_v001_landscape",
+      "baseline_candidate_csv": "results/denny_v001_access/screened_indicators.csv",
+      "raw_dir": "data/raw/enhanced_v001/denny-mountain",
+      "processed_dir": "data/processed/carbonate_v001/denny-mountain",
+      "result_dir": "results/carbonate_v001_denny-mountain",
+      "source_enhanced_dir": "results/enhanced_v001_denny-mountain",
+      "source_enhanced_processed": "data/processed/enhanced_v001/denny-mountain",
+      "library_id": "denny-mountain-carbonate-v001"
+    },
+    "kaleetan-vicinity": {
+      "name": "Kaleetan Peak vicinity",
+      "baseline_area_id": "kaleetan-vicinity",
+      "enhanced_library_id": "kaleetan-vicinity-enhanced-v001",
+      "baseline_feature_config": "configs/kaleetan_v001_features.json",
+      "study_bounds": [
+        613050,
+        5256200,
+        616050,
+        5259200
+      ],
+      "baseline_processed": "data/processed/kaleetan_v001",
+      "baseline_feature_prepared": "data/processed/kaleetan_v001/features",
+      "baseline_features": "results/kaleetan_v001_features",
+      "baseline_landscape": "results/kaleetan_v001_landscape",
+      "baseline_candidate_csv": "results/kaleetan_v001_access/screened_indicators.csv",
+      "raw_dir": "data/raw/enhanced_v001/kaleetan-vicinity",
+      "processed_dir": "data/processed/carbonate_v001/kaleetan-vicinity",
+      "result_dir": "results/carbonate_v001_kaleetan-vicinity",
+      "source_enhanced_dir": "results/enhanced_v001_kaleetan-vicinity",
+      "source_enhanced_processed": "data/processed/enhanced_v001/kaleetan-vicinity",
+      "library_id": "kaleetan-vicinity-carbonate-v001"
+    },
+    "marble-peak": {
+      "name": "Marble Peak / upper Marble Gulch",
+      "baseline_area_id": "marble-peak",
+      "enhanced_library_id": "marble-peak-enhanced-v001",
+      "baseline_feature_config": "configs/marble_v001_features.json",
+      "study_bounds": [
+        605050,
+        5322150,
+        608050,
+        5325150
+      ],
+      "baseline_processed": "data/processed/marble_v001",
+      "baseline_feature_prepared": "data/processed/marble_v001/features",
+      "baseline_features": "results/marble_v001_features",
+      "baseline_landscape": "results/marble_v001_landscape",
+      "baseline_candidate_csv": "results/marble_v001_access/screened_indicators.csv",
+      "raw_dir": "data/raw/enhanced_v001/marble-peak",
+      "processed_dir": "data/processed/carbonate_v001/marble-peak",
+      "result_dir": "results/carbonate_v001_marble-peak",
+      "source_enhanced_dir": "results/enhanced_v001_marble-peak",
+      "source_enhanced_processed": "data/processed/enhanced_v001/marble-peak",
+      "library_id": "marble-peak-carbonate-v001"
+    }
+  }
+}

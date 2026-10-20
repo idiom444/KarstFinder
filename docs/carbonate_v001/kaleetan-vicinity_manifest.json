@@ -1,0 +1,49 @@
+{
+  "area": "kaleetan-vicinity",
+  "config_sha256": "0bbdc4fbe10650d6413e60dc6a0037ba0a1e8a267803156307b9eefa34004024",
+  "inputs": {
+    "configs/carbonate_v001.json": "0bbdc4fbe10650d6413e60dc6a0037ba0a1e8a267803156307b9eefa34004024",
+    "data/processed/enhanced_v001/kaleetan-vicinity/imagery/ndvi.tif": "9cb00deb80db841426ca2908299550038800c6e43008e08827bbd3d04103bfee",
+    "data/processed/enhanced_v001/kaleetan-vicinity/imagery/possible_exposed_surface_mask.tif": "0b6c76efda37e037ac4e85df5832e9727a449f5c8f2e359d8633346706d0adb4",
+    "data/processed/enhanced_v001/kaleetan-vicinity/imagery/vegetation_mask.tif": "1082eed03eb8355ac6159ca132be36b827f64fe9b75c77fbb68d9adbfecd8da4",
+    "data/processed/enhanced_v001/kaleetan-vicinity/terrain/height_above_modeled_drainage.tif": "c0c54097e8609ed9f112a5df242cb0ff37af5fa2f7678274cb740ec8b0ed6e8c",
+    "data/processed/enhanced_v001/kaleetan-vicinity/terrain/hydrologic_edge_contamination.tif": "20ac0458ef95b13a871e0bce53fc98f6af782286bfbbccb7ad405866243711c0",
+    "data/processed/enhanced_v001/kaleetan-vicinity/terrain/residual_11m.tif": "a06b1df9b955b3201e9723af3e2d246bb62ea02cf5cf439694a6f936e03378de",
+    "data/processed/enhanced_v001/kaleetan-vicinity/terrain/residual_31m.tif": "bb2ecf5ab3956c26c7df928220159ba62cc7ce58308fd4764bbde6dd744dac23",
+    "data/processed/enhanced_v001/kaleetan-vicinity/terrain/residual_61m.tif": "970e6fbb198e414689e9557ca3e35fb3c5954b9c23d33043a9d46f8d30ef56ca",
+    "data/processed/kaleetan_v001/features/contributing_area_10m_buffered.tif": "5bc81094abc8672359902feb89e0f3a510566b43f231eab7bcf1d0987f73336d",
+    "data/raw/area_shortlist_20261019/selected_unit_descriptions.json": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+    "results/enhanced_v001_kaleetan-vicinity/geology.gpkg": "feef398b073ba877e36d397238b4d308cf684b6a3ef4b0969d124aba4d250d81",
+    "results/enhanced_v001_kaleetan-vicinity/registry.gpkg": "4444faa62fc3e3a92dbe0d52081f93345b1134b9239811d3995d70e56daaad39",
+    "results/kaleetan_v001_features/depression_depth_1m.tif": "9f9b82ede4e58127c609eeb51d22edea41d4c1d16d75ce5c07217399befb8707",
+    "results/kaleetan_v001_features/feature_quality_1m.tif": "f44b2fac0075f1cf54b3c70224f2427abbacdca40d36a2dc21892bb27405bcc6",
+    "results/kaleetan_v001_features/slope_1m.tif": "723d847368b82b6fa1dd11fc6acb3e11c32a1764983074a6bd1248c536b9873c",
+    "results/kaleetan_v001_features/source_epoch_1m.tif": "6c07b0180bfd127c3144b4700719e268e0730f86c7df6a1d5d1cc4f1be5a9b38"
+  },
+  "prepared": {
+    "data/processed/carbonate_v001/kaleetan-vicinity/formation_29440_ec4747ceaa19/eligibility_1m.tif": "0bfaf6191ac97bd0b46c50dda5be65a998dc984c7e83dac0a09d4a4ee85fcb0e",
+    "data/processed/carbonate_v001/kaleetan-vicinity/formation_29440_ec4747ceaa19/hydrology_eligible_10m.tif": "cc0fbc1b8c81605c05a0793f002b5fc3ade63dc7ae9405601ceecc2ef21baca3"
+  },
+  "outputs": {
+    "results/carbonate_v001_kaleetan-vicinity/boundary_sensitivity.json": "67ab84d452042fa995d7cb54688c6d75997277771dced82e4fcc1b067b339be2",
+    "results/carbonate_v001_kaleetan-vicinity/candidates.csv": "edd4c8d93aeb4cfe84ae42d5389aabe196d6e42316d67cf5d3a4b075b277de6a",
+    "results/carbonate_v001_kaleetan-vicinity/candidates.json": "7797ff4952908a532f46a01c3ee9cb7c4da8860d65bd5ee4223caf3823936be2",
+    "results/carbonate_v001_kaleetan-vicinity/config.json": "8e7e16086d37da0636ad165ff026a1df6e2a510a40eb7e3701900cd78855b9ef",
+    "results/carbonate_v001_kaleetan-vicinity/membership.json": "fb0bb57f11478bd0c092b17038dbd9a36b54ccee75bbe0727d69988186e55d36",
+    "results/carbonate_v001_kaleetan-vicinity/observations.csv": "d66c8a1cc33d629e17e2afb0813a6ce39eba604dcc4666bb59ede544f82829fc",
+    "results/carbonate_v001_kaleetan-vicinity/observations.json": "f25d0f5a06fb2611fac9b49bf14b8e9bafd96172ebd62f2bea8d202fedad0d3a",
+    "results/carbonate_v001_kaleetan-vicinity/priority_display_10m.tif": "a450b23324b256c8890ab602451d99a22b454d2227fd4f69d58c3d886f51d0ff",
+    "results/carbonate_v001_kaleetan-vicinity/prospecting.gpkg": "bd2d36fee4da831b649b84468827c0868712f3ed5e3aaa9784698c8c9eaa01c3",
+    "results/carbonate_v001_kaleetan-vicinity/summary.json": "1a8ac0402f5293f1d64e9474d0f46c8eb7a85eea13d8a3c5c099400db4568870"
+  },
+  "code": {
+    "src/karstfinder/carbonate/__init__.py": "d01926b1c819cc615f11150a3f7ef5fedc9984e9d141a0d383819af8edeefeac",
+    "src/karstfinder/carbonate/common.py": "6b1957d7d954835860ccde25b723dd07c25a699d50808257558b1202f96dc1cb",
+    "src/karstfinder/carbonate/grouping.py": "35156507ff133b2d39276727ad4bddc8e7d6d5804ca2b63b9a1e7446b6a40066",
+    "src/karstfinder/carbonate/map_project.py": "40b26fff3237c7da7cccac163af66c98aa7315721d560532d1e2a4e91507e080",
+    "src/karstfinder/carbonate/pipeline.py": "e8e71f7a930bb9d86dbe2741bfd30fcd4a96e489df44ea68fb2c90301d93f9fc",
+    "src/karstfinder/carbonate/priority.py": "44b54cc2ca7a3bbf7b84b14bddfd977f675a90b6b4be241a85aa0adb23117b36",
+    "src/karstfinder/carbonate/scope.py": "2c0257f1e2e287ec5f09136267955267e74a024a9e3eb6cdbe9bb154667e4f38"
+  },
+  "scoring_model": "carbonate_priority_v001"
+}

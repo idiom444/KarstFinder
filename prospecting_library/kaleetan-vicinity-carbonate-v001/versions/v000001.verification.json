@@ -1,0 +1,109 @@
+{
+  "fresh_process": true,
+  "qgis_version": "4.2.2-Belém do Pará",
+  "layer_count": 13,
+  "state_matches_capture": true,
+  "vector_counts": {
+    "25 m contact uncertainty • not mapped carbonate": 1,
+    "Documented marble • PMmb(e) / TRmb(e)": 1,
+    "Individual observation footprints • original scoped geometry": 3,
+    "Individual observations • carbonate scope only": 3,
+    "Prospecting sites • ALL eligible destinations": 1,
+    "Site ↔ observation membership and evidence roles": 3,
+    "Site support footprints • related eligible observations": 1
+  },
+  "candidate_table_check": {
+    "candidate_count": 1,
+    "matching_layer": "Prospecting sites • ALL eligible destinations",
+    "ids_ranks_scores_coordinates_match_csv": true
+  },
+  "dependencies": [
+    {
+      "path": "data/processed/carbonate_v001/kaleetan-vicinity/formation_29440_ec4747ceaa19/eligibility_1m.tif",
+      "bytes": 2257,
+      "sha256": "0bfaf6191ac97bd0b46c50dda5be65a998dc984c7e83dac0a09d4a4ee85fcb0e",
+      "layers": [
+        "Eligibility mask • formation_29440_ec4747ceaa19 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/carbonate_v001/kaleetan-vicinity/formation_29440_ec4747ceaa19/eligibility_1m.tif.aux.xml",
+      "bytes": 358,
+      "sha256": "4f7a957ef1a96526f7d147a1adb5041539a70af85bddb0b79938e36a5acee196",
+      "layers": [
+        "Eligibility mask • formation_29440_ec4747ceaa19 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/kaleetan-vicinity/imagery/rgbnir.tif",
+      "bytes": 98857757,
+      "sha256": "eee7e30cd7cd59c6426f249b17bba30e42e2de147bad864f5cc98076b27ae464",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/kaleetan-vicinity/imagery/rgbnir.tif.aux.xml",
+      "bytes": 5281,
+      "sha256": "de60e30ea2136bb15ff49112e742e7cf0becbb1c0561d8201e6b85ea72488c8c",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_kaleetan-vicinity/priority_display_10m.tif",
+      "bytes": 2901,
+      "sha256": "a450b23324b256c8890ab602451d99a22b454d2227fd4f69d58c3d886f51d0ff",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_kaleetan-vicinity/priority_display_10m.tif.aux.xml",
+      "bytes": 329,
+      "sha256": "89bb31cf0557e3c9e2201200ab7d646fabfa388e349bf1595371b0f5247565b0",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_kaleetan-vicinity/prospecting.gpkg",
+      "bytes": 360448,
+      "sha256": "bd2d36fee4da831b649b84468827c0868712f3ed5e3aaa9784698c8c9eaa01c3",
+      "layers": [
+        "25 m contact uncertainty • not mapped carbonate",
+        "Documented marble • PMmb(e) / TRmb(e)",
+        "Individual observation footprints • original scoped geometry",
+        "Individual observations • carbonate scope only",
+        "Prospecting sites • ALL eligible destinations",
+        "Site ↔ observation membership and evidence roles",
+        "Site support footprints • related eligible observations"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/depression_depth_1m.tif",
+      "bytes": 212885,
+      "sha256": "9f9b82ede4e58127c609eeb51d22edea41d4c1d16d75ce5c07217399befb8707",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/hillshade_1m.tif",
+      "bytes": 7200964,
+      "sha256": "f5e97c155cebd992d89236af6864135a13117be1bac8e3686fd30b51c2c4d3c9",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/kaleetan_v001_features/slope_1m.tif",
+      "bytes": 29998070,
+      "sha256": "723d847368b82b6fa1dd11fc6acb3e11c32a1764983074a6bd1248c536b9873c",
+      "layers": [
+        "slope 1m"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package"
+}

@@ -4,7 +4,38 @@ Reproducible geospatial research into cave-bearing landscapes near Cave
 Ridge, Denny Mountain, Kaleetan Peak and Marble Peak near Silverton, Washington. Outputs describe **landscape
 hypotheses, not cave locations or probabilities**. Initial predictions were frozen before known local cave references were consulted. Read [PROJECT_STATE.md](PROJECT_STATE.md) before work.
 
-## Enhanced prospecting maps
+## Current maps: carbonate prospecting
+
+KarstFinder targets **documented limestone/marble formations**. The corrected
+`carbonate_v001` analysis admits mapped marble and a flagged 25 m contact margin;
+unrelated terrain and broad uncertain mélange are excluded before detection.
+Existing enhanced v001 is retained below as a historical comparison.
+
+| Current Library map | Local prospecting sites | Scoped observations |
+|---|---:|---:|
+| [Cave Ridge](prospecting_library/cave-ridge-carbonate-v001/cave-ridge-carbonate-v001.qgz) | 57 | 212 |
+| [Denny Mountain](prospecting_library/denny-mountain-carbonate-v001/denny-mountain-carbonate-v001.qgz) | 3 | 78 |
+| [Kaleetan vicinity](prospecting_library/kaleetan-vicinity-carbonate-v001/kaleetan-vicinity-carbonate-v001.qgz) | 1 | 3 |
+| [Marble Peak](prospecting_library/marble-peak-carbonate-v001/marble-peak-carbonate-v001.qgz) | 1 | 15 |
+
+Every eligible site is visible; there are no scale-hiding or top-N filters.
+Underlying observations remain inspectable. Drainage provides context but cannot
+create, bridge or raise a destination's score. Exact continuous 0–1 colors and
+specific surface reference coordinates are retained. These are unvalidated
+prospecting sites, **not cave entrances**. Local shared datasets are required.
+
+```bash
+./library open denny-mountain-carbonate-v001
+./library verify denny-mountain-carbonate-v001
+```
+
+[Methodology](docs/carbonate_v001/METHODOLOGY.md),
+[results and geological limits](docs/carbonate_v001/RESULTS.md),
+[map workflow](docs/carbonate_v001/WORKFLOW.md), and
+[audit](docs/carbonate_v001/verification.json) explain the correction.
+All original/enhanced results, maps, Library entries and freezes are preserved.
+
+## Archived enhanced prospecting maps
 
 The additive **enhanced_v001** analyses retain every original lead and add
 terrain/drainage hypotheses with exact continuous purple → blue → teal → green → yellow

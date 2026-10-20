@@ -1,0 +1,133 @@
+{
+  "fresh_process": true,
+  "qgis_version": "4.2.2-Belém do Pará",
+  "layer_count": 13,
+  "state_matches_capture": true,
+  "vector_counts": {
+    "25 m contact uncertainty • not mapped carbonate": 1,
+    "Documented marble • PMmb(e) / TRmb(e)": 1,
+    "Individual observation footprints • original scoped geometry": 78,
+    "Individual observations • carbonate scope only": 78,
+    "Prospecting sites • ALL eligible destinations": 3,
+    "Site ↔ observation membership and evidence roles": 78,
+    "Site support footprints • related eligible observations": 3
+  },
+  "candidate_table_check": {
+    "candidate_count": 3,
+    "matching_layer": "Prospecting sites • ALL eligible destinations",
+    "ids_ranks_scores_coordinates_match_csv": true
+  },
+  "dependencies": [
+    {
+      "path": "data/processed/carbonate_v001/denny-mountain/formation_29438_4a8c01af73c9/eligibility_1m.tif",
+      "bytes": 4380,
+      "sha256": "81a25280d05d3628daabfe01dd1f1fd6375c1dc7adf6edf15153e28b7eea3c84",
+      "layers": [
+        "Eligibility mask • formation_29438_4a8c01af73c9 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/carbonate_v001/denny-mountain/formation_29438_4a8c01af73c9/eligibility_1m.tif.aux.xml",
+      "bytes": 358,
+      "sha256": "aa967aea001ce98a5196e181ea69adf10a81f49a73f303af4ad29ec6cdded12a",
+      "layers": [
+        "Eligibility mask • formation_29438_4a8c01af73c9 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/rgbnir.tif",
+      "bytes": 89824723,
+      "sha256": "1953c20cbd495a519743e41795f3789bf05a90f55a66dbbb111ab51d8dfd98c9",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/rgbnir.tif.aux.xml",
+      "bytes": 5242,
+      "sha256": "953f7ebc49b63e70c9ec63507612ccf24c7db14a4c490deff2a683cd37ecfc1c",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_denny-mountain/priority_display_10m.tif",
+      "bytes": 3153,
+      "sha256": "04d3e66ea1ed0035eaa26af0954020a3d0e6e1ab93d137e063cdc9f86850dce2",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_denny-mountain/priority_display_10m.tif.aux.xml",
+      "bytes": 376,
+      "sha256": "610800aa2ef4ffcaae49b6fab803a9dbf95a9d4b90547b05579928ba95ef1764",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_denny-mountain/prospecting.gpkg",
+      "bytes": 1355776,
+      "sha256": "9f4b7f94b4c17572895a06b24caa0ccd74788dfadeb1f9d99ddea968071040bf",
+      "layers": [
+        "25 m contact uncertainty • not mapped carbonate",
+        "Documented marble • PMmb(e) / TRmb(e)",
+        "Individual observation footprints • original scoped geometry",
+        "Individual observations • carbonate scope only",
+        "Prospecting sites • ALL eligible destinations",
+        "Site ↔ observation membership and evidence roles",
+        "Site support footprints • related eligible observations"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif",
+      "bytes": 190311,
+      "sha256": "14046f556e232ed73aec997c37e5dd76ad1f84157c172313ff6b6fc55e9dfa38",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif.aux.xml",
+      "bytes": 425,
+      "sha256": "131d94403ea70de756d6fc1414befc3017f6cdc582903115d1466f9d599e8498",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif",
+      "bytes": 7540467,
+      "sha256": "9896a9f106c9fec7346f7554c7877fac6986ceb76289e5e697576d5a9300ea16",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif.aux.xml",
+      "bytes": 408,
+      "sha256": "d5cdf2d877b7ffe39b83f92647168e094373fe899c7527f6f58c0a21b4c06e56",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif",
+      "bytes": 31563227,
+      "sha256": "e8ef572d699e49afa9e420b55b93619921c74396a5555aa1bb17262cb148a2e7",
+      "layers": [
+        "slope 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif.aux.xml",
+      "bytes": 436,
+      "sha256": "212ce9e546e4827dc130baf9ba7c424ef8091aeb989f9ca9dcaa6ad19d14292b",
+      "layers": [
+        "slope 1m"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package"
+}

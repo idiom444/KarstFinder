@@ -1,6 +1,29 @@
-# Project state — 2026-10-19
+# Project state — 2026-10-20
 
 Repository: /home/Idiom/Repos/MyRepos/KarstFinder (the open VS Code workspace).
+
+## Current recommended analysis: carbonate v001
+
+The user's scope correction makes documented carbonate geology an eligibility
+requirement. All four existing windows were reprocessed using only existing local
+data. Explicit PMmb(e)/TRmb(e) marble and a flagged 25 m contact margin yield
+57 Cave Ridge, 3 Denny, 1 Kaleetan and 1 Marble Peak local surface sites from 308
+scoped observations. Seven unattached drainage observations remain context only.
+Outside the listed marble bodies, carbonate evidence is insufficient and no
+candidate is generated. Local purity, fine contact accuracy and cave development
+remain unverified. Scores use separately versioned `carbonate_priority_v001`.
+
+New Library IDs end `-carbonate-v001`. Every site is visible at every scale;
+individual observations remain optionally inspectable. Exact colors, coordinates,
+membership, measurements and source IDs are retained. See
+[results](docs/carbonate_v001/RESULTS.md),
+[methodology](docs/carbonate_v001/METHODOLOGY.md),
+[workflow](docs/carbonate_v001/WORKFLOW.md) and
+[verification](docs/carbonate_v001/verification.json).
+Prior records below describe preserved historical analyses. No previous result,
+implementation, Library entry or frozen map was overwritten. No new geographic
+data, cave records, outreach or training was used. These are unvalidated,
+previously exposed studies, not independently blind tests or route recommendations.
 
 ## Enhanced prospecting upgrade — additive v001
 

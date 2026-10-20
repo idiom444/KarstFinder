@@ -1,5 +1,14 @@
 # KarstFinder methodology and preserved Denny evidence
 
+**Current scope correction (2026-10-20):**
+[Carbonate v001 methodology](docs/carbonate_v001/METHODOLOGY.md) is the current
+prospecting method: documented marble is required before terrain detection,
+with a small flagged contact margin; broad mélange/unknown rock is excluded.
+It preserves all prior science and uses a separately versioned priority model.
+[Results and complete review measurements](docs/carbonate_v001/RESULTS.md) cover
+all four reprocessed areas. The following original Denny methodology and evidence
+remain an unchanged historical account, not the recommended current candidate scope.
+
 Documentation review: 2026-10-19. This describes the **implemented methods and
 saved measurements**, rather than a validated cave-entrance detector. The current
 Denny rankings, configurations, terrain products and geometries are unchanged.

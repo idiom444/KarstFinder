@@ -1,0 +1,128 @@
+{
+  "preserved_hashes_before": {
+    "blind_v002": 163,
+    "denny_v001": 144,
+    "kaleetan_v001": 149,
+    "marble_v001_reviewed": 156,
+    "enhanced_v001": 541
+  },
+  "areas": {
+    "cave-ridge": {
+      "observations": 212,
+      "sites": 57,
+      "source_v001_ids_linked": 203,
+      "unattached_drainage_context": 7,
+      "all_geometries_inside_carbonate_scope": true,
+      "key_native_measurements_recomputed": 1272,
+      "waypoints_on_actual_member_geometry": true,
+      "exact_ramp_and_absolute_scale": true,
+      "no_scale_hiding_or_subset": true,
+      "fresh_project_reopened": true,
+      "layouts": [
+        "Study overview",
+        "Marble detail 29438",
+        "Marble detail 29439"
+      ],
+      "library": {
+        "area_id": "cave-ridge-carbonate-v001",
+        "layer_count": 14,
+        "candidate_count": 57,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 15,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    },
+    "denny-mountain": {
+      "observations": 78,
+      "sites": 3,
+      "source_v001_ids_linked": 70,
+      "unattached_drainage_context": 0,
+      "all_geometries_inside_carbonate_scope": true,
+      "key_native_measurements_recomputed": 468,
+      "waypoints_on_actual_member_geometry": true,
+      "exact_ramp_and_absolute_scale": true,
+      "no_scale_hiding_or_subset": true,
+      "fresh_project_reopened": true,
+      "layouts": [
+        "Study overview",
+        "Marble detail 29438"
+      ],
+      "library": {
+        "area_id": "denny-mountain-carbonate-v001",
+        "layer_count": 13,
+        "candidate_count": 3,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 13,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    },
+    "kaleetan-vicinity": {
+      "observations": 3,
+      "sites": 1,
+      "source_v001_ids_linked": 3,
+      "unattached_drainage_context": 0,
+      "all_geometries_inside_carbonate_scope": true,
+      "key_native_measurements_recomputed": 18,
+      "waypoints_on_actual_member_geometry": true,
+      "exact_ramp_and_absolute_scale": true,
+      "no_scale_hiding_or_subset": true,
+      "fresh_project_reopened": true,
+      "layouts": [
+        "Study overview",
+        "Marble detail 29440"
+      ],
+      "library": {
+        "area_id": "kaleetan-vicinity-carbonate-v001",
+        "layer_count": 13,
+        "candidate_count": 1,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 10,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    },
+    "marble-peak": {
+      "observations": 15,
+      "sites": 1,
+      "source_v001_ids_linked": 10,
+      "unattached_drainage_context": 0,
+      "all_geometries_inside_carbonate_scope": true,
+      "key_native_measurements_recomputed": 90,
+      "waypoints_on_actual_member_geometry": true,
+      "exact_ramp_and_absolute_scale": true,
+      "no_scale_hiding_or_subset": true,
+      "fresh_project_reopened": true,
+      "layouts": [
+        "Study overview",
+        "Marble detail 741"
+      ],
+      "library": {
+        "area_id": "marble-peak-carbonate-v001",
+        "layer_count": 13,
+        "candidate_count": 1,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 10,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    }
+  },
+  "preserved_hashes_after": {
+    "blind_v002": 163,
+    "denny_v001": 144,
+    "kaleetan_v001": 149,
+    "marble_v001_reviewed": 156,
+    "enhanced_v001": 541
+  },
+  "original_library_entries_unchanged": 8
+}

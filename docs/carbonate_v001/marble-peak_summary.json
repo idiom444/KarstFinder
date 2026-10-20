@@ -1,0 +1,89 @@
+{
+  "version": "carbonate_v001",
+  "area": "marble-peak",
+  "scope": "Explicit carbonate exposure polygons plus 25 m flagged boundary margin; no blanket melange/unknown eligibility.",
+  "formations": [
+    {
+      "formation_id": "marble-peak:F-741-941be6848858",
+      "source_id": "741",
+      "unit": "TRmb(e)",
+      "source_ref": "results/enhanced_v001_marble-peak/geology.gpkg#source_id=741",
+      "lithology": "crystalline marble beds and pods, interlayered locally with metachert and greenstone",
+      "description_key": "Compiled | TRmb(e)",
+      "description_source": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13",
+      "description_input": "data/raw/area_shortlist_20261019/selected_unit_descriptions.json",
+      "description_input_sha256": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+      "scale_denominator": 100000,
+      "unit_id_confidence": "certain",
+      "geometry_sha256": "941be6848858cbffafa72882c1bc50e037a0f8aed2923c5b0ef63b85108548d7",
+      "mixed_unit_eligible": false,
+      "mapped_carbonate_area_m2": 10907.554046506062,
+      "eligible_area_with_margin_m2": 23352.46518024057,
+      "observations": 15,
+      "sites": 1,
+      "boundary_only_observations": 8,
+      "bounds_utm": [
+        606420,
+        5323510,
+        606650,
+        5323760
+      ]
+    }
+  ],
+  "excluded_geological_polygons": [
+    {
+      "source_id": "9746",
+      "unit": "Jigb(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "10493",
+      "unit": "JTRmc(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "10548",
+      "unit": "JTRmt(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "10549",
+      "unit": "JTRmt(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "10651",
+      "unit": "Ju(e)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "27381",
+      "unit": "Oit(sv)",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "34234",
+      "unit": "Qad",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    },
+    {
+      "source_id": "42557",
+      "unit": "Qgo",
+      "reason": "No separately documented local carbonate exposure admitted; mixed/unknown rock is not eligible."
+    }
+  ],
+  "observations": 15,
+  "sites": 1,
+  "by_kind": {
+    "cliff": 15
+  },
+  "unattached_context_observations": 0,
+  "boundary_only_sites": 0,
+  "single_method_sites": 1,
+  "suppressed": {},
+  "geology_insufficient": "Outside the listed mapped marble bodies, local carbonate exposure is not established; no candidates generated there. Finer-scale exposure/karst suitability and within-unit purity remain unresolved.",
+  "no_documented_carbonate_coverage": false,
+  "caves_confirmed": 0,
+  "independently_blind": false,
+  "known_cave_inputs_used": false
+}

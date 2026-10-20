@@ -1,5 +1,19 @@
 # Scientific reading — 2026-10-19
 
+## Carbonate scope correction — 2026-10-20
+
+The current scientific question is cave prospecting **inside documented carbonate**.
+Existing DNR unit polygons and unit descriptions establish PMmb(e)/TRmb(e) marble
+in all four approved windows. They do not localize carbonate throughout the broader
+JTRmt(e) mélange, so that unit is excluded. No source was consulted for known cave
+locations and no new geographic data was downloaded. The earlier literature-informed
+area selection and prior Cave Ridge exposure still preclude independent blind claims.
+See [geological evidence](docs/carbonate_v001/GEOLOGY_EVIDENCE.json) and
+[methodology](docs/carbonate_v001/METHODOLOGY.md) for source keys and limitations.
+Ordinary modeled drainage is not evidence of sinking water and no longer creates
+a candidate. Local terrain residual strength remains a hypothesis index, with
+glacial and other non-karst alternatives explicitly preserved.
+
 ## Cuthbertson et al. (2021)
 
 [Paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0245170),

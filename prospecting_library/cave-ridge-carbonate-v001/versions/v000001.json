@@ -1,0 +1,263 @@
+{
+  "area_id": "cave-ridge-carbonate-v001",
+  "created_utc": "2026-10-20T12:09:23.034941+00:00",
+  "status": "Not yet investigated",
+  "personal_notes": "prospecting_library/cave-ridge-carbonate-v001/local/field_notes.json",
+  "revision": 1,
+  "updated_utc": "2026-10-20T12:09:23.035041+00:00",
+  "change": "map registered from saved project",
+  "metadata_path": "prospecting_library/cave-ridge-carbonate-v001/versions/v000001.json",
+  "name": "Cave Ridge — Carbonate prospecting v001",
+  "general_location": "Cave Ridge, Washington; existing approved study window",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      617000,
+      5253500,
+      623000,
+      5258500
+    ]
+  },
+  "geological_summary": "Explicit DNR mapped marble plus a flagged 25 m contact-review margin. Mixed/unknown formations excluded. Unvalidated ordinal prospecting; coordinates are surface reference points, not entrances or access routes.",
+  "specification": {
+    "name": "Cave Ridge — Carbonate prospecting v001",
+    "general_location": "Cave Ridge, Washington; existing approved study window",
+    "study_extent": {
+      "crs": "EPSG:26910",
+      "bounds": [
+        617000,
+        5253500,
+        623000,
+        5258500
+      ]
+    },
+    "geological_summary": "Explicit DNR mapped marble plus a flagged 25 m contact-review margin. Mixed/unknown formations excluded. Unvalidated ordinal prospecting; coordinates are surface reference points, not entrances or access routes.",
+    "candidate_csv": "results/carbonate_v001_cave-ridge/candidates.csv",
+    "analysis_references": [
+      "configs/carbonate_v001.json",
+      "docs/carbonate_v001/METHODOLOGY.md",
+      "docs/carbonate_v001/GEOLOGY_EVIDENCE.json",
+      "docs/carbonate_v001/RESULTS.md",
+      "results/carbonate_v001_cave-ridge/manifest.json",
+      "results/carbonate_v001_cave-ridge/summary.json"
+    ]
+  },
+  "candidate_count": 57,
+  "highest_priority_candidates": [
+    {
+      "object_id": "cave-ridge:S-0d1ce80973430111",
+      "rank": "1",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-196e2494172d207a",
+      "rank": "2",
+      "kind": "depression",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-1a3a338a74c46c64",
+      "rank": "3",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-23f44d88f079e9b1",
+      "rank": "4",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-3e84488971216953",
+      "rank": "5",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-5bd80d6360acab0e",
+      "rank": "6",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-6974fe10dddd0d0f",
+      "rank": "7",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-9396aca6b1172fc6",
+      "rank": "8",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-af87d736df4eb316",
+      "rank": "9",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "cave-ridge:S-bb3f5cdf41c555f7",
+      "rank": "10",
+      "kind": "cliff",
+      "score": "1.0"
+    }
+  ],
+  "candidate_csv": "results/carbonate_v001_cave-ridge/candidates.csv",
+  "candidate_csv_sha256": "7298b0809f9ec9778fafa54a211c51e31ef0f9578000d9508c1aefd375cccf86",
+  "analysis_references": [
+    "configs/carbonate_v001.json",
+    "docs/carbonate_v001/METHODOLOGY.md",
+    "docs/carbonate_v001/GEOLOGY_EVIDENCE.json",
+    "docs/carbonate_v001/RESULTS.md",
+    "results/carbonate_v001_cave-ridge/manifest.json",
+    "results/carbonate_v001_cave-ridge/summary.json"
+  ],
+  "analysis_reference_hashes": {
+    "configs/carbonate_v001.json": "0bbdc4fbe10650d6413e60dc6a0037ba0a1e8a267803156307b9eefa34004024",
+    "docs/carbonate_v001/METHODOLOGY.md": "0bc7940832a10b076d0129fbfc825d8595e7ad914449aa00b121b3bdc4947e50",
+    "docs/carbonate_v001/GEOLOGY_EVIDENCE.json": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+    "docs/carbonate_v001/RESULTS.md": "eaeaf045248b743f6991f991ecbf5ebda3339f5249e91d5c9476a1ca553a7457",
+    "results/carbonate_v001_cave-ridge/manifest.json": "192ad85fc687b4f4d47a8ec7ec77f7c32b94954984b69043765a34be4e932b93",
+    "results/carbonate_v001_cave-ridge/summary.json": "671035bd32beb1915261233603bee3c6318aa460671047be2fee2d9bcd436553"
+  },
+  "project_path": "prospecting_library/cave-ridge-carbonate-v001/cave-ridge-carbonate-v001.qgz",
+  "archived_project": "prospecting_library/cave-ridge-carbonate-v001/map-v000001.qgz",
+  "project_sha256": "0c2d5cabffb447e2ddf8298fdb2d1a0a28006d841ada36e8126f5706981028a0",
+  "map_revision": 1,
+  "state_path": "prospecting_library/cave-ridge-carbonate-v001/versions/v000001.state.json",
+  "verification_path": "prospecting_library/cave-ridge-carbonate-v001/versions/v000001.verification.json",
+  "dataset_references": [
+    {
+      "path": "data/processed/carbonate_v001/cave-ridge/formation_29438_5a36d27e7073/eligibility_1m.tif",
+      "bytes": 4012,
+      "sha256": "eb10e0e3d2c90b2764866774dff393bb549c945ecbdcb2b628130e225659b685",
+      "layers": [
+        "Eligibility mask • formation_29438_5a36d27e7073 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/carbonate_v001/cave-ridge/formation_29438_5a36d27e7073/eligibility_1m.tif.aux.xml",
+      "bytes": 358,
+      "sha256": "c8278dcd412e517d6a71044be3f9ec9322b72d3f68afbe9ef374f07fd36c0add",
+      "layers": [
+        "Eligibility mask • formation_29438_5a36d27e7073 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/carbonate_v001/cave-ridge/formation_29439_994cc1c5e821/eligibility_1m.tif",
+      "bytes": 5800,
+      "sha256": "045c739bdf9ce43d7a6145d196ae699f099fdcfca3cfefd6629a33fcd0c54e08",
+      "layers": [
+        "Eligibility mask • formation_29439_994cc1c5e821 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/carbonate_v001/cave-ridge/formation_29439_994cc1c5e821/eligibility_1m.tif.aux.xml",
+      "bytes": 407,
+      "sha256": "c69f130ae89cbf54da0e1195ab911cc6e35741b153932172dc830c8089930b76",
+      "layers": [
+        "Eligibility mask • formation_29439_994cc1c5e821 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/cave-ridge/imagery/rgbnir.tif",
+      "bytes": 344979367,
+      "sha256": "30ca4fb4cc1d7fb0285cec7f72e6ce3e0b345e3b81c35eec9d20d3732afdb97c",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/cave-ridge/imagery/rgbnir.tif.aux.xml",
+      "bytes": 5863,
+      "sha256": "a9ccaffa62953d14a9a6757cdb96ecfa7697b723f81e5569b4d212c6f819ea88",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "results/blind_v002/depression_depth_1m.tif",
+      "bytes": 912680,
+      "sha256": "46d224819b995fc28f0847384b4fe856b79507fd36e67f0874c6d296aeadcb76",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/blind_v002/depression_depth_1m.tif.aux.xml",
+      "bytes": 420,
+      "sha256": "4d133f10e730d391876a30b2832b9663cd1ab3a6b4ee77c01c8df6d35bdacd65",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/blind_v002/hillshade_1m.tif",
+      "bytes": 25244089,
+      "sha256": "15d99bcb1d7c9e4980139eb1b9e491c9a802208434f7b1460883c06cc1da7780",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/blind_v002/hillshade_1m.tif.aux.xml",
+      "bytes": 408,
+      "sha256": "f363e7a9f0d93f7088984647fa072844fc3309d87da2c1692333dbc573d592b6",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/blind_v002/slope_1m.tif",
+      "bytes": 104953070,
+      "sha256": "8317e4383a207b92d88563e3976f64b8bdcdcb3b9dbd07428db7d4c2feb5e5ee",
+      "layers": [
+        "slope 1m"
+      ]
+    },
+    {
+      "path": "results/blind_v002/slope_1m.tif.aux.xml",
+      "bytes": 420,
+      "sha256": "2b3f863b89ded59c7ccd54b7c599f0007c6ac0852c5cb36e4f12d1f8973f3070",
+      "layers": [
+        "slope 1m"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_cave-ridge/priority_display_10m.tif",
+      "bytes": 5630,
+      "sha256": "573a96770f7638971f6c59ec640bb0aefd8f0750835b3f5381f05d8e72cbaa9f",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_cave-ridge/priority_display_10m.tif.aux.xml",
+      "bytes": 374,
+      "sha256": "0ba8321ae69bef7ddd3dc93c7e58691991fa6c289bb08147e89b4fd29c801d09",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_cave-ridge/prospecting.gpkg",
+      "bytes": 2867200,
+      "sha256": "40f070ee9e1edb3cefd94d86d3ef962a801b3b2443d9fbbb7a565e34412439b4",
+      "layers": [
+        "25 m contact uncertainty • not mapped carbonate",
+        "Documented marble • PMmb(e) / TRmb(e)",
+        "Individual observation footprints • original scoped geometry",
+        "Individual observations • carbonate scope only",
+        "Prospecting sites • ALL eligible destinations",
+        "Site ↔ observation membership and evidence roles",
+        "Site support footprints • related eligible observations"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package",
+  "layer_count": 14,
+  "source_project": "qgis/KarstFinder_cave-ridge_carbonate_v001.qgz"
+}

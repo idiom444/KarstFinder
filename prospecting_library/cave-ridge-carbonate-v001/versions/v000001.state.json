@@ -1,0 +1,1079 @@
+{
+  "crs": "EPSG:26910",
+  "title": "KarstFinder | Cave Ridge | Carbonate prospecting v001",
+  "view_extent": [
+    619367.6281316228,
+    5255980.124549466,
+    620426.1880775542,
+    5257038.684495398
+  ],
+  "view_crs": "EPSG:26910",
+  "rotation": 0.0,
+  "tree": {
+    "name": "",
+    "checked": true,
+    "expanded": true,
+    "children": [
+      {
+        "name": "Cave prospecting • documented marble + flagged 25 m contact margin",
+        "checked": true,
+        "expanded": true,
+        "children": [
+          {
+            "name": "Prospecting sites • ALL eligible destinations",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Prospecting_sites___ALL_eligible_destinations_a29a58b9_4df2_4ada_9ac3_71871cf23e3a"
+          },
+          {
+            "name": "Site support footprints • related eligible observations",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Site_support_footprints___related_eligible_observations_f3fdf33c_a977_464c_af2d_b1c2414a5825"
+          },
+          {
+            "name": "Ordinal index",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Priority___absolute_0_1_baa45d16_dc84_42fa_bb1d_ded589712560"
+          }
+        ]
+      },
+      {
+        "name": "Eligible supporting observations • optional inspection",
+        "checked": true,
+        "expanded": true,
+        "children": [
+          {
+            "name": "Individual observations • carbonate scope only",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Individual_observations___carbonate_scope_only_fcb0b15c_75c8_4afb_83da_fef92415ad12"
+          },
+          {
+            "name": "Individual observation footprints • original scoped geometry",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Individual_observation_footprints___original_scoped_geometry_0e9ebc30_11bf_442f_9e83_ac36c1eddd77"
+          },
+          {
+            "name": "Site ↔ observation membership and evidence roles",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Site___observation_membership_and_evidence_roles_44e7d043_e1a3_4f4b_a309_945bc16c29db"
+          }
+        ]
+      },
+      {
+        "name": "Geology and local imagery / terrain",
+        "checked": true,
+        "expanded": true,
+        "children": [
+          {
+            "name": "Documented marble • PMmb(e) / TRmb(e)",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Documented_marble___PMmb_e____TRmb_e__535044f9_6935_427f_9a8a_dc94ee8f2b15"
+          },
+          {
+            "name": "25 m contact uncertainty • not mapped carbonate",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "25_m_contact_uncertainty___not_mapped_carbonate_f4a2739d_9a57_473b_b6c4_0c306a5683c7"
+          },
+          {
+            "name": "2023 native RGB • 0.6 m; imagery cannot confirm an entrance",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "2023_native_RGB___0_6_m__imagery_cannot_confirm_an_entrance_15f2fc03_74d7_487f_95b7_8ee4526eb954"
+          },
+          {
+            "name": "slope 1m",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "slope_1m_aee86879_24d7_4f6f_b82c_96c5ae9bada4"
+          },
+          {
+            "name": "depression depth 1m",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "depression_depth_1m_e9011820_4217_47ad_a9a9_9bf6a60e0298"
+          },
+          {
+            "name": "Eligibility mask • formation_29438_5a36d27e7073 (0 excluded, 1 marble, 2 contact)",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Eligibility_mask___formation_29438_5a36d27e7073__0_excluded__1_marble__2_contact__2f6b4df8_6d93_43d1_aeec_98b84796184f"
+          },
+          {
+            "name": "Eligibility mask • formation_29439_994cc1c5e821 (0 excluded, 1 marble, 2 contact)",
+            "checked": false,
+            "expanded": true,
+            "layer_id": "Eligibility_mask___formation_29439_994cc1c5e821__0_excluded__1_marble__2_contact__6fffa798_2318_4f5f_a2e9_16720cb7a4f8"
+          },
+          {
+            "name": "Bare-earth hillshade • existing LiDAR terrain",
+            "checked": true,
+            "expanded": true,
+            "layer_id": "Bare_earth_hillshade___existing_LiDAR_terrain_0c0642f2_a8fd_45e0_b673_c7010ae22a36"
+          }
+        ]
+      }
+    ]
+  },
+  "layers": {
+    "2023_native_RGB___0_6_m__imagery_cannot_confirm_an_entrance_15f2fc03_74d7_487f_95b7_8ee4526eb954": {
+      "name": "2023 native RGB • 0.6 m; imagery cannot confirm an entrance",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "c8cd72f35be23ba2a413f0eb340f3ebf4b1f3fc3580f20a4cc36ab1cecdc2432",
+      "width": 10000,
+      "height": 8333,
+      "bands": 4
+    },
+    "25_m_contact_uncertainty___not_mapped_carbonate_f4a2739d_9a57_473b_b6c4_0c306a5683c7": {
+      "name": "25 m contact uncertainty • not mapped carbonate",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "37c3c01f5318b8af54522a00da1ea81f6d697678fac1cc495959a34b1a4ff1e8",
+      "feature_count": 2,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "assessment",
+          "String"
+        ],
+        [
+          "description_input",
+          "String"
+        ],
+        [
+          "description_input_sha256",
+          "String"
+        ],
+        [
+          "description_key",
+          "String"
+        ],
+        [
+          "description_source",
+          "String"
+        ],
+        [
+          "formation_id",
+          "String"
+        ],
+        [
+          "geometry_sha256",
+          "String"
+        ],
+        [
+          "lithology",
+          "String"
+        ],
+        [
+          "margin_m",
+          "String"
+        ],
+        [
+          "mixed_unit_eligible",
+          "String"
+        ],
+        [
+          "observation_count",
+          "String"
+        ],
+        [
+          "scale_denominator",
+          "String"
+        ],
+        [
+          "site_count",
+          "String"
+        ],
+        [
+          "site_ids",
+          "String"
+        ],
+        [
+          "source_id",
+          "String"
+        ],
+        [
+          "source_ref",
+          "String"
+        ],
+        [
+          "unit",
+          "String"
+        ],
+        [
+          "unit_id_confidence",
+          "String"
+        ]
+      ],
+      "features_sha256": "50419c739f3c2eb7c61adc2d1da9e098b590f91778b0c57e73b9a6121c77bba2",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Bare_earth_hillshade___existing_LiDAR_terrain_0c0642f2_a8fd_45e0_b673_c7010ae22a36": {
+      "name": "Bare-earth hillshade • existing LiDAR terrain",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "020b9f3da6004f655c2ceb81e389f7abe521bfed4cbb3af4c42ce4ff2d1a347d",
+      "width": 6000,
+      "height": 5000,
+      "bands": 1
+    },
+    "Documented_marble___PMmb_e____TRmb_e__535044f9_6935_427f_9a8a_dc94ee8f2b15": {
+      "name": "Documented marble • PMmb(e) / TRmb(e)",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "86c913f312c986f800d188eedd3b49023c45efbe15fb9dc61549da03cbb410e3",
+      "feature_count": 2,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "assessment",
+          "String"
+        ],
+        [
+          "description_input",
+          "String"
+        ],
+        [
+          "description_input_sha256",
+          "String"
+        ],
+        [
+          "description_key",
+          "String"
+        ],
+        [
+          "description_source",
+          "String"
+        ],
+        [
+          "formation_id",
+          "String"
+        ],
+        [
+          "geometry_sha256",
+          "String"
+        ],
+        [
+          "lithology",
+          "String"
+        ],
+        [
+          "mixed_unit_eligible",
+          "String"
+        ],
+        [
+          "observation_count",
+          "String"
+        ],
+        [
+          "scale_denominator",
+          "String"
+        ],
+        [
+          "site_count",
+          "String"
+        ],
+        [
+          "site_ids",
+          "String"
+        ],
+        [
+          "source_id",
+          "String"
+        ],
+        [
+          "source_ref",
+          "String"
+        ],
+        [
+          "unit",
+          "String"
+        ],
+        [
+          "unit_id_confidence",
+          "String"
+        ]
+      ],
+      "features_sha256": "22f1f0c342b25372fb9ca46449c0a078e2a6b24809f523918f9bc7559154a2bc",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Eligibility_mask___formation_29438_5a36d27e7073__0_excluded__1_marble__2_contact__2f6b4df8_6d93_43d1_aeec_98b84796184f": {
+      "name": "Eligibility mask • formation_29438_5a36d27e7073 (0 excluded, 1 marble, 2 contact)",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "d2420dda471c058cef79a140a26aa6b654b93f9512c8b5e7bf23cb491893dc5c",
+      "width": 610,
+      "height": 560,
+      "bands": 1
+    },
+    "Eligibility_mask___formation_29439_994cc1c5e821__0_excluded__1_marble__2_contact__6fffa798_2318_4f5f_a2e9_16720cb7a4f8": {
+      "name": "Eligibility mask • formation_29439_994cc1c5e821 (0 excluded, 1 marble, 2 contact)",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "c7108a147e5ee7d273f8ec570cee1fd0f94e44ebbfb58dcdc5977a75f8826f72",
+      "width": 810,
+      "height": 820,
+      "bands": 1
+    },
+    "Individual_observation_footprints___original_scoped_geometry_0e9ebc30_11bf_442f_9e83_ac36c1eddd77": {
+      "name": "Individual observation footprints • original scoped geometry",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "c6f8544b0d8470f129694d21e72aff55216eddcb4213d51253b1a737fe0df6e7",
+      "feature_count": 212,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "access_status",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "color_hex",
+          "String"
+        ],
+        [
+          "contradictory_evidence",
+          "String"
+        ],
+        [
+          "data_confidence",
+          "Real"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "eligibility_status",
+          "String"
+        ],
+        [
+          "evidence_role",
+          "String"
+        ],
+        [
+          "evidence_strength",
+          "Real"
+        ],
+        [
+          "fieldwork_status",
+          "String"
+        ],
+        [
+          "formation_id",
+          "String"
+        ],
+        [
+          "geological_confidence",
+          "Real"
+        ],
+        [
+          "geological_support_factor",
+          "Real"
+        ],
+        [
+          "geology_evidence",
+          "String"
+        ],
+        [
+          "geometry_sha256",
+          "String"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "measurements",
+          "String"
+        ],
+        [
+          "model_version",
+          "String"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "priority_model",
+          "String"
+        ],
+        [
+          "prospecting_priority",
+          "Real"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "source_registry",
+          "String"
+        ],
+        [
+          "source_unit",
+          "String"
+        ],
+        [
+          "source_unit_id",
+          "String"
+        ],
+        [
+          "source_v001_ids",
+          "String"
+        ],
+        [
+          "terrain_anomaly_strength",
+          "Real"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ]
+      ],
+      "features_sha256": "b17989de3fb8cd863815e025329ca1322582e9f2c2dbd8ff1eee2acd1a26a3f6",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Individual_observations___carbonate_scope_only_fcb0b15c_75c8_4afb_83da_fef92415ad12": {
+      "name": "Individual observations • carbonate scope only",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "fb46132e308192c4a80d7fff3b700acd545fec7d180c415544577a950bc7738e",
+      "feature_count": 212,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "access_status",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "color_hex",
+          "String"
+        ],
+        [
+          "contradictory_evidence",
+          "String"
+        ],
+        [
+          "data_confidence",
+          "Real"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "eligibility_status",
+          "String"
+        ],
+        [
+          "evidence_role",
+          "String"
+        ],
+        [
+          "evidence_strength",
+          "Real"
+        ],
+        [
+          "fieldwork_status",
+          "String"
+        ],
+        [
+          "formation_id",
+          "String"
+        ],
+        [
+          "geological_confidence",
+          "Real"
+        ],
+        [
+          "geological_support_factor",
+          "Real"
+        ],
+        [
+          "geology_evidence",
+          "String"
+        ],
+        [
+          "geometry_sha256",
+          "String"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "measurements",
+          "String"
+        ],
+        [
+          "model_version",
+          "String"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "priority_model",
+          "String"
+        ],
+        [
+          "prospecting_priority",
+          "Real"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "source_registry",
+          "String"
+        ],
+        [
+          "source_unit",
+          "String"
+        ],
+        [
+          "source_unit_id",
+          "String"
+        ],
+        [
+          "source_v001_ids",
+          "String"
+        ],
+        [
+          "terrain_anomaly_strength",
+          "Real"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ]
+      ],
+      "features_sha256": "799ef117f5af8682be4fffb6f83b7fde07ff05f5be4b52715feb2b86899d6237",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Priority___absolute_0_1_baa45d16_dc84_42fa_bb1d_ded589712560": {
+      "name": "Ordinal index",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "131dc3fe14a96381fc7f8bd23b96e23bf7909c80d68051fe0b0f49e13b1f8e80",
+      "width": 600,
+      "height": 500,
+      "bands": 1
+    },
+    "Prospecting_sites___ALL_eligible_destinations_a29a58b9_4df2_4ada_9ac3_71871cf23e3a": {
+      "name": "Prospecting sites • ALL eligible destinations",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "de8391b34698c252fd7c109fec6fa2a3247848795d16874f5957f36448a7634c",
+      "feature_count": 57,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "access_status",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "color_hex",
+          "String"
+        ],
+        [
+          "contradictory_evidence",
+          "String"
+        ],
+        [
+          "data_confidence",
+          "Real"
+        ],
+        [
+          "drainage_attachments",
+          "String"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "eligibility_status",
+          "String"
+        ],
+        [
+          "evidence",
+          "String"
+        ],
+        [
+          "evidence_strength",
+          "Real"
+        ],
+        [
+          "fieldwork_status",
+          "String"
+        ],
+        [
+          "formation_id",
+          "String"
+        ],
+        [
+          "geological_confidence",
+          "Real"
+        ],
+        [
+          "geological_support_factor",
+          "Real"
+        ],
+        [
+          "geology_evidence",
+          "String"
+        ],
+        [
+          "grouping_edges",
+          "String"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "max_member_terrain_anomaly_strength",
+          "Real"
+        ],
+        [
+          "member_count",
+          "Integer"
+        ],
+        [
+          "member_ids",
+          "String"
+        ],
+        [
+          "method_types",
+          "String"
+        ],
+        [
+          "model_version",
+          "String"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "priority_member_id",
+          "String"
+        ],
+        [
+          "priority_model",
+          "String"
+        ],
+        [
+          "prospecting_priority",
+          "Real"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "source_unit",
+          "String"
+        ],
+        [
+          "source_unit_id",
+          "String"
+        ],
+        [
+          "source_v001_ids",
+          "String"
+        ],
+        [
+          "terrain_anomaly_strength",
+          "Real"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "waypoint_member_id",
+          "String"
+        ]
+      ],
+      "features_sha256": "9c446223b8cccd39cdbe07d4739ded9112430fb86547f2acaae7e91cdc1458a3",
+      "subset": "",
+      "labels_enabled": true
+    },
+    "Site___observation_membership_and_evidence_roles_44e7d043_e1a3_4f4b_a309_945bc16c29db": {
+      "name": "Site ↔ observation membership and evidence roles",
+      "provider": "ogr",
+      "crs": "",
+      "opacity": 1.0,
+      "style_sha256": "d0663a0e0932f0c86ef46e6758b238397fb2f5f4b29439e6ca3b650fe09d7cdb",
+      "feature_count": 205,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "formation_id",
+          "String"
+        ],
+        [
+          "observation_id",
+          "String"
+        ],
+        [
+          "role",
+          "String"
+        ],
+        [
+          "site_id",
+          "String"
+        ]
+      ],
+      "features_sha256": "78842b060b75941e02dff75da25c8f5283e17c707d109e965a8525256bb921ec",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "Site_support_footprints___related_eligible_observations_f3fdf33c_a977_464c_af2d_b1c2414a5825": {
+      "name": "Site support footprints • related eligible observations",
+      "provider": "ogr",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "319b0446787057e2b3094a929c46cb7e4096dfb54f61b2906e32ee91faea213e",
+      "feature_count": 57,
+      "fields": [
+        [
+          "fid",
+          "Integer64"
+        ],
+        [
+          "access_status",
+          "String"
+        ],
+        [
+          "alternatives",
+          "String"
+        ],
+        [
+          "area_m2",
+          "Real"
+        ],
+        [
+          "carbonate_fraction",
+          "Real"
+        ],
+        [
+          "color_hex",
+          "String"
+        ],
+        [
+          "contradictory_evidence",
+          "String"
+        ],
+        [
+          "data_confidence",
+          "Real"
+        ],
+        [
+          "drainage_attachments",
+          "String"
+        ],
+        [
+          "easting",
+          "Real"
+        ],
+        [
+          "eligibility_status",
+          "String"
+        ],
+        [
+          "evidence",
+          "String"
+        ],
+        [
+          "evidence_strength",
+          "Real"
+        ],
+        [
+          "fieldwork_status",
+          "String"
+        ],
+        [
+          "formation_id",
+          "String"
+        ],
+        [
+          "geological_confidence",
+          "Real"
+        ],
+        [
+          "geological_support_factor",
+          "Real"
+        ],
+        [
+          "geology_evidence",
+          "String"
+        ],
+        [
+          "grouping_edges",
+          "String"
+        ],
+        [
+          "kind",
+          "String"
+        ],
+        [
+          "latitude",
+          "Real"
+        ],
+        [
+          "longitude",
+          "Real"
+        ],
+        [
+          "max_member_terrain_anomaly_strength",
+          "Real"
+        ],
+        [
+          "member_count",
+          "Integer"
+        ],
+        [
+          "member_ids",
+          "String"
+        ],
+        [
+          "method_types",
+          "String"
+        ],
+        [
+          "model_version",
+          "String"
+        ],
+        [
+          "northing",
+          "Real"
+        ],
+        [
+          "object_id",
+          "String"
+        ],
+        [
+          "priority_member_id",
+          "String"
+        ],
+        [
+          "priority_model",
+          "String"
+        ],
+        [
+          "prospecting_priority",
+          "Real"
+        ],
+        [
+          "rank",
+          "Integer"
+        ],
+        [
+          "score",
+          "Real"
+        ],
+        [
+          "source_unit",
+          "String"
+        ],
+        [
+          "source_unit_id",
+          "String"
+        ],
+        [
+          "source_v001_ids",
+          "String"
+        ],
+        [
+          "terrain_anomaly_strength",
+          "Real"
+        ],
+        [
+          "uncertainty",
+          "String"
+        ],
+        [
+          "waypoint_member_id",
+          "String"
+        ]
+      ],
+      "features_sha256": "1b02f576597357c5224ab4c14296736e5cd97cfdc164545dc5832920631c4298",
+      "subset": "",
+      "labels_enabled": false
+    },
+    "depression_depth_1m_e9011820_4217_47ad_a9a9_9bf6a60e0298": {
+      "name": "depression depth 1m",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "e54dd7109e796e5e3b35b47a974b09c008eb26701efed4d302d90cb050baff70",
+      "width": 6000,
+      "height": 5000,
+      "bands": 1
+    },
+    "slope_1m_aee86879_24d7_4f6f_b82c_96c5ae9bada4": {
+      "name": "slope 1m",
+      "provider": "gdal",
+      "crs": "EPSG:26910",
+      "opacity": 1.0,
+      "style_sha256": "4fcc1d9f3cfca8b8940b3f05430cc6a2060abdd2a4d7d016f513edc479ddf0e5",
+      "width": 6000,
+      "height": 5000,
+      "bands": 1
+    }
+  },
+  "custom_order": [
+    "Prospecting_sites___ALL_eligible_destinations_a29a58b9_4df2_4ada_9ac3_71871cf23e3a",
+    "Site_support_footprints___related_eligible_observations_f3fdf33c_a977_464c_af2d_b1c2414a5825",
+    "Individual_observations___carbonate_scope_only_fcb0b15c_75c8_4afb_83da_fef92415ad12",
+    "Individual_observation_footprints___original_scoped_geometry_0e9ebc30_11bf_442f_9e83_ac36c1eddd77",
+    "Documented_marble___PMmb_e____TRmb_e__535044f9_6935_427f_9a8a_dc94ee8f2b15",
+    "25_m_contact_uncertainty___not_mapped_carbonate_f4a2739d_9a57_473b_b6c4_0c306a5683c7",
+    "Priority___absolute_0_1_baa45d16_dc84_42fa_bb1d_ded589712560",
+    "2023_native_RGB___0_6_m__imagery_cannot_confirm_an_entrance_15f2fc03_74d7_487f_95b7_8ee4526eb954",
+    "slope_1m_aee86879_24d7_4f6f_b82c_96c5ae9bada4",
+    "depression_depth_1m_e9011820_4217_47ad_a9a9_9bf6a60e0298",
+    "Eligibility_mask___formation_29438_5a36d27e7073__0_excluded__1_marble__2_contact__2f6b4df8_6d93_43d1_aeec_98b84796184f",
+    "Eligibility_mask___formation_29439_994cc1c5e821__0_excluded__1_marble__2_contact__6fffa798_2318_4f5f_a2e9_16720cb7a4f8",
+    "Bare_earth_hillshade___existing_LiDAR_terrain_0c0642f2_a8fd_45e0_b673_c7010ae22a36"
+  ],
+  "has_custom_order": false,
+  "layouts_sha256": "1d65b4492d87bda25825ddd4c1a70d5ec4f94a329156e5366a870fc8077c7bf6",
+  "annotations_sha256": "45477b24752d2ff4ee1ec1c2764654546b9dd7e17f29aa4331eecb0dbe09cc80",
+  "main_annotation_layer_sha256": "4ddcf45517ac7bf451cc568432340564dfd4563e3cf353ea9e269342a7bbb597",
+  "layout_names": [
+    "Study overview",
+    "Marble detail 29438",
+    "Marble detail 29439"
+  ]
+}

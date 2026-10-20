@@ -1,0 +1,169 @@
+{
+  "area_id": "marble-peak-carbonate-v001",
+  "created_utc": "2026-10-20T12:09:29.040906+00:00",
+  "status": "Not yet investigated",
+  "personal_notes": "prospecting_library/marble-peak-carbonate-v001/local/field_notes.json",
+  "revision": 1,
+  "updated_utc": "2026-10-20T12:09:29.040943+00:00",
+  "change": "map registered from saved project",
+  "metadata_path": "prospecting_library/marble-peak-carbonate-v001/versions/v000001.json",
+  "name": "Marble Peak / upper Marble Gulch — Carbonate prospecting v001",
+  "general_location": "Marble Peak / upper Marble Gulch, Washington; existing approved study window",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      605050,
+      5322150,
+      608050,
+      5325150
+    ]
+  },
+  "geological_summary": "Explicit DNR mapped marble plus a flagged 25 m contact-review margin. Mixed/unknown formations excluded. Unvalidated ordinal prospecting; coordinates are surface reference points, not entrances or access routes.",
+  "specification": {
+    "name": "Marble Peak / upper Marble Gulch — Carbonate prospecting v001",
+    "general_location": "Marble Peak / upper Marble Gulch, Washington; existing approved study window",
+    "study_extent": {
+      "crs": "EPSG:26910",
+      "bounds": [
+        605050,
+        5322150,
+        608050,
+        5325150
+      ]
+    },
+    "geological_summary": "Explicit DNR mapped marble plus a flagged 25 m contact-review margin. Mixed/unknown formations excluded. Unvalidated ordinal prospecting; coordinates are surface reference points, not entrances or access routes.",
+    "candidate_csv": "results/carbonate_v001_marble-peak/candidates.csv",
+    "analysis_references": [
+      "configs/carbonate_v001.json",
+      "docs/carbonate_v001/METHODOLOGY.md",
+      "docs/carbonate_v001/GEOLOGY_EVIDENCE.json",
+      "docs/carbonate_v001/RESULTS.md",
+      "results/carbonate_v001_marble-peak/manifest.json",
+      "results/carbonate_v001_marble-peak/summary.json"
+    ]
+  },
+  "candidate_count": 1,
+  "highest_priority_candidates": [
+    {
+      "object_id": "marble-peak:S-1011ba0db0a2775f",
+      "rank": "1",
+      "kind": "cliff",
+      "score": "1.0"
+    }
+  ],
+  "candidate_csv": "results/carbonate_v001_marble-peak/candidates.csv",
+  "candidate_csv_sha256": "9e40241bdae73ef5f289ca00c2368af0f668f0e1d36e39d3c3d6716f24652e16",
+  "analysis_references": [
+    "configs/carbonate_v001.json",
+    "docs/carbonate_v001/METHODOLOGY.md",
+    "docs/carbonate_v001/GEOLOGY_EVIDENCE.json",
+    "docs/carbonate_v001/RESULTS.md",
+    "results/carbonate_v001_marble-peak/manifest.json",
+    "results/carbonate_v001_marble-peak/summary.json"
+  ],
+  "analysis_reference_hashes": {
+    "configs/carbonate_v001.json": "0bbdc4fbe10650d6413e60dc6a0037ba0a1e8a267803156307b9eefa34004024",
+    "docs/carbonate_v001/METHODOLOGY.md": "0bc7940832a10b076d0129fbfc825d8595e7ad914449aa00b121b3bdc4947e50",
+    "docs/carbonate_v001/GEOLOGY_EVIDENCE.json": "9bdc7dc748e3455d2a4ca56d19d5efc3f1c466d18394427f9fc0ebd98c56b958",
+    "docs/carbonate_v001/RESULTS.md": "eaeaf045248b743f6991f991ecbf5ebda3339f5249e91d5c9476a1ca553a7457",
+    "results/carbonate_v001_marble-peak/manifest.json": "0868da34b1d5b5acdc9948b0856466ed2cc2250e5e5c8acc8ad53d83ace2e6f0",
+    "results/carbonate_v001_marble-peak/summary.json": "5e8297c31827bddfffefd050d8568d4889a251dfa23534e6133522d81aba45a6"
+  },
+  "project_path": "prospecting_library/marble-peak-carbonate-v001/marble-peak-carbonate-v001.qgz",
+  "archived_project": "prospecting_library/marble-peak-carbonate-v001/map-v000001.qgz",
+  "project_sha256": "68e7474c6c2b75c128110ca3a0f5e622c4bda76c95c3e3ee1f02d3c87e1f7e75",
+  "map_revision": 1,
+  "state_path": "prospecting_library/marble-peak-carbonate-v001/versions/v000001.state.json",
+  "verification_path": "prospecting_library/marble-peak-carbonate-v001/versions/v000001.verification.json",
+  "dataset_references": [
+    {
+      "path": "data/processed/carbonate_v001/marble-peak/formation_741_941be6848858/eligibility_1m.tif",
+      "bytes": 1319,
+      "sha256": "8f3a298a1f157de579b565e2415626667358ff5520f2e9f9be6f7bfab23d1e49",
+      "layers": [
+        "Eligibility mask • formation_741_941be6848858 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/carbonate_v001/marble-peak/formation_741_941be6848858/eligibility_1m.tif.aux.xml",
+      "bytes": 357,
+      "sha256": "d4e474bd0ad94402f9baefdd3964e90b2336f704fc7ddac41faf8363b8cd6f51",
+      "layers": [
+        "Eligibility mask • formation_741_941be6848858 (0 excluded, 1 marble, 2 contact)"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/marble-peak/imagery/rgbnir.tif",
+      "bytes": 97093977,
+      "sha256": "ab90203a055edd48e6d1949251892b0a04fc1feda369d06ba7c2792676baaaa2",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/marble-peak/imagery/rgbnir.tif.aux.xml",
+      "bytes": 5367,
+      "sha256": "437fc25f45348b4b2a62c2e25c0186e57256f1c7e4227a16cd94a95492382ea3",
+      "layers": [
+        "2023 native RGB • 0.6 m; imagery cannot confirm an entrance"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_marble-peak/priority_display_10m.tif",
+      "bytes": 2874,
+      "sha256": "111852948f622b61e88ae897897183ceb2fabd37ec80347d2318eb088e103b08",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_marble-peak/priority_display_10m.tif.aux.xml",
+      "bytes": 331,
+      "sha256": "418e773f515321ae352531ac9a566172524e827a33eab62c47f825aa127a6c99",
+      "layers": [
+        "Ordinal index"
+      ]
+    },
+    {
+      "path": "results/carbonate_v001_marble-peak/prospecting.gpkg",
+      "bytes": 401408,
+      "sha256": "48b5c3190a548ef46289b0fbff32c0a79b52cadd16fc4a7e265f56b993dc8365",
+      "layers": [
+        "25 m contact uncertainty • not mapped carbonate",
+        "Documented marble • PMmb(e) / TRmb(e)",
+        "Individual observation footprints • original scoped geometry",
+        "Individual observations • carbonate scope only",
+        "Prospecting sites • ALL eligible destinations",
+        "Site ↔ observation membership and evidence roles",
+        "Site support footprints • related eligible observations"
+      ]
+    },
+    {
+      "path": "results/marble_v001_features/depression_depth_1m.tif",
+      "bytes": 70186,
+      "sha256": "db90c53b5413112378564b0719033ebef8bdd59c69e65b5acc09b8bd1094eef3",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/marble_v001_features/hillshade_1m.tif",
+      "bytes": 7670819,
+      "sha256": "9bb42b5cd2c663f9698d88b5783ee43e869dab61bb4286909320a0a25b352005",
+      "layers": [
+        "Bare-earth hillshade • existing LiDAR terrain"
+      ]
+    },
+    {
+      "path": "results/marble_v001_features/slope_1m.tif",
+      "bytes": 31216458,
+      "sha256": "2367f1a470b477dd6046eb9c763c4458666fb419ea26b61d59e51d12dba49224",
+      "layers": [
+        "slope 1m"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package",
+  "layer_count": 13,
+  "source_project": "qgis/KarstFinder_marble-peak_carbonate_v001.qgz"
+}

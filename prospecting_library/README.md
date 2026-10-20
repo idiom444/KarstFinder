@@ -1,5 +1,15 @@
 # Prospecting Library
 
+## Current carbonate prospecting entries
+
+Use `cave-ridge-carbonate-v001`, `denny-mountain-carbonate-v001`,
+`kaleetan-vicinity-carbonate-v001` or `marble-peak-carbonate-v001` for the current
+geologically restricted maps. They contain 57, 3, 1 and 1 local sites respectively,
+with inspectable underlying observations and unchanged exact priority colors.
+The eight original/enhanced entries remain historical archives with all their
+rankings and geometries. [Current workflow](../docs/carbonate_v001/WORKFLOW.md)
+explains membership, geology, source-ID recovery and interpretation.
+
 Open [Denny Mountain](denny-mountain/denny-mountain.qgz) or
 [Cave Ridge](cave-ridge/cave-ridge.qgz) in QGIS with **Project → Open** (or
 double-click the `.qgz` file). No Codex session, MCP connection, downloads, or

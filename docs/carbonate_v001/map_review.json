@@ -1,0 +1,177 @@
+{
+  "areas": {
+    "cave-ridge": {
+      "renders": [
+        {
+          "view": "regional",
+          "scale": 23622.04724409449,
+          "preview": "docs/carbonate_v001/cave-ridge_review_regional.png",
+          "site_features": 57,
+          "individual_observations_loaded": 212,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "formation",
+          "scale": 5001.070610700747,
+          "preview": "docs/carbonate_v001/cave-ridge_review_formation.png",
+          "site_features": 57,
+          "individual_observations_loaded": 212,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "close",
+          "scale": 944.8818897637797,
+          "preview": "docs/carbonate_v001/cave-ridge_review_close.png",
+          "site_features": 57,
+          "individual_observations_loaded": 212,
+          "individual_observations_visible": true,
+          "all_sites_unfiltered": true
+        }
+      ],
+      "live_open": {
+        "filename": "/home/Idiom/Repos/MyRepos/KarstFinder/prospecting_library/cave-ridge-carbonate-v001/cave-ridge-carbonate-v001.qgz",
+        "layer_count": 14,
+        "session_backup": null
+      },
+      "live_state": {
+        "sites": 57,
+        "observations": 212,
+        "dirty": false,
+        "crs": "EPSG:26910",
+        "extent": "619004.0756749444408342,5255980.1245494661852717 : 620789.7405342325801030,5257038.6844953978434205"
+      }
+    },
+    "denny-mountain": {
+      "renders": [
+        {
+          "view": "regional",
+          "scale": 14173.228346456694,
+          "preview": "docs/carbonate_v001/denny-mountain_review_regional.png",
+          "site_features": 3,
+          "individual_observations_loaded": 78,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "formation",
+          "scale": 3844.6342549338115,
+          "preview": "docs/carbonate_v001/denny-mountain_review_formation.png",
+          "site_features": 3,
+          "individual_observations_loaded": 78,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "close",
+          "scale": 944.8818897637797,
+          "preview": "docs/carbonate_v001/denny-mountain_review_close.png",
+          "site_features": 3,
+          "individual_observations_loaded": 78,
+          "individual_observations_visible": true,
+          "all_sites_unfiltered": true
+        }
+      ],
+      "live_open": {
+        "filename": "/home/Idiom/Repos/MyRepos/KarstFinder/prospecting_library/denny-mountain-carbonate-v001/denny-mountain-carbonate-v001.qgz",
+        "layer_count": 13,
+        "session_backup": null
+      },
+      "live_state": {
+        "sites": 3,
+        "observations": 78,
+        "dirty": false,
+        "crs": "EPSG:26910",
+        "extent": "616672.3911836214829236,5253327.2487535271793604 : 618045.1429042553063482,5254141.0296708215028048"
+      }
+    },
+    "kaleetan-vicinity": {
+      "renders": [
+        {
+          "view": "regional",
+          "scale": 14173.228346456694,
+          "preview": "docs/carbonate_v001/kaleetan-vicinity_review_regional.png",
+          "site_features": 1,
+          "individual_observations_loaded": 3,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "formation",
+          "scale": 2834.6456692913384,
+          "preview": "docs/carbonate_v001/kaleetan-vicinity_review_formation.png",
+          "site_features": 1,
+          "individual_observations_loaded": 3,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "close",
+          "scale": 944.8818897637797,
+          "preview": "docs/carbonate_v001/kaleetan-vicinity_review_close.png",
+          "site_features": 1,
+          "individual_observations_loaded": 3,
+          "individual_observations_visible": true,
+          "all_sites_unfiltered": true
+        }
+      ],
+      "live_open": {
+        "filename": "/home/Idiom/Repos/MyRepos/KarstFinder/prospecting_library/kaleetan-vicinity-carbonate-v001/kaleetan-vicinity-carbonate-v001.qgz",
+        "layer_count": 13,
+        "session_backup": null
+      },
+      "live_state": {
+        "sites": 1,
+        "observations": 3,
+        "dirty": false,
+        "crs": "EPSG:26910",
+        "extent": "614058.4219374042004347,5257379.2471010107547045 : 615070.5506502755451947,5257979.2471010107547045"
+      }
+    },
+    "marble-peak": {
+      "renders": [
+        {
+          "view": "regional",
+          "scale": 14173.228346456694,
+          "preview": "docs/carbonate_v001/marble-peak_review_regional.png",
+          "site_features": 1,
+          "individual_observations_loaded": 15,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "formation",
+          "scale": 2834.6456692913384,
+          "preview": "docs/carbonate_v001/marble-peak_review_formation.png",
+          "site_features": 1,
+          "individual_observations_loaded": 15,
+          "individual_observations_visible": false,
+          "all_sites_unfiltered": true
+        },
+        {
+          "view": "close",
+          "scale": 944.8818897637797,
+          "preview": "docs/carbonate_v001/marble-peak_review_close.png",
+          "site_features": 1,
+          "individual_observations_loaded": 15,
+          "individual_observations_visible": true,
+          "all_sites_unfiltered": true
+        }
+      ],
+      "live_open": {
+        "filename": "/home/Idiom/Repos/MyRepos/KarstFinder/prospecting_library/marble-peak-carbonate-v001/marble-peak-carbonate-v001.qgz",
+        "layer_count": 13,
+        "session_backup": null
+      },
+      "live_state": {
+        "sites": 1,
+        "observations": 15,
+        "dirty": false,
+        "crs": "EPSG:26910",
+        "extent": "606029.3636007745517418,5323336.4859485886991024 : 607041.4923136458965018,5323936.4859485886991024"
+      }
+    }
+  },
+  "purpose": "Saved maps reviewed at regional, default formation and close scales; no scientific filters or thresholds changed."
+}
