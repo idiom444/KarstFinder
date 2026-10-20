@@ -1,0 +1,100 @@
+{
+  "area": "denny-mountain",
+  "status": "usable",
+  "optional": true,
+  "score_weight": 0,
+  "sources": [
+    {
+      "item_id": "wa_m_4712137_nw_10_060_20231006_20240209",
+      "datetime": "2023-10-06T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/47121/m_4712137_nw_10_060_20231006_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/denny-mountain/imagery/wa_m_4712137_nw_10_060_20231006_20240209.tif",
+      "sha256": "13e861612000384205692b1da947790486255de93ba7f5c36531128d8230d8f4",
+      "geotransform": [
+        615849.6,
+        0.6,
+        0.0,
+        5255250.0,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    },
+    {
+      "item_id": "wa_m_4712137_sw_10_060_20230802_20240209",
+      "datetime": "2023-08-02T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/47121/m_4712137_sw_10_060_20230802_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/denny-mountain/imagery/wa_m_4712137_sw_10_060_20230802_20240209.tif",
+      "sha256": "5b6c5a5dff99c9db627e456adfe8ed53257dabdff55172bd52fb6c133786d859",
+      "geotransform": [
+        615849.6,
+        0.6,
+        0.0,
+        5255166.6,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    },
+    {
+      "item_id": "wa_m_4712137_se_10_060_20230718_20240209",
+      "datetime": "2023-07-18T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/47121/m_4712137_se_10_060_20230718_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/denny-mountain/imagery/wa_m_4712137_se_10_060_20230718_20240209.tif",
+      "sha256": "a024b3edbd7cc18fcf40b316a13d9791684fa3e90c6a7bb8d69951fd125e88a8",
+      "geotransform": [
+        617615.4,
+        0.6,
+        0.0,
+        5255250.0,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    }
+  ],
+  "catalog": {
+    "path": "data/raw/enhanced_v001/denny-mountain/imagery/stac_catalog.json",
+    "sha256": "15ac876f2a47c39247b94e7a664e19e1ffef888f31db0ec9fc4562d97b82a028",
+    "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=naip&bbox=-121.46426971510058%2C47.412872542970455%2C-121.42371082201107%2C47.440396638750954&limit=100&datetime=2020-01-01T00%3A00%3A00Z%2F2026-10-20T00%3A00%3A00Z"
+  },
+  "resolution_m": 0.6,
+  "coverage_fraction": 0.99968232,
+  "vegetation_fraction_among_valid": 0.4880780526357613,
+  "products": {
+    "data/processed/enhanced_v001/denny-mountain/imagery/rgbnir.tif": "1953c20cbd495a519743e41795f3789bf05a90f55a66dbbb111ab51d8dfd98c9",
+    "data/processed/enhanced_v001/denny-mountain/imagery/ndvi.tif": "19ac8ba0d29787df7b5f3d31d32ffc4de3337338cff7fd58b59ba87f17a4cbd2",
+    "data/processed/enhanced_v001/denny-mountain/imagery/vegetation_mask.tif": "8d7132df7960775cc34dc162d164580a0aa4b09df55702b775b6e4e4f7c985ed",
+    "data/processed/enhanced_v001/denny-mountain/imagery/possible_exposed_surface_mask.tif": "bd9847a98d3f7b1092241768bd944bda7e854efc0e62d40b4b45a8f5c295d677"
+  },
+  "limitations": [
+    "NDVI threshold is an exploratory vegetation screen, not a validated land-cover classifier.",
+    "Possible exposed surface includes soil/snow/water/shadow errors and does not establish rock type.",
+    "Imagery does not confirm cave entrances; no imagery score bonus is assigned.",
+    "Final grid uses nearest-neighbour reprojection at the coarsest selected native resolution."
+  ]
+}

@@ -1,0 +1,1656 @@
+{
+  "schema_version": 1,
+  "areas": [
+    {
+      "area_id": "cave-ridge",
+      "created_utc": "2026-10-19T19:31:24.553519+00:00",
+      "status": "Not yet investigated",
+      "personal_notes": "prospecting_library/cave-ridge/local/field_notes.json",
+      "revision": 2,
+      "updated_utc": "2026-10-19T19:35:16.917395+00:00",
+      "change": "map registered from saved project",
+      "metadata_path": "prospecting_library/cave-ridge/versions/v000002.json",
+      "name": "Cave Ridge",
+      "general_location": "Cave Ridge / Snoqualmie Pass, Washington",
+      "study_extent": {
+        "crs": "EPSG:26910",
+        "bounds": [
+          617000,
+          5253500,
+          623000,
+          5258500
+        ]
+      },
+      "geological_summary": "DNR mapped marble and uncertain mixed melange/contact context in glacial alpine terrain. Frozen blind v001 landscape and v002 surface indicators; subsequent exploratory comparison did not establish entrance-localization skill. This saved map contains predictions only, without private cave-reference layers.",
+      "specification": {
+        "name": "Cave Ridge",
+        "general_location": "Cave Ridge / Snoqualmie Pass, Washington",
+        "study_extent": {
+          "crs": "EPSG:26910",
+          "bounds": [
+            617000,
+            5253500,
+            623000,
+            5258500
+          ]
+        },
+        "geological_summary": "DNR mapped marble and uncertain mixed melange/contact context in glacial alpine terrain. Frozen blind v001 landscape and v002 surface indicators; subsequent exploratory comparison did not establish entrance-localization skill. This saved map contains predictions only, without private cave-reference layers.",
+        "candidate_csv": "results/blind_v002/ranked_indicators.csv",
+        "analysis_references": [
+          "configs/blind_v001.json",
+          "configs/blind_v002.json",
+          "experiments/frozen/blind_v002.json",
+          "docs/BLIND_REVIEW.md",
+          "results/blind_v001",
+          "results/blind_v002"
+        ]
+      },
+      "candidate_count": 596,
+      "highest_priority_candidates": [
+        {
+          "object_id": "C-020086",
+          "rank": "1",
+          "kind": "cliff",
+          "score": "0.9031484711170197"
+        },
+        {
+          "object_id": "C-019450",
+          "rank": "2",
+          "kind": "cliff",
+          "score": "0.8906062638759613"
+        },
+        {
+          "object_id": "C-021267",
+          "rank": "3",
+          "kind": "cliff",
+          "score": "0.8661167174577713"
+        },
+        {
+          "object_id": "C-041463",
+          "rank": "4",
+          "kind": "cliff",
+          "score": "0.861542123556137"
+        },
+        {
+          "object_id": "C-041427",
+          "rank": "5",
+          "kind": "cliff",
+          "score": "0.8555275201797485"
+        },
+        {
+          "object_id": "C-041270",
+          "rank": "6",
+          "kind": "cliff",
+          "score": "0.8544946312904358"
+        },
+        {
+          "object_id": "C-041671",
+          "rank": "7",
+          "kind": "cliff",
+          "score": "0.8535515832901002"
+        },
+        {
+          "object_id": "C-041237",
+          "rank": "8",
+          "kind": "cliff",
+          "score": "0.8221245628595353"
+        },
+        {
+          "object_id": "C-041446",
+          "rank": "9",
+          "kind": "cliff",
+          "score": "0.819242308139801"
+        },
+        {
+          "object_id": "C-041712",
+          "rank": "10",
+          "kind": "cliff",
+          "score": "0.8183267438411712"
+        }
+      ],
+      "candidate_csv": "results/blind_v002/ranked_indicators.csv",
+      "candidate_csv_sha256": "cd674f9677655ff98a8f8999cd99011ecf842c7a1b10f9dffb1355a63ff70031",
+      "analysis_references": [
+        "configs/blind_v001.json",
+        "configs/blind_v002.json",
+        "experiments/frozen/blind_v002.json",
+        "docs/BLIND_REVIEW.md",
+        "results/blind_v001",
+        "results/blind_v002"
+      ],
+      "project_path": "prospecting_library/cave-ridge/cave-ridge.qgz",
+      "archived_project": "prospecting_library/cave-ridge/map-v000002.qgz",
+      "project_sha256": "f16f24f7b5bca1cec9dbcf5ca52d2b1a47fe5237b77fa9f219c12f454e8d1d31",
+      "map_revision": 2,
+      "state_path": "prospecting_library/cave-ridge/versions/v000002.state.json",
+      "verification_path": "prospecting_library/cave-ridge/versions/v000002.verification.json",
+      "dataset_references": [
+        {
+          "path": "data/processed/context.gpkg",
+          "bytes": 278528,
+          "sha256": "19c478a6616868a6d673abab0c696704f27554ff9b0ff7b2f6f34f08404340e8",
+          "layers": [
+            "Geological contacts \u2022 uncertain",
+            "Geological units (PMmb(e) = marble)",
+            "Mapped faults",
+            "Structural measurements",
+            "Study envelope \u2022 30 km\u00b2"
+          ]
+        },
+        {
+          "path": "data/processed/dem_10m_buffered.tif",
+          "bytes": 1956334,
+          "sha256": "2af9dda643068a2382c2b2727df7a8002449af8f2b52d52f4cdf5e6ca1a15c13",
+          "layers": [
+            "Averaged elevation \u2022 10 m / NAVD88 m"
+          ]
+        },
+        {
+          "path": "data/processed/dem_10m_buffered.tif.aux.xml",
+          "bytes": 434,
+          "sha256": "bb1dae0cb26c28f8ff692f65a60527f97f9b08c3fb40367d37743f9596416686",
+          "layers": [
+            "Averaged elevation \u2022 10 m / NAVD88 m"
+          ]
+        },
+        {
+          "path": "data/processed/dem_1m_buffered.tif",
+          "bytes": 177639714,
+          "sha256": "49f3d7f7311e67806f4cd53c3ba0928afe5a19cb3666877fe53c25ed077357e0",
+          "layers": [
+            "USGS bare-earth elevation \u2022 1 m / NAVD88 m"
+          ]
+        },
+        {
+          "path": "data/processed/dem_1m_buffered.tif.aux.xml",
+          "bytes": 433,
+          "sha256": "af83c064f44a2401294ca58b82c6ca35bf9626bc4b23ae92c1cc36936f670ba6",
+          "layers": [
+            "USGS bare-earth elevation \u2022 1 m / NAVD88 m"
+          ]
+        },
+        {
+          "path": "data/processed/features_v002/contributing_area_10m_buffered.tif",
+          "bytes": 2367804,
+          "sha256": "ec357da369f2fed2101f38d74201eefb8b1435a6c8f84300423505af72cceca8",
+          "layers": [
+            "Modeled D8 contributing area \u2022 m\u00b2, edge-limited"
+          ]
+        },
+        {
+          "path": "data/processed/features_v002/contributing_area_10m_buffered.tif.aux.xml",
+          "bytes": 414,
+          "sha256": "f1596648b141b0c8747d99f11f181a7bd39f3a50b76fd2be21e297e102d87ce6",
+          "layers": [
+            "Modeled D8 contributing area \u2022 m\u00b2, edge-limited"
+          ]
+        },
+        {
+          "path": "data/processed/source_epoch_10m.tif",
+          "bytes": 5969,
+          "sha256": "25fa2597d97ba1770111b81a34619414ea04bd21bf5346f0c2445188862b9ec5",
+          "layers": [
+            "LiDAR acquisition \u2022 2019 / 2021"
+          ]
+        },
+        {
+          "path": "data/processed/source_epoch_10m.tif.aux.xml",
+          "bytes": 413,
+          "sha256": "245403e8a593ce05d8b15e48dd98e2515c01fda00d76e0ac09d6852bb5127061",
+          "layers": [
+            "LiDAR acquisition \u2022 2019 / 2021"
+          ]
+        },
+        {
+          "path": "data/raw/naip2017_rgb_2m.tif",
+          "bytes": 23597336,
+          "sha256": "7ae6b6639d0147d8b636e4e71222394f284145cc0e54f9727c833e4462d99b4a",
+          "layers": [
+            "NAIP 2017 RGB \u2022 exported at 2 m"
+          ]
+        },
+        {
+          "path": "data/raw/naip2017_rgb_2m.tif.aux.xml",
+          "bytes": 1170,
+          "sha256": "84798d66ae05f82b35993efc5cabca9cf51e8d5c3afed77832133eaeedd30369",
+          "layers": [
+            "NAIP 2017 RGB \u2022 exported at 2 m"
+          ]
+        },
+        {
+          "path": "results/blind_v001/analysis_valid.tif",
+          "bytes": 4085,
+          "sha256": "ac7ded4f9a97732029b78b3941b2d2e2e8db7552f4710920ef04d9c923c857c4",
+          "layers": [
+            "Complete neighbourhood support \u2022 1 = valid"
+          ]
+        },
+        {
+          "path": "results/blind_v001/analysis_valid.tif.aux.xml",
+          "bytes": 328,
+          "sha256": "110c8abb31814538d709948e780f52a2b88775d53812dfc30c25a18c20aafc7f",
+          "layers": [
+            "Complete neighbourhood support \u2022 1 = valid"
+          ]
+        },
+        {
+          "path": "results/blind_v001/aspect.tif",
+          "bytes": 1058555,
+          "sha256": "faf562e2211f2b3efe2beb39a8ee4593f30f85f98e8978528c99dbb2a58ce811",
+          "layers": [
+            "Aspect \u2022 degrees clockwise from north"
+          ]
+        },
+        {
+          "path": "results/blind_v001/aspect.tif.aux.xml",
+          "bytes": 372,
+          "sha256": "5d383ac681e21a0d30b3de9530f6d11739d4fa45f23c2cc8e761e50d31490493",
+          "layers": [
+            "Aspect \u2022 degrees clockwise from north"
+          ]
+        },
+        {
+          "path": "results/blind_v001/candidates.gpkg",
+          "bytes": 110592,
+          "sha256": "42da38fbe3096a5395aff51166b358b8b22b53ed0a891c190ca528261e6f8935",
+          "layers": [
+            "Ranked landscape areas \u2022 unverified"
+          ]
+        },
+        {
+          "path": "results/blind_v001/combined_score.tif",
+          "bytes": 47904,
+          "sha256": "57347e613b2ca23e978f846a11e5522a83f7d72d1fbc1955d4993e11a94226ff",
+          "layers": [
+            "Lithology \u00d7 terrain index \u2022 NOT probability"
+          ]
+        },
+        {
+          "path": "results/blind_v001/combined_score.tif.aux.xml",
+          "bytes": 360,
+          "sha256": "cbb32e375c83fe7d33ff585072d2b9cbd5a6d9272a4fb80461c4432400ebdf3d",
+          "layers": [
+            "Lithology \u00d7 terrain index \u2022 NOT probability"
+          ]
+        },
+        {
+          "path": "results/blind_v001/dev_2010m.tif",
+          "bytes": 1102101,
+          "sha256": "32bb9f2e693a4987cde191195e799a97d62c8bc7ac5fef8f27fe927e93fdbab7",
+          "layers": [
+            "Standardized topographic position \u2022 2010 m window"
+          ]
+        },
+        {
+          "path": "results/blind_v001/dev_2010m.tif.aux.xml",
+          "bytes": 387,
+          "sha256": "62cb0812b889089683bfe68c76ee0883b85845afee6b5dd11c74b449b76e3ed1",
+          "layers": [
+            "Standardized topographic position \u2022 2010 m window"
+          ]
+        },
+        {
+          "path": "results/blind_v001/dev_210m.tif",
+          "bytes": 1118893,
+          "sha256": "a57c76dc8a261b25a6dafaa94f59377a2fe36a196308da859a926dcbb2a63914",
+          "layers": [
+            "Standardized topographic position \u2022 210 m window"
+          ]
+        },
+        {
+          "path": "results/blind_v001/dev_210m.tif.aux.xml",
+          "bytes": 389,
+          "sha256": "5d2200e651047d34c7c3bdf9dd1639af22c639f2c807715a233502c408bad6ae",
+          "layers": [
+            "Standardized topographic position \u2022 210 m window"
+          ]
+        },
+        {
+          "path": "results/blind_v001/dev_610m.tif",
+          "bytes": 1116640,
+          "sha256": "4617ee21322c1149c97ae363344532cf5b503fea89052b7b1113550cf76dd657",
+          "layers": [
+            "Standardized topographic position \u2022 610 m window"
+          ]
+        },
+        {
+          "path": "results/blind_v001/dev_610m.tif.aux.xml",
+          "bytes": 390,
+          "sha256": "6939f6e88457252329d9242a29693c0449c588703eb21bfd5aaaea16209e107e",
+          "layers": [
+            "Standardized topographic position \u2022 610 m window"
+          ]
+        },
+        {
+          "path": "results/blind_v001/geological_score.tif",
+          "bytes": 3483,
+          "sha256": "f41abd4bb7c7012ee4b45e2c73eb5097983034234ae2dbfee6381b192827f4e6",
+          "layers": [
+            "Mapped lithology evidence index"
+          ]
+        },
+        {
+          "path": "results/blind_v001/geological_score.tif.aux.xml",
+          "bytes": 359,
+          "sha256": "a9d284deed2843c2d4954b87676a042498dacd7e0801073fecadc4f712ae6bd7",
+          "layers": [
+            "Mapped lithology evidence index"
+          ]
+        },
+        {
+          "path": "results/blind_v001/hillshade.tif",
+          "bytes": 279521,
+          "sha256": "5fb8c36c0efa29efd3060b6f114cdda3be71e14a9c0ef9cd2df67bfad9d28c6e",
+          "layers": [
+            "Local terrain hillshade (10 m DEM)"
+          ]
+        },
+        {
+          "path": "results/blind_v001/hillshade.tif.aux.xml",
+          "bytes": 358,
+          "sha256": "50e6c06982725e6ab00e3e17e340004c6bc755231b6e136822ce9a8fb499b625",
+          "layers": [
+            "Local terrain hillshade (10 m DEM)"
+          ]
+        },
+        {
+          "path": "results/blind_v001/mid_slope_votes.tif",
+          "bytes": 37385,
+          "sha256": "4f89e86d7de56e6c0519b06bcc44c1c618ef3723f8fafa81275d341b967fcce1",
+          "layers": [
+            "Mid-slope votes \u2022 0\u20133"
+          ]
+        },
+        {
+          "path": "results/blind_v001/mid_slope_votes.tif.aux.xml",
+          "bytes": 357,
+          "sha256": "b920136c81855c39b1d5c0f360754936e855bc361e8c088e41dbe60cdb6fc535",
+          "layers": [
+            "Mid-slope votes \u2022 0\u20133"
+          ]
+        },
+        {
+          "path": "results/blind_v001/slope.tif",
+          "bytes": 1068752,
+          "sha256": "4e2926ea3dd2465190c21b074fd61d106af6b3a0d793dd9f863ad495ecdf948c",
+          "layers": [
+            "Slope \u2022 degrees (Horn)"
+          ]
+        },
+        {
+          "path": "results/blind_v001/slope.tif.aux.xml",
+          "bytes": 370,
+          "sha256": "f599351126141a775da692c09382ccb08cd1a82a32a6ae874980de32fb314ea2",
+          "layers": [
+            "Slope \u2022 degrees (Horn)"
+          ]
+        },
+        {
+          "path": "results/blind_v001/terrain_score.tif",
+          "bytes": 805687,
+          "sha256": "a14e5c1acb748556d1529917da8e91caf07deab4fb4daea9866718d9acd4d3b0",
+          "layers": [
+            "Terrain index \u2022 0\u20131 hypothesis"
+          ]
+        },
+        {
+          "path": "results/blind_v001/terrain_score.tif.aux.xml",
+          "bytes": 358,
+          "sha256": "8cc07d5b0ac362843d5f4f0110c72fcc5a17f421bea05f70a2721721b087eac5",
+          "layers": [
+            "Terrain index \u2022 0\u20131 hypothesis"
+          ]
+        },
+        {
+          "path": "results/blind_v002/combined_score_10m.tif",
+          "bytes": 50668,
+          "sha256": "1d04711c457e5fefc0356fc882fef5a45b13b9493ca4aea31e1e9bfd2f6696a1",
+          "layers": [
+            "Combined index \u2022 ordinal, not probability"
+          ]
+        },
+        {
+          "path": "results/blind_v002/combined_score_10m.tif.aux.xml",
+          "bytes": 373,
+          "sha256": "4df240e10be5295950b11ab10cad66adfd5bc79ead0fa7a479ec978b41776e24",
+          "layers": [
+            "Combined index \u2022 ordinal, not probability"
+          ]
+        },
+        {
+          "path": "results/blind_v002/depression_depth_1m.tif",
+          "bytes": 912680,
+          "sha256": "46d224819b995fc28f0847384b4fe856b79507fd36e67f0874c6d296aeadcb76",
+          "layers": [
+            "Closed depression depth \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/blind_v002/depression_depth_1m.tif.aux.xml",
+          "bytes": 420,
+          "sha256": "4d133f10e730d391876a30b2832b9663cd1ab3a6b4ee77c01c8df6d35bdacd65",
+          "layers": [
+            "Closed depression depth \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/blind_v002/feature_quality_1m.tif",
+          "bytes": 67889,
+          "sha256": "2ea2d4d9cb19816aa7058431ed1177b3d354a91cbd4dff8a6f2d3b86e98f0508",
+          "layers": [
+            "Feature quality mask \u2022 excludes epoch seams"
+          ]
+        },
+        {
+          "path": "results/blind_v002/feature_quality_1m.tif.aux.xml",
+          "bytes": 408,
+          "sha256": "ca38353711d7458101c4c6e7cc054bedf57a77f4f58fd4dab04025917f2609ce",
+          "layers": [
+            "Feature quality mask \u2022 excludes epoch seams"
+          ]
+        },
+        {
+          "path": "results/blind_v002/feature_score_10m.tif",
+          "bytes": 8948,
+          "sha256": "b620f67b4107431c3e3bf2c82c4cb7719fbe8332c88a976977796db342d9953b",
+          "layers": [
+            "Independent surface morphology index"
+          ]
+        },
+        {
+          "path": "results/blind_v002/feature_score_10m.tif.aux.xml",
+          "bytes": 361,
+          "sha256": "0cf990cabe49d681eb09790e184d3a138add8535668bf9474e335c14b67a1aab",
+          "layers": [
+            "Independent surface morphology index"
+          ]
+        },
+        {
+          "path": "results/blind_v002/features.gpkg",
+          "bytes": 1589248,
+          "sha256": "45ebaeaa4a67f255a0273d854e08703b71869f3e69f3e786dd94257ef38fc1ef",
+          "layers": [
+            "All ranked indicators \u2022 inspect attributes",
+            "Cliff/outcrop exposures \u2022 not openings",
+            "Closed-depression cores \u2022 not confirmed sinkholes",
+            "Top 10 per method \u2022 separate method ranks"
+          ]
+        },
+        {
+          "path": "results/blind_v002/geology_score_10m.tif",
+          "bytes": 3802,
+          "sha256": "d4d0511e32f83fd03488447e0bb9abae34179de5986914ae82fe639bc8a65eef",
+          "layers": [
+            "Geology + assumed contact buffer"
+          ]
+        },
+        {
+          "path": "results/blind_v002/geology_score_10m.tif.aux.xml",
+          "bytes": 359,
+          "sha256": "47169423862dc888d2b1fa254656d36617dd12c6b0800ddb546f2a6b029501df",
+          "layers": [
+            "Geology + assumed contact buffer"
+          ]
+        },
+        {
+          "path": "results/blind_v002/hillshade_1m.tif",
+          "bytes": 25244089,
+          "sha256": "15d99bcb1d7c9e4980139eb1b9e491c9a802208434f7b1460883c06cc1da7780",
+          "layers": [
+            "Native terrain hillshade \u2022 numerical DEM"
+          ]
+        },
+        {
+          "path": "results/blind_v002/hillshade_1m.tif.aux.xml",
+          "bytes": 408,
+          "sha256": "f363e7a9f0d93f7088984647fa072844fc3309d87da2c1692333dbc573d592b6",
+          "layers": [
+            "Native terrain hillshade \u2022 numerical DEM"
+          ]
+        },
+        {
+          "path": "results/blind_v002/residual_11m.tif",
+          "bytes": 90003735,
+          "sha256": "0f706b7268cd8c467a584c39a2dfdc7421f1c445d12e478abe03beff6a3859d7",
+          "layers": [
+            "11 m elevation residual \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/blind_v002/residual_11m.tif.aux.xml",
+          "bytes": 440,
+          "sha256": "51d4193ecb7a7b58ee934b1218c62dc91cffc7ca1abef7ac28730761733bd881",
+          "layers": [
+            "11 m elevation residual \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/blind_v002/slope_1m.tif",
+          "bytes": 104953070,
+          "sha256": "8317e4383a207b92d88563e3976f64b8bdcdcb3b9dbd07428db7d4c2feb5e5ee",
+          "layers": [
+            "Native Horn slope \u2022 degrees"
+          ]
+        },
+        {
+          "path": "results/blind_v002/slope_1m.tif.aux.xml",
+          "bytes": 420,
+          "sha256": "2b3f863b89ded59c7ccd54b7c599f0007c6ac0852c5cb36e4f12d1f8973f3070",
+          "layers": [
+            "Native Horn slope \u2022 degrees"
+          ]
+        },
+        {
+          "path": "results/blind_v002/source_epoch_1m.tif",
+          "bytes": 114166,
+          "sha256": "735089cf18ed28a2f7d7e62d51e631a37e3116b61522e68d7814656eb844b316",
+          "layers": [
+            "Exact native acquisition \u2022 2019 / 2021"
+          ]
+        },
+        {
+          "path": "results/blind_v002/source_epoch_1m.tif.aux.xml",
+          "bytes": 413,
+          "sha256": "fa8e2d7f7040e48ad9c23f5c8384e1da104348f59bd50e4c0ff242708aa34da1",
+          "layers": [
+            "Exact native acquisition \u2022 2019 / 2021"
+          ]
+        },
+        {
+          "path": "results/blind_v002/terrain_clusters_10m.tif",
+          "bytes": 44589,
+          "sha256": "c6b044d01c5d1348531f550ed5a20a2e4927d9e7ee8c0f73773fb4e8ca5dc8a5",
+          "layers": [
+            "Unsupervised terrain classes \u2022 no cave labels"
+          ]
+        },
+        {
+          "path": "results/blind_v002/terrain_clusters_10m.tif.aux.xml",
+          "bytes": 355,
+          "sha256": "20477827ba0322697cc28b2ea37ec32d9b5ae533a8708a574c1839fc8c5cdb18",
+          "layers": [
+            "Unsupervised terrain classes \u2022 no cave labels"
+          ]
+        }
+      ],
+      "portability": "local_shared_datasets; not a self-contained package",
+      "layer_count": 36,
+      "source_project": "qgis/KarstFinder_Blind_v002.qgz",
+      "analysis_reference_hashes": {
+        "configs/blind_v001.json": "320cd4ab15fdcd60911d7d3e689c7bfb4b6f779420ff8219d1f173fe0ea7a1a1",
+        "configs/blind_v002.json": "ad69ebb64b6d30885889fd1a983e81a54e21db46be51edf8dc4c49bd771e489d",
+        "experiments/frozen/blind_v002.json": "128c11020b5125d8b98b2f37eab7f0b704b9afec7fa1749865f46410188b4318",
+        "docs/BLIND_REVIEW.md": "fcc18beed1139fd73d9e0a3fe0525703a7e2ed0deb5dbf4b16482beb5c908047"
+      }
+    },
+    {
+      "area_id": "denny-mountain",
+      "created_utc": "2026-10-19T19:31:15.025157+00:00",
+      "status": "Not yet investigated",
+      "personal_notes": "prospecting_library/denny-mountain/local/field_notes.json",
+      "revision": 2,
+      "updated_utc": "2026-10-19T19:35:15.533048+00:00",
+      "change": "map saved from live QGIS",
+      "metadata_path": "prospecting_library/denny-mountain/versions/v000002.json",
+      "name": "Denny Mountain",
+      "general_location": "Southern Denny Mountain / Denny Creek, Snoqualmie Pass, Washington",
+      "study_extent": {
+        "crs": "EPSG:26910",
+        "bounds": [
+          615850,
+          5252250,
+          618850,
+          5255250
+        ]
+      },
+      "geological_summary": "DNR 1:100,000 mapped PMmb(e) marble lens (OBJECTID 29438), with uncertain contacts and mixed melange context. 48 cliff patches overlap mapped marble; no depression core does. Unvalidated surface indicators, not detected entrances.",
+      "specification": {
+        "name": "Denny Mountain",
+        "general_location": "Southern Denny Mountain / Denny Creek, Snoqualmie Pass, Washington",
+        "study_extent": {
+          "crs": "EPSG:26910",
+          "bounds": [
+            615850,
+            5252250,
+            618850,
+            5255250
+          ]
+        },
+        "geological_summary": "DNR 1:100,000 mapped PMmb(e) marble lens (OBJECTID 29438), with uncertain contacts and mixed melange context. 48 cliff patches overlap mapped marble; no depression core does. Unvalidated surface indicators, not detected entrances.",
+        "candidate_csv": "results/denny_v001_access/screened_indicators.csv",
+        "analysis_references": [
+          "configs/denny_v001_landscape.json",
+          "configs/denny_v001_features.json",
+          "experiments/snapshots/denny_v001.json",
+          "docs/DENNY_RESULTS.md",
+          "docs/reviews/denny_v001_methodology/review_manifest.json",
+          "results/denny_v001_landscape",
+          "results/denny_v001_features",
+          "results/denny_v001_access",
+          "results/denny_v001_observation"
+        ]
+      },
+      "candidate_count": 489,
+      "highest_priority_candidates": [
+        {
+          "object_id": "C-007851",
+          "rank": "1",
+          "kind": "cliff",
+          "score": "0.861542123556137"
+        },
+        {
+          "object_id": "C-007828",
+          "rank": "2",
+          "kind": "cliff",
+          "score": "0.8555275201797485"
+        },
+        {
+          "object_id": "C-007722",
+          "rank": "3",
+          "kind": "cliff",
+          "score": "0.8544946312904358"
+        },
+        {
+          "object_id": "C-007983",
+          "rank": "4",
+          "kind": "cliff",
+          "score": "0.8535515832901002"
+        },
+        {
+          "object_id": "C-007707",
+          "rank": "5",
+          "kind": "cliff",
+          "score": "0.8221245628595353"
+        },
+        {
+          "object_id": "C-007841",
+          "rank": "6",
+          "kind": "cliff",
+          "score": "0.819242308139801"
+        },
+        {
+          "object_id": "C-008008",
+          "rank": "7",
+          "kind": "cliff",
+          "score": "0.8183267438411712"
+        },
+        {
+          "object_id": "C-008453",
+          "rank": "8",
+          "kind": "cliff",
+          "score": "0.8051103615760804"
+        },
+        {
+          "object_id": "C-008180",
+          "rank": "9",
+          "kind": "cliff",
+          "score": "0.7982960754632951"
+        },
+        {
+          "object_id": "C-008379",
+          "rank": "10",
+          "kind": "cliff",
+          "score": "0.78975876390934"
+        }
+      ],
+      "candidate_csv": "results/denny_v001_access/screened_indicators.csv",
+      "candidate_csv_sha256": "11901ef5c3c44e358b5257890529bbc20b84087c0fc12a1a1d0851e827b20609",
+      "analysis_references": [
+        "configs/denny_v001_landscape.json",
+        "configs/denny_v001_features.json",
+        "experiments/snapshots/denny_v001.json",
+        "docs/DENNY_RESULTS.md",
+        "docs/reviews/denny_v001_methodology/review_manifest.json",
+        "results/denny_v001_landscape",
+        "results/denny_v001_features",
+        "results/denny_v001_access",
+        "results/denny_v001_observation"
+      ],
+      "project_path": "prospecting_library/denny-mountain/denny-mountain.qgz",
+      "archived_project": "prospecting_library/denny-mountain/map-v000002.qgz",
+      "project_sha256": "78273e453a0d4377ef21cfcadac9ddde23ca80626dcecc0792867775fc0dd813",
+      "map_revision": 2,
+      "state_path": "prospecting_library/denny-mountain/versions/v000002.state.json",
+      "verification_path": "prospecting_library/denny-mountain/versions/v000002.verification.json",
+      "dataset_references": [
+        {
+          "path": "data/processed/denny_v001/context.gpkg",
+          "bytes": 229376,
+          "sha256": "6478be7a7a408f1376bb37a55953a4417103455e75c7c977c06037d8434f4a86",
+          "layers": [
+            "Approved study \u2022 3 \u00d7 3 km",
+            "Mapped contacts \u2022 uncertain",
+            "Mapped faults \u2022 context only",
+            "Mapped marble PMmb(e) \u2022 approximate contacts",
+            "Mixed melange \u2022 carbonate occurrence uncertain"
+          ]
+        },
+        {
+          "path": "data/processed/denny_v001/features/contributing_area_10m_buffered.tif",
+          "bytes": 1086204,
+          "sha256": "ba4a586cd5ec6cb27305bac862ed3d847d8beedc6f8f671f86169ae2dc2702b3",
+          "layers": [
+            "Modeled D8 contributing area \u2022 m\u00b2, context only"
+          ]
+        },
+        {
+          "path": "data/processed/denny_v001/features/contributing_area_10m_buffered.tif.aux.xml",
+          "bytes": 365,
+          "sha256": "b370f9d84db0cfb62a494cbcc79e4fb1312b0a8f6675746aff84122fdafb54aa",
+          "layers": [
+            "Modeled D8 contributing area \u2022 m\u00b2, context only"
+          ]
+        },
+        {
+          "path": "data/raw/naip2017_rgb_2m.tif",
+          "bytes": 23597336,
+          "sha256": "7ae6b6639d0147d8b636e4e71222394f284145cc0e54f9727c833e4462d99b4a",
+          "layers": [
+            "NAIP 2017 RGB \u2022 partial context coverage"
+          ]
+        },
+        {
+          "path": "data/raw/naip2017_rgb_2m.tif.aux.xml",
+          "bytes": 1170,
+          "sha256": "84798d66ae05f82b35993efc5cabca9cf51e8d5c3afed77832133eaeedd30369",
+          "layers": [
+            "NAIP 2017 RGB \u2022 partial context coverage"
+          ]
+        },
+        {
+          "path": "results/denny_v001_access/access.gpkg",
+          "bytes": 724992,
+          "sha256": "82a3286e9c70d0e3590fdef55d494943555aa5761d1f7c32a5b9122b48870128",
+          "layers": [
+            "All indicators \u2022 geological rank + access flags",
+            "NON-FS mapped land \u2022 access unresolved",
+            "Official USFS trails \u2022 current conditions still apply",
+            "Top 10 marble priorities \u2022 steep/off-trail; NOT destinations",
+            "USFS mapped ownership \u2022 not a legal boundary"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/combined_score_10m.tif",
+          "bytes": 47572,
+          "sha256": "0ca12e598f3407010b755170589c28df43050150e17cb571f891bcc9d8ab1b09",
+          "layers": [
+            "Combined ordinal index \u2022 NOT cave probability"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/combined_score_10m.tif.aux.xml",
+          "bytes": 373,
+          "sha256": "fc0db938615aeb2957576f1b1d4b3ba29b48631b9a1cfac8fb04de9b519039bb",
+          "layers": [
+            "Combined ordinal index \u2022 NOT cave probability"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/depression_depth_1m.tif",
+          "bytes": 190311,
+          "sha256": "14046f556e232ed73aec997c37e5dd76ad1f84157c172313ff6b6fc55e9dfa38",
+          "layers": [
+            "Closed depression depth \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/depression_depth_1m.tif.aux.xml",
+          "bytes": 425,
+          "sha256": "131d94403ea70de756d6fc1414befc3017f6cdc582903115d1466f9d599e8498",
+          "layers": [
+            "Closed depression depth \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/feature_quality_1m.tif",
+          "bytes": 18111,
+          "sha256": "2a2eb0841a5cbd9bd3a454016954531139cf7a76d1e85da31e5e2a314a23fe74",
+          "layers": [
+            "Quality mask \u2022 survey seam excluded"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/feature_quality_1m.tif.aux.xml",
+          "bytes": 408,
+          "sha256": "0b902001b9f9c8144ee74ed1a598d78467e781697fd9be7714b71028f3a22c37",
+          "layers": [
+            "Quality mask \u2022 survey seam excluded"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/features.gpkg",
+          "bytes": 1359872,
+          "sha256": "8dd9925cc7b454ac9d9c539fc93154e49e863904523c1602cd326191a46ed207",
+          "layers": [
+            "12 depression cores \u2022 none overlaps mapped marble",
+            "48 cliff patches overlapping mapped marble",
+            "All cliff indicators \u2022 includes uncertain melange/contact context"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/hillshade_1m.tif",
+          "bytes": 7540467,
+          "sha256": "9896a9f106c9fec7346f7554c7877fac6986ceb76289e5e697576d5a9300ea16",
+          "layers": [
+            "1 m LiDAR terrain hillshade"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/hillshade_1m.tif.aux.xml",
+          "bytes": 408,
+          "sha256": "d5cdf2d877b7ffe39b83f92647168e094373fe899c7527f6f58c0a21b4c06e56",
+          "layers": [
+            "1 m LiDAR terrain hillshade"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/residual_11m.tif",
+          "bytes": 26941940,
+          "sha256": "446b7c2860ef6dcae507d91c5b4c05bd95f15587920842a69c0575972f37815d",
+          "layers": [
+            "11 m elevation residual \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/residual_11m.tif.aux.xml",
+          "bytes": 439,
+          "sha256": "4cc998d4d5af3b30fddbcea0c5febeb28c6993fbf32d04529f354e023dfeecd7",
+          "layers": [
+            "11 m elevation residual \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/slope_1m.tif",
+          "bytes": 31563227,
+          "sha256": "e8ef572d699e49afa9e420b55b93619921c74396a5555aa1bb17262cb148a2e7",
+          "layers": [
+            "Native slope \u2022 degrees"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/slope_1m.tif.aux.xml",
+          "bytes": 436,
+          "sha256": "212ce9e546e4827dc130baf9ba7c424ef8091aeb989f9ca9dcaa6ad19d14292b",
+          "layers": [
+            "Native slope \u2022 degrees"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/source_epoch_1m.tif",
+          "bytes": 38408,
+          "sha256": "7c3f698d17fa5894a753bde8e314ec488fc7b1045265d5623d43b6341e47e344",
+          "layers": [
+            "Native acquisition epoch \u2022 2019/2021"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/source_epoch_1m.tif.aux.xml",
+          "bytes": 413,
+          "sha256": "851e448c8f4dc7b901431427cfe98c39b1420d842a22e22d69732eb17877c82e",
+          "layers": [
+            "Native acquisition epoch \u2022 2019/2021"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/terrain_clusters_10m.tif",
+          "bytes": 12636,
+          "sha256": "860eb2f99d58ba1f49d0a67029931ab7993221d51f0e6ec0472ccacd874de3a1",
+          "layers": [
+            "Six descriptive terrain classes \u2022 no cave labels"
+          ]
+        },
+        {
+          "path": "results/denny_v001_features/terrain_clusters_10m.tif.aux.xml",
+          "bytes": 356,
+          "sha256": "1742cb18250ee081a600bd6df5506f05bb72d556d538b418753f7ddb7bc29dc6",
+          "layers": [
+            "Six descriptive terrain classes \u2022 no cave labels"
+          ]
+        },
+        {
+          "path": "results/denny_v001_landscape/combined_score.tif",
+          "bytes": 45882,
+          "sha256": "d43f8d46ce22d182a7f3e1cc00f15cdcd9922b92870f0a0530895c232fb143fc",
+          "layers": [
+            "Original landscape index \u2022 whole marble lens selected"
+          ]
+        },
+        {
+          "path": "results/denny_v001_landscape/combined_score.tif.aux.xml",
+          "bytes": 358,
+          "sha256": "806477c4c44e4d0333c6f69b51f58704bbb4f911357b4cd48a29233eb43a0257",
+          "layers": [
+            "Original landscape index \u2022 whole marble lens selected"
+          ]
+        },
+        {
+          "path": "results/denny_v001_observation/OBS-01_bare_earth_viewshed.tif",
+          "bytes": 3176,
+          "sha256": "9afcefbb5eaeb2123f7074a2ed9201ba1b3eea1c72d351e7a6e513b53d24768e",
+          "layers": [
+            "OBS-01 terrain viewshed \u2022 excludes canopy"
+          ]
+        },
+        {
+          "path": "results/denny_v001_observation/OBS-01_bare_earth_viewshed.tif.aux.xml",
+          "bytes": 336,
+          "sha256": "e5cf9836e8c968a8baad6b8ee7d115b1db8adbd357507c6311df204d7659be96",
+          "layers": [
+            "OBS-01 terrain viewshed \u2022 excludes canopy"
+          ]
+        },
+        {
+          "path": "results/denny_v001_observation/OBS-02_bare_earth_viewshed.tif",
+          "bytes": 3094,
+          "sha256": "719a4f7e8d23ec5463970efe7c0d8ce56be14b5bfac68207bdd8b5fda7318ea8",
+          "layers": [
+            "OBS-02 terrain viewshed \u2022 excludes canopy"
+          ]
+        },
+        {
+          "path": "results/denny_v001_observation/OBS-02_bare_earth_viewshed.tif.aux.xml",
+          "bytes": 336,
+          "sha256": "ef33b4e736b5292352d9a8ffb5182ec3d7e072f0d4e697037f8de1a3c67c6cad",
+          "layers": [
+            "OBS-02 terrain viewshed \u2022 excludes canopy"
+          ]
+        },
+        {
+          "path": "results/denny_v001_observation/OBS-03_bare_earth_viewshed.tif",
+          "bytes": 4353,
+          "sha256": "d1f60820c2fc59b5fe2df40df07c8859d83686450b3ca698c7813471adf5b124",
+          "layers": [
+            "OBS-03 terrain viewshed \u2022 excludes canopy"
+          ]
+        },
+        {
+          "path": "results/denny_v001_observation/OBS-03_bare_earth_viewshed.tif.aux.xml",
+          "bytes": 336,
+          "sha256": "0a4c2684be13b0a98e95e24dcde0919be514b9010f5567cd3fd24caa7f4b9969",
+          "layers": [
+            "OBS-03 terrain viewshed \u2022 excludes canopy"
+          ]
+        },
+        {
+          "path": "results/denny_v001_observation/observation.gpkg",
+          "bytes": 98304,
+          "sha256": "1abe1062853f2ed87add7c34c0bf865891ce4a996f67a01c57ce3183523e1ed8",
+          "layers": [
+            "OBS triangles \u2022 ON mapped trail; canopy visibility unknown"
+          ]
+        }
+      ],
+      "portability": "local_shared_datasets; not a self-contained package",
+      "layer_count": 28,
+      "analysis_reference_hashes": {
+        "configs/denny_v001_landscape.json": "2e341e3afbb2e36a6a9fdf804ce01b2845b094a76417967ff22d8a5bf29b25b8",
+        "configs/denny_v001_features.json": "1638fbfd8d74f34b85a199357ab22ee30b752dc6572d57ea953f824a4e1d3a60",
+        "experiments/snapshots/denny_v001.json": "8d6a061c0ac519ab2183a34c2d68383bff5c948792640e991f798cfe23f612f6",
+        "docs/DENNY_RESULTS.md": "7c4e857cf7efbb510e9b9ca58eedddb2632bfa27a761f3672f50a1640a445107",
+        "docs/reviews/denny_v001_methodology/review_manifest.json": "54663d40bdac551704d55f768bb95800a4ddf71037f76d2796449c0d91df5790"
+      }
+    },
+    {
+      "area_id": "kaleetan-vicinity",
+      "created_utc": "2026-10-19T23:28:53.505348+00:00",
+      "status": "Not yet investigated",
+      "personal_notes": "prospecting_library/kaleetan-vicinity/local/field_notes.json",
+      "revision": 2,
+      "updated_utc": "2026-10-19T23:37:24.881004+00:00",
+      "change": "map registered from saved project",
+      "metadata_path": "prospecting_library/kaleetan-vicinity/versions/v000002.json",
+      "name": "Kaleetan Peak vicinity",
+      "general_location": "Kaleetan Peak vicinity, Snoqualmie Pass, Washington",
+      "study_extent": {
+        "crs": "EPSG:26910",
+        "bounds": [
+          613050,
+          5256200,
+          616050,
+          5259200
+        ]
+      },
+      "geological_summary": "DNR 1:100,000 PMmb(e) marble, OBJECTID 29440; approximate contacts. Two cliff patches overlap mapped marble; no depression core does. Literature-informed unvalidated prospecting; no entrance predictions or verified routes.",
+      "specification": {
+        "name": "Kaleetan Peak vicinity",
+        "general_location": "Kaleetan Peak vicinity, Snoqualmie Pass, Washington",
+        "study_extent": {
+          "crs": "EPSG:26910",
+          "bounds": [
+            613050,
+            5256200,
+            616050,
+            5259200
+          ]
+        },
+        "geological_summary": "DNR 1:100,000 PMmb(e) marble, OBJECTID 29440; approximate contacts. Two cliff patches overlap mapped marble; no depression core does. Literature-informed unvalidated prospecting; no entrance predictions or verified routes.",
+        "candidate_csv": "results/kaleetan_v001_access/screened_indicators.csv",
+        "analysis_references": [
+          "configs/kaleetan_v001_landscape.json",
+          "configs/kaleetan_v001_features.json",
+          "docs/APPROVED_AREAS_20261019.md",
+          "docs/reviews/kaleetan_v001_methodology/review_manifest.json",
+          "results/kaleetan_v001_landscape",
+          "results/kaleetan_v001_features",
+          "results/kaleetan_v001_access",
+          "docs/APPROVED_AREAS_RESULTS_20261019.md",
+          "experiments/snapshots/kaleetan_v001.json"
+        ]
+      },
+      "candidate_count": 808,
+      "highest_priority_candidates": [
+        {
+          "object_id": "C-006298",
+          "rank": "1",
+          "kind": "cliff",
+          "score": "0.7219283562898636"
+        },
+        {
+          "object_id": "C-006113",
+          "rank": "2",
+          "kind": "cliff",
+          "score": "0.6805990070104599"
+        },
+        {
+          "object_id": "C-006046",
+          "rank": "3",
+          "kind": "cliff",
+          "score": "0.6763026922941208"
+        },
+        {
+          "object_id": "C-003954",
+          "rank": "4",
+          "kind": "cliff",
+          "score": "0.6646629297733306"
+        },
+        {
+          "object_id": "C-010050",
+          "rank": "5",
+          "kind": "cliff",
+          "score": "0.6590898954868317"
+        },
+        {
+          "object_id": "C-009519",
+          "rank": "6",
+          "kind": "cliff",
+          "score": "0.6550310897827147"
+        },
+        {
+          "object_id": "D-000018",
+          "rank": "7",
+          "kind": "depression",
+          "score": "0.6425000011920929"
+        },
+        {
+          "object_id": "C-002438",
+          "rank": "8",
+          "kind": "cliff",
+          "score": "0.6418817818164825"
+        },
+        {
+          "object_id": "C-000012",
+          "rank": "9",
+          "kind": "cliff",
+          "score": "0.6414303493499756"
+        },
+        {
+          "object_id": "C-008305",
+          "rank": "10",
+          "kind": "cliff",
+          "score": "0.6388596141338347"
+        }
+      ],
+      "candidate_csv": "results/kaleetan_v001_access/screened_indicators.csv",
+      "candidate_csv_sha256": "79e591c4c6eba0a161a4089c6642884a91236ed05bedfec20b9719d754786cab",
+      "analysis_references": [
+        "configs/kaleetan_v001_landscape.json",
+        "configs/kaleetan_v001_features.json",
+        "docs/APPROVED_AREAS_20261019.md",
+        "docs/reviews/kaleetan_v001_methodology/review_manifest.json",
+        "results/kaleetan_v001_landscape",
+        "results/kaleetan_v001_features",
+        "results/kaleetan_v001_access",
+        "docs/APPROVED_AREAS_RESULTS_20261019.md",
+        "experiments/snapshots/kaleetan_v001.json"
+      ],
+      "analysis_reference_hashes": {
+        "configs/kaleetan_v001_landscape.json": "5022966b3fcfc12f65d971e976fa517bbfc31ed0dd54dae3ad377515d0c75a42",
+        "configs/kaleetan_v001_features.json": "6bfe8f0c7f2e2d18d32ea77f270914b12b4d1bb43cc87bba4f75dd11ea2d4678",
+        "docs/APPROVED_AREAS_20261019.md": "5443967bf9b56a48bd79dfcbb81adda314f5115eacc50b47ac0ec1bce39a4eb2",
+        "docs/reviews/kaleetan_v001_methodology/review_manifest.json": "e9a7ca8675356d727eb02309189930b5fafa21c86be88148ba3c032c83120b3f",
+        "docs/APPROVED_AREAS_RESULTS_20261019.md": "1d31380e4cc21608bbaba5c5709b6015305ae72cf5b18fa4c42f73a3d09ed54c",
+        "experiments/snapshots/kaleetan_v001.json": "4ddbd664325f28236d8cef6e3216211a5a336f95fc08a3e34094d397ddb52f3b"
+      },
+      "project_path": "prospecting_library/kaleetan-vicinity/kaleetan-vicinity.qgz",
+      "archived_project": "prospecting_library/kaleetan-vicinity/map-v000002.qgz",
+      "project_sha256": "62c0f569cfbcad5a999bf2b8e7e08ad68a267bda0ca289082e36fae263ba14a0",
+      "map_revision": 2,
+      "state_path": "prospecting_library/kaleetan-vicinity/versions/v000002.state.json",
+      "verification_path": "prospecting_library/kaleetan-vicinity/versions/v000002.verification.json",
+      "dataset_references": [
+        {
+          "path": "data/processed/kaleetan_v001/context.gpkg",
+          "bytes": 217088,
+          "sha256": "8c67e66ac47afd94840d3d8bd88f26678e10b65ec64d01ffa8862e74941370ae",
+          "layers": [
+            "Approved study \u2022 3 \u00d7 3 km",
+            "Mapped contacts \u2022 positional uncertainty",
+            "Mapped faults \u2022 context only",
+            "Mapped marble PMmb(e) \u2022 purple outline",
+            "Mixed melange \u2022 possible carbonate, uncertain distribution"
+          ]
+        },
+        {
+          "path": "data/processed/kaleetan_v001/features/contributing_area_10m_buffered.tif",
+          "bytes": 1086204,
+          "sha256": "5bc81094abc8672359902feb89e0f3a510566b43f231eab7bcf1d0987f73336d",
+          "layers": [
+            "Modeled D8 contributing area \u2022 m\u00b2, context only"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_access/access.gpkg",
+          "bytes": 1044480,
+          "sha256": "91af6509b16fdb8a1f85edebe7a2da6ba07b3d1536bf4db5669bd951f33868e7",
+          "layers": [
+            "2 mapped-marble indicators \u2022 purple dots are patch representatives",
+            "All 808 ranked indicators \u2022 includes uncertain surrounding geology",
+            "Mapped ownership \u2022 access still unresolved",
+            "Official USFS trails \u2022 query context; no route approval"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/combined_score_10m.tif",
+          "bytes": 99653,
+          "sha256": "bf06b2395ac2a1f8b949e027cd8eac6191e8b1b90b93979dd9fa562cadb2a0cd",
+          "layers": [
+            "Combined ordinal index \u2022 not a cave probability"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/depression_depth_1m.tif",
+          "bytes": 212885,
+          "sha256": "9f9b82ede4e58127c609eeb51d22edea41d4c1d16d75ce5c07217399befb8707",
+          "layers": [
+            "Closed depression depth \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/feature_quality_1m.tif",
+          "bytes": 16221,
+          "sha256": "f44b2fac0075f1cf54b3c70224f2427abbacdca40d36a2dc21892bb27405bcc6",
+          "layers": [
+            "Eligible terrain mask \u2022 seams excluded"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/features.gpkg",
+          "bytes": 2322432,
+          "sha256": "67909392f31d904dfa53d52f61a222ce507f4f8b065e6f30795275f69adf88ba",
+          "layers": [
+            "All cliff patches \u2022 773; geological support varies",
+            "Closed depression cores \u2022 35; 0 overlap mapped marble",
+            "Orange patches \u2022 overlap mapped marble; unverified"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/hillshade_1m.tif",
+          "bytes": 7200964,
+          "sha256": "f5e97c155cebd992d89236af6864135a13117be1bac8e3686fd30b51c2c4d3c9",
+          "layers": [
+            "1 m terrain grid \u2022 bare-earth hillshade"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/residual_11m.tif",
+          "bytes": 25898544,
+          "sha256": "a06b1df9b955b3201e9723af3e2d246bb62ea02cf5cf439694a6f936e03378de",
+          "layers": [
+            "11 m elevation residual \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/slope_1m.tif",
+          "bytes": 29998070,
+          "sha256": "723d847368b82b6fa1dd11fc6acb3e11c32a1764983074a6bd1248c536b9873c",
+          "layers": [
+            "Slope \u2022 degrees"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/source_epoch_1m.tif",
+          "bytes": 35206,
+          "sha256": "6c07b0180bfd127c3144b4700719e268e0730f86c7df6a1d5d1cc4f1be5a9b38",
+          "layers": [
+            "Source project year \u2022 2021"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_features/terrain_clusters_10m.tif",
+          "bytes": 14704,
+          "sha256": "bd9b8e3f1f09e5c2d3bfdf87edab41c6db3ee9a352d7d4a508aab153ea914a0b",
+          "layers": [
+            "Six descriptive terrain classes \u2022 no cave labels"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/analysis_valid.tif",
+          "bytes": 2767,
+          "sha256": "567a52b6adce0faf8f90b05b3f77ca02de9548818e702cca99d007978c248fe0",
+          "layers": [
+            "Landscape component \u2022 analysis_valid"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/candidates.gpkg",
+          "bytes": 98304,
+          "sha256": "b50745b8a6f3d65f8104c05d3f41857b6ef71e693e2eae1b3cfb91f611c10fd6",
+          "layers": [
+            "Gold outline \u2022 landscape hypothesis areas"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/combined_score.tif",
+          "bytes": 97844,
+          "sha256": "b189066473d4e630b0c780a9d475ddf7fca048c40866eef28b79ddcbbe897472",
+          "layers": [
+            "Landscape index \u2022 10 m; not an entrance model"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/dev_2010m.tif",
+          "bytes": 330946,
+          "sha256": "1c250518030dd42ae753c3362f249b34202d8ed8811673d61ddf8018c97f0c52",
+          "layers": [
+            "Landscape component \u2022 dev_2010m"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/dev_210m.tif",
+          "bytes": 336735,
+          "sha256": "04c2f7356463fbc9e6e9897ef67562cae160147e6956f6031ef59ed86f04fc6c",
+          "layers": [
+            "Landscape component \u2022 dev_210m"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/dev_610m.tif",
+          "bytes": 336411,
+          "sha256": "5c063cc36b2bab1638f2e81a0cee215864edf3acf89c9e4f38780a2e403b4bd9",
+          "layers": [
+            "Landscape component \u2022 dev_610m"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/exposure.tif",
+          "bytes": 242690,
+          "sha256": "084d5930e2cfd0a332f8459c72e7dcb68aee9a8e366d409c030e94657baefaac",
+          "layers": [
+            "Landscape component \u2022 exposure"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/geological_score.tif",
+          "bytes": 3932,
+          "sha256": "d0fe0ba10902b437cdb37d272008f7377f28f54a9647a18a971d8408a99ab8ec",
+          "layers": [
+            "Landscape component \u2022 geological_score"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/mid_slope_votes.tif",
+          "bytes": 13081,
+          "sha256": "a3c386e1cec2c81c639edbdab5c3efab21b9d7706d0e50937df4589a021c9dce",
+          "layers": [
+            "Landscape component \u2022 mid_slope_votes"
+          ]
+        },
+        {
+          "path": "results/kaleetan_v001_landscape/terrain_score.tif",
+          "bytes": 246203,
+          "sha256": "61758619900c030a10b302de257d195cf34cebaf83f13d881bf8bd060ce9f630",
+          "layers": [
+            "Landscape component \u2022 terrain_score"
+          ]
+        }
+      ],
+      "portability": "local_shared_datasets; not a self-contained package",
+      "layer_count": 31,
+      "source_project": "qgis/KarstFinder_Kaleetan_v001.qgz"
+    },
+    {
+      "area_id": "marble-peak",
+      "created_utc": "2026-10-19T23:37:27.263726+00:00",
+      "status": "Not yet investigated",
+      "personal_notes": "prospecting_library/marble-peak/local/field_notes.json",
+      "revision": 2,
+      "updated_utc": "2026-10-19T23:39:37.368687+00:00",
+      "change": "map registered from saved project",
+      "metadata_path": "prospecting_library/marble-peak/versions/v000002.json",
+      "name": "Marble Peak / upper Marble Gulch",
+      "general_location": "Marble Peak / upper Marble Gulch near Silverton, Snohomish County, Washington",
+      "study_extent": {
+        "crs": "EPSG:26910",
+        "bounds": [
+          605050,
+          5322150,
+          608050,
+          5325150
+        ]
+      },
+      "geological_summary": "DNR 1:100,000 TRmb(e) marble, local component of OBJECTID 741; approximate contacts. Five cliff patches intersect mapped marble: four wholly within it and one weak edge overlap (~3 m\u00b2). No depression core overlaps it. Literature-informed unvalidated prospecting; no entrance predictions or verified routes.",
+      "specification": {
+        "name": "Marble Peak / upper Marble Gulch",
+        "general_location": "Marble Peak / upper Marble Gulch near Silverton, Snohomish County, Washington",
+        "study_extent": {
+          "crs": "EPSG:26910",
+          "bounds": [
+            605050,
+            5322150,
+            608050,
+            5325150
+          ]
+        },
+        "geological_summary": "DNR 1:100,000 TRmb(e) marble, local component of OBJECTID 741; approximate contacts. Five cliff patches intersect mapped marble: four wholly within it and one weak edge overlap (~3 m\u00b2). No depression core overlaps it. Literature-informed unvalidated prospecting; no entrance predictions or verified routes.",
+        "candidate_csv": "results/marble_v001_access/screened_indicators.csv",
+        "analysis_references": [
+          "configs/marble_v001_landscape.json",
+          "configs/marble_v001_features.json",
+          "docs/APPROVED_AREAS_20261019.md",
+          "docs/reviews/marble_v001_methodology/review_manifest.json",
+          "results/marble_v001_landscape",
+          "results/marble_v001_features",
+          "results/marble_v001_access",
+          "docs/APPROVED_AREAS_RESULTS_20261019.md",
+          "experiments/snapshots/marble_v001.json",
+          "experiments/snapshots/marble_v001_reviewed.json",
+          "docs/experiments/marble_v001_provider_review.json"
+        ]
+      },
+      "candidate_count": 1525,
+      "highest_priority_candidates": [
+        {
+          "object_id": "C-015597",
+          "rank": "1",
+          "kind": "cliff",
+          "score": "0.7496521383523941"
+        },
+        {
+          "object_id": "D-000026",
+          "rank": "2",
+          "kind": "depression",
+          "score": "0.7116620898246765"
+        },
+        {
+          "object_id": "C-015095",
+          "rank": "3",
+          "kind": "cliff",
+          "score": "0.7012222796678543"
+        },
+        {
+          "object_id": "C-016118",
+          "rank": "4",
+          "kind": "cliff",
+          "score": "0.6901356741786003"
+        },
+        {
+          "object_id": "C-015225",
+          "rank": "5",
+          "kind": "cliff",
+          "score": "0.6756082436442375"
+        },
+        {
+          "object_id": "D-000016",
+          "rank": "6",
+          "kind": "depression",
+          "score": "0.6287736892700195"
+        },
+        {
+          "object_id": "C-023090",
+          "rank": "7",
+          "kind": "cliff",
+          "score": "0.6246316826343536"
+        },
+        {
+          "object_id": "C-003367",
+          "rank": "8",
+          "kind": "cliff",
+          "score": "0.6223870611190796"
+        },
+        {
+          "object_id": "C-022227",
+          "rank": "9",
+          "kind": "cliff",
+          "score": "0.6207615220546722"
+        },
+        {
+          "object_id": "C-023844",
+          "rank": "10",
+          "kind": "cliff",
+          "score": "0.6188989603519439"
+        }
+      ],
+      "candidate_csv": "results/marble_v001_access/screened_indicators.csv",
+      "candidate_csv_sha256": "ada78e57e69bb547d2962b6080cf03c48963f2112e85cd2680b5b4e821050ed1",
+      "analysis_references": [
+        "configs/marble_v001_landscape.json",
+        "configs/marble_v001_features.json",
+        "docs/APPROVED_AREAS_20261019.md",
+        "docs/reviews/marble_v001_methodology/review_manifest.json",
+        "results/marble_v001_landscape",
+        "results/marble_v001_features",
+        "results/marble_v001_access",
+        "docs/APPROVED_AREAS_RESULTS_20261019.md",
+        "experiments/snapshots/marble_v001.json",
+        "experiments/snapshots/marble_v001_reviewed.json",
+        "docs/experiments/marble_v001_provider_review.json"
+      ],
+      "analysis_reference_hashes": {
+        "configs/marble_v001_landscape.json": "c0eb9c3a2a208d9664bce9dcdba531728832fcf308bbf3d7a1d7945770125288",
+        "configs/marble_v001_features.json": "eb63922a129c6fb28b8ac7ffdc522cf776e9ebb7477ddbba01ad8c482d177d8e",
+        "docs/APPROVED_AREAS_20261019.md": "5443967bf9b56a48bd79dfcbb81adda314f5115eacc50b47ac0ec1bce39a4eb2",
+        "docs/reviews/marble_v001_methodology/review_manifest.json": "0ba6b3675da6d4db6ab629af855636a5d4a54623026273e21db3ea627b3a7cc7",
+        "docs/APPROVED_AREAS_RESULTS_20261019.md": "1d31380e4cc21608bbaba5c5709b6015305ae72cf5b18fa4c42f73a3d09ed54c",
+        "experiments/snapshots/marble_v001.json": "2c741da3ac01d50292b5c78a739311a76cfe996e2d572cc8909ac53ce8da288a",
+        "experiments/snapshots/marble_v001_reviewed.json": "313d871d921835bc491769e2772d76f7e9d84ae106417d8eb8f1b780dc218bdd",
+        "docs/experiments/marble_v001_provider_review.json": "9c52366d9f1edb89fb54a0787c36194fb928c94a2311a0d2d90fb0327a2270ef"
+      },
+      "project_path": "prospecting_library/marble-peak/marble-peak.qgz",
+      "archived_project": "prospecting_library/marble-peak/map-v000002.qgz",
+      "project_sha256": "42d22bced7e5831de138b11b76350c6a2c616fd394a2dfe8b59de28d0118b79c",
+      "map_revision": 2,
+      "state_path": "prospecting_library/marble-peak/versions/v000002.state.json",
+      "verification_path": "prospecting_library/marble-peak/versions/v000002.verification.json",
+      "dataset_references": [
+        {
+          "path": "data/processed/marble_v001/context.gpkg",
+          "bytes": 221184,
+          "sha256": "6be05a313db63d8baf3d7016ae5fa0892373c24c1b149fc0a93c8d9f49b3137b",
+          "layers": [
+            "Approved study \u2022 3 \u00d7 3 km",
+            "Mapped contacts \u2022 positional uncertainty",
+            "Mapped faults \u2022 context only",
+            "Mapped marble TRmb(e) \u2022 purple outline",
+            "Mixed melange \u2022 possible carbonate, uncertain distribution"
+          ]
+        },
+        {
+          "path": "data/processed/marble_v001/features/contributing_area_10m_buffered.tif",
+          "bytes": 1086204,
+          "sha256": "75e3af5375b9be22d078c8590ab824aeb2d8ff493f26da98e199e9aa9ce4fbd5",
+          "layers": [
+            "Modeled D8 contributing area \u2022 m\u00b2, context only"
+          ]
+        },
+        {
+          "path": "results/marble_v001_access/access.gpkg",
+          "bytes": 1794048,
+          "sha256": "aa6f797bfa1e64379e84097e3535f5f420f816e5fb21bf0b5d2e21a00e882639",
+          "layers": [
+            "5 mapped-marble indicators \u2022 purple dots are patch representatives",
+            "All 1525 ranked indicators \u2022 includes uncertain surrounding geology",
+            "Mapped ownership \u2022 access still unresolved",
+            "Official USFS trails \u2022 query context; no route approval"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/combined_score_10m.tif",
+          "bytes": 114390,
+          "sha256": "2f07ad840190d0f8ac39d07f8aa04b58be29afd836fbca31b76b9913432c9c78",
+          "layers": [
+            "Combined ordinal index \u2022 not a cave probability"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/depression_depth_1m.tif",
+          "bytes": 70186,
+          "sha256": "db90c53b5413112378564b0719033ebef8bdd59c69e65b5acc09b8bd1094eef3",
+          "layers": [
+            "Closed depression depth \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/feature_quality_1m.tif",
+          "bytes": 20693,
+          "sha256": "39bea4d5ab67a75cbba8b40bde0047bf86fbe084088a11839b9133829136c37e",
+          "layers": [
+            "Eligible terrain mask \u2022 seams excluded"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/features.gpkg",
+          "bytes": 4050944,
+          "sha256": "338dd5748a117b2b5f2f94c28a500ce94b8299274b838823dcad989857da4d44",
+          "layers": [
+            "All cliff patches \u2022 1517; geological support varies",
+            "Closed depression cores \u2022 8; 0 overlap mapped marble",
+            "Orange patches \u2022 overlap mapped marble; unverified"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/hillshade_1m.tif",
+          "bytes": 7670819,
+          "sha256": "9bb42b5cd2c663f9698d88b5783ee43e869dab61bb4286909320a0a25b352005",
+          "layers": [
+            "1 m terrain grid \u2022 bare-earth hillshade"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/residual_11m.tif",
+          "bytes": 28445528,
+          "sha256": "bbe87bd3697694a3bfdfefcbae68868ed39bf7cabc004f7f5a7c6f4301818cf7",
+          "layers": [
+            "11 m elevation residual \u2022 metres"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/slope_1m.tif",
+          "bytes": 31216458,
+          "sha256": "2367f1a470b477dd6046eb9c763c4458666fb419ea26b61d59e51d12dba49224",
+          "layers": [
+            "Slope \u2022 degrees"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/source_epoch_1m.tif",
+          "bytes": 47329,
+          "sha256": "682c4ffda549332afb8b4b17c045413e2fab806b3e828190d5d2d2fb435e56cf",
+          "layers": [
+            "Source project year \u2022 2013/2016/2021"
+          ]
+        },
+        {
+          "path": "results/marble_v001_features/terrain_clusters_10m.tif",
+          "bytes": 16353,
+          "sha256": "0c1a977db834de21e15a8ed516005bb79104b8b80cb84bd607331f3422e43fca",
+          "layers": [
+            "Six descriptive terrain classes \u2022 no cave labels"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/analysis_valid.tif",
+          "bytes": 2767,
+          "sha256": "35a728c11cb8a0669e1c41d8cb8f624d820d281f83fbd60d07c661d546697498",
+          "layers": [
+            "Landscape component \u2022 analysis_valid"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/candidates.gpkg",
+          "bytes": 98304,
+          "sha256": "79d50f31086262a53371b4fce65027a14f99619d91e1244164bb6efe8debb94e",
+          "layers": [
+            "Gold outline \u2022 landscape hypothesis areas"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/combined_score.tif",
+          "bytes": 110172,
+          "sha256": "655387b6a937dd332f95737c79d376eafe6a5ee53147f6c27923367fabbddb03",
+          "layers": [
+            "Landscape index \u2022 10 m; not an entrance model"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/dev_2010m.tif",
+          "bytes": 333658,
+          "sha256": "17ec7fe2430bc4dddd09e42a56fcf4cef8c0430aaa33ec906e5e89629fbb5980",
+          "layers": [
+            "Landscape component \u2022 dev_2010m"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/dev_210m.tif",
+          "bytes": 338320,
+          "sha256": "7efbb17654fc72e71dc0b595c01718fff860f62d825ad2011f31e21207d37aa8",
+          "layers": [
+            "Landscape component \u2022 dev_210m"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/dev_610m.tif",
+          "bytes": 336295,
+          "sha256": "58742d8aa181dc504dc05e83cddaa0f03b67d2ae7cb4e12007411413ed56be9d",
+          "layers": [
+            "Landscape component \u2022 dev_610m"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/exposure.tif",
+          "bytes": 237112,
+          "sha256": "5f6462fd7ae00691eefa9924e21a49e91be805a02cb93bf6625d1339ef64e0e2",
+          "layers": [
+            "Landscape component \u2022 exposure"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/geological_score.tif",
+          "bytes": 4275,
+          "sha256": "566e503cb19d1785f0b08e51a075821dd98728aa61c02f86e81b0b76eace285e",
+          "layers": [
+            "Landscape component \u2022 geological_score"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/mid_slope_votes.tif",
+          "bytes": 13214,
+          "sha256": "77ba6abf91519a3da1412b12f7295391d2239c73031f88a53a2eeff82b88c1b9",
+          "layers": [
+            "Landscape component \u2022 mid_slope_votes"
+          ]
+        },
+        {
+          "path": "results/marble_v001_landscape/terrain_score.tif",
+          "bytes": 241807,
+          "sha256": "47621b0ea39fae99567c9ee245f639dddf396850c6a481643e38098269a4440f",
+          "layers": [
+            "Landscape component \u2022 terrain_score"
+          ]
+        }
+      ],
+      "portability": "local_shared_datasets; not a self-contained package",
+      "layer_count": 31,
+      "source_project": "qgis/KarstFinder_Marble_v001.qgz"
+    }
+  ]
+}

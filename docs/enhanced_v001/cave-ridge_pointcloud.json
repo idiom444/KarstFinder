@@ -1,0 +1,13 @@
+{
+  "area": "cave-ridge",
+  "optional": true,
+  "status": "unavailable",
+  "score_weight": 0,
+  "catalog": {
+    "path": "data/raw/enhanced_v001/cave-ridge/pointcloud/catalog.json",
+    "sha256": "bba9e070fa40d16072795adf0b0c3de88c87e68fe8e598fd281f4116f86bc1d3",
+    "request_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.41572655325534%2C47.44801911145197%2C-121.40772655325533%2C47.45401911145197&max=100"
+  },
+  "reason": "No tile within declared 250 MB budget. Public KingCo EPT footprint does not cover approved mountain areas; no requester-pays data used.",
+  "fallback": "DEM remains enabled; unavailable point-cloud fields NULL."
+}

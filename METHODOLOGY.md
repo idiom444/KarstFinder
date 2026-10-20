@@ -529,3 +529,23 @@ and GeoPackage geometries/attributes are compared separately from SQLite contain
 metadata. These establish traceability and reproducibility, not cave-detection
 skill. Different terrain epochs and source sampling also limit comparison of
 ordinal scores between areas.
+
+
+## Additive enhanced_v001 methodology
+
+The implemented enhanced workflow is documented separately in
+[Enhanced methodology](docs/enhanced_v001/METHODOLOGY.md), with
+[geological source discovery](docs/enhanced_v001/GEOLOGY_SOURCES.md),
+[matched-object comparisons](docs/enhanced_v001/COMPARISON.md) and
+[reproduction / QGIS instructions](docs/enhanced_v001/WORKFLOW.md).
+The text above describes the preserved baseline. Its pre-upgrade copy and
+original library/hash audit are retained under `docs/enhanced_v001/`.
+
+The upgrade unions every original lead with new connected terrain and drainage
+setting features, removes the carbonate gate and maximum-area caps for new
+terrain hypotheses, uses three-scale residual q10 rather than a single cliff
+minimum pixel, and groups correlated observations by family. Continuous exact
+strength colors remain separate from geological/data confidence. New code lives
+in `src/karstfinder/enhanced/` and `scripts/enhanced_*.py`; archived analytical
+code is unchanged. These are unvalidated prospecting analyses, not independently
+blind cave validation, entrance localization or verified hiking routes.

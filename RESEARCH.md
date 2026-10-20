@@ -146,3 +146,22 @@ Prior public cave-literature exposure is documented, and no model weight,
 threshold or ranking rule is tuned using it. New-area reviews reconstruct the
 saved-pixel arithmetic and retain complete original rankings; neither repeated
 computation nor a visually plausible hillshade demonstrates cave-prediction skill.
+
+
+## Enhanced prospecting investigation — 2026-10-19
+
+The four approved existing footprints now have an additive enhanced experiment.
+The DNR 24k and intermediate services did not supply usable finer unit mapping
+for these windows; missing coverage is preserved as uncertainty. Regional USGS
+publication metadata was reviewed without opening cave-bearing pamphlets or
+looking up caves. See [source discovery](docs/enhanced_v001/GEOLOGY_SOURCES.md).
+Free 2023 0.6 m RGB/NIR NAIP was acquired for each footprint. Bounded native
+LPC processing is usable over a partial Marble window; other targeted tiles
+exceed the configured budget and use DEM fallback. Normals, line filters,
+drainage and vegetation screens are experimental context, not entrance evidence.
+
+[Comparisons](docs/enhanced_v001/COMPARISON.md) measure preservation, coverage,
+score dependence and uncertainty. They do not establish better cave-detection
+accuracy. No private archive, named cave record, cave trip report or field note
+was read for this upgrade. Prior literature-informed selection/exposure remains
+recorded; no independent-blindness claim is introduced.

@@ -1,0 +1,52 @@
+{
+  "area": "kaleetan-vicinity",
+  "status": "usable",
+  "optional": true,
+  "score_weight": 0,
+  "sources": [
+    {
+      "item_id": "wa_m_4712137_nw_10_060_20231006_20240209",
+      "datetime": "2023-10-06T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/47121/m_4712137_nw_10_060_20231006_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/kaleetan-vicinity/imagery/wa_m_4712137_nw_10_060_20231006_20240209.tif",
+      "sha256": "6a85343ea1dcec2bcd8f58f79ee5d05123de1cba11dbcd0b0b976c04020cd86e",
+      "geotransform": [
+        613050.0,
+        0.6,
+        0.0,
+        5259200.4,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    }
+  ],
+  "catalog": {
+    "path": "data/raw/enhanced_v001/kaleetan-vicinity/imagery/stac_catalog.json",
+    "sha256": "93c0accef691ed65527971874f1da0c14747c00d09bea2970e1c2a225a9f099f",
+    "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=naip&bbox=-121.50036461903511%2C47.448906134910295%2C-121.4597953579367%2C47.47641830157663&limit=100&datetime=2020-01-01T00%3A00%3A00Z%2F2026-10-20T00%3A00%3A00Z"
+  },
+  "resolution_m": 0.6,
+  "coverage_fraction": 1.0,
+  "vegetation_fraction_among_valid": 0.30015152,
+  "products": {
+    "data/processed/enhanced_v001/kaleetan-vicinity/imagery/rgbnir.tif": "eee7e30cd7cd59c6426f249b17bba30e42e2de147bad864f5cc98076b27ae464",
+    "data/processed/enhanced_v001/kaleetan-vicinity/imagery/ndvi.tif": "9cb00deb80db841426ca2908299550038800c6e43008e08827bbd3d04103bfee",
+    "data/processed/enhanced_v001/kaleetan-vicinity/imagery/vegetation_mask.tif": "1082eed03eb8355ac6159ca132be36b827f64fe9b75c77fbb68d9adbfecd8da4",
+    "data/processed/enhanced_v001/kaleetan-vicinity/imagery/possible_exposed_surface_mask.tif": "0b6c76efda37e037ac4e85df5832e9727a449f5c8f2e359d8633346706d0adb4"
+  },
+  "limitations": [
+    "NDVI threshold is an exploratory vegetation screen, not a validated land-cover classifier.",
+    "Possible exposed surface includes soil/snow/water/shadow errors and does not establish rock type.",
+    "Imagery does not confirm cave entrances; no imagery score bonus is assigned.",
+    "Final grid uses nearest-neighbour reprojection at the coarsest selected native resolution."
+  ]
+}

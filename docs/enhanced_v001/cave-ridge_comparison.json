@@ -1,0 +1,104 @@
+{
+  "area": "cave-ridge",
+  "baseline_count": 596,
+  "retained_baseline_count": 596,
+  "new_leads": 6521,
+  "total": 7117,
+  "by_kind": {
+    "cliff": 6402,
+    "depression": 373,
+    "hydrology": 342
+  },
+  "by_geology": {
+    "mapped_carbonate": 161,
+    "contact_uncertain": 226,
+    "possible_mixed": 438,
+    "unknown": 4374,
+    "mapped_noncarbonate": 1918
+  },
+  "single_detection_method_count": 7117,
+  "score_range": [
+    0.12056884765624999,
+    1.0
+  ],
+  "scores_below_025_retained": 809,
+  "new_noise_suppression": {
+    "new_component_intersects_QA_exclusion": 92,
+    "new_component_intersects_mapped_open_water": 3
+  },
+  "spearman_on_identical_baseline_objects": {
+    "baseline_score_vs_slope": 0.10049735451834776,
+    "enhanced_score_vs_slope": 0.23540546254968925,
+    "baseline_min_residual_vs_q10": 0.9235300364316743
+  },
+  "comparison_top20": {
+    "enhanced": [
+      "cave-ridge:C-018994",
+      "cave-ridge:C-019088",
+      "cave-ridge:C-019213",
+      "cave-ridge:C-019450",
+      "cave-ridge:C-019559",
+      "cave-ridge:C-019582",
+      "cave-ridge:C-019783",
+      "cave-ridge:C-019996",
+      "cave-ridge:C-020099",
+      "cave-ridge:C-020217",
+      "cave-ridge:C-020236",
+      "cave-ridge:C-020243",
+      "cave-ridge:C-020312",
+      "cave-ridge:C-020323",
+      "cave-ridge:C-020336",
+      "cave-ridge:C-020525",
+      "cave-ridge:C-020604",
+      "cave-ridge:C-020671",
+      "cave-ridge:C-020993",
+      "cave-ridge:C-040866"
+    ],
+    "geology_only": [
+      "cave-ridge:C-017511",
+      "cave-ridge:C-018409",
+      "cave-ridge:C-018994",
+      "cave-ridge:C-019069",
+      "cave-ridge:C-019070",
+      "cave-ridge:C-019088",
+      "cave-ridge:C-019144",
+      "cave-ridge:C-019213",
+      "cave-ridge:C-019247",
+      "cave-ridge:C-019411",
+      "cave-ridge:C-019450",
+      "cave-ridge:C-019502",
+      "cave-ridge:C-019559",
+      "cave-ridge:C-019582",
+      "cave-ridge:C-019682",
+      "cave-ridge:C-019762",
+      "cave-ridge:C-019777",
+      "cave-ridge:C-019783",
+      "cave-ridge:C-019822",
+      "cave-ridge:C-019899"
+    ],
+    "simple_slope": [
+      "cave-ridge:E-D-93739bdc92a46296",
+      "cave-ridge:E-D-846684057697f674",
+      "cave-ridge:D-000553",
+      "cave-ridge:E-H-60215c46ee7bcd83",
+      "cave-ridge:E-H-8c154c4b52fff809",
+      "cave-ridge:E-H-02a6f0d5317c9a8b",
+      "cave-ridge:E-C-eb76d379c0699bfc",
+      "cave-ridge:E-C-448d26b116cc9c74",
+      "cave-ridge:D-000562",
+      "cave-ridge:E-D-01388c23d7272506",
+      "cave-ridge:E-C-d9ef93353d8b59b1",
+      "cave-ridge:E-C-7002e6066728a779",
+      "cave-ridge:E-C-7a85d076fbbeb727",
+      "cave-ridge:E-H-fd3003642eec910c",
+      "cave-ridge:E-C-0e13ba71b25ae168",
+      "cave-ridge:E-C-29c59094a51b6871",
+      "cave-ridge:E-C-0e63d485dba4a88c",
+      "cave-ridge:E-C-b5c48dac15f1bcb0",
+      "cave-ridge:E-D-332e3055cdd93433",
+      "cave-ridge:E-C-6bc57b921032e09c"
+    ]
+  },
+  "interpretation": "Descriptive usefulness/coverage comparison only; no known cave data, cave accuracy or independent validation. New leads are unverified surface/setting hypotheses.",
+  "slope_audit": "Original exposure, landscape slope and cliff morphology all encode steepness. Enhanced cliff support uses robust residual quantiles plus a fixed weak cliff-detection floor; slope is retained as measurement/threshold, not a second amplitude bonus."
+}

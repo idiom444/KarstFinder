@@ -1,0 +1,13 @@
+{
+  "area": "kaleetan-vicinity",
+  "optional": true,
+  "status": "unavailable",
+  "score_weight": 0,
+  "catalog": {
+    "path": "data/raw/enhanced_v001/kaleetan-vicinity/pointcloud/catalog.json",
+    "sha256": "f0b880a013e9fba75993ec84e35aa30ba523351b14bc593e200e557c6195800a",
+    "request_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.48376812232797%2C47.45967310490257%2C-121.47576812232796%2C47.46567310490257&max=100"
+  },
+  "reason": "No tile within declared 250 MB budget. Public KingCo EPT footprint does not cover approved mountain areas; no requester-pays data used.",
+  "fallback": "DEM remains enabled; unavailable point-cloud fields NULL."
+}

@@ -2,6 +2,30 @@
 
 Repository: /home/Idiom/Repos/MyRepos/KarstFinder (the open VS Code workspace).
 
+## Enhanced prospecting upgrade — additive v001
+
+The enhanced registry has 15,804 retained features, including every one of the
+3,418 original leads and 1,313 features below strength 0.25. These counts do not
+measure caves discovered or predictive accuracy.
+
+The four existing areas have separate enhanced analyses and Library IDs ending
+`-enhanced-v001`; original entries/maps/rankings remain unchanged. The upgrade
+retains every original feature, adds terrain/drainage hypotheses, provides
+continuous exact strength colors and separate uncertainty, and attaches zones,
+structural context, multiscale terrain and 2023 native RGB/NIR imagery.
+[Results and limits](docs/enhanced_v001/COMPARISON.md),
+[methodology](docs/enhanced_v001/METHODOLOGY.md), and
+[opening/filtering workflow](docs/enhanced_v001/WORKFLOW.md) are the current references.
+
+These analyses remain **unvalidated and not independently blind**. No cave-source
+lookup, private archive access or personal observation import occurred. Native
+point-cloud support is experimental and partial at Marble; three targeted areas
+use DEM fallback under the acquisition budget. No new route/access approval or
+field visit is claimed. `enhanced_verify.py` checks baseline preservation and
+new saved outputs; `enhanced_freeze.py --verify` checks the new snapshot. Future
+scientific changes require new versioned names and paths. Existing analytical
+scripts/modules remain byte-identical for old frozen comparisons.
+
 ## Approved Kaleetan and Marble Peak investigations completed
 
 The user approved both proposed 3 × 3 km windows. Separate persistent maps and

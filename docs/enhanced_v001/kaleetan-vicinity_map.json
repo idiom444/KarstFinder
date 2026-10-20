@@ -1,0 +1,40 @@
+{
+  "area": "kaleetan-vicinity",
+  "project": "qgis/KarstFinder_kaleetan-vicinity_enhanced_v001.qgz",
+  "layer_count": 53,
+  "lead_count": 2071,
+  "all_leads_default_visible": true,
+  "default_subset": "",
+  "ramp_stops": [
+    [
+      0.0,
+      "#440154"
+    ],
+    [
+      0.25,
+      "#3b528b"
+    ],
+    [
+      0.5,
+      "#21918c"
+    ],
+    [
+      0.75,
+      "#5ec962"
+    ],
+    [
+      1.0,
+      "#fde725"
+    ]
+  ],
+  "color_expression": "ramp_color(create_ramp(map(0,'#440154',0.25,'#3b528b',0.5,'#21918c',0.75,'#5ec962',1,'#fde725')),\"evidence_strength\")",
+  "previews": [
+    "docs/enhanced_v001/kaleetan-vicinity_overview.png",
+    "docs/enhanced_v001/kaleetan-vicinity_carbonate_detail.png"
+  ],
+  "layouts": [
+    "Enhanced overview",
+    "Enhanced carbonate_detail"
+  ],
+  "private_layers": 0
+}

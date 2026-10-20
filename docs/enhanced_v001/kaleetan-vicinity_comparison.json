@@ -1,0 +1,102 @@
+{
+  "area": "kaleetan-vicinity",
+  "baseline_count": 808,
+  "retained_baseline_count": 808,
+  "new_leads": 1263,
+  "total": 2071,
+  "by_kind": {
+    "cliff": 1649,
+    "depression": 56,
+    "hydrology": 366
+  },
+  "by_geology": {
+    "mapped_carbonate": 3,
+    "contact_uncertain": 20,
+    "possible_mixed": 1055,
+    "unknown": 993
+  },
+  "single_detection_method_count": 2071,
+  "score_range": [
+    0.12133789062499999,
+    1.0
+  ],
+  "scores_below_025_retained": 156,
+  "new_noise_suppression": {
+    "new_component_intersects_mapped_open_water": 30
+  },
+  "spearman_on_identical_baseline_objects": {
+    "baseline_score_vs_slope": 0.482552351793685,
+    "enhanced_score_vs_slope": 0.27315295536723794,
+    "baseline_min_residual_vs_q10": 0.9231002483391728
+  },
+  "comparison_top20": {
+    "enhanced": [
+      "kaleetan-vicinity:C-006113",
+      "kaleetan-vicinity:C-006298",
+      "kaleetan-vicinity:C-003954",
+      "kaleetan-vicinity:C-004355",
+      "kaleetan-vicinity:C-004608",
+      "kaleetan-vicinity:C-004609",
+      "kaleetan-vicinity:C-004655",
+      "kaleetan-vicinity:C-004720",
+      "kaleetan-vicinity:C-004798",
+      "kaleetan-vicinity:C-006046",
+      "kaleetan-vicinity:C-006228",
+      "kaleetan-vicinity:C-000002",
+      "kaleetan-vicinity:C-000005",
+      "kaleetan-vicinity:C-000007",
+      "kaleetan-vicinity:C-000009",
+      "kaleetan-vicinity:C-000010",
+      "kaleetan-vicinity:C-000012",
+      "kaleetan-vicinity:C-000077",
+      "kaleetan-vicinity:C-000132",
+      "kaleetan-vicinity:C-000147"
+    ],
+    "geology_only": [
+      "kaleetan-vicinity:C-006113",
+      "kaleetan-vicinity:C-006298",
+      "kaleetan-vicinity:C-003954",
+      "kaleetan-vicinity:C-004095",
+      "kaleetan-vicinity:C-004355",
+      "kaleetan-vicinity:C-004608",
+      "kaleetan-vicinity:C-004609",
+      "kaleetan-vicinity:C-004655",
+      "kaleetan-vicinity:C-004720",
+      "kaleetan-vicinity:C-004798",
+      "kaleetan-vicinity:C-006046",
+      "kaleetan-vicinity:C-006228",
+      "kaleetan-vicinity:C-006249",
+      "kaleetan-vicinity:C-006292",
+      "kaleetan-vicinity:C-006671",
+      "kaleetan-vicinity:C-006822",
+      "kaleetan-vicinity:C-006856",
+      "kaleetan-vicinity:C-006867",
+      "kaleetan-vicinity:C-006905",
+      "kaleetan-vicinity:C-006924"
+    ],
+    "simple_slope": [
+      "kaleetan-vicinity:D-000018",
+      "kaleetan-vicinity:E-H-e33d8110beb48e97",
+      "kaleetan-vicinity:C-008268",
+      "kaleetan-vicinity:C-006899",
+      "kaleetan-vicinity:E-C-aa87b032da9eadae",
+      "kaleetan-vicinity:E-C-a8b201b0383c6435",
+      "kaleetan-vicinity:C-000670",
+      "kaleetan-vicinity:E-C-26f2f9491b690e42",
+      "kaleetan-vicinity:E-C-5369441e19473e36",
+      "kaleetan-vicinity:C-010050",
+      "kaleetan-vicinity:E-C-75d7da6453f09c3a",
+      "kaleetan-vicinity:E-C-775d5065f5788259",
+      "kaleetan-vicinity:C-006228",
+      "kaleetan-vicinity:C-000009",
+      "kaleetan-vicinity:C-009519",
+      "kaleetan-vicinity:C-000012",
+      "kaleetan-vicinity:E-C-806f6b9297415a96",
+      "kaleetan-vicinity:C-005439",
+      "kaleetan-vicinity:E-C-62940e555345afd3",
+      "kaleetan-vicinity:E-C-430bd8b0894616b4"
+    ]
+  },
+  "interpretation": "Descriptive usefulness/coverage comparison only; no known cave data, cave accuracy or independent validation. New leads are unverified surface/setting hypotheses.",
+  "slope_audit": "Original exposure, landscape slope and cliff morphology all encode steepness. Enhanced cliff support uses robust residual quantiles plus a fixed weak cliff-detection floor; slope is retained as measurement/threshold, not a second amplitude bonus."
+}

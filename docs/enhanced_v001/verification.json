@@ -1,0 +1,78 @@
+{
+  "baseline_file_hashes_preserved": 145,
+  "initial_blind_freeze_hashes": 163,
+  "areas": {
+    "cave-ridge": {
+      "retained_originals": 596,
+      "all_leads": 7117,
+      "weak_below_025": 809,
+      "pointcloud_covered": 0,
+      "baseline_coordinates_ranks_scores_geometries_unchanged": true,
+      "library": {
+        "area_id": "cave-ridge-enhanced-v001",
+        "layer_count": 53,
+        "candidate_count": 7117,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 45,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    },
+    "denny-mountain": {
+      "retained_originals": 489,
+      "all_leads": 2625,
+      "weak_below_025": 206,
+      "pointcloud_covered": 0,
+      "baseline_coordinates_ranks_scores_geometries_unchanged": true,
+      "library": {
+        "area_id": "denny-mountain-enhanced-v001",
+        "layer_count": 53,
+        "candidate_count": 2625,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 45,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    },
+    "kaleetan-vicinity": {
+      "retained_originals": 808,
+      "all_leads": 2071,
+      "weak_below_025": 156,
+      "pointcloud_covered": 0,
+      "baseline_coordinates_ranks_scores_geometries_unchanged": true,
+      "library": {
+        "area_id": "kaleetan-vicinity-enhanced-v001",
+        "layer_count": 53,
+        "candidate_count": 2071,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 40,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    },
+    "marble-peak": {
+      "retained_originals": 1525,
+      "all_leads": 3991,
+      "weak_below_025": 142,
+      "pointcloud_covered": 2,
+      "baseline_coordinates_ranks_scores_geometries_unchanged": true,
+      "library": {
+        "area_id": "marble-peak-enhanced-v001",
+        "layer_count": 58,
+        "candidate_count": 3991,
+        "fresh_process_reopened": true,
+        "state_matches_capture": true,
+        "dataset_files": 45,
+        "dataset_hashes_checked": true,
+        "candidate_csv_unchanged": true,
+        "portability": "local_shared_datasets; not a self-contained package"
+      }
+    }
+  }
+}

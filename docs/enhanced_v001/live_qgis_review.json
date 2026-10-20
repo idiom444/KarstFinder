@@ -1,0 +1,42 @@
+{
+  "cave-ridge": {
+    "crs": "EPSG:26910",
+    "layers": 53,
+    "leads": 7117,
+    "all_retained_default_visible": true,
+    "filter_roundtrip_count": 3900,
+    "default_subset": "",
+    "dirty_state_preserved": true,
+    "canvas_png": "docs/enhanced_v001/cave-ridge_live_canvas.png"
+  },
+  "denny-mountain": {
+    "crs": "EPSG:26910",
+    "layers": 53,
+    "leads": 2625,
+    "all_retained_default_visible": true,
+    "filter_roundtrip_count": 1234,
+    "default_subset": "",
+    "dirty_state_preserved": true,
+    "canvas_png": "docs/enhanced_v001/denny-mountain_live_canvas.png"
+  },
+  "kaleetan-vicinity": {
+    "crs": "EPSG:26910",
+    "layers": 53,
+    "leads": 2071,
+    "all_retained_default_visible": true,
+    "filter_roundtrip_count": 1001,
+    "default_subset": "",
+    "dirty_state_preserved": true,
+    "canvas_png": "docs/enhanced_v001/kaleetan-vicinity_live_canvas.png"
+  },
+  "marble-peak": {
+    "crs": "EPSG:26910",
+    "layers": 58,
+    "leads": 3991,
+    "all_retained_default_visible": true,
+    "filter_roundtrip_count": 2003,
+    "default_subset": "",
+    "dirty_state_preserved": true,
+    "canvas_png": "docs/enhanced_v001/marble-peak_live_canvas.png"
+  }
+}

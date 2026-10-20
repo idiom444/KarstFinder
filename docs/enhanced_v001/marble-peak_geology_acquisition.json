@@ -1,0 +1,135 @@
+{
+  "area": "marble-peak",
+  "coverage": {
+    "24k": {
+      "polygons_returned": 0,
+      "nominal_scale_denominator": 24000,
+      "scale_note": "nominal compilation scale",
+      "units": []
+    },
+    "mid": {
+      "polygons_returned": 1,
+      "nominal_scale_denominator": 99000,
+      "scale_note": "25–99k range; actual publication scale required",
+      "units": [
+        "unmapped"
+      ]
+    },
+    "100k": {
+      "polygons_returned": 17,
+      "nominal_scale_denominator": 100000,
+      "scale_note": "nominal compilation scale",
+      "units": [
+        "Ec(b)",
+        "JTRmc(e)",
+        "JTRmt(e)",
+        "Jigb(e)",
+        "Ju(e)",
+        "Oit(sv)",
+        "Qad",
+        "Qgo",
+        "TRmb(e)"
+      ]
+    }
+  },
+  "records": [
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/24k_unit_metadata.json",
+      "sha256": "951ebc41b3ddec243f2052a0602dc2c17233f738b6bb7037ecfe105ee10e4c8f",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/49?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/24k_units.geojson",
+      "sha256": "5d8fc40121ecf46568fb91603eaff619d4f2456646fef7a46ebdac749b219265",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/49/query?geometry=603950%2C5321050%2C609150%2C5326250&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CMAP_UNIT_24K%2CMAP_UNIT_24K_ID_CONFIDENCE%2CMAP_UNIT_24K_PUB_NUMBER%2CMAP_UNIT_24K_QUAD_NAME%2CMAP_UNIT_24K_QUAD_UNIT"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/24k_source_metadata.json",
+      "sha256": "4abba0d25b9965f589bfaf7b524cf8e4186d4755975bf62ab1b73c81fb0b66d8",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/42?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/24k_source_catalog.geojson",
+      "sha256": "5d8fc40121ecf46568fb91603eaff619d4f2456646fef7a46ebdac749b219265",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/42/query?geometry=603950%2C5321050%2C609150%2C5326250&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CDATA_SOURCES_24K_PUB_NUMBER%2CDATA_SOURCE_24K_QUAD%2CDATA_SOURCES_24K_CITATION%2CDATA_SOURCE_24K_LINK%2CDATA_SOURCES_24K_STATUS"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/24k_dmu_metadata.json",
+      "sha256": "f40edaa9e5e04fe3072d8448586f5b1abee7bbf677a02b4f5d8a561e796e633f",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/54?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/24k_unit_lithology.json",
+      "sha256": "74859d0defb54a93044545cb806c6ff4bb9342727dfb95ac07badc32f70182d5",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/54/query?f=json&where=1%3D0&outFields=OBJECTID%2CDMU_24K_MAP_UNIT%2CDMU_24K_NAME%2CDMU_24K_FULL_NAME%2CDMU_24K_AGE%2CDMU_24K_GEOMATERIAL%2CDMU_24K_GEOMATERIAL_CONF%2CDMU_24K_PUB_NUMBER%2CDMU_24K_QUAD_NAME%2CDMU_24K_QUAD_UNIT&returnGeometry=false&resultRecordCount=2000"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/mid_unit_metadata.json",
+      "sha256": "f9536338cf81a66882ad5e63c5c356b56424fd5773428a8d4aadfa2e85ec2229",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/11?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/mid_units.geojson",
+      "sha256": "8bef239dee15b52f58ca5b10e3ac370573dca13f129bd7c2abb1736c5e03ec7d",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/11/query?geometry=603950%2C5321050%2C609150%2C5326250&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CMAP_UNIT_INT%2CMAP_UNIT_INT_ID_CONFIDENCE%2CMAP_UNIT_INT_PUB_NUMBER%2CMAP_UNIT_INT_MAP_AND_UNIT"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/mid_source_metadata.json",
+      "sha256": "c114ed9cf483a67611a87ed72affefb6b7659ab5726b54592333a6cc8e3994a9",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/10?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/mid_source_catalog.geojson",
+      "sha256": "9c6cbb8cde833b9f63ce23d8a9f352d053a00a5d82ebcf685046337df818728e",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/10/query?geometry=603950%2C5321050%2C609150%2C5326250&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CDATA_SOURCES_INT_PUB_NUMBER%2CDATA_SOURCES_INT_CITATION%2CDATA_SOURCE_INT_LINK"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/mid_dmu_metadata.json",
+      "sha256": "914ac3ff1be4eb315611135d276736937b76b1cfdc1157e89449154cdbd7cc07",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/12?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/mid_unit_lithology.json",
+      "sha256": "77cbde7d394e1bd61f637f7c4d2fd7c7b241e8633037bbb87c2aaa627ccae124",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/12/query?f=json&where=DMU_INT_MAP_UNIT+IN+%28%27unmapped%27%29&outFields=OBJECTID%2CDMU_INT_MAP_UNIT%2CDMU_INT_NAME%2CDMU_INT_FULL_NAME%2CDMU_INT_AGE%2CDMU_INT_GEOMATERIAL%2CDMU_INT_GEOMATERIAL_CONF%2CDMU_INT_PUB_NUMBER%2CDMU_INT_MAP_AND_UNIT&returnGeometry=false&resultRecordCount=2000"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/100k_unit_metadata.json",
+      "sha256": "866a77e7dfbd1313be45854fe6321b34e3e42b2f8144281fc30e01e97e637748",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/100k_units.geojson",
+      "sha256": "11b2fbd63130d3bf674e1484ae0c61d4dfe8aeaf8074a7ea997bcdaab6313dc9",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11/query?geometry=603950%2C5321050%2C609150%2C5326250&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CMAP_UNIT_100K%2CMAP_UNIT_100K_ID_CONFIDENCE%2CMAP_UNIT_100K_QUAD_NAME%2CMAP_UNIT_100K_QUAD_UNIT"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/100k_source_metadata.json",
+      "sha256": "35676c95e5acc2dc2e169ad614f03008895047e6794d03cd2bb48f79c8b4af46",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/12?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/100k_source_catalog.geojson",
+      "sha256": "9b717a877472297233e24230e5483cdf1fffd3bd5628779591bdb4001adbb2da",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/12/query?geometry=603950%2C5321050%2C609150%2C5326250&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CDATA_SOURCE_100K_QUAD%2CDATA_SOURCE_100K_LINK%2CDATA_SOURCE_100K_PUBLISHER%2CDATA_SOURCE_100K_CITATION"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/100k_dmu_metadata.json",
+      "sha256": "6443c544e30e30b4d64a2f7090f2b7d34545a6ab6c1b2ab67a86f3705a62b444",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/marble-peak/geology/100k_unit_lithology.json",
+      "sha256": "4818670571fbb77498a76a8514e6677014db19071c7cb9985f1740c6322d07c1",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13/query?f=json&where=DMU_100K_MAP_UNIT+IN+%28%27Ec%28b%29%27%2C%27JTRmc%28e%29%27%2C%27JTRmt%28e%29%27%2C%27Jigb%28e%29%27%2C%27Ju%28e%29%27%2C%27Oit%28sv%29%27%2C%27Qad%27%2C%27Qgo%27%2C%27TRmb%28e%29%27%29&outFields=OBJECTID%2CDMU_100K_MAP_UNIT%2CDMU_100K_FULL_NAME%2CDMU_100K_AGE%2CDMU_100K_QUAD_NAME&returnGeometry=false&resultRecordCount=2000"
+    }
+  ],
+  "cave_reference_sources_read": false,
+  "unknown_geology_is_not_unsuitable": true,
+  "notes": [
+    "No generic point/station/vent/fossil datasets requested.",
+    "Finer mapping only overrides where a returned polygon and explicit lithology support it.",
+    "Source catalogs include publications absent from statewide unit coverage; catalog availability does not guarantee a finer map.",
+    "Free-form map pamphlets and historical cave-bearing reports were not opened."
+  ]
+}

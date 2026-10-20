@@ -1,0 +1,209 @@
+{
+  "public_ept_url": "https://usgs-lidar-public.s3.amazonaws.com/WA_KingCo_1_2021/ept.json",
+  "public_ept_header": {
+    "bounds": [
+      -13660166,
+      5968012,
+      -55203,
+      -13550808,
+      6077370,
+      54155
+    ],
+    "boundsConforming": [
+      -13643070,
+      5968012,
+      -2352,
+      -13567904,
+      6077369,
+      1304
+    ],
+    "dataType": "laszip",
+    "hierarchyType": "json",
+    "points": 30991978247,
+    "schema": [
+      {
+        "name": "X",
+        "offset": -13605487,
+        "scale": 0.01,
+        "size": 4,
+        "type": "signed"
+      },
+      {
+        "name": "Y",
+        "offset": 6022691,
+        "scale": 0.01,
+        "size": 4,
+        "type": "signed"
+      },
+      {
+        "name": "Z",
+        "offset": -524,
+        "scale": 0.01,
+        "size": 4,
+        "type": "signed"
+      },
+      {
+        "name": "Intensity",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "ReturnNumber",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "NumberOfReturns",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanDirectionFlag",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "EdgeOfFlightLine",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "Classification",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanAngleRank",
+        "size": 4,
+        "type": "float"
+      },
+      {
+        "name": "UserData",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "PointSourceId",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "GpsTime",
+        "size": 8,
+        "type": "float"
+      },
+      {
+        "name": "ScanChannel",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ClassFlags",
+        "size": 1,
+        "type": "unsigned"
+      }
+    ],
+    "span": 128,
+    "srs": {
+      "authority": "EPSG",
+      "horizontal": "3857",
+      "wkt": "PROJCS[\"WGS 84 / Pseudo-Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_1SP\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"X\",EAST],AXIS[\"Y\",NORTH],EXTENSION[\"PROJ4\",\"+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs\"],AUTHORITY[\"EPSG\",\"3857\"]]"
+    },
+    "version": "1.1.0"
+  },
+  "header_sha256": "bdd9ad1f7fe2e55c7ac55849e05d7ca4b9c3008004f988d0cec7153775457697",
+  "vertical_units_note": "EPT header has horizontal 3857 only; no explicit vertical datum. Not used.",
+  "dnr": {
+    "portal_url": "https://lidarportal.dnr.wa.gov/",
+    "direct_fetch_status": 403,
+    "response_sha256": "32f2fa940d4b4fe19aca1e53a24e5aac29c57b7c5ee78588325b87f1b649c864",
+    "public_catalog_labels": [
+      "King County East 2021 point cloud",
+      "Tulalip 2013 point cloud"
+    ],
+    "help_url": "https://lidarportal.dnr.wa.gov/help.html",
+    "limitation": "Tiled point downloads are documented; no bounded programmatic download source was established in this session. No absence-of-data claim."
+  },
+  "areas": {
+    "cave-ridge": {
+      "study_bbox_epsg3857": [
+        -13519607.49806663,
+        6011450.852703434,
+        -13510600.367495302,
+        6019035.490965261
+      ],
+      "ept_overlap": false,
+      "tnm_catalog_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.41572655325534%2C47.44801911145197%2C-121.40772655325533%2C47.45401911145197&max=100",
+      "candidate_tiles": [
+        {
+          "title": "USGS Lidar Point Cloud WA_KingCounty_2021_B21 King_1447",
+          "sizeInBytes": 632231557,
+          "downloadURL": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/WA_KingCounty_2021_B21/WA_KingCo_2_2021/LAZ/USGS_LPC_WA_KingCounty_2021_B21_King_1447.laz"
+        }
+      ]
+    },
+    "denny-mountain": {
+      "study_bbox_epsg3857": [
+        -13521340.654261837,
+        6009727.700401631,
+        -13516825.658935973,
+        6014256.622412368
+      ],
+      "ept_overlap": false,
+      "tnm_catalog_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.44895080985201%2C47.42381460060326%2C-121.440950809852%2C47.42981460060326&max=100",
+      "candidate_tiles": [
+        {
+          "title": "USGS Lidar Point Cloud WA_KingCounty_2021_B21 King_1317",
+          "sizeInBytes": 655249780,
+          "downloadURL": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/WA_KingCounty_2021_B21/WA_KingCo_2_2021/LAZ/USGS_LPC_WA_KingCounty_2021_B21_King_1317.laz"
+        },
+        {
+          "title": "USGS Lidar Point Cloud WA_KingCounty_2021_B21 King_1318",
+          "sizeInBytes": 630245239,
+          "downloadURL": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/WA_KingCounty_2021_B21/WA_KingCo_2_2021/LAZ/USGS_LPC_WA_KingCounty_2021_B21_King_1318.laz"
+        }
+      ]
+    },
+    "kaleetan-vicinity": {
+      "study_bbox_epsg3857": [
+        -13525358.72058806,
+        6015657.287534055,
+        -13520842.571100727,
+        6020187.348195324
+      ],
+      "ept_overlap": false,
+      "tnm_catalog_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.48376812232797%2C47.45967310490257%2C-121.47576812232796%2C47.46567310490257&max=100",
+      "candidate_tiles": [
+        {
+          "title": "USGS Lidar Point Cloud WA_KingCounty_2021_B21 King_1508",
+          "sizeInBytes": 570074980,
+          "downloadURL": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/WA_KingCounty_2021_B21/WA_KingCo_2_2021/LAZ/USGS_LPC_WA_KingCounty_2021_B21_King_1508.laz"
+        },
+        {
+          "title": "USGS Lidar Point Cloud WA_KingCounty_2021_B21 King_1509",
+          "sizeInBytes": 377136679,
+          "downloadURL": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/WA_KingCounty_2021_B21/WA_KingCo_2_2021/LAZ/USGS_LPC_WA_KingCounty_2021_B21_King_1509.laz"
+        }
+      ]
+    },
+    "marble-peak": {
+      "study_bbox_epsg3857": [
+        -13535395.301616544,
+        6114092.146641338,
+        -13530831.622690342,
+        6118669.565447189
+      ],
+      "ept_overlap": false,
+      "tnm_catalog_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.57414850236398%2C48.054139431691056%2C-121.56614850236397%2C48.060139431691056&max=100",
+      "candidate_tiles": [
+        {
+          "title": "USGS Lidar Point Cloud WA_Western_WA_QL1_LiDAR_2016_B16 q48121A5305",
+          "sizeInBytes": 73074441,
+          "downloadURL": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/WA_Western_WA_QL1_LiDAR_2016_B16/WA_Western_North_2016/LAZ/USGS_LPC_WA_Western_WA_QL1_LiDAR_2016_B16_q48121A5305.laz"
+        }
+      ]
+    }
+  },
+  "acquisition_budget_bytes_per_area": 250000000,
+  "no_outreach": true
+}

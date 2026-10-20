@@ -1,0 +1,141 @@
+{
+  "area": "cave-ridge",
+  "coverage": {
+    "24k": {
+      "polygons_returned": 0,
+      "nominal_scale_denominator": 24000,
+      "scale_note": "nominal compilation scale",
+      "units": []
+    },
+    "mid": {
+      "polygons_returned": 0,
+      "nominal_scale_denominator": 99000,
+      "scale_note": "25–99k range; actual publication scale required",
+      "units": []
+    },
+    "100k": {
+      "polygons_returned": 53,
+      "nominal_scale_denominator": 100000,
+      "scale_note": "nominal compilation scale",
+      "units": [
+        "Ec(2na)",
+        "Ec(2nag)",
+        "Ec(2nas)",
+        "Evb(na)",
+        "Evb(nap)",
+        "Evt(na)",
+        "JTRmt(e)",
+        "MOigd(s)",
+        "Mig(s)",
+        "Migd(s)",
+        "Ovc",
+        "PMmb(e)",
+        "Qa",
+        "Qad(e)",
+        "Qls",
+        "Qta",
+        "wtr"
+      ]
+    }
+  },
+  "records": [
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/24k_unit_metadata.json",
+      "sha256": "66671f31f4ef9331cc317fe2bd48d16abec6d7eb19b3a408affe02a3614b67be",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/49?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/24k_units.geojson",
+      "sha256": "5d8fc40121ecf46568fb91603eaff619d4f2456646fef7a46ebdac749b219265",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/49/query?geometry=615900%2C5252400%2C624100%2C5259600&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CMAP_UNIT_24K%2CMAP_UNIT_24K_ID_CONFIDENCE%2CMAP_UNIT_24K_PUB_NUMBER%2CMAP_UNIT_24K_QUAD_NAME%2CMAP_UNIT_24K_QUAD_UNIT"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/24k_source_metadata.json",
+      "sha256": "ad57c6cd889db05e1aa034b141462edb3b71fc0703abdf623e15fbf0d34fc6ac",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/42?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/24k_source_catalog.geojson",
+      "sha256": "5d8fc40121ecf46568fb91603eaff619d4f2456646fef7a46ebdac749b219265",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/42/query?geometry=615900%2C5252400%2C624100%2C5259600&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CDATA_SOURCES_24K_PUB_NUMBER%2CDATA_SOURCE_24K_QUAD%2CDATA_SOURCES_24K_CITATION%2CDATA_SOURCE_24K_LINK%2CDATA_SOURCES_24K_STATUS"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/24k_dmu_metadata.json",
+      "sha256": "f40edaa9e5e04fe3072d8448586f5b1abee7bbf677a02b4f5d8a561e796e633f",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/54?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/24k_unit_lithology.json",
+      "sha256": "74859d0defb54a93044545cb806c6ff4bb9342727dfb95ac07badc32f70182d5",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer/54/query?f=json&where=1%3D0&outFields=OBJECTID%2CDMU_24K_MAP_UNIT%2CDMU_24K_NAME%2CDMU_24K_FULL_NAME%2CDMU_24K_AGE%2CDMU_24K_GEOMATERIAL%2CDMU_24K_GEOMATERIAL_CONF%2CDMU_24K_PUB_NUMBER%2CDMU_24K_QUAD_NAME%2CDMU_24K_QUAD_UNIT&returnGeometry=false&resultRecordCount=2000"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/mid_unit_metadata.json",
+      "sha256": "c89dd424cbbd422e746c2939e55e6424ee0a3892c0cf5ddcdae7f15be1a02b1a",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/11?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/mid_units.geojson",
+      "sha256": "5d8fc40121ecf46568fb91603eaff619d4f2456646fef7a46ebdac749b219265",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/11/query?geometry=615900%2C5252400%2C624100%2C5259600&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CMAP_UNIT_INT%2CMAP_UNIT_INT_ID_CONFIDENCE%2CMAP_UNIT_INT_PUB_NUMBER%2CMAP_UNIT_INT_MAP_AND_UNIT"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/mid_source_metadata.json",
+      "sha256": "c114ed9cf483a67611a87ed72affefb6b7659ab5726b54592333a6cc8e3994a9",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/10?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/mid_source_catalog.geojson",
+      "sha256": "5d8fc40121ecf46568fb91603eaff619d4f2456646fef7a46ebdac749b219265",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/10/query?geometry=615900%2C5252400%2C624100%2C5259600&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CDATA_SOURCES_INT_PUB_NUMBER%2CDATA_SOURCES_INT_CITATION%2CDATA_SOURCE_INT_LINK"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/mid_dmu_metadata.json",
+      "sha256": "914ac3ff1be4eb315611135d276736937b76b1cfdc1157e89449154cdbd7cc07",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/12?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/mid_unit_lithology.json",
+      "sha256": "77cbde7d394e1bd61f637f7c4d2fd7c7b241e8633037bbb87c2aaa627ccae124",
+      "url": "https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer/12/query?f=json&where=1%3D0&outFields=OBJECTID%2CDMU_INT_MAP_UNIT%2CDMU_INT_NAME%2CDMU_INT_FULL_NAME%2CDMU_INT_AGE%2CDMU_INT_GEOMATERIAL%2CDMU_INT_GEOMATERIAL_CONF%2CDMU_INT_PUB_NUMBER%2CDMU_INT_MAP_AND_UNIT&returnGeometry=false&resultRecordCount=2000"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/100k_unit_metadata.json",
+      "sha256": "6c75b724f99247631b77e063f6f3461e34ba38e387ffeeecc9927a4be2a759d3",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/100k_units.geojson",
+      "sha256": "daeaaa9aa64841225c16756c9ab8708307f63e888375639433f8855a08f1ae14",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/11/query?geometry=615900%2C5252400%2C624100%2C5259600&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CMAP_UNIT_100K%2CMAP_UNIT_100K_ID_CONFIDENCE%2CMAP_UNIT_100K_QUAD_NAME%2CMAP_UNIT_100K_QUAD_UNIT"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/100k_source_metadata.json",
+      "sha256": "35676c95e5acc2dc2e169ad614f03008895047e6794d03cd2bb48f79c8b4af46",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/12?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/100k_source_catalog.geojson",
+      "sha256": "3c2fb87a33084e54c11d84b9399f1b9b8a4943514276cb081596e03d796625de",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/12/query?geometry=615900%2C5252400%2C624100%2C5259600&geometryType=esriGeometryEnvelope&inSR=26910&outSR=26910&spatialRel=esriSpatialRelIntersects&resultRecordCount=2000&where=1%3D1&f=geojson&outFields=OBJECTID%2CDATA_SOURCE_100K_QUAD%2CDATA_SOURCE_100K_LINK%2CDATA_SOURCE_100K_PUBLISHER%2CDATA_SOURCE_100K_CITATION"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/100k_dmu_metadata.json",
+      "sha256": "6443c544e30e30b4d64a2f7090f2b7d34545a6ab6c1b2ab67a86f3705a62b444",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13?f=json"
+    },
+    {
+      "path": "data/raw/enhanced_v001/cave-ridge/geology/100k_unit_lithology.json",
+      "sha256": "09ff6e9083d6b2c0e5b7da9333b256b9a13838de84048e76558c7bcb714f52b4",
+      "url": "https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer/13/query?f=json&where=DMU_100K_MAP_UNIT+IN+%28%27Ec%282na%29%27%2C%27Ec%282nag%29%27%2C%27Ec%282nas%29%27%2C%27Evb%28na%29%27%2C%27Evb%28nap%29%27%2C%27Evt%28na%29%27%2C%27JTRmt%28e%29%27%2C%27MOigd%28s%29%27%2C%27Mig%28s%29%27%2C%27Migd%28s%29%27%2C%27Ovc%27%2C%27PMmb%28e%29%27%2C%27Qa%27%2C%27Qad%28e%29%27%2C%27Qls%27%2C%27Qta%27%2C%27wtr%27%29&outFields=OBJECTID%2CDMU_100K_MAP_UNIT%2CDMU_100K_FULL_NAME%2CDMU_100K_AGE%2CDMU_100K_QUAD_NAME&returnGeometry=false&resultRecordCount=2000"
+    }
+  ],
+  "cave_reference_sources_read": false,
+  "unknown_geology_is_not_unsuitable": true,
+  "notes": [
+    "No generic point/station/vent/fossil datasets requested.",
+    "Finer mapping only overrides where a returned polygon and explicit lithology support it.",
+    "Source catalogs include publications absent from statewide unit coverage; catalog availability does not guarantee a finer map.",
+    "Free-form map pamphlets and historical cave-bearing reports were not opened."
+  ]
+}

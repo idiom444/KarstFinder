@@ -1,0 +1,103 @@
+{
+  "area": "marble-peak",
+  "baseline_count": 1525,
+  "retained_baseline_count": 1525,
+  "new_leads": 2466,
+  "total": 3991,
+  "by_kind": {
+    "cliff": 3211,
+    "depression": 30,
+    "hydrology": 750
+  },
+  "by_geology": {
+    "mapped_carbonate": 5,
+    "contact_uncertain": 29,
+    "possible_mixed": 2014,
+    "unknown": 1925,
+    "mapped_noncarbonate": 18
+  },
+  "single_detection_method_count": 3991,
+  "score_range": [
+    0.13999999999999999,
+    1.0
+  ],
+  "scores_below_025_retained": 142,
+  "new_noise_suppression": {
+    "new_component_intersects_QA_exclusion": 109
+  },
+  "spearman_on_identical_baseline_objects": {
+    "baseline_score_vs_slope": 0.32116347125478156,
+    "enhanced_score_vs_slope": 0.20479115141504137,
+    "baseline_min_residual_vs_q10": 0.8491727356351905
+  },
+  "comparison_top20": {
+    "enhanced": [
+      "marble-peak:C-015095",
+      "marble-peak:C-015225",
+      "marble-peak:C-015597",
+      "marble-peak:C-016118",
+      "marble-peak:C-014539",
+      "marble-peak:C-014806",
+      "marble-peak:C-015455",
+      "marble-peak:C-015522",
+      "marble-peak:C-015644",
+      "marble-peak:C-015854",
+      "marble-peak:C-015904",
+      "marble-peak:C-016740",
+      "marble-peak:C-016775",
+      "marble-peak:C-016914",
+      "marble-peak:C-017099",
+      "marble-peak:C-017224",
+      "marble-peak:C-017243",
+      "marble-peak:C-000026",
+      "marble-peak:C-000030",
+      "marble-peak:C-000036"
+    ],
+    "geology_only": [
+      "marble-peak:C-015095",
+      "marble-peak:C-015225",
+      "marble-peak:C-015597",
+      "marble-peak:C-016118",
+      "marble-peak:C-014453",
+      "marble-peak:C-014466",
+      "marble-peak:C-014468",
+      "marble-peak:C-014483",
+      "marble-peak:C-014539",
+      "marble-peak:C-014806",
+      "marble-peak:C-015212",
+      "marble-peak:C-015258",
+      "marble-peak:C-015259",
+      "marble-peak:C-015455",
+      "marble-peak:C-015522",
+      "marble-peak:C-015598",
+      "marble-peak:C-015633",
+      "marble-peak:C-015644",
+      "marble-peak:C-015687",
+      "marble-peak:C-015854"
+    ],
+    "simple_slope": [
+      "marble-peak:E-H-07107465d14d23ab",
+      "marble-peak:E-H-b3e2a1d69dbe523e",
+      "marble-peak:E-D-a6b9702063825801",
+      "marble-peak:E-H-5ecdf6504e782f72",
+      "marble-peak:E-H-404f6df804ec5439",
+      "marble-peak:E-H-f72879e83f84968d",
+      "marble-peak:E-H-a9638ff57f9b73f1",
+      "marble-peak:E-H-45e05ca26e6c6e30",
+      "marble-peak:E-H-2ae5d9efeb7b3195",
+      "marble-peak:E-D-0f7d250c74da6ccc",
+      "marble-peak:E-C-62ad4b8e8ddc10de",
+      "marble-peak:E-H-ef0c140744206dc4",
+      "marble-peak:E-H-b3e04edca3a06f04",
+      "marble-peak:E-H-8feaa8f48f01a9ef",
+      "marble-peak:E-H-d597136465f592a9",
+      "marble-peak:E-H-58ec5d10ad45ea58",
+      "marble-peak:E-H-0662b668da74aa79",
+      "marble-peak:E-H-59c4ea1a66359ac5",
+      "marble-peak:E-H-56d8ac24be5061da",
+      "marble-peak:E-H-5ea99d8c4f4a6e2c"
+    ]
+  },
+  "interpretation": "Descriptive usefulness/coverage comparison only; no known cave data, cave accuracy or independent validation. New leads are unverified surface/setting hypotheses.",
+  "slope_audit": "Original exposure, landscape slope and cliff morphology all encode steepness. Enhanced cliff support uses robust residual quantiles plus a fixed weak cliff-detection floor; slope is retained as measurement/threshold, not a second amplitude bonus."
+}

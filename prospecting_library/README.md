@@ -220,3 +220,21 @@ inputs, outputs, original candidate checksums and unvalidated prospecting
 snapshot. Source-year/quality masks and the shared data/results are required to
 reopen the saved maps. These literature-informed choices are not independent
 blind holdouts. Original Cave Ridge/Denny entries and archives remain intact.
+
+
+## Enhanced v001 analyses
+
+All four original entries are retained, with separately saved enhanced entries:
+`cave-ridge-enhanced-v001`, `denny-mountain-enhanced-v001`,
+`kaleetan-vicinity-enhanced-v001`, and `marble-peak-enhanced-v001`.
+Open `prospecting_library/ID/ID.qgz` directly, or `./library open ID`.
+The enhanced maps retain all 3,418 original leads and add terrain/drainage
+hypotheses; they use exact continuous strength colors, separate geological
+uncertainty and source-unit zones. They are unvalidated, not cave entrances.
+
+See [enhanced workflow](../docs/enhanced_v001/WORKFLOW.md) for filters, method
+views, source data requirements and private notes. Original notes remain under
+their original IDs; enhanced rows retain original ID/checksum links. All entries
+start Not yet investigated. The first enhanced map revision preserves the
+initial review style; the next improves outline contrast on bright cliffs
+without changing any evidence strength or palette anchor. Both archives remain.

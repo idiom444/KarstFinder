@@ -1,0 +1,504 @@
+{
+  "area_id": "denny-mountain-enhanced-v001",
+  "created_utc": "2026-10-20T00:09:27.614601+00:00",
+  "status": "Not yet investigated",
+  "personal_notes": "prospecting_library/denny-mountain-enhanced-v001/local/field_notes.json",
+  "revision": 1,
+  "updated_utc": "2026-10-20T00:09:27.614682+00:00",
+  "change": "map registered from saved project",
+  "metadata_path": "prospecting_library/denny-mountain-enhanced-v001/versions/v000001.json",
+  "name": "Denny Mountain — Enhanced Analysis v001",
+  "general_location": "Denny Mountain, Washington Cascades",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      615850,
+      5252250,
+      618850,
+      5255250
+    ]
+  },
+  "geological_summary": "Unvalidated union of preserved original leads and enhanced terrain/hydrological hypotheses. DNR 1:100,000 carbonate/mixed-unit zones; unknown geology retained. Continuous ordinal evidence strength, separate uncertainty. No cave entrance or access route confirmed.",
+  "specification": {
+    "name": "Denny Mountain — Enhanced Analysis v001",
+    "general_location": "Denny Mountain, Washington Cascades",
+    "study_extent": {
+      "crs": "EPSG:26910",
+      "bounds": [
+        615850,
+        5252250,
+        618850,
+        5255250
+      ]
+    },
+    "geological_summary": "Unvalidated union of preserved original leads and enhanced terrain/hydrological hypotheses. DNR 1:100,000 carbonate/mixed-unit zones; unknown geology retained. Continuous ordinal evidence strength, separate uncertainty. No cave entrance or access route confirmed.",
+    "candidate_csv": "results/enhanced_v001_denny-mountain/candidates.csv",
+    "analysis_references": [
+      "configs/enhanced_v001.json",
+      "docs/enhanced_v001/METHODOLOGY.md",
+      "docs/enhanced_v001/GEOLOGY_SOURCES.md",
+      "results/enhanced_v001_denny-mountain/run_manifest.json"
+    ]
+  },
+  "candidate_count": 2625,
+  "highest_priority_candidates": [
+    {
+      "object_id": "denny-mountain:C-007414",
+      "rank": "1",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007697",
+      "rank": "2",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007707",
+      "rank": "3",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007722",
+      "rank": "4",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007828",
+      "rank": "5",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007841",
+      "rank": "6",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007851",
+      "rank": "7",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007956",
+      "rank": "8",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-007983",
+      "rank": "9",
+      "kind": "cliff",
+      "score": "1.0"
+    },
+    {
+      "object_id": "denny-mountain:C-008008",
+      "rank": "10",
+      "kind": "cliff",
+      "score": "1.0"
+    }
+  ],
+  "candidate_csv": "results/enhanced_v001_denny-mountain/candidates.csv",
+  "candidate_csv_sha256": "09b944e7378403a97f02f04c048adbe038a4000e82f0c28a67aa26b77c5c1b00",
+  "analysis_references": [
+    "configs/enhanced_v001.json",
+    "docs/enhanced_v001/METHODOLOGY.md",
+    "docs/enhanced_v001/GEOLOGY_SOURCES.md",
+    "results/enhanced_v001_denny-mountain/run_manifest.json"
+  ],
+  "analysis_reference_hashes": {
+    "configs/enhanced_v001.json": "663c4ede021ae13227291298012d285be6542edb1091f0296a8a2a1302101eb8",
+    "docs/enhanced_v001/METHODOLOGY.md": "8aee9a08bf64cf3803b1071ec8fafde75cf5453df2d2c2f154b12d0adc00a309",
+    "docs/enhanced_v001/GEOLOGY_SOURCES.md": "50cf3b6e02bb793c644536088c42a2058df63cb55b2478e8afd3b501615c5c81",
+    "results/enhanced_v001_denny-mountain/run_manifest.json": "a5513ebe8fd099b7aef64da229569e3d91e265ce044d185ac65a8700f4e72008"
+  },
+  "project_path": "prospecting_library/denny-mountain-enhanced-v001/denny-mountain-enhanced-v001.qgz",
+  "archived_project": "prospecting_library/denny-mountain-enhanced-v001/map-v000001.qgz",
+  "project_sha256": "e2f44b3f412196ab076ad2f95d81daf884e6cb44ef158e40d574b35ab3c9c377",
+  "map_revision": 1,
+  "state_path": "prospecting_library/denny-mountain-enhanced-v001/versions/v000001.state.json",
+  "verification_path": "prospecting_library/denny-mountain-enhanced-v001/versions/v000001.verification.json",
+  "dataset_references": [
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/ndvi.tif",
+      "bytes": 50891922,
+      "sha256": "19ac8ba0d29787df7b5f3d31d32ffc4de3337338cff7fd58b59ba87f17a4cbd2",
+      "layers": [
+        "ndvi • screening proxy"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/possible_exposed_surface_mask.tif",
+      "bytes": 1110452,
+      "sha256": "bd9847a98d3f7b1092241768bd944bda7e854efc0e62d40b4b45a8f5c295d677",
+      "layers": [
+        "possible exposed surface mask • screening proxy"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/rgbnir.tif",
+      "bytes": 89824723,
+      "sha256": "1953c20cbd495a519743e41795f3789bf05a90f55a66dbbb111ab51d8dfd98c9",
+      "layers": [
+        "RGB • native 0.6 m; NIR retained as band 4"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/imagery/vegetation_mask.tif",
+      "bytes": 1728743,
+      "sha256": "8d7132df7960775cc34dc162d164580a0aa4b09df55702b775b6e4e4f7c985ed",
+      "layers": [
+        "vegetation mask • screening proxy"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/depth_below_local_crest_210m.tif",
+      "bytes": 299530,
+      "sha256": "f61a2dd56307ed26e880f1b8bab9451e55835b04e518dd456084c633452ba99f",
+      "layers": [
+        "depth below local crest 210m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/depth_below_local_crest_610m.tif",
+      "bytes": 306661,
+      "sha256": "e36d775fa5bea9a04d2f7d53283ddabec2fdb4c5ba686cf1cbc7e1d66ce133cb",
+      "layers": [
+        "depth below local crest 610m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/depth_below_modeled_divide.tif",
+      "bytes": 334790,
+      "sha256": "d405e17ec4a2e327678d31e68bc53f67e779966a16a8f95e65d68334a29596f0",
+      "layers": [
+        "MODELED terrain proxy • depth below modeled divide"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/height_above_local_floor_210m.tif",
+      "bytes": 300531,
+      "sha256": "8a6e2df65a5c7685be51e1751e1ac08cc1f3731c57d72cc9e5163856f769cb6a",
+      "layers": [
+        "height above local floor 210m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/height_above_local_floor_610m.tif",
+      "bytes": 310580,
+      "sha256": "e9cf3e16ef2eda8bcfe9ff181321bf61879365e6406541707d9509f806d06720",
+      "layers": [
+        "height above local floor 610m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/height_above_modeled_drainage.tif",
+      "bytes": 331107,
+      "sha256": "b716ec9cd2260c70729819cc6bc536974205322e92fef3d8d23ce56f3dd155f4",
+      "layers": [
+        "MODELED terrain proxy • height above modeled drainage"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/hillshade_10m.tif",
+      "bytes": 85074,
+      "sha256": "edc57f870e543728e52b27fa15871e9fcb12ef669de99ab6f97b4dc80063933b",
+      "layers": [
+        "hillshade 10m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/hydrologic_edge_contamination.tif",
+      "bytes": 1632,
+      "sha256": "c57d743abc387f4330ec3a900b490597266f92cd07f459a3cb6bcd8f293255d4",
+      "layers": [
+        "hydrologic edge contamination"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/line_filter_135.tif",
+      "bytes": 268209,
+      "sha256": "6ce4b8b6d3acd67b9e954fc6043938a68f94c9b1d10dbe23b54744d66543d6a6",
+      "layers": [
+        "EXPERIMENTAL texture • line filter 135"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/line_filter_45.tif",
+      "bytes": 268252,
+      "sha256": "51ae0411b7a6a8f3339d571a1f8ece44a72c6bde2635fcf18ebc9b438593ba8e",
+      "layers": [
+        "EXPERIMENTAL texture • line filter 45"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/line_filter_horizontal.tif",
+      "bytes": 263985,
+      "sha256": "7d6d621853d17dad7f19147dbf1dcdbe264f660a54eea43d5b0b4808eedc4f05",
+      "layers": [
+        "EXPERIMENTAL texture • line filter horizontal"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/line_filter_vertical.tif",
+      "bytes": 268178,
+      "sha256": "c5647fc8e13ab5cdb5baa91b63028c3f4bae74628f293ad5f833c39dcca03d2f",
+      "layers": [
+        "EXPERIMENTAL texture • line filter vertical"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/local_relief_210m.tif",
+      "bytes": 280638,
+      "sha256": "766bd87bfa3fb28eb5d0a5c17880da227e706ffb966db1235b57e72fd035534a",
+      "layers": [
+        "local relief 210m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/local_relief_610m.tif",
+      "bytes": 250347,
+      "sha256": "642bc35cf121992657dc513a0dc4a32670711fb981d38c5d1ad11686836c222c",
+      "layers": [
+        "local relief 610m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/modeled_streams_100000m2.tif",
+      "bytes": 4185,
+      "sha256": "7f8863a40aa13da462556595c4236378a0f842dacd9d17e608bb18616bca15cd",
+      "layers": [
+        "MODELED terrain proxy • modeled streams 100000m2"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/modeled_streams_25000m2.tif",
+      "bytes": 6727,
+      "sha256": "c88d72d2c7a39176deb09dc3af99a00610de3c880972a812dac3508fe7dca377",
+      "layers": [
+        "MODELED terrain proxy • modeled streams 25000m2"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/modeled_streams_5000m2.tif",
+      "bytes": 11185,
+      "sha256": "2210e828e86a8a7b0d087f3b88e36a4add18bde27b3d62d725ef3403e6d416d5",
+      "layers": [
+        "MODELED terrain proxy • modeled streams 5000m2"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/normalized_drainage_divide_position.tif",
+      "bytes": 291633,
+      "sha256": "fbace20e51248e690243a222449e5b30fe2ee824ed0188e5bce926ea5d97dcb7",
+      "layers": [
+        "MODELED terrain proxy • normalized drainage divide position"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/plan_curvature.tif",
+      "bytes": 339833,
+      "sha256": "afe40b8e584fdc97e225ae221bbb26684b00f09bcfdf131f6391ae7aeb8db93d",
+      "layers": [
+        "plan curvature"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/profile_curvature.tif",
+      "bytes": 338730,
+      "sha256": "22907bfcad15284868f4312f8f8d5dc0d67ee32217a34943401adf4166373967",
+      "layers": [
+        "profile curvature"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/relative_position_210m.tif",
+      "bytes": 338687,
+      "sha256": "b97a986aba0f5602c67939652f1e6642fd9c249113e21fb27251c16d116f3d45",
+      "layers": [
+        "relative position 210m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/relative_position_610m.tif",
+      "bytes": 335583,
+      "sha256": "c9cbfd03d98501d2e6aa1afe87f062d54a6cb1e4832859af24d4f790d18c91c6",
+      "layers": [
+        "relative position 610m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/residual_11m.tif",
+      "bytes": 26941940,
+      "sha256": "446b7c2860ef6dcae507d91c5b4c05bd95f15587920842a69c0575972f37815d",
+      "layers": [
+        "residual 11m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/residual_31m.tif",
+      "bytes": 33219382,
+      "sha256": "f6e79bb864a44a8449aa8ba8cbeaee882383f21a203f4853e7ff298e9c2ca10e",
+      "layers": [
+        "residual 31m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/residual_61m.tif",
+      "bytes": 33398889,
+      "sha256": "b264638ee511831956f2471f2781ecf86d6761bc780a5e9b2641673477616594",
+      "layers": [
+        "residual 61m"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/ruggedness_index.tif",
+      "bytes": 322369,
+      "sha256": "3bb0a0f862b0aaab7ce58f36199fa61eb13d4d762d27cdaee36f848e77cf3b9a",
+      "layers": [
+        "ruggedness index"
+      ]
+    },
+    {
+      "path": "data/processed/enhanced_v001/denny-mountain/terrain/slope_10m.tif",
+      "bytes": 322019,
+      "sha256": "67566061e0783c1939574594d7b12d4702d19c6afec84f5da6b7dcba9cd51217",
+      "layers": [
+        "slope 10m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif",
+      "bytes": 190311,
+      "sha256": "14046f556e232ed73aec997c37e5dd76ad1f84157c172313ff6b6fc55e9dfa38",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/depression_depth_1m.tif.aux.xml",
+      "bytes": 425,
+      "sha256": "131d94403ea70de756d6fc1414befc3017f6cdc582903115d1466f9d599e8498",
+      "layers": [
+        "depression depth 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/feature_quality_1m.tif",
+      "bytes": 18111,
+      "sha256": "2a2eb0841a5cbd9bd3a454016954531139cf7a76d1e85da31e5e2a314a23fe74",
+      "layers": [
+        "feature quality 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/feature_quality_1m.tif.aux.xml",
+      "bytes": 408,
+      "sha256": "0b902001b9f9c8144ee74ed1a598d78467e781697fd9be7714b71028f3a22c37",
+      "layers": [
+        "feature quality 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif",
+      "bytes": 7540467,
+      "sha256": "9896a9f106c9fec7346f7554c7877fac6986ceb76289e5e697576d5a9300ea16",
+      "layers": [
+        "Bare-earth hillshade • DEM cannot see overhangs"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/hillshade_1m.tif.aux.xml",
+      "bytes": 408,
+      "sha256": "d5cdf2d877b7ffe39b83f92647168e094373fe899c7527f6f58c0a21b4c06e56",
+      "layers": [
+        "Bare-earth hillshade • DEM cannot see overhangs"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif",
+      "bytes": 31563227,
+      "sha256": "e8ef572d699e49afa9e420b55b93619921c74396a5555aa1bb17262cb148a2e7",
+      "layers": [
+        "slope 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/slope_1m.tif.aux.xml",
+      "bytes": 436,
+      "sha256": "212ce9e546e4827dc130baf9ba7c424ef8091aeb989f9ca9dcaa6ad19d14292b",
+      "layers": [
+        "slope 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/source_epoch_1m.tif",
+      "bytes": 38408,
+      "sha256": "7c3f698d17fa5894a753bde8e314ec488fc7b1045265d5623d43b6341e47e344",
+      "layers": [
+        "source epoch 1m"
+      ]
+    },
+    {
+      "path": "results/denny_v001_features/source_epoch_1m.tif.aux.xml",
+      "bytes": 413,
+      "sha256": "851e448c8f4dc7b901431427cfe98c39b1420d842a22e22d69732eb17877c82e",
+      "layers": [
+        "source epoch 1m"
+      ]
+    },
+    {
+      "path": "results/enhanced_v001_denny-mountain/display_strength_10m.tif",
+      "bytes": 23747,
+      "sha256": "15f6a486c5b07ac3788562cdb950141f081d15f3b6116cc50cd167afe2a934a9",
+      "layers": [
+        "Strength index"
+      ]
+    },
+    {
+      "path": "results/enhanced_v001_denny-mountain/geology.gpkg",
+      "bytes": 229376,
+      "sha256": "f759b628574b125a2a803d9b96fa17ec3e4a3fd87f9b6f0cacacd6722044d54b",
+      "layers": [
+        "All geological units • unknown is not unsuitable",
+        "Approved study extent",
+        "Geological zones • source-unit footprints; not proximity clusters",
+        "Mapped bedding/structure observations • source attributes",
+        "Mapped contacts • neutral context",
+        "Mapped faults • neutral context"
+      ]
+    },
+    {
+      "path": "results/enhanced_v001_denny-mountain/hydrological_setting_mask_10m.tif",
+      "bytes": 1950,
+      "sha256": "f6ffcd2f9d56833717852acb744518f8694a4b1a0515e7b44a5072deadae6fa2",
+      "layers": [
+        "Hydrological setting mask • not a spring/sink observation"
+      ]
+    },
+    {
+      "path": "results/enhanced_v001_denny-mountain/registry.gpkg",
+      "bytes": 62058496,
+      "sha256": "310bd612df2cb789d0b723b2f6aacec8b84c2ae71253e9d07789e8830cbc8a1a",
+      "layers": [
+        "ALL leads • exact continuous strength; no minimum cutoff",
+        "Lead footprints • original and enhanced geometries retained",
+        "Mapped-carbonate support",
+        "Preserved baseline lead coordinates",
+        "Single detection method • explicitly retained",
+        "cliff • inspect complete method view",
+        "depression • inspect complete method view",
+        "hydrology • inspect complete method view",
+        "structure • inspect complete method view"
+      ]
+    }
+  ],
+  "portability": "local_shared_datasets; not a self-contained package",
+  "layer_count": 53,
+  "source_project": "qgis/KarstFinder_denny-mountain_enhanced_v001.qgz"
+}

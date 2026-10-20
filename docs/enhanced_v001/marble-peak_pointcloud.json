@@ -1,0 +1,47 @@
+{
+  "area": "marble-peak",
+  "optional": true,
+  "status": "usable_partial",
+  "score_weight": 0,
+  "catalog": {
+    "path": "data/raw/enhanced_v001/marble-peak/pointcloud/catalog.json",
+    "sha256": "4c7802cb2e3d2ab7342cf5becda30db42cf280d9a5d24c2a721286b484af820e",
+    "request_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.57414850236398%2C48.054139431691056%2C-121.56614850236397%2C48.060139431691056&max=100"
+  },
+  "source": {
+    "url": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/WA_Western_WA_QL1_LiDAR_2016_B16/WA_Western_North_2016/LAZ/USGS_LPC_WA_Western_WA_QL1_LiDAR_2016_B16_q48121A5305.laz",
+    "sha256": "d2cc54e92b39871da5350567fdd23579b004127aa99a61fd0a3ca7d663867a28",
+    "bytes": 73074441,
+    "title": "USGS Lidar Point Cloud WA_Western_WA_QL1_LiDAR_2016_B16 q48121A5305"
+  },
+  "ground_points": 155369,
+  "vertical_source_units": "US survey foot",
+  "vertical_conversion_to_m": 0.3048006096012192,
+  "vertical_datum": "NAVD88 retained, no fitted datum offset",
+  "bounds_utm": [
+    606291.4948911112,
+    5323389.99081949,
+    606791.4948911112,
+    5323889.99081949
+  ],
+  "products": {
+    "data/processed/enhanced_v001/marble-peak/pointcloud/source_header.json": "b51374918f5e1c8aa1b9e522be00771e1bd86f348477c001eea049707c71bb1e",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/crop_pipeline.json": "25e6290d05d3b4f954b0c7fbb773c3583197c30034ce700d6ab8f58b5fa262ba",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/ground_crop.laz": "ebb5d22615d4396c570fe6f84520ba8e95c741d9e749f84d1bae60544e5551c5",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/all_return_count.tif": "73b28ecf21f6f3db280bbd4c4b6cc12384f7da528bd33b7ac4d95afc5a8aceb9",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/normals_pipeline.json": "a7008c63d96c9f04d726f7bab710e4857c2560f0c4ef57f738a95e5bfaac5b4c",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/ground_return_count.tif": "7aeef1a1adfb7ce08688ee12daa383e3c2144c1bbba16bf594980c1ba25eec47",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/ground_z_stdev.tif": "c18aa05d7d7f4fcc4fb93c95be630f4d687303e16c93f7ff851d29eec7a00238",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/normal_z.tif": "f8351857df913c30ed58bec5fcd656f35e1e808844390cbc243f50a470a330dd",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/surface_curvature.tif": "9d4aa0580f59ebf9f5f24546d08883bb04bfaf2ee8cee9d134d967da62faec3d",
+    "data/processed/enhanced_v001/marble-peak/pointcloud/ground_normals.laz": "61dcdf1951638f4539b44b574dc96a4cbe3f58defb88f2ceb9c8330592f72b95"
+  },
+  "limitations": [
+    "Only a partial 500 m geology-centered window is sampled; blank cells mean absent coverage, not openings.",
+    "Classified ground only. Vertical/overhanging surfaces may be absent or misclassified.",
+    "KNN normals and covariance curvature mix scan geometry, sampling and real surface shape; experimental context only.",
+    "Z standard deviation in 2 m bins includes slope and is not detrended rock-face roughness.",
+    "Normals near crop boundary have truncated neighborhoods; no point-cloud score bonus is assigned.",
+    "Recess/entrance recognition is not implemented or claimed. DEM fallback remains active."
+  ]
+}

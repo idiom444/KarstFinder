@@ -1,0 +1,13 @@
+{
+  "area": "denny-mountain",
+  "optional": true,
+  "status": "unavailable",
+  "score_weight": 0,
+  "catalog": {
+    "path": "data/raw/enhanced_v001/denny-mountain/pointcloud/catalog.json",
+    "sha256": "dace4ec33f4629a77cfe30b5aab66650bdd52551721cb8b3f9e407b4b9a4c9fd",
+    "request_url": "https://tnmaccess.nationalmap.gov/api/v1/products?datasets=Lidar+Point+Cloud+%28LPC%29&bbox=-121.44895080985201%2C47.42381460060326%2C-121.440950809852%2C47.42981460060326&max=100"
+  },
+  "reason": "No tile within declared 250 MB budget. Public KingCo EPT footprint does not cover approved mountain areas; no requester-pays data used.",
+  "fallback": "DEM remains enabled; unavailable point-cloud fields NULL."
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Denny Mountain — Enhanced Analysis v001",
+  "general_location": "Denny Mountain, Washington Cascades",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      615850,
+      5252250,
+      618850,
+      5255250
+    ]
+  },
+  "geological_summary": "Unvalidated union of preserved original leads and enhanced terrain/hydrological hypotheses. DNR 1:100,000 carbonate/mixed-unit zones; unknown geology retained. Continuous ordinal evidence strength, separate uncertainty. No cave entrance or access route confirmed.",
+  "candidate_csv": "results/enhanced_v001_denny-mountain/candidates.csv",
+  "analysis_references": [
+    "configs/enhanced_v001.json",
+    "docs/enhanced_v001/METHODOLOGY.md",
+    "docs/enhanced_v001/GEOLOGY_SOURCES.md",
+    "results/enhanced_v001_denny-mountain/run_manifest.json"
+  ]
+}

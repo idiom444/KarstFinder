@@ -1,0 +1,124 @@
+{
+  "area": "marble-peak",
+  "status": "usable",
+  "optional": true,
+  "score_weight": 0,
+  "sources": [
+    {
+      "item_id": "wa_m_4812160_sw_10_060_20231006_20240209",
+      "datetime": "2023-10-06T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/48121/m_4812160_sw_10_060_20231006_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/marble-peak/imagery/wa_m_4812160_sw_10_060_20231006_20240209.tif",
+      "sha256": "e1caea521af9999de07bfa546eb70f869f072bc5159f217c0a4fd8d55c7960b1",
+      "geotransform": [
+        605049.6,
+        0.6,
+        0.0,
+        5324448.0,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    },
+    {
+      "item_id": "wa_m_4812160_se_10_060_20231006_20240209",
+      "datetime": "2023-10-06T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/48121/m_4812160_se_10_060_20231006_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/marble-peak/imagery/wa_m_4812160_se_10_060_20231006_20240209.tif",
+      "sha256": "e662b89be7bd111ea13ff10ed69f2423ae1dee0ab6a18b0b2bc51e7c4b472378",
+      "geotransform": [
+        606900.0,
+        0.6,
+        0.0,
+        5324538.0,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    },
+    {
+      "item_id": "wa_m_4812160_nw_10_060_20231006_20240209",
+      "datetime": "2023-10-06T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/48121/m_4812160_nw_10_060_20231006_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/marble-peak/imagery/wa_m_4812160_nw_10_060_20231006_20240209.tif",
+      "sha256": "e35729285d4eb34a1d9a896a89bceaafc6c9ffc217752c5c88ff08fe8665fb24",
+      "geotransform": [
+        605049.6,
+        0.6,
+        0.0,
+        5325150.0,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    },
+    {
+      "item_id": "wa_m_4812160_ne_10_060_20231006_20240209",
+      "datetime": "2023-10-06T16:00:00Z",
+      "native_resolution_m": 0.6,
+      "asset_url": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2023/wa_060cm_2023/48121/m_4812160_ne_10_060_20231006_20240209.tif",
+      "bands": [
+        "red",
+        "green",
+        "blue",
+        "nir"
+      ],
+      "path": "data/raw/enhanced_v001/marble-peak/imagery/wa_m_4812160_ne_10_060_20231006_20240209.tif",
+      "sha256": "0ad63d7300bed6703514b4e3d14e2d52df9051c19a9af81293a16e792ccf066f",
+      "geotransform": [
+        606768.0,
+        0.6,
+        0.0,
+        5325150.0,
+        0.0,
+        -0.6
+      ],
+      "native_crs": "PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]]",
+      "operation": "native pixel crop from RGBIR COG; no contrast stretch or band substitution"
+    }
+  ],
+  "catalog": {
+    "path": "data/raw/enhanced_v001/marble-peak/imagery/stac_catalog.json",
+    "sha256": "5858e119d222e90c57111d5793991576fe3058d19f14777b47795c9c33b5cc4d",
+    "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=naip&bbox=-121.59052476041701%2C48.04348443448274%2C-121.5495285351048%2C48.070968317184665&limit=100&datetime=2020-01-01T00%3A00%3A00Z%2F2026-10-20T00%3A00%3A00Z"
+  },
+  "resolution_m": 0.6,
+  "coverage_fraction": 0.9997644,
+  "vegetation_fraction_among_valid": 0.30983315669171657,
+  "products": {
+    "data/processed/enhanced_v001/marble-peak/imagery/rgbnir.tif": "ab90203a055edd48e6d1949251892b0a04fc1feda369d06ba7c2792676baaaa2",
+    "data/processed/enhanced_v001/marble-peak/imagery/ndvi.tif": "a675b5358bfd61ef16640cf08e3f3c43cb3ca1635505fc520e3151739c4a224c",
+    "data/processed/enhanced_v001/marble-peak/imagery/vegetation_mask.tif": "dc8422626370030de5b06c44959dd2500da7ee420e07361d073b5755bd717be2",
+    "data/processed/enhanced_v001/marble-peak/imagery/possible_exposed_surface_mask.tif": "dd7f56219eea42f8c2198429ca2db78e3aa6634bafc050294ab001fb6bed53bc"
+  },
+  "limitations": [
+    "NDVI threshold is an exploratory vegetation screen, not a validated land-cover classifier.",
+    "Possible exposed surface includes soil/snow/water/shadow errors and does not establish rock type.",
+    "Imagery does not confirm cave entrances; no imagery score bonus is assigned.",
+    "Final grid uses nearest-neighbour reprojection at the coarsest selected native resolution."
+  ]
+}

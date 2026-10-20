@@ -1,0 +1,21 @@
+{
+  "name": "Kaleetan Peak vicinity — Enhanced Analysis v001",
+  "general_location": "Kaleetan Peak vicinity, Washington Cascades",
+  "study_extent": {
+    "crs": "EPSG:26910",
+    "bounds": [
+      613050,
+      5256200,
+      616050,
+      5259200
+    ]
+  },
+  "geological_summary": "Unvalidated union of preserved original leads and enhanced terrain/hydrological hypotheses. DNR 1:100,000 carbonate/mixed-unit zones; unknown geology retained. Continuous ordinal evidence strength, separate uncertainty. No cave entrance or access route confirmed.",
+  "candidate_csv": "results/enhanced_v001_kaleetan-vicinity/candidates.csv",
+  "analysis_references": [
+    "configs/enhanced_v001.json",
+    "docs/enhanced_v001/METHODOLOGY.md",
+    "docs/enhanced_v001/GEOLOGY_SOURCES.md",
+    "results/enhanced_v001_kaleetan-vicinity/run_manifest.json"
+  ]
+}

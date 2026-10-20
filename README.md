@@ -4,6 +4,25 @@ Reproducible geospatial research into cave-bearing landscapes near Cave
 Ridge, Denny Mountain, Kaleetan Peak and Marble Peak near Silverton, Washington. Outputs describe **landscape
 hypotheses, not cave locations or probabilities**. Initial predictions were frozen before known local cave references were consulted. Read [PROJECT_STATE.md](PROJECT_STATE.md) before work.
 
+## Enhanced prospecting maps
+
+The additive **enhanced_v001** analyses retain every original lead and add
+terrain/drainage hypotheses with exact continuous purple → blue → teal → green → yellow
+strength colors, separate geological uncertainty, source-unit zones and native
+0.6 m RGB/NIR imagery. Strength is an ordinal index, **not a cave probability**.
+Original Library entries and frozen experiments remain intact.
+
+Open [enhanced Denny](prospecting_library/denny-mountain-enhanced-v001/denny-mountain-enhanced-v001.qgz),
+[enhanced Kaleetan](prospecting_library/kaleetan-vicinity-enhanced-v001/kaleetan-vicinity-enhanced-v001.qgz),
+[enhanced Marble Peak](prospecting_library/marble-peak-enhanced-v001/marble-peak-enhanced-v001.qgz), or
+[enhanced Cave Ridge](prospecting_library/cave-ridge-enhanced-v001/cave-ridge-enhanced-v001.qgz).
+Use the [workflow and filters](docs/enhanced_v001/WORKFLOW.md),
+[scoring methodology](docs/enhanced_v001/METHODOLOGY.md), and
+[comparison](docs/enhanced_v001/COMPARISON.md) to review evidence and limitations.
+Maps require the local shared datasets. Optional native LiDAR is partial at Marble;
+the other three areas use the DEM fallback within the declared download budget.
+No new cave-reference sources or personal field observations were used.
+
 ## Saved prospecting areas
 
 The [Prospecting Library](prospecting_library/README.md) keeps independent,

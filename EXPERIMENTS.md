@@ -244,3 +244,20 @@ current integrity record is `experiments/snapshots/marble_v001_reviewed.json`.
 Prepared context files are now read-only. No numerical model or candidate changed.
 [Provider audit details](docs/MARBLE_PROVIDER_REVIEW_20261019.md) document the
 preserved initial record and limits on attributing the exact byte-level change.
+
+
+## Enhanced v001 prospecting union
+
+`configs/enhanced_v001.json` defines separate four-area inputs, output paths,
+exact five-stop continuous colors, conservative correlation-family aggregation
+and optional-data budgets. Numeric outputs live in `results/enhanced_v001_AREA/`
+and prepared measurements in `data/processed/enhanced_v001/AREA/`. Original
+experiments are untouched. All original candidate IDs, ranks, scores, coordinates
+and geometries are retained alongside enhanced strength and source evidence.
+
+The [comparison](docs/enhanced_v001/COMPARISON.md), per-area acquisition/terrain/
+registry manifests, independent [verification](docs/enhanced_v001/verification.json)
+and `experiments/snapshots/enhanced_v001.json` provide the audit trail.
+The enhanced snapshot is unvalidated prospecting, not a blind cave experiment.
+New scientific revisions require new names/paths. Separately saved Library IDs
+end `-enhanced-v001`; older entries still open the original analyses.

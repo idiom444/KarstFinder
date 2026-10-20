@@ -1,0 +1,27 @@
+# Geological source discovery and limits
+
+The upgrade used geology, numerical terrain and unlabeled NAIP imagery. It did not query cave inventories, named entrances, exploration reports or the private validation archive. Earlier area-selection exposure remains part of the experiment history. No outreach occurred.
+
+## Sources queried
+
+The bounded acquisition script requests map-unit polygons, publication-catalog polygons and controlled unit-name/age fields from DNR's current [24k service](https://gis.dnr.wa.gov/site3/rest/services/Geology/24K_Surface_Geology_WA_GeMS/MapServer), [25–99k service](https://gis.dnr.wa.gov/site3/rest/services/Geology/25_to_99K_Surface_Geology_WA_GeMS/MapServer), and [100k service](https://gis.dnr.wa.gov/site1/rest/services/Public_Geology/100K_Surface_Geology_WA_GeMS/MapServer). Each study window includes its existing 1,100 m support buffer for discovery. The actual query URLs, selected fields, raw response hashes, nominal scales and returned codes are recorded in each `*_geology_acquisition.json`.
+
+All four footprints returned zero 24k unit polygons. Only Marble returned an intermediate-scale polygon, explicitly coded **unmapped**. It does not supersede valid regional mapping. The 100k responses returned 53 Cave Ridge, 32 Denny, 23 Kaleetan and 17 Marble polygons before study clipping. These are intersecting source records, not necessarily distinct formations inside the study. No claim is made that every unpublished thesis, historical plate or geological archive has been exhausted.
+
+[DNR's mapping page](https://dnr.wa.gov/washington-geological-survey/geologic-mapping) and publication-catalog service were inspected for additional map sources. Broader pamphlets, field notebooks, photographs and generic geological point datasets were excluded because they can contain cave-location information. Search-result snippets were limited to geological map discovery; no cave-specific search was made during this upgrade.
+
+The USGS [Snoqualmie Pass database DS-186 / I-2538](https://www.usgs.gov/publications/database-geologic-map-snoqualmie-pass-30-minute-60-minute-quadrangle-washington-i-2538) explicitly describes regional 1:100,000 resolution. The publication metadata distinguishes detailed original mapping from simplified regional database contacts; it does not justify treating this product as 24k carbonate mapping. [Sauk River I-2592](https://pubs.usgs.gov/publication/i2592) and its [DS-188 database catalog](https://pubs.usgs.gov/ds/2006/188/) were located as regional alternatives. A direct I-2592 catalog fetch returned HTTP 403; its public indexed publication record remained available. The map plates/pamphlets were not opened, digitized or used to manufacture finer geological certainty.
+
+## Applied interpretation
+
+`src/karstfinder/enhanced/geology.py` builds a new clipped GeoPackage. Explicit existing mapped marble codes **PMmb(e)** and **TRmb(e)** retain their established carbonate interpretation; controlled names containing marble, limestone or dolostone can also support mapped carbonate. **JTRmt(e)** retains the baseline's possible mixed-carbonate hypothesis, not a claim that carbonate occurs throughout the melange. Same-code unit names from other quadrangles are not silently substituted. Missing matched descriptions remain blank.
+
+Categories are `mapped_carbonate`, `possible_mixed`, `contact_uncertain`, `mapped_noncarbonate` and `unknown`. There is **no field-confirmed carbonate** category assigned in these runs. Explicit volcanic/intrusive names, water and mapped talus/slide surface material can carry measured lack of surface carbonate support; this does not establish absence beneath cover. Unresolved codes and missing descriptions are unknown, not unsuitable. Talus/slide material is unfavorable surface evidence rather than proof of subsurface composition.
+
+The 100 m contact-context distance is an inherited exploratory assumption. The 50 m contact proxy is 0.5 mm at 1:100,000 and communicates cartographic scale only: it is **not measured accuracy, a confidence interval or a validated positional bound**. Source identification confidence is preserved. Carbonate overlap fractions and nearest distances are retained, including narrow contact-edge overlap; a tiny overlap does not receive the score of an entirely mapped-carbonate footprint. Faults receive no automatic bonus. Distances and the nearest mapped orientation record remain inspectable context, without claiming hydraulic openness or favorable bedding geometry.
+
+Zones follow actual mapped-carbonate or mixed-unit source footprints, with source OBJECTIDs and representative waypoints. They do not join nearby unrelated leads into arbitrary distance clusters. A mixed-unit zone has considerable within-unit uncertainty. Unresolved surrounding leads remain separately visible without an invented geological zone.
+
+## Optional plate support
+
+`enhanced_georeference.py` accepts an explicitly reviewed local plate, citation, scale, geological uncertainty and at least four pixel/UTM control points. GDAL performs a first-order transform; the helper records input/output hashes and affine GCP fit residuals. A synthetic fixture verifies that workflow. GCP fit is not independent map accuracy. No real plate was georeferenced in these runs because no suitable finer blind-safe source was established. Automated carbonate digitization and cross-section inference are not claimed; manual interpretation would require a separately reviewed, versioned input and new experiment.

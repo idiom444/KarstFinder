@@ -1,0 +1,103 @@
+{
+  "area": "denny-mountain",
+  "baseline_count": 489,
+  "retained_baseline_count": 489,
+  "new_leads": 2136,
+  "total": 2625,
+  "by_kind": {
+    "cliff": 2068,
+    "depression": 66,
+    "hydrology": 491
+  },
+  "by_geology": {
+    "mapped_carbonate": 56,
+    "contact_uncertain": 75,
+    "possible_mixed": 699,
+    "unknown": 1723,
+    "mapped_noncarbonate": 72
+  },
+  "single_detection_method_count": 2625,
+  "score_range": [
+    0.12717692057291666,
+    1.0
+  ],
+  "scores_below_025_retained": 206,
+  "new_noise_suppression": {
+    "new_component_intersects_QA_exclusion": 13
+  },
+  "spearman_on_identical_baseline_objects": {
+    "baseline_score_vs_slope": 0.10595434794656072,
+    "enhanced_score_vs_slope": 0.08943715962357444,
+    "baseline_min_residual_vs_q10": 0.912525330614165
+  },
+  "comparison_top20": {
+    "enhanced": [
+      "denny-mountain:C-007414",
+      "denny-mountain:C-007697",
+      "denny-mountain:C-007707",
+      "denny-mountain:C-007722",
+      "denny-mountain:C-007828",
+      "denny-mountain:C-007841",
+      "denny-mountain:C-007851",
+      "denny-mountain:C-007956",
+      "denny-mountain:C-007983",
+      "denny-mountain:C-008008",
+      "denny-mountain:C-008180",
+      "denny-mountain:C-008379",
+      "denny-mountain:C-008453",
+      "denny-mountain:C-008085",
+      "denny-mountain:C-007783",
+      "denny-mountain:C-007105",
+      "denny-mountain:C-006437",
+      "denny-mountain:C-006681",
+      "denny-mountain:C-006751",
+      "denny-mountain:C-006757"
+    ],
+    "geology_only": [
+      "denny-mountain:C-006979",
+      "denny-mountain:C-007105",
+      "denny-mountain:C-007177",
+      "denny-mountain:C-007414",
+      "denny-mountain:C-007572",
+      "denny-mountain:C-007586",
+      "denny-mountain:C-007592",
+      "denny-mountain:C-007602",
+      "denny-mountain:C-007640",
+      "denny-mountain:C-007660",
+      "denny-mountain:C-007674",
+      "denny-mountain:C-007697",
+      "denny-mountain:C-007707",
+      "denny-mountain:C-007722",
+      "denny-mountain:C-007783",
+      "denny-mountain:C-007793",
+      "denny-mountain:C-007828",
+      "denny-mountain:C-007834",
+      "denny-mountain:C-007841",
+      "denny-mountain:C-007851"
+    ],
+    "simple_slope": [
+      "denny-mountain:D-000027",
+      "denny-mountain:E-H-60215c46ee7bcd83",
+      "denny-mountain:E-H-8c154c4b52fff809",
+      "denny-mountain:E-H-02a6f0d5317c9a8b",
+      "denny-mountain:D-000030",
+      "denny-mountain:E-C-d9ef93353d8b59b1",
+      "denny-mountain:E-H-fd3003642eec910c",
+      "denny-mountain:E-C-3bcbacc09c8bb80b",
+      "denny-mountain:E-C-a1b7770c802f98d3",
+      "denny-mountain:E-C-b2d329b1c9247248",
+      "denny-mountain:E-H-cec8f4d2423b2b49",
+      "denny-mountain:E-C-3fad4a786652ab41",
+      "denny-mountain:E-H-9f656ec2a931e7fe",
+      "denny-mountain:E-C-3c5d20794b1ca8f2",
+      "denny-mountain:E-H-7e7dcaabd9915aec",
+      "denny-mountain:E-H-4b81125c5f4c294e",
+      "denny-mountain:E-C-dee286f732227c99",
+      "denny-mountain:E-H-e040a602b0debccb",
+      "denny-mountain:E-C-4826e5223879d069",
+      "denny-mountain:E-H-0e84a0a5f2e97c4a"
+    ]
+  },
+  "interpretation": "Descriptive usefulness/coverage comparison only; no known cave data, cave accuracy or independent validation. New leads are unverified surface/setting hypotheses.",
+  "slope_audit": "Original exposure, landscape slope and cliff morphology all encode steepness. Enhanced cliff support uses robust residual quantiles plus a fixed weak cliff-detection floor; slope is retained as measurement/threshold, not a second amplitude bonus."
+}

@@ -1,0 +1,89 @@
+# Enhanced v001: implementation and interpretation
+
+This additive experiment extends the four saved investigations without changing their numerical outputs, rankings, original scripts or archived maps. Baseline commit: `8b0b1877df014ecf5969f1529bcde6fc5fcd29f8`. The pre-upgrade methodology, catalog and hashes are preserved beside this document. The original frozen blind comparison remains intact; these enhanced investigations are **unvalidated and not independently blind**. No new cave-reference records or personal observations were read.
+
+## Inputs and observation levels
+
+Configuration: [`configs/enhanced_v001.json`](../../configs/enhanced_v001.json). All analysis coordinates use **EPSG:26910, NAD83 / UTM 10N, metres**. Native DEM working grids are 1 m, with existing 10 m terrain/drainage grids and 1,100 m support buffers. Working resolution is not accuracy. Original native epoch/seam/void masks remain in force for new terrain detections; all old features survive regardless. Original source units, coverage and vertical conversion evidence remain in the baseline manifests and methodology. The upgrade does not fabricate a new survey or datum conversion for those DEMs.
+
+Geological acquisition and uncertainty are documented in [GEOLOGY_SOURCES.md](GEOLOGY_SOURCES.md). Only usable 100k polygons are interpreted in current runs. All direct mapped marble remains **mapped**, not field-confirmed. Faults, contacts and orientation observations are copied with their original fields. Geological confidence is separate from strength: mapped classes receive an ordinal 0.5 confidence indicator, uncertain contacts/mixed units 0.25, and unknown lithology 0. These are transparent display categories, not fitted confidence probabilities. The indicator is coarse because the effective map scale is coarse, even when a source labels unit identification certain.
+
+Imagery is free 2023 NAIP RGB/NIR from the [Planetary Computer NAIP catalog](https://planetarycomputer.microsoft.com/dataset/naip), cropped at native **0.6 m** pixels. Actual dates, CRS, source assets, selected footprints, pixel transforms, hashes and valid coverage are in each area's `*_imagery.json`. Newest intersecting footprints are selected greedily; mosaics can therefore contain different dates. Range reads avoid full COG downloads. The four source bands are red, green, blue and NIR; NIR is not an alpha band. UInt16 output reserves 65535 for nodata and preserves valid zero radiometry. Edge windows can contain invalid padded pixels; reported valid coverage is based on the produced mosaic, not catalog boxes alone.
+
+## Terrain and hydrological measurements
+
+[`enhanced_terrain.py`](../../scripts/enhanced_terrain.py) uses installed **GDAL** and **WhiteboxTools** implementations. Tool versions, binary hash, inputs, output hashes and complete logs are retained. No custom flow routing, TPI or curvature implementation is introduced.
+
+| Output | Derivation and limits |
+|---|---|
+| Slope / hillshade | GDAL on existing buffered 10 m DEM; native 1 m baseline products also retained. |
+| Local relief, height above local floor, depth below local crest | Whitebox minimum/maximum filters at 210 and 610 m; respectively max−min, elevation−min, max−elevation. These are window extrema, not surveyed valley/crest heights. |
+| Relative topographic position | Whitebox `RelativeTopographicPosition`, 210 and 610 m windows. |
+| Plan/profile curvature, ruggedness | Whitebox `PlanCurvature`, `ProfileCurvature`, `RuggednessIndex`; algorithm-native units/definitions, inspectable rasters. |
+| Multiscale elevation residuals | Whitebox `DiffFromMeanElev` at 11, 31 and 61 m on the 1 m buffered DEM. Footprint q10/median/q90/min/max remain in the registry. |
+| Contributing area and modeled streams | Existing Whitebox filled DEM and D8 catchment area; `ExtractStreams` at 5,000, 25,000 and 100,000 m². These are exploratory support scales, not perennial stream inventories. |
+| Height above modeled drainage | Whitebox `ElevationAboveStream` on filled DEM and the 25,000 m² network. |
+| Depth below modeled divide | Invert elevation, Whitebox Wang–Liu fill, D8 catchment routing and 25,000 m² extraction, then `ElevationAboveStream` on the inverted surface. This is an inversion-based proxy, not actual ridge mapping. |
+| Normalized drainage/divide position | HAND / (HAND + inverted-surface height); NULL when denominator is zero or support missing. |
+| Hydrologic boundary flag | Whitebox `EdgeContamination` with D8 and zfactor=1. Whitebox encodes unflagged zero with nodata=0; registry summaries explicitly retain zeros over these complete DEM grids. Positive flags are counterevidence for catchment completeness. The original raw mask remains unchanged. |
+| Directional line responses | Whitebox vertical/horizontal/45°/135° line-detection filters on the 10 m DEM. Experimental texture/orientation responses; **not identified fractures** and not scoring bonuses. |
+
+The 210/610 m terrain scales transfer existing baseline scales. The added 31/61 m windows test whether negative relief persists beyond an 11 m neighborhood. No Washington cave validation selected these scales. Hydrological thresholds and the 5 m low-HAND setting are explicit exploratory assumptions, not imported validated cave thresholds. Sensitivity counts are reported for all three catchment thresholds; none is selected by cave outcomes.
+
+A drainage-setting lead requires contributing area ≥25,000 m², HAND ≤5 m, and mapped carbonate/mixed geology or its assumed 100 m context. Connected components ≥100 m² are retained. These describe potential valley/discharge contexts. A depression in carbonate may suggest infiltration, but no infiltration, spring or disappearing stream was measured. DEM drainage endpoints receive **no disappearing-stream interpretation**. Edge-contaminated catchments are flagged. Mapped fault/contact intersections inside mapped carbonate generate separate exploratory structural features with 10 m display footprints; no intersection produced a fault-permeability bonus. The source attributes and nearest bedding/structural observation are retained without inferring a favorable passage orientation.
+
+## Optional native LiDAR
+
+[`enhanced_pointcloud.py`](../../scripts/enhanced_pointcloud.py) queries USGS LPC metadata around a geology-selected reference point (largest existing mapped-marble polygon's representative point). Acquisition is limited to **one tile, ≤250 MB per area**, and a **500 m crop**; the standard DEM workflow works without it. The public [USGS EPT registry](https://registry.opendata.aws/usgs-lidar/) was investigated. The available `WA_KingCo_1_2021` EPT bounds do not cover these eastern King County study areas. Larger original tiles for Cave Ridge, Denny and Kaleetan exceed the configured budget and were not downloaded. No requester-pays resources were used. DNR native coverage catalogs and original USGS/PSLC DEM acquisition evidence informed discovery, but no additional bounded DNR LAS source was established for those three areas.
+
+For a usable LAS tile, the workflow requires explicit vertical units and datum. It reprojects XY to UTM 10N separately and converts US survey-foot Z by **1200/3937**, retaining NAVD88 without fitting offsets. Unknown units/datums cause a documented fallback. Withheld points are excluded from the class-2 ground crop. PDAL computes 16-neighbor normals and covariance curvature; 2 m bins retain all-return/ground-return counts, mean normal Z, mean curvature and Z standard deviation. Count/4 is a ground-return density in points/m². Curvature is the smallest eigenvalue divided by the eigenvalue sum, per [PDAL's normal implementation](https://pdal.io/en/latest/stages/filters.normal.html). The cropped LAZ retains full normal vectors for inspection.
+
+These products can reveal sampling quality and broad surface orientation variation, but airborne ground classification omits many vertical/overhanging faces. Z standard deviation includes slope and is not detrended roughness. Crop-edge neighborhoods are truncated; counts are return counts, not independent pulse density. Sparse or absent returns are **never opening evidence**. No automatic recess recognition or point-cloud score bonus is implemented. Real usable coverage and candidate intersections are reported in acquisition/comparison manifests rather than inferred from a tile bounding box. Native LAZ is retained outside the saved library's raster/vector-only provider inventory; persistent derived GeoTIFFs reopen in those maps.
+
+## Imagery screening
+
+NDVI=(NIR−red)/(NIR+red) where both bands are valid and the denominator is positive. NDVI>0.3 is an exploratory vegetation screen. A possible exposed-surface proxy requires NDVI≤0.2 and mean RGB brightness 40–220. These thresholds are documented screens, not a validated rock classifier: soil, snow, water and shadow can pass or fail them. Imagery cannot confirm carbonate composition or an entrance. Candidate summaries retain NDVI and mask statistics; no imagery score bonus is assigned. Occluded forest/cliff/overhang surfaces remain unresolved.
+
+## Detection, union and preservation
+
+[`registry.py`](../../src/karstfinder/enhanced/registry.py) imports **all 3,418 original leads**, retaining original geometry, representative coordinates, rank, score, original ID and prediction-CSV checksum. Enhanced IDs prefix the area to prevent cross-area collisions. Existing notes remain untouched in their original ignored library folders, with baseline ID/checksum links in the enhanced registry. Notes are not copied into public outputs.
+
+New cliff and depression detections transfer the existing thresholds: slope≥45° and area≥25 m²; closed-depression depth≥0.5 m and area≥4 m². Four-neighbor connected components are formed **before** QA screening; seam-crossing components are not split into apparently independent leads. The arbitrary maximum area caps and carbonate-proximity gate are removed. New components intersecting excluded DEM quality or mapped open water are suppressed as noise/inappropriate observations, with counts recorded. Missing/uncertain/noncarbonate geology does not otherwise delete a terrain lead. All baseline leads survive these new checks. Large cliff/depression systems remain inspectable; area does not establish an entrance size.
+
+Exact normalized geometry+method hashes merge repeated detections of the same baseline object; same-location but different-method/geometry hypotheses are not discarded by a proximity deduplication rule. New IDs include stable geometry hashes. New coordinates use an interior point; baseline coordinates remain unchanged. Footprints and points are persistent GeoPackage layers, with CSV and structured JSON views. The registry retains source references, measurements, individual contributions, unfavorable evidence, uncertainty, alternatives, method labels, geological zone, access status and fieldwork status. Nested measurements are JSON text in QGIS attributes and structured objects in `candidate_evidence.json`. A component with no sampled raster cell is NULL, not an interpolated fabricated value.
+
+## Ordinal scoring and separate uncertainty
+
+[`scoring.py`](../../src/karstfinder/enhanced/scoring.py) implements:
+
+`strength = 0.30 × max(observed geology/structure-family support) + 0.70 × max(observed terrain/hydrology/point-cloud-family support)`.
+
+Only measured components enter a maximum; missing components are NULL. No family renormalization occurs when data is missing. Zero means a measured lack of that support. No strength threshold deletes a lead. These weights are configurable in the versioned config and are **judgment assumptions**, not learned probabilities or evidence of optimal weighting.
+
+- Geology: mapped-carbonate overlap fraction (largest overlapping source fraction if sources overlap), possible mixed support `0.35 × mixed overlap fraction`, assumed contact context 0.5, explicitly mapped noncarbonate support 0, unresolved lithology NULL. No positive fault-distance or bedding bonus.
+- Cliff: `0.2 + 0.8 × clip(max(−q10 residual at 11/31/61 m)/2 m, 0, 1)`. The 0.2 floor preserves the weak steep-surface hypothesis; 2 m is an exploratory relief scale. A single extreme residual no longer drives the score. Large glacial faces can still score strongly; saturation creates ties.
+- Depression: `clip(maximum measured depression depth/3 m,0,1)`, retaining the baseline depth scale. Depth is a DEM depression measurement, not cave depth.
+- Hydrology: 0.4 when a footprint samples the documented drainage-setting mask; 0 when sampled mask cells lack it; NULL when no cell is sampled. This can contribute to existing leads as well as separate setting objects. It does not stack with stronger morphology from the same DEM.
+- Structure, line filters, imagery and point-cloud context do not add unvalidated independent bonuses. An intersection can remain a geology-supported exploratory lead.
+
+Original exposure, landscape slope and cliff morphology reused steepness. The enhanced score removes repeated slope-amplitude bonuses and uses robust residual summaries, while slope still defines cliff detection and can correlate with residual relief. Maximum-within-family aggregation reduces arithmetic double counting; it does not make the measurements statistically independent. Unfavorable mapped geology removes carbonate support rather than erasing terrain observations. Talus, uncertainty and boundary flags remain explicit counterevidence, without unvalidated numerical penalties.
+
+Data confidence is a separate availability indicator: 0.4 terrain + 0.3 resolved geological class + 0.2 imagery + 0.1 classified ground-return coverage. It describes available data, **not measurement accuracy**. A low-resolution mapped noncarbonate class can have data coverage yet little prospecting support. Geological confidence, data availability and ordinal strength must be read together. Confidence does not recolor the strength ramp or discard a single-method lead.
+
+## Exact continuous presentation, zones and filtering
+
+Marker fill and the continuous legend use **linear sRGB interpolation** at exact stops **0 #440154**, **0.25 #3b528b**, **0.5 #21918c**, **0.75 #5ec962**, **1 #fde725**. No preset palette or graduated color classes substitute for these values. QGIS's expression is tested against the independent interpolation function at anchor and intermediate values. Marker shapes: cliff triangle, depression diamond, drainage setting circle, mapped intersection square. A thicker dark outline separately marks uncertain/unknown geological support; fills remain strength colors. All retained leads appear by default. Color yellow means strongest configured ordinal support, not a cave or a safe destination.
+
+The hidden 10 m display-strength raster burns the maximum overlapping footprint score into touched cells; it supports a native continuous QGIS legend and is **not a new prediction grid**. Original point coordinates/footprints are authoritative. QGIS layouts include whole-study and carbonate-detail views. Method views are independently inspectable, alongside all measured raster products.
+
+Zones are clipped source geological polygons with stable source IDs, an interior reference waypoint, member count and maximum lead strength. Geology-unresolved leads remain unzoned. Unit boundaries and the 50 m cartographic proxy are coarse. Zones have no route or access implication; inherited access screening stays separate from scientific strength. New leads are unscreened for access. No field-trip recommendation is made here.
+
+`enhanced_filter.py` applies reversible subsets to the main points and footprints, supporting minimum strength, method, geological class/confidence, zone, fieldwork status and terrain/imagery/point-cloud availability. `--reset` restores all leads. Native QGIS Query Builder can inspect any combination. Independent method views remain complete even when the main view is filtered. Current statuses are prediction-time **Not yet investigated**; later private field notes stay under the existing Library workflow and are not automatically promoted into public scientific attributes.
+
+## Reproducibility, comparison and limits
+
+Each area's manifests hash source rasters, actual acquired imagery, configuration, intermediate terrain, registry and comparisons. The final snapshot additionally hashes new code, output files, saved styles and library archives after provider review. The package contains no known cave-reference input. Download budgets, incomplete catalogs, unit failures and optional-source errors produce explicit limitations and DEM fallback rather than fabricated measurements. Successful registry/terrain runs refuse output overwrite; revisions require new versioned paths/configurations.
+
+[COMPARISON.md](COMPARISON.md) and `comparison.json` compare matched original objects, geology-only and simple-slope baselines, correlations, new lead counts, uncertainty, weak-lead retention and catchment-threshold sensitivity. These measure coverage and auditability. They **do not measure cave precision, recall, detection accuracy or field usefulness validated by visits**. Sources remain correlated and geology remains coarse. No independent cave observations or visits were invented.
+
+Synthetic tests cover continuous colors, missing versus zero, correlation-family aggregation, robust residual resistance to one extreme pixel, exact footprint sampling, connected components/large-object retention, geological unknowns, reversible filters, GDAL GCP transforms, Whitebox flat terrain and PDAL plane normals/vertical-unit conversion. Fresh-process library checks reopen complete persistent maps; baseline hashes are checked again afterward. All shared ignored data/results are required for reopening. A public Git clone alone does not contain the large datasets.
